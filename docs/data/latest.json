@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "generated_at": "2026-11-24T05:23:47+00:00",
+ "generated_at": "2026-11-24T05:25:08+00:00",
  "ai_summaries": false,
  "topics": [
   {
@@ -83,7 +83,7 @@
   },
   {
    "topic": "sports",
-   "text": "Fantasy Baseball Offseason Tracker: Trevor Rogers' deal with Cubs underscores his upside"
+   "text": "England, Northern Ireland, Scotland & Wales to host 2035 Women's World Cup"
   }
  ],
  "stories": [
@@ -528,24 +528,6 @@
   {
    "id": "sports-1",
    "topic": "sports",
-   "headline": "Fantasy Baseball Offseason Tracker: Trevor Rogers' deal with Cubs underscores his upside",
-   "summary": "The Chicago Cubs are in agreement on a deal with free-agent left-handed starter Trevor Rogers, as first reported by Jon Morosi of MLB Network. ESPN's Jeff Passan reports that it is a five-year, $120 million deal.",
-   "why": "",
-   "sources": [
-    {
-     "name": "CBS Sports",
-     "url": "https://www.cbssports.com/fantasy/baseball/news/fantasy-baseball-offseason-tracker-trevor-rogers-deal-with-cubs-underscores-his-upside/"
-    },
-    {
-     "name": "Yahoo Sports",
-     "url": "https://sports.yahoo.com/articles/trevor-rogers-cubs-agree-five-045029968.html"
-    }
-   ],
-   "time": "2026-11-24T04:50:29+00:00"
-  },
-  {
-   "id": "sports-2",
-   "topic": "sports",
    "headline": "England, Northern Ireland, Scotland & Wales to host 2035 Women's World Cup",
    "summary": "FIFA has confirmed a United States-led bid to host the 2031 Women's World Cup and a U.K. project led by England for the 2035 edition.",
    "why": "",
@@ -562,18 +544,32 @@
    "time": "2026-11-23T16:59:31+00:00"
   },
   {
+   "id": "sports-2",
+   "topic": "sports",
+   "headline": "Tarkowski's first Premier League red ruins Moyes' night - was it deserved?",
+   "summary": "Everton captain James Tarkowski was sent off for the first time in his Premier League career in Monday's 4-0 loss at Brentford - but was it a harsh decision?",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/sport/football/articles/cmqx5eynvpqno?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-23T22:43:39+00:00"
+  },
+  {
    "id": "sports-3",
    "topic": "sports",
-   "headline": "Bengals vs. Commanders odds, prediction, betting preview, start time: Monday Night Football picks, best bets",
-   "summary": "Find best bets and props for the biggest games in sports on Monday from the SportsLine Projection Model and top CBS Sports experts",
+   "headline": "2026 NFL playoff picture, standings: 49ers reign over NFC, Jaguars slip in AFC, wild-card battles heat up",
+   "summary": "A comprehensive look at all seven seeds in the AFC and NFC and the teams on the outside looking in",
    "why": "",
    "sources": [
     {
      "name": "CBS Sports",
-     "url": "https://www.cbssports.com/betting/news/bengals-vs-commanders-odds-prediction-betting-preview-start-time-monday-night-football-picks-best-bets/"
+     "url": "https://www.cbssports.com/nfl/news/2026-nfl-playoff-picture-standings-49ers-reign-over-nfc-jaguars-slip-in-afc/"
     }
    ],
-   "time": "2026-11-24T00:47:31+00:00"
+   "time": "2026-11-24T04:33:23+00:00"
   },
   {
    "id": "culture-1",
@@ -596,20 +592,6 @@
   {
    "id": "culture-2",
    "topic": "culture",
-   "headline": "Mending relationships over the holidays? Considering a truce? NPR wants to know",
-   "summary": "Has a political or social issue broken down a relationship that was important to you? Can it be repaired? Tell us what's going on. You might be asked to participate in a possible upcoming segment on All Things Considered.",
-   "why": "",
-   "sources": [
-    {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/23/g-s1-155085/holidays-relationships-politics-dispute"
-    }
-   ],
-   "time": "2026-11-23T20:53:12+00:00"
-  },
-  {
-   "id": "culture-3",
-   "topic": "culture",
    "headline": "US rapper postpones two arena shows after Manchester evacuation",
    "summary": "Don Toliver's show on Sunday was evacuated after an \"unknown substance\" was released into the crowd.",
    "why": "",
@@ -620,6 +602,20 @@
     }
    ],
    "time": "2026-11-23T20:49:08+00:00"
+  },
+  {
+   "id": "culture-3",
+   "topic": "culture",
+   "headline": "In Harlem, a New Museum Maps the Civil Rights Fight in the North",
+   "summary": "The Urban Civil Rights Museum, the first in New York dedicated to the history of the movement, aims to tell stories often overlooked in similar narratives.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/arts/design/urban-civil-rights-museum-harlem.html"
+    }
+   ],
+   "time": "2026-11-23T10:03:04+00:00"
   }
  ]
 }
