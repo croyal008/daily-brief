@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "generated_at": "2026-11-24T05:13:39+00:00",
+ "generated_at": "2026-11-24T05:23:47+00:00",
  "ai_summaries": false,
  "topics": [
   {
@@ -74,12 +74,16 @@
    "text": "Rep. Jimmy Gomez Resigns After Panel Alleges Unwanted Sexual Contact With Aide"
   },
   {
+   "topic": "culture",
+   "text": "Miley Cyrus marries Maxx Morando in California ceremony"
+  },
+  {
    "topic": "business",
    "text": "Paolo Bulgari, Heir of Italian Jewelry Dynasty, Dies at 89"
   },
   {
-   "topic": "culture",
-   "text": "Mending relationships over the holidays? Considering a truce? NPR wants to know"
+   "topic": "sports",
+   "text": "Fantasy Baseball Offseason Tracker: Trevor Rogers' deal with Cubs underscores his upside"
   }
  ],
  "stories": [
@@ -108,41 +112,23 @@
   {
    "id": "us-2",
    "topic": "us",
-   "headline": "Miley Cyrus marries rock drummer Maxx Morando in an intimate Palm Springs wedding",
-   "summary": "Singer Miley Cyrus has married rock drummer Maxx Morando in an intimate ceremony in Palm Springs, California",
-   "why": "",
-   "sources": [
-    {
-     "name": "Abcnews",
-     "url": "https://abcnews.com/US/wireStory/miley-cyrus-marries-rock-drummer-maxx-morando-intimate-138366725"
-    },
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cq8e0p87l89lo?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-23T05:30:14+00:00"
-  },
-  {
-   "id": "us-3",
-   "topic": "us",
    "headline": "Two central Ohio bus drivers killed, nine others injured after head-on crash",
    "summary": "Two Columbus transit bus drivers have been killed and nine others injured after their vehicles collided during the morning rush hour in Ohio's state capital and one bus was struck by a third vehicle",
    "why": "",
    "sources": [
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/us/columbus-ohio-bus-crash.html"
+     "name": "ABC News",
+     "url": "https://abcnews.com/US/wireStory/central-ohio-bus-drivers-killed-injured-after-head-138384467"
     },
     {
-     "name": "Abcnews",
-     "url": "https://abcnews.com/US/wireStory/central-ohio-bus-drivers-killed-injured-after-head-138384467"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/us/columbus-ohio-bus-crash.html"
     }
    ],
    "time": "2026-11-23T22:13:03+00:00"
   },
   {
-   "id": "us-4",
+   "id": "us-3",
    "topic": "us",
    "headline": "Federal court releases Rep. Ilhan Omar D.C. home raid documents",
    "summary": "A federal court on Monday evening released documents regarding last month's raid at the Washington, D.C. home of Democratic Minnesota U.S. Rep. Ilhan Omar.",
@@ -156,7 +142,7 @@
    "time": "2026-11-24T02:21:00+00:00"
   },
   {
-   "id": "us-5",
+   "id": "us-4",
    "topic": "us",
    "headline": "Let's talk turkey: Here's how Thanksgiving meal costs have changed this year",
    "summary": "Grocery costs have been on the rise, but food-price analysts say it's unclear if you'll spend more on the Thanksgiving meal this year. Some people are deciding not to host or are hosting fewer guests.",
@@ -165,6 +151,20 @@
     {
      "name": "NPR",
      "url": "https://www.npr.org/2026/11/23/nx-s1-6044207/thanksgiving-meal-costs"
+    }
+   ],
+   "time": "2026-11-23T10:00:00+00:00"
+  },
+  {
+   "id": "us-5",
+   "topic": "us",
+   "headline": "Seniors embrace Tesla automated driving technology despite questions about safety",
+   "summary": "Older drivers are using Tesla's automated driving technology to stay on the road longer. But safety experts warn the company may be over-selling what its cars can do.",
+   "why": "",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6020559/senior-drivers-tesla-automated-driving-safety"
     }
    ],
    "time": "2026-11-23T10:00:00+00:00"
@@ -266,6 +266,24 @@
   {
    "id": "world-2",
    "topic": "world",
+   "headline": "Pennsylvania reports ninth measles death in ongoing state outbreak",
+   "summary": "Measles cases are surging in the U.S., to the highest count it's seen in more than three decades. Pennsylvania has reported more than 1,600 confirmed cases and nine measles-related deaths in 2026 so far.",
+   "why": "",
+   "sources": [
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/24/pennsylvania-reports-ninth-measles-death-in-ongoing-state-outbreak?traffic_source=rss"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/pennsylvania-measles-outbreak-death/"
+    }
+   ],
+   "time": "2026-11-24T04:59:13+00:00"
+  },
+  {
+   "id": "world-3",
+   "topic": "world",
    "headline": "24 Killed After Fire Rips Through Candy Factory in Indonesia",
    "summary": "Rescuers brave unstable structures in search for missing as DNA needed to identify victims Indonesia has confirmed the deaths of 24 people in a fire that tore ⁠through a factory, as rescuers braved unstable structures in the burned…",
    "why": "",
@@ -282,7 +300,7 @@
    "time": "2026-11-24T00:35:20+00:00"
   },
   {
-   "id": "world-3",
+   "id": "world-4",
    "topic": "world",
    "headline": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
    "summary": "French woman says she will pursue legal action against publisher and author over use of photos taken by convicted husband Gisèle Pelicot has said she is “deeply shocked” that nude photographs of her had been used without her consent to…",
@@ -300,7 +318,7 @@
    "time": "2026-11-23T21:24:47+00:00"
   },
   {
-   "id": "world-4",
+   "id": "world-5",
    "topic": "world",
    "headline": "UK sanctions top Myanmar military leaders after Rohingya genocide ruling",
    "summary": "A U.N. court’s decision against Myanmar sets a precedent in international law with important implications for a similar case over Israel’s actions in Gaza.",
@@ -318,28 +336,10 @@
    "time": "2026-11-23T21:03:34+00:00"
   },
   {
-   "id": "world-5",
-   "topic": "world",
-   "headline": "Iranian authorities flog singer who performed without hijab, lawyers say",
-   "summary": "Western governments and rights groups have criticised flogging as torture and a violation of international law An Iranian singer and four members of her production team ⁠have each received 74 lashes after being sentenced for “offending…",
-   "why": "",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/world/2026/nov/23/iranian-singer-lashes-performing-without-hijab"
-    }
-   ],
-   "time": "2026-11-23T20:56:17+00:00"
-  },
-  {
    "id": "tech-1",
    "topic": "tech",
    "headline": "With Jensen Huang’s Return as C.E.O., Trump Effectively Overrode Nvidia’s Board",
-   "summary": "This live blog is now closed. Jensen Huang reinstated as Nvidia CEO after Trump intervenes Sign up to the Breaking News US email Nvidia ’s shares have surged by 31% at the start of trading following the news.",
+   "summary": "Jensen Huang reinstated as Nvidia CEO after Trump intervenes Sign up to the Breaking News US email Nvidia ’s shares have surged by 31% at the start of trading following the news.",
    "why": "",
    "sources": [
     {
@@ -361,7 +361,7 @@
    "id": "tech-2",
    "topic": "tech",
    "headline": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
-   "summary": "The administration added Megaspeed to the entity list, a trade blacklist, after weeks of sparring among top officials on the decision.",
+   "summary": "The Trump administration restricted Megaspeed from buying advanced semiconductor chips, after the firm's alleged links to China helped kick-start the scandal surrounding Nvidia CEO Jensen Huang.",
    "why": "",
    "sources": [
     {
@@ -371,6 +371,10 @@
     {
      "name": "New York Times",
      "url": "https://www.nytimes.com/2026/11/23/business/trump-administration-megaspeed-trade-blacklist-nvidia.html"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/megaspeed-trade-blacklist-nvidia-jensen-huang/"
     }
    ],
    "time": "2026-11-24T03:12:26+00:00"
@@ -396,20 +400,16 @@
   {
    "id": "tech-4",
    "topic": "tech",
-   "headline": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
-   "summary": "Virginia and Oregon filed separate lawsuits on Monday, accusing the company of promoting Grok's 'spicy mode'.",
+   "headline": "The rise and fall and rise again of Jensen Huang",
+   "summary": "Days after resigning while mired in scandal of extra-marital affairs, Nvidia's Jensen Huang is making a remarkable return.",
    "why": "",
    "sources": [
     {
-     "name": "Ars Technica",
-     "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/"
-    },
-    {
-     "name": "Al Jazeera",
-     "url": "https://www.aljazeera.com/economy/2026/11/23/us-states-sue-spacex-over-grok-ais-creation-of-child-sexual-abuse-material?traffic_source=rss"
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-23T21:30:44+00:00"
+   "time": "2026-11-23T15:49:52+00:00"
   },
   {
    "id": "science-1",
@@ -526,7 +526,75 @@
    "time": "2026-11-24T00:55:56+00:00"
   },
   {
+   "id": "sports-1",
+   "topic": "sports",
+   "headline": "Fantasy Baseball Offseason Tracker: Trevor Rogers' deal with Cubs underscores his upside",
+   "summary": "The Chicago Cubs are in agreement on a deal with free-agent left-handed starter Trevor Rogers, as first reported by Jon Morosi of MLB Network. ESPN's Jeff Passan reports that it is a five-year, $120 million deal.",
+   "why": "",
+   "sources": [
+    {
+     "name": "CBS Sports",
+     "url": "https://www.cbssports.com/fantasy/baseball/news/fantasy-baseball-offseason-tracker-trevor-rogers-deal-with-cubs-underscores-his-upside/"
+    },
+    {
+     "name": "Yahoo Sports",
+     "url": "https://sports.yahoo.com/articles/trevor-rogers-cubs-agree-five-045029968.html"
+    }
+   ],
+   "time": "2026-11-24T04:50:29+00:00"
+  },
+  {
+   "id": "sports-2",
+   "topic": "sports",
+   "headline": "England, Northern Ireland, Scotland & Wales to host 2035 Women's World Cup",
+   "summary": "FIFA has confirmed a United States-led bid to host the 2031 Women's World Cup and a U.K. project led by England for the 2035 edition.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/us-host-2031-fifa-women-world-cup-announcement/"
+    }
+   ],
+   "time": "2026-11-23T16:59:31+00:00"
+  },
+  {
+   "id": "sports-3",
+   "topic": "sports",
+   "headline": "Bengals vs. Commanders odds, prediction, betting preview, start time: Monday Night Football picks, best bets",
+   "summary": "Find best bets and props for the biggest games in sports on Monday from the SportsLine Projection Model and top CBS Sports experts",
+   "why": "",
+   "sources": [
+    {
+     "name": "CBS Sports",
+     "url": "https://www.cbssports.com/betting/news/bengals-vs-commanders-odds-prediction-betting-preview-start-time-monday-night-football-picks-best-bets/"
+    }
+   ],
+   "time": "2026-11-24T00:47:31+00:00"
+  },
+  {
    "id": "culture-1",
+   "topic": "culture",
+   "headline": "Miley Cyrus marries Maxx Morando in California ceremony",
+   "summary": "Singer Miley Cyrus has married rock drummer Maxx Morando in an intimate ceremony in Palm Springs, California",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cq8e0p87l89lo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "ABC News",
+     "url": "https://abcnews.com/US/wireStory/miley-cyrus-marries-rock-drummer-maxx-morando-intimate-138366725"
+    }
+   ],
+   "time": "2026-11-23T05:30:14+00:00"
+  },
+  {
+   "id": "culture-2",
    "topic": "culture",
    "headline": "Mending relationships over the holidays? Considering a truce? NPR wants to know",
    "summary": "Has a political or social issue broken down a relationship that was important to you? Can it be repaired? Tell us what's going on. You might be asked to participate in a possible upcoming segment on All Things Considered.",
@@ -540,7 +608,7 @@
    "time": "2026-11-23T20:53:12+00:00"
   },
   {
-   "id": "culture-2",
+   "id": "culture-3",
    "topic": "culture",
    "headline": "US rapper postpones two arena shows after Manchester evacuation",
    "summary": "Don Toliver's show on Sunday was evacuated after an \"unknown substance\" was released into the crowd.",
@@ -552,20 +620,6 @@
     }
    ],
    "time": "2026-11-23T20:49:08+00:00"
-  },
-  {
-   "id": "culture-3",
-   "topic": "culture",
-   "headline": "In Harlem, a New Museum Maps the Civil Rights Fight in the North",
-   "summary": "The Urban Civil Rights Museum, the first in New York dedicated to the history of the movement, aims to tell stories often overlooked in similar narratives.",
-   "why": "",
-   "sources": [
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/arts/design/urban-civil-rights-museum-harlem.html"
-    }
-   ],
-   "time": "2026-11-23T10:03:04+00:00"
   }
  ]
 }
