@@ -6,7 +6,7 @@
       "name": "U.S.",
       "emoji": "🇺🇸",
       "default_on": true,
-      "max_stories": 5,
+      "max_stories": 3,
       "feeds": [
         "https://feeds.npr.org/1003/rss.xml",
         "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
@@ -19,7 +19,7 @@
       "name": "Politics",
       "emoji": "🏛️",
       "default_on": true,
-      "max_stories": 4,
+      "max_stories": 3,
       "feeds": [
         "https://feeds.npr.org/1014/rss.xml",
         "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
@@ -31,7 +31,7 @@
       "name": "World",
       "emoji": "🌍",
       "default_on": true,
-      "max_stories": 5,
+      "max_stories": 3,
       "feeds": [
         "https://feeds.bbci.co.uk/news/world/rss.xml",
         "https://feeds.npr.org/1004/rss.xml",
@@ -45,7 +45,7 @@
       "name": "Tech",
       "emoji": "💻",
       "default_on": true,
-      "max_stories": 4,
+      "max_stories": 3,
       "feeds": [
         "https://feeds.arstechnica.com/arstechnica/index",
         "https://www.theverge.com/rss/index.xml",
@@ -58,7 +58,7 @@
       "name": "Science & Health",
       "emoji": "🔬",
       "default_on": true,
-      "max_stories": 4,
+      "max_stories": 3,
       "feeds": [
         "https://feeds.npr.org/1007/rss.xml",
         "https://feeds.npr.org/1128/rss.xml",
