@@ -1,8 +1,14 @@
 {
  "date": "2026-11-23",
- "generated_at": "2026-11-24T05:32:55+00:00",
+ "generated_at": "2026-11-24T05:38:16+00:00",
  "ai_summaries": false,
  "topics": [
+  {
+   "id": "myteams",
+   "name": "My Teams",
+   "emoji": "🏆",
+   "default_on": true
+  },
   {
    "id": "us",
    "name": "U.S.",
@@ -87,6 +93,20 @@
   }
  ],
  "stories": [
+  {
+   "headline": "✅ Cowboys 51, Titans 30",
+   "summary": "Final · vs. Titans · Record 5-6",
+   "stat": "Dak Prescott: 28/33, 325 YDS, 4 TD",
+   "sources": [
+    {
+     "name": "ESPN recap",
+     "url": "https://www.espn.com/nfl/recap?gameId=401873073"
+    }
+   ],
+   "id": "team-dallas-cowboys",
+   "topic": "myteams",
+   "why": ""
+  },
   {
    "id": "us-1",
    "topic": "us",
