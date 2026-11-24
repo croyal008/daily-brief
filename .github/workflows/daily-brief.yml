@@ -55,6 +55,9 @@ jobs:
         continue-on-error: true   # if this fails, the written brief still goes out
         env:
           KOKORO_DIR: models
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BRIEF_MODEL: ${{ vars.BRIEF_MODEL }}
+          PODCAST_MODEL: ${{ vars.PODCAST_MODEL }}
         run: python scripts/podcast.py
 
       # Keep only today's episode: upload it to the "podcast" release, then delete older ones.

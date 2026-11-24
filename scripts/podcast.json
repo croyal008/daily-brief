@@ -1,7 +1,17 @@
 {
-  "_note": "Settings for the recorded morning podcast. 'voice': af_heart, af_bella, am_michael (and others from Kokoro). 'speed': 1.0 is normal. 'topics': which topics are read, in this order. Set 'enabled' to false to turn the recording off.",
+  "_note": "Settings for the recorded morning podcast. 'voice': af_heart, af_bella, am_michael (and others from Kokoro). 'speed': 1.0 is normal. 'topics': which topics are read, in this order. Set 'enabled' to false to turn the recording off. 'host_style': when an Anthropic API key is set, Claude rewrites the script as a casual, witty host; set to false for the plain version.",
   "enabled": true,
   "voice": "af_heart",
   "speed": 1.0,
-  "topics": ["myteams", "us", "politics", "world", "tech", "science", "business", "sports"]
+  "topics": [
+    "myteams",
+    "us",
+    "politics",
+    "world",
+    "tech",
+    "science",
+    "business",
+    "sports"
+  ],
+  "host_style": true
 }

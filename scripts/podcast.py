@@ -108,6 +108,100 @@ def build_script(brief: dict, settings: dict) -> list[dict]:
     return segs
 
 
+HOST_PROMPT = """You are the host of a short daily news podcast for one listener: an adult who
+wants to stay informed in a few minutes and enjoys sharp, witty, grown-up humor. You will get the
+plain script of today's episode, one numbered segment at a time. Rewrite every segment so it sounds
+like a smart friend talking, not a newsreader.
+
+How to rewrite:
+- Conversational and loose: contractions, plain words, short sentences, the occasional aside.
+  Summarize; don't read the headline back word for word.
+- Explain anything a busy person might not know, in a few words, woven in naturally: acronyms
+  (say what they stand for or what the group does), people who aren't household names, places,
+  jargon, and the one bit of background that makes the story make sense.
+- Humor: witty, dry, sarcastic, a little irreverent, adult. Innuendo and the occasional mild swear
+  word are fine. Only use a joke when it lands naturally inside the story; at most one quip per
+  segment and skip it when nothing clever comes. Never joke about deaths, victims, disasters, war
+  casualties, abuse or anyone's suffering; for those stories be warm and straight. Punch up at the
+  powerful, not down. No forced puns, no "folks", no "buckle up".
+- Facts: keep every fact accurate and only use facts from the segment, plus widely known general
+  background (like what an acronym stands for). Never invent numbers, quotes or details.
+- Sports recaps: keep the final score and the standout stat line, and make it sound like a fan
+  talking. These are the listener's own teams, so cheer the wins and grumble a little at losses.
+- Keep the flow: the intro welcomes the listener, the first segment of each topic introduces that
+  topic, the rest flow on from the one before, and the last segment signs off with personality.
+- Written to be spoken by a text-to-speech voice: no emojis, symbols, bullet points, parentheses
+  or stage directions; write numbers the way you'd say them ("fifty-one to thirty" is fine, so is
+  "51 to 30"); spell out abbreviations that wouldn't be read correctly.
+- Length: roughly 30 to 80 words per segment. The whole episode should stay around five to seven
+  minutes.
+
+Return one rewritten segment for every input segment, with the same index."""
+
+PODCAST_SCHEMA = {
+    "type": "object",
+    "additionalProperties": False,
+    "required": ["segments"],
+    "properties": {"segments": {"type": "array", "items": {
+        "type": "object", "additionalProperties": False,
+        "required": ["index", "text"],
+        "properties": {"index": {"type": "integer"}, "text": {"type": "string"}},
+    }}},
+}
+
+
+def punch_up(segs: list[dict]) -> list[dict]:
+    """Have Claude rewrite the script as a casual, witty host. Falls back to the plain script."""
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        print("No ANTHROPIC_API_KEY: podcast uses the plain script.")
+        return segs
+    try:
+        import anthropic
+    except ImportError:
+        return segs
+    model = os.environ.get("PODCAST_MODEL", "").strip() or os.environ.get("BRIEF_MODEL", "").strip() or "claude-opus-5-5"
+    numbered = "\n\n".join(f"[{i}] ({s.get('label', '')})\n{s['text']}" for i, s in enumerate(segs))
+    kwargs = dict(
+        model=model,
+        max_tokens=16000,
+        system=HOST_PROMPT,
+        messages=[{"role": "user", "content": f"Today's plain script, {len(segs)} segments:\n\n{numbered}"}],
+        output_config={"effort": "medium", "format": {"type": "json_schema", "schema": PODCAST_SCHEMA}},
+    )
+    if model in ("claude-opus-5-5", "claude-opus-5", "claude-sonnet-5-5", "claude-fable-5-2", "claude-fable-5-1"):
+        kwargs.update(betas=["server-side-fallback-2026-07-01"], fallbacks="default")
+    try:
+        resp = anthropic.Anthropic().beta.messages.create(**kwargs)
+    except anthropic.AuthenticationError:
+        print("! Anthropic key rejected: podcast uses the plain script.", file=sys.stderr)
+        return segs
+    except anthropic.RateLimitError as e:
+        print(f"! Anthropic rate limit or credit problem ({e}): plain script.", file=sys.stderr)
+        return segs
+    except anthropic.APIStatusError as e:
+        print(f"! Anthropic API error {e.status_code}: plain script.", file=sys.stderr)
+        return segs
+    except anthropic.APIConnectionError as e:
+        print(f"! Could not reach Anthropic ({e}): plain script.", file=sys.stderr)
+        return segs
+    if resp.stop_reason in ("refusal", "max_tokens"):
+        print(f"! Host rewrite stopped early ({resp.stop_reason}): plain script.", file=sys.stderr)
+        return segs
+    try:
+        out = json.loads("".join(b.text for b in resp.content if b.type == "text"))
+        rewritten = {int(x["index"]): x["text"].strip() for x in out["segments"] if x.get("text", "").strip()}
+    except (ValueError, KeyError, TypeError):
+        print("! Could not read the host rewrite: plain script.", file=sys.stderr)
+        return segs
+    for i, seg in enumerate(segs):
+        if i in rewritten:
+            seg["plain"] = seg["text"]
+            seg["text"] = rewritten[i]
+    print(f"Host rewrite by {resp.model}: {len(rewritten)}/{len(segs)} segments, "
+          f"{resp.usage.input_tokens} in / {resp.usage.output_tokens} out tokens")
+    return segs
+
+
 def main() -> int:
     brief = json.loads((DATA / "latest.json").read_text())
     settings = json.loads(SETTINGS.read_text()) if SETTINGS.exists() else {}
@@ -130,6 +224,8 @@ def main() -> int:
     voice = settings.get("voice", "af_heart")
     speed = float(settings.get("speed", 1.0))
     segs = build_script(brief, settings)
+    if settings.get("host_style", True):
+        segs = punch_up(segs)
 
     started = time.time()
     pieces, chapters, t = [], [], 0.0
@@ -156,6 +252,7 @@ def main() -> int:
         "url": f"https://github.com/{repo}/releases/download/podcast/{out.name}",
         "duration": round(t, 1),
         "voice": voice,
+        "style": "host" if any("plain" in s for s in segs) else "plain",
         "chapters": chapters,
     }, ensure_ascii=False, indent=1))
     print(f"Podcast: {t / 60:.1f} min, {len(segs)} parts, voice {voice}, "
