@@ -35,6 +35,7 @@
       for (const k of ["topics", "known", "order", "size", "rate", "listenMode"]) {
         if (saved[k] !== undefined) prefs[k] = saved[k];
       }
+      if (prefs.rate === "1.3") prefs.rate = "1.15";
       prefs.updated = saved.updated || Date.now();
       savePrefs(false);
       return true;
