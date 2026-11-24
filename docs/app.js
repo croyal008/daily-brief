@@ -449,7 +449,13 @@
   audioEl.addEventListener("pause", () => setToggle(false));
   // If the recording can't be loaded, fall back to the phone's own voice.
   audioEl.addEventListener("error", () => {
-    if (player.mode !== "recorded" || !player.playing || !synth) return;
+    if (player.mode !== "recorded" || !player.playing) return;
+    if (podcast && podcast.backup_url && audioEl.src !== podcast.backup_url) {
+      audioEl.src = podcast.backup_url;
+      audioEl.play().catch(() => {});
+      return;
+    }
+    if (!synth) return;
     const code = audioEl.error ? audioEl.error.code : "?";
     localStorage.setItem("brief-audio-error", `${new Date().toLocaleString()} (error ${code})`);
     $("player-now").textContent = "Podcast didn't load, using iPhone voice";

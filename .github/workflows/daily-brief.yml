@@ -78,6 +78,23 @@ jobs:
           for old in $(gh release view podcast --json assets -q '.assets[].name'); do
             if [ "$old" != "$new" ]; then gh release delete-asset podcast "$old" -y; fi
           done
+          # iPhones won't play release downloads, so also put the episode alone on the "audio" branch
+          # (replaced each day, no history) and play it through the jsDelivr CDN, which serves it as audio.
+          rm -rf /tmp/audio && mkdir /tmp/audio && cp "build/$new" /tmp/audio/
+          git -C /tmp/audio init -q -b audio
+          git -C /tmp/audio add .
+          git -C /tmp/audio -c user.name="daily-brief-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -qm "Today's podcast"
+          git -C /tmp/audio push -qf "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" audio
+          sha=$(git -C /tmp/audio rev-parse HEAD)
+          python3 - "$sha" "$new" <<'PY'
+          import json, os, sys
+          sha, name = sys.argv[1], sys.argv[2]
+          p = "build/audio.json"
+          a = json.load(open(p))
+          a["backup_url"] = a["url"]
+          a["url"] = f"https://cdn.jsdelivr.net/gh/{os.environ['GITHUB_REPOSITORY']}@{sha}/{name}"
+          json.dump(a, open(p, "w"), ensure_ascii=False, indent=1)
+          PY
           cp build/audio.json docs/data/audio.json
 
       - name: Save it
