@@ -1,0 +1,24 @@
+name: Podcast script sample
+
+on:
+  workflow_dispatch: {}   # writes today's host script to the log, no audio, no commit
+
+permissions:
+  contents: read
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet "anthropic>=2.13" soundfile numpy
+      - name: Write the script
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BRIEF_MODEL: ${{ vars.BRIEF_MODEL }}
+          PODCAST_MODEL: ${{ vars.PODCAST_MODEL }}
+        run: python scripts/podcast.py --script-only

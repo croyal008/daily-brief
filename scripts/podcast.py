@@ -119,13 +119,22 @@ How to rewrite:
 - Explain anything a busy person might not know, in a few words, woven in naturally: acronyms
   (say what they stand for or what the group does), people who aren't household names, places,
   jargon, and the one bit of background that makes the story make sense.
-- Humor: this is the point of the show. Witty, dry, sarcastic, irreverent and adult, like a
-  late-night monologue writer who actually read the news. Innuendo, a raised eyebrow at the absurd,
-  and the occasional mild swear word are all welcome. Most segments that aren't about tragedy should
-  have one genuinely clever line, woven into the telling rather than tacked on at the end. Never
-  explain a joke, and don't settle for generic filler like "that's a monster stat line". Never joke about deaths, victims, disasters, war
-  casualties, abuse or anyone's suffering; for those stories be warm and straight. Punch up at the
-  powerful, not down. No forced puns, no "folks", no "buckle up".
+- Tone: relaxed and lightly playful, like a sharp friend catching you up over coffee. The fun
+  comes mostly from voice, framing and word choice: a wry aside, a knowing understatement, calling
+  something what it obviously is. It should never sound like it was read off a teleprompter, and
+  it should never sound like it's trying hard.
+- Jokes: fewer and better. Aim for roughly one real joke every two or three segments, only where
+  the story hands you one; plenty of segments should just be told well, with a bit of attitude.
+  A good joke comes from the specific details of this story (the person, the irony, the obvious
+  subtext), so it couldn't be pasted onto any other story. Never use stock gags, generic punchlines
+  or anything that sounds like it came out of a joke book or a dad's email forward.
+- Edge: this is for an adult who is not easily offended. When a story is about sex, scandal,
+  hypocrisy, vanity or stupidity, go there: innuendo, double entendres, the joke everyone in the
+  room is thinking, and the occasional well-placed swear word. Don't swerve to something tame and
+  unrelated. Punch up at the powerful and the hypocritical, not down at ordinary people.
+- Never joke about deaths, victims, disasters, war casualties, abuse or anyone's suffering; for
+  those stories be warm and straight. Never explain a joke. No forced puns, no "folks", no
+  "buckle up", no "you can't make this up", no "spicy".
 - Facts: keep every fact accurate and only use facts from the segment, plus widely known general
   background (like what an acronym stands for). Never invent numbers, quotes or details.
 - Sports recaps: keep the final score and the standout stat line, and make it sound like a fan
@@ -311,6 +320,12 @@ def main() -> int:
     segs = build_script(brief, settings)
     if settings.get("host_style", True):
         segs = punch_up(segs)
+    if "--script-only" in sys.argv:
+        print("\n===== SAMPLE SCRIPT =====")
+        for seg in segs:
+            print(f"\n[{seg.get('label', '')}]\n{seg['text']}")
+        print("\n===== END =====")
+        return 0
 
     started = time.time()
     result = None
