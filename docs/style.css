@@ -115,10 +115,17 @@ dialog::backdrop { background: rgba(0,0,0,0.35); }
 }
 .hint { margin: 0 0 8px; color: var(--muted); font-size: 0.8em; }
 .hint.small { margin-top: 20px; font-size: 0.72em; }
-.toggles label {
+.toggles .row {
   display: flex; align-items: center; justify-content: space-between;
   padding: 10px 0; border-bottom: 1px solid var(--line);
 }
+.toggles .tname { flex: 1; }
+.moves { display: flex; gap: 6px; margin-right: 12px; }
+.move {
+  border: 0; background: var(--chip); color: var(--text);
+  width: 34px; height: 34px; border-radius: 8px; font-size: 0.7em; cursor: pointer;
+}
+.move:disabled { opacity: 0.3; }
 .toggles input {
   appearance: none; -webkit-appearance: none; width: 50px; height: 30px;
   border-radius: 999px; background: var(--line); position: relative;
@@ -136,3 +143,4 @@ dialog::backdrop { background: rgba(0,0,0,0.35); }
 .seg input { display: none; }
 .seg span { display: block; padding: 6px; border-radius: 8px; font-size: 0.85em; cursor: pointer; }
 .seg input:checked + span { background: var(--card); font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,0.15); }
+.done:focus { outline: none; }

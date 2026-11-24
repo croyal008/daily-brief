@@ -30,6 +30,16 @@
     return all.filter((t) => prefs.topics.includes(t.id) || (!known.has(t.id) && t.default_on)).map((t) => t.id);
   }
 
+  // Topics in the reader's chosen order; topics they've never ordered keep their default spot.
+  function orderedTopics() {
+    const order = prefs.order || [];
+    const pos = (t) => {
+      const i = order.indexOf(t.id);
+      return i >= 0 ? i : order.length + brief.topics.indexOf(t);
+    };
+    return [...brief.topics].sort((a, b) => pos(a) - pos(b));
+  }
+
   function prettyDate(iso) {
     const d = new Date(iso + "T12:00:00");
     return d.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
@@ -37,7 +47,7 @@
 
   function render() {
     const on = enabledTopics();
-    const topics = brief.topics.filter((t) => on.includes(t.id));
+    const topics = orderedTopics().filter((t) => on.includes(t.id));
     const byTopic = Object.fromEntries(topics.map((t) => [t.id, []]));
     for (const s of brief.stories) if (byTopic[s.topic]) byTopic[s.topic].push(s);
 
@@ -45,7 +55,10 @@
     $("dateline").textContent = `${prettyDate(brief.date)} · updated ${updated.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}`;
 
     // Overview
-    const ov = brief.overview.filter((o) => on.includes(o.topic)).slice(0, 6);
+    const rank = Object.fromEntries(topics.map((t, i) => [t.id, i]));
+    const ov = brief.overview.filter((o) => on.includes(o.topic) && o.topic !== "myteams")
+      .map((o, i) => [o, i]).sort((a, b) => (rank[a[0].topic] - rank[b[0].topic]) || (a[1] - b[1]))
+      .map(([o]) => o).slice(0, 6);
     const list = $("overview-list");
     list.replaceChildren(...ov.map((o) => {
       const t = brief.topics.find((x) => x.id === o.topic);
@@ -95,18 +108,35 @@
 
   function renderSettings() {
     const on = enabledTopics();
-    $("topic-toggles").replaceChildren(...brief.topics.map((t) => {
-      const box = el("input", { type: "checkbox", "data-id": t.id });
+    const rows = orderedTopics().map((t, i, all) => {
+      const box = el("input", { type: "checkbox", "data-id": t.id, "aria-label": `Show ${t.name}` });
       box.checked = on.includes(t.id);
       box.addEventListener("change", () => {
-        const ids = [...$("topic-toggles").querySelectorAll("input")].filter((i) => i.checked).map((i) => i.dataset.id);
+        const ids = [...$("topic-toggles").querySelectorAll("input")].filter((x) => x.checked).map((x) => x.dataset.id);
         prefs.topics = ids;
         prefs.known = brief.topics.map((x) => x.id);
         savePrefs();
         render();
       });
-      return el("label", {}, el("span", { text: `${t.emoji}  ${t.name}` }), box);
-    }));
+      const move = (delta) => {
+        const ids = all.map((x) => x.id);
+        const j = i + delta;
+        if (j < 0 || j >= ids.length) return;
+        [ids[i], ids[j]] = [ids[j], ids[i]];
+        prefs.order = ids;
+        savePrefs();
+        render();
+        renderSettings();
+      };
+      const up = el("button", { type: "button", class: "move", "aria-label": `Move ${t.name} up`, text: "▲" });
+      const down = el("button", { type: "button", class: "move", "aria-label": `Move ${t.name} down`, text: "▼" });
+      up.disabled = i === 0;
+      down.disabled = i === all.length - 1;
+      up.addEventListener("click", () => move(-1));
+      down.addEventListener("click", () => move(1));
+      return el("div", { class: "row" }, el("span", { class: "moves" }, up, down), el("span", { class: "tname", text: `${t.emoji}  ${t.name}` }), box);
+    });
+    $("topic-toggles").replaceChildren(...rows);
     document.querySelectorAll('input[name="size"]').forEach((r) => { r.checked = r.value === prefs.size; });
     $("about").textContent = brief.ai_summaries
       ? "Summaries are written by Claude from headlines collected from NPR, BBC, the New York Times and other outlets each morning. Tap a source to read the full story."

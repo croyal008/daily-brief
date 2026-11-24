@@ -46,6 +46,11 @@ Off (turn on in Settings): Sports, Culture & Entertainment.
 
 ## Changing things later
 
+- **Topic order:** in the app, tap the gear and use the ▲ ▼ arrows.
+- **My Teams:** list your teams in `scripts/my_teams.json`, e.g.
+  `{"name": "Chicago Bears", "league": "nfl"}`. A team only shows up when it won last night or has big
+  news (trades, signings, major injuries, firings, clinching a playoff spot, and so on).
+
 - **Topics and sources:** edit `scripts/feeds.json` (add or remove feed links, change how many
   stories a topic gets, or which topics are on by default).
 - **Time of day:** edit the `cron` line in `.github/workflows/daily-brief.yml` (times are UTC).

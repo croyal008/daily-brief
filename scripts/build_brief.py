@@ -34,6 +34,8 @@ FEEDS_FILE = ROOT / "scripts" / "feeds.json"
 DATA_DIR = ROOT / "docs" / "data"
 ARCHIVE_DIR = DATA_DIR / "archive"
 HISTORY_FILE = DATA_DIR / "history.json"
+TEAMS_FILE = ROOT / "scripts" / "my_teams.json"
+MY_TEAMS_TOPIC = {"id": "myteams", "name": "My Teams", "emoji": "🏆", "default_on": True}
 
 LOCAL_TZ = ZoneInfo(os.environ.get("BRIEF_TIMEZONE", "").strip() or "America/Chicago")
 MODEL = os.environ.get("BRIEF_MODEL", "").strip() or "claude-opus-5-5"
@@ -88,6 +90,17 @@ def fetch(url: str) -> bytes | None:
             return r.read()
     except Exception as e:  # one dead feed shouldn't stop the brief
         print(f"  ! could not fetch {url}: {e}", file=sys.stderr)
+        return None
+
+
+def fetch_json(url: str):
+    raw = fetch(url)
+    if not raw:
+        return None
+    try:
+        return json.loads(raw)
+    except ValueError:
+        print(f"  ! bad JSON from {url}", file=sys.stderr)
         return None
 
 
@@ -494,6 +507,20 @@ def main() -> int:
         brief = simple_brief(candidates, config)
         stories = finalize(brief, candidates, config)
 
+    # My Teams: last night's wins and big news, added as its own topic.
+    from my_teams import team_stories
+    team = team_stories(TEAMS_FILE, datetime.fromisoformat(today), {
+        "fetch": fetch, "fetch_json": fetch_json, "parse_feed": parse_feed, "tokens": tokens,
+        "same_story": same_story,
+        "is_repeat_title": lambda title: is_repeat({"headline": title}, history),
+    })
+    topics_out = [{k: t[k] for k in ("id", "name", "emoji", "default_on")} for t in config["topics"]]
+    if TEAMS_FILE.exists() and json.loads(TEAMS_FILE.read_text()).get("teams"):
+        topics_out.insert(0, MY_TEAMS_TOPIC)
+    for s in team:
+        s["_key"] = s["headline"]
+    stories = team + stories
+
     topic_ids = {t["id"] for t in config["topics"]}
     overview = [o for o in brief.get("overview", []) if o.get("topic") in topic_ids and o.get("text")]
 
@@ -501,7 +528,7 @@ def main() -> int:
         "date": today,
         "generated_at": now.isoformat(timespec="seconds"),
         "ai_summaries": used_ai,
-        "topics": [{k: t[k] for k in ("id", "name", "emoji", "default_on")} for t in config["topics"]],
+        "topics": topics_out,
         "overview": overview,
         "stories": [{k: v for k, v in s.items() if not k.startswith("_")} for s in stories],
     }
