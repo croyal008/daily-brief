@@ -47,6 +47,7 @@
     <p id="status" class="status"></p>
   </main>
 
+  <audio id="podcast" preload="none" playsinline></audio>
   <div id="player" class="player" hidden>
     <div class="player-label">
       <span class="player-kicker">Listening</span>
@@ -75,15 +76,19 @@
         <label><input type="radio" name="size" value="large"><span>Large</span></label>
       </div>
       <h3>Listening</h3>
-      <div class="seg" role="radiogroup" aria-label="Reading speed">
+      <div id="mode-row" class="seg" role="radiogroup" aria-label="Listen with">
+        <label><input type="radio" name="mode" value="recorded"><span>Podcast voice</span></label>
+        <label><input type="radio" name="mode" value="device"><span>iPhone voice</span></label>
+      </div>
+      <div class="seg" role="radiogroup" aria-label="Reading speed" style="margin-top:8px">
         <label><input type="radio" name="rate" value="1"><span>Normal</span></label>
         <label><input type="radio" name="rate" value="1.15"><span>Faster</span></label>
         <label><input type="radio" name="rate" value="1.3"><span>Fastest</span></label>
       </div>
-      <label class="voice-row">Voice
+      <label class="voice-row" id="voice-row">Voice
         <select id="voice-picker"></select>
       </label>
-      <p class="hint">Tip: for a more natural voice, download an "Enhanced" or "Premium" voice in iPhone Settings → Accessibility → Spoken Content → Voices → English, then pick it here.</p>
+      <p class="hint" id="voice-tip">Tip: for a more natural voice, download an "Enhanced" or "Premium" voice in iPhone Settings → Accessibility → Spoken Content → Voices → English, then pick it here.</p>
       <p class="hint small" id="about"></p>
     </form>
   </dialog>

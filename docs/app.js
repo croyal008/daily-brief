@@ -163,6 +163,7 @@
     try {
       brief = await loadJson(date ? `data/archive/${date}.json` : "data/latest.json");
       render();
+      await loadPodcast();
     } catch (e) {
       $("dateline").textContent = "";
       $("status").textContent = "Couldn't load the brief. Check your connection, then close and reopen the app.";
@@ -291,18 +292,107 @@
     });
   }
 
+  // ---- recorded podcast (made each morning on GitHub; keeps playing with the screen locked)
+  const audioEl = $("podcast");
+  let podcast = null; // contents of data/audio.json when it matches the brief on screen
+
+  async function loadPodcast() {
+    try {
+      const p = await loadJson("data/audio.json");
+      podcast = brief && p.date === brief.date ? p : null;
+    } catch { podcast = null; }
+  }
+
+  const useRecorded = () => podcast && prefs.listenMode !== "device";
+
+  function chapterAt(t) {
+    let i = 0;
+    podcast.chapters.forEach((c, k) => { if (c.t <= t + 0.05) i = k; });
+    return i;
+  }
+
+  function seekChapter(delta) {
+    const i = chapterAt(audioEl.currentTime);
+    // "Back" restarts the current story unless we're right at its start.
+    const target = delta < 0 && audioEl.currentTime - podcast.chapters[i].t > 3 ? i : i + delta;
+    const c = podcast.chapters[Math.max(0, Math.min(target, podcast.chapters.length - 1))];
+    audioEl.currentTime = c.t;
+    showChapter();
+  }
+
+  let lastChapter = -1;
+  function showChapter() {
+    if (!podcast) return;
+    const i = chapterAt(audioEl.currentTime);
+    if (i === lastChapter) return;
+    lastChapter = i;
+    const c = podcast.chapters[i];
+    highlight({ label: c.label, sid: c.sid });
+  }
+
+  function setToggle(playing) {
+    $("p-toggle").textContent = playing ? "⏸" : "▶";
+    $("p-toggle").setAttribute("aria-label", playing ? "Pause" : "Play");
+  }
+
+  function startRecorded() {
+    const posKey = "brief-pos-" + podcast.url;
+    if (!audioEl.src.endsWith(podcast.url)) {
+      audioEl.src = podcast.url;
+      const saved = parseFloat(localStorage.getItem(posKey) || "0");
+      if (saved > 0 && saved < podcast.duration - 10) audioEl.currentTime = saved;
+    }
+    audioEl.playbackRate = parseFloat(prefs.rate) || 1;
+    audioEl.play().catch(() => {});
+    player.playing = true;
+    lastChapter = -1;
+    if ("mediaSession" in navigator) {
+      const day = new Date(brief.date + "T12:00:00").toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" });
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: `Daily Brief · ${day}`, artist: "Daily Brief", album: "Your morning news",
+        artwork: [{ src: "icons/icon-512.png", sizes: "512x512", type: "image/png" }],
+      });
+      const ms = navigator.mediaSession;
+      ms.setActionHandler("play", () => audioEl.play());
+      ms.setActionHandler("pause", () => audioEl.pause());
+      ms.setActionHandler("previoustrack", () => seekChapter(-1));
+      ms.setActionHandler("nexttrack", () => seekChapter(1));
+      try { ms.setActionHandler("seekbackward", () => { audioEl.currentTime = Math.max(0, audioEl.currentTime - 15); }); } catch {}
+      try { ms.setActionHandler("seekforward", () => { audioEl.currentTime += 15; }); } catch {}
+    }
+  }
+
+  audioEl.addEventListener("timeupdate", () => {
+    showChapter();
+    if (podcast) localStorage.setItem("brief-pos-" + podcast.url, String(audioEl.currentTime));
+  });
+  audioEl.addEventListener("play", () => setToggle(true));
+  audioEl.addEventListener("pause", () => setToggle(false));
+  audioEl.addEventListener("ended", () => {
+    if (podcast) localStorage.removeItem("brief-pos-" + podcast.url);
+    stopListening();
+  });
+
+  // ---- shared controls
   function startListening() {
-    if (!synth || !brief) return;
-    player.queue = buildScript();
+    if (!brief) return;
     $("player").hidden = false;
     document.body.classList.add("playing");
-    speakFrom(0);
+    if (useRecorded()) {
+      player.mode = "recorded";
+      startRecorded();
+    } else if (synth) {
+      player.mode = "device";
+      player.queue = buildScript();
+      speakFrom(0);
+    }
   }
 
   function stopListening() {
     player.playing = false;
     player.paused = false;
-    synth.cancel();
+    if (synth) synth.cancel();
+    audioEl.pause();
     highlight(null);
     $("player").hidden = true;
     document.body.classList.remove("playing");
@@ -310,20 +400,23 @@
 
   function togglePause() {
     if (!player.playing) return;
+    if (player.mode === "recorded") {
+      if (audioEl.paused) audioEl.play(); else audioEl.pause();
+      return;
+    }
     if (player.paused) {
       // Resuming by re-speaking the current story is more reliable on iPhone than resume().
       speakFrom(player.index);
     } else {
       player.paused = true;
       synth.cancel();
-      $("p-toggle").textContent = "▶";
-      $("p-toggle").setAttribute("aria-label", "Play");
+      setToggle(false);
     }
   }
 
   function renderVoices() {
     const sel = $("voice-picker");
-    if (!synth) { sel.closest("label").hidden = true; return; }
+    if (!synth) { $("voice-row").hidden = true; return; }
     const voices = synth.getVoices().filter((v) => /^en(-|_|$)/i.test(v.lang));
     const current = pickVoice();
     sel.replaceChildren(...voices.map((v) => {
@@ -333,13 +426,32 @@
     }));
   }
 
+  $("listen").hidden = false;
+  $("listen").addEventListener("click", () => (player.playing ? stopListening() : startListening()));
+  $("p-toggle").addEventListener("click", togglePause);
+  $("p-stop").addEventListener("click", stopListening);
+  $("p-next").addEventListener("click", () => {
+    if (!player.playing) return;
+    if (player.mode === "recorded") seekChapter(1); else speakFrom(player.index + 1);
+  });
+  $("p-prev").addEventListener("click", () => {
+    if (!player.playing) return;
+    if (player.mode === "recorded") seekChapter(-1); else speakFrom(player.index - 1);
+  });
+  document.querySelectorAll('input[name="rate"]').forEach((r) => r.addEventListener("change", () => {
+    prefs.rate = r.value; savePrefs();
+    audioEl.playbackRate = parseFloat(prefs.rate) || 1;
+  }));
+  document.querySelectorAll('input[name="mode"]').forEach((r) => r.addEventListener("change", () => {
+    prefs.listenMode = r.value; savePrefs();
+    if (player.playing) stopListening();
+    updateVoiceRow();
+  }));
+  function updateVoiceRow() {
+    $("voice-row").hidden = prefs.listenMode !== "device" && !!podcast;
+    $("voice-tip").hidden = $("voice-row").hidden;
+  }
   if (synth) {
-    $("listen").hidden = false;
-    $("listen").addEventListener("click", () => (player.playing ? stopListening() : startListening()));
-    $("p-toggle").addEventListener("click", togglePause);
-    $("p-stop").addEventListener("click", stopListening);
-    $("p-next").addEventListener("click", () => player.playing && speakFrom(player.index + 1));
-    $("p-prev").addEventListener("click", () => player.playing && speakFrom(player.index - 1));
     $("voice-picker").addEventListener("change", (e) => {
       prefs.voice = e.target.value; savePrefs();
       const u = new SpeechSynthesisUtterance("This is how your brief will sound.");
@@ -347,9 +459,6 @@
       u.rate = parseFloat(prefs.rate) || 1;
       synth.cancel(); synth.speak(u);
     });
-    document.querySelectorAll('input[name="rate"]').forEach((r) => r.addEventListener("change", () => {
-      prefs.rate = r.value; savePrefs();
-    }));
     synth.addEventListener?.("voiceschanged", () => { if ($("settings").open) renderVoices(); });
   }
 
@@ -358,6 +467,9 @@
     renderSettings();
     renderVoices();
     document.querySelectorAll('input[name="rate"]').forEach((r) => { r.checked = r.value === String(prefs.rate); });
+    document.querySelectorAll('input[name="mode"]').forEach((r) => { r.checked = r.value === (prefs.listenMode || "recorded"); });
+    $("mode-row").hidden = !podcast || !synth;
+    updateVoiceRow();
     $("settings").showModal();
   });
   document.querySelectorAll('input[name="size"]').forEach((r) => r.addEventListener("change", () => {

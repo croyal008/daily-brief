@@ -46,7 +46,9 @@ Off (turn on in Settings): Sports, Culture & Entertainment.
 
 ## Changing things later
 
-- **Listen:** tap the headphones to hear the brief read aloud. Speed and voice are in Settings.
+- **Listen:** tap the headphones to hear the brief as a short podcast. Each morning the job records it with a
+  free, open-source voice (Kokoro), so it keeps playing with the screen locked. Voice, speed and topic order
+  for the recording are in `scripts/podcast.json`. In the app's Settings you can switch to the iPhone's own voice instead.
 - **Topic order:** in the app, tap the gear and use the ▲ ▼ arrows.
 - **My Teams:** list your teams in `scripts/my_teams.json`, e.g.
   `{"name": "Chicago Bears", "league": "nfl"}`. A team only shows up when it won last night or has big
