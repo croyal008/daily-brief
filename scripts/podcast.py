@@ -119,9 +119,11 @@ How to rewrite:
 - Explain anything a busy person might not know, in a few words, woven in naturally: acronyms
   (say what they stand for or what the group does), people who aren't household names, places,
   jargon, and the one bit of background that makes the story make sense.
-- Humor: witty, dry, sarcastic, a little irreverent, adult. Innuendo and the occasional mild swear
-  word are fine. Only use a joke when it lands naturally inside the story; at most one quip per
-  segment and skip it when nothing clever comes. Never joke about deaths, victims, disasters, war
+- Humor: this is the point of the show. Witty, dry, sarcastic, irreverent and adult, like a
+  late-night monologue writer who actually read the news. Innuendo, a raised eyebrow at the absurd,
+  and the occasional mild swear word are all welcome. Most segments that aren't about tragedy should
+  have one genuinely clever line, woven into the telling rather than tacked on at the end. Never
+  explain a joke, and don't settle for generic filler like "that's a monster stat line". Never joke about deaths, victims, disasters, war
   casualties, abuse or anyone's suffering; for those stories be warm and straight. Punch up at the
   powerful, not down. No forced puns, no "folks", no "buckle up".
 - Facts: keep every fact accurate and only use facts from the segment, plus widely known general
@@ -166,7 +168,7 @@ def punch_up(segs: list[dict]) -> list[dict]:
         max_tokens=16000,
         system=HOST_PROMPT,
         messages=[{"role": "user", "content": f"Today's plain script, {len(segs)} segments:\n\n{numbered}"}],
-        output_config={"effort": "medium", "format": {"type": "json_schema", "schema": PODCAST_SCHEMA}},
+        output_config={"effort": "high", "format": {"type": "json_schema", "schema": PODCAST_SCHEMA}},
     )
     if model in ("claude-opus-5-5", "claude-opus-5", "claude-sonnet-5-5", "claude-fable-5-2", "claude-fable-5-1"):
         kwargs.update(betas=["server-side-fallback-2026-07-01"], fallbacks="default")

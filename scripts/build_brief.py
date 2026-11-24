@@ -358,8 +358,8 @@ Choose stories:
 - Pick the stories that matter most: real consequences for people, major decisions, big events.
   Prefer stories several outlets are covering. Skip celebrity gossip, listicles, opinion pieces,
   how-to/service pieces, quizzes, live-blog shells and minor local crime.
-- Fill each topic up to its limit with the best available candidates. Only pick fewer when the
-  remaining candidates are genuinely not news (filler, gossip, service pieces).
+- Pick exactly the number of stories each topic asks for (or all of its candidates if it has fewer).
+  Choose the most important first; a lighter but real story is better than an empty slot.
 - Do not pick a story the reader already saw unless there is a clearly new development; then
   write about only what is new.
 - Business: favour things that affect everyday life (jobs, prices, big company decisions, tech
@@ -393,7 +393,7 @@ def ai_brief(candidates: dict[str, list[dict]], config: dict, history: list[dict
         cs = candidates.get(t["id"], [])
         if not cs:
             continue
-        lines.append(f"\n## Topic id: {t['id']} ({t['name']}), pick at most {t['max_stories']}")
+        lines.append(f"\n## Topic id: {t['id']} ({t['name']}), pick {t['max_stories']}")
         for c in cs:
             heads = "; ".join(dict.fromkeys(i["title"] for i in c["items"][:3]))
             srcs = ", ".join(s["name"] for s in c["sources"])
@@ -467,6 +467,28 @@ def finalize(brief: dict, candidates: dict[str, list[dict]], config: dict) -> li
             "time": c["time"].isoformat() if c["time"] else None,
             "_key": c["headline"],
         })
+    returned = len(brief.get("stories", []))
+    if returned != len(stories):
+        print(f"  summary step returned {returned} stories, {len(stories)} usable")
+    # Top up any topic that came back short with the next best-ranked stories.
+    added = 0
+    for t in config["topics"]:
+        for c in candidates.get(t["id"], []):
+            if counts.get(t["id"], 0) >= limits[t["id"]]:
+                break
+            if c["id"] in used:
+                continue
+            counts[t["id"]] = counts.get(t["id"], 0) + 1
+            used.add(c["id"])
+            added += 1
+            stories.append({
+                "id": c["id"], "topic": t["id"], "headline": c["headline"],
+                "summary": first_sentences(c["desc"]) if c["desc"] and c["desc"] != c["headline"] else "",
+                "why": "", "sources": c["sources"][:3],
+                "time": c["time"].isoformat() if c["time"] else None, "_key": c["headline"],
+            })
+    if added:
+        print(f"  topped up {added} stories from the ranked list")
     order = [t["id"] for t in config["topics"]]
     stories.sort(key=lambda s: order.index(s["topic"]))
     return stories
