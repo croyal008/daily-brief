@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-24T07:31:28+00:00",
+ "generated_at": "2026-11-24T07:34:26+00:00",
  "ai_summaries": true,
  "topics": [
   {
@@ -60,28 +60,28 @@
  ],
  "overview": [
   {
-   "topic": "politics",
-   "text": "Iran vows to end the U.S. naval blockade by all available means, as Trump acknowledges increasing Iranian attacks but says they have done no damage."
-  },
-  {
-   "topic": "world",
-   "text": "Three Russian cruise missiles landed in Poland on Friday, and NATO's Rutte is working to reassure eastern allies as incursions increase."
-  },
-  {
-   "topic": "world",
-   "text": "Immigration agents arrested a father and daughter at Seattle-Tacoma airport, drawing outrage and prompting some flight crew to ask to be replaced."
+   "topic": "us",
+   "text": "Trump condemned California Gov. Newsom's commutation of hundreds of death sentences in a Justice Department speech on violent crime."
   },
   {
    "topic": "politics",
-   "text": "Nvidia's Jensen Huang is still set to testify before Congress next week after being reinstated as CEO."
+   "text": "Iran vowed to end the U.S. naval blockade by all available means, while Trump said Iranian attacks have done no damage."
+  },
+  {
+   "topic": "world",
+   "text": "Three Russian cruise missiles landed in Poland, and NATO's Rutte is working to reassure eastern allies as incursions rise."
+  },
+  {
+   "topic": "us",
+   "text": "Video of ICE agents arresting a father and daughter at Seattle airport has drawn outrage, with some flight crew asking to be replaced."
   },
   {
    "topic": "science",
-   "text": "The longest UN climate talks in history ended with no deal after oil producers blocked language on phasing out fossil fuels."
+   "text": "Measles poses a growing risk to U.S. adults, including some vaccinated people born before 1989, experts say."
   },
   {
-   "topic": "science",
-   "text": "Measles poses a growing risk to U.S. adults, including some vaccinated before 1989, medical experts said."
+   "topic": "business",
+   "text": "CrowdStrike agreed to buy Zscaler in a $44 billion deal combining two major cybersecurity firms."
   }
  ],
  "stories": [
@@ -102,8 +102,8 @@
   {
    "id": "us-10",
    "topic": "us",
-   "headline": "Trump targets Newsom over death sentence commutations in DOJ speech",
-   "summary": "In a Justice Department speech on violent crime, President Trump condemned California Governor Gavin Newsom's decision to commute hundreds of death sentences.",
+   "headline": "Trump targets Newsom over death sentence commutations in Justice Department speech",
+   "summary": "President Trump condemned California Gov. Gavin Newsom's decision to commute hundreds of death sentences. The speech at the Justice Department focused on violent crime and targeted Democrats.",
    "why": "",
    "sources": [
     {
@@ -117,8 +117,8 @@
    "id": "politics-5",
    "topic": "politics",
    "headline": "Iran vows to end U.S. naval blockade by 'all available means'",
-   "summary": "Iran says it will force the U.S. to lift its blockade. Trump acknowledged Iran's increasing attacks but said they have \"done no damage.\"",
-   "why": "Escalation at sea between the U.S. and Iran carries security and energy risks.",
+   "summary": "Iran said it will force the U.S. to lift its blockade. Trump acknowledged Iran's increasing attacks but said they have \"done no damage.\"",
+   "why": "Rising confrontation at sea could escalate the conflict.",
    "sources": [
     {
      "name": "CBS News",
@@ -128,39 +128,11 @@
    "time": "2026-11-24T06:42:21+00:00"
   },
   {
-   "id": "politics-7",
-   "topic": "politics",
-   "headline": "Jensen Huang still to testify before Congress next week",
-   "summary": "Congressional panels confirmed Huang will testify as scheduled, after he was reinstated Monday as Nvidia CEO. He had resigned earlier this month amid allegations of affairs.",
-   "why": "",
-   "sources": [
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/jensen-huang-congress-reinstatement-nvidia/"
-    }
-   ],
-   "time": "2026-11-24T01:18:24+00:00"
-  },
-  {
-   "id": "world-6",
-   "topic": "world",
-   "headline": "Russian incursions into NATO territory increase after missiles land in Poland",
-   "summary": "NATO Secretary General Mark Rutte is seeking to reassure eastern European members after three Russian cruise missiles landed in Poland on Friday.",
-   "why": "Spillover from Russia's war is testing NATO's eastern flank.",
-   "sources": [
-    {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/23/nx-s1-6051013/russian-incursions-into-nato-territory-are-increasing"
-    }
-   ],
-   "time": "2026-11-23T23:08:51+00:00"
-  },
-  {
    "id": "world-4",
    "topic": "world",
-   "headline": "Outrage after ICE arrests father and daughter at Seattle airport",
-   "summary": "The arrest was caught on camera as passengers boarded an Alaska Airlines flight. Some crew members asked to be replaced, and the family has spoken out.",
-   "why": "It raises questions over how immigration arrests are carried out in public places.",
+   "headline": "ICE arrest of father and daughter at Seattle airport sparks outrage",
+   "summary": "An ICE arrest was filmed as passengers boarded an Alaska Airlines flight. Some crew members asked to be replaced because the event was so distressing.",
+   "why": "It raises questions about how immigration agents carry out arrests in public places.",
    "sources": [
     {
      "name": "BBC",
@@ -174,43 +146,39 @@
    "time": "2026-11-23T22:59:07+00:00"
   },
   {
-   "id": "world-3",
+   "id": "world-6",
    "topic": "world",
-   "headline": "UK sanctions Myanmar military leaders after UN court genocide ruling",
-   "summary": "Britain sanctioned top Myanmar military leaders after a UN court ruled against Myanmar over the Rohingya. The decision sets a precedent with implications for a similar case over Israel's actions in Gaza.",
-   "why": "The ruling may shape how international law is applied elsewhere.",
+   "headline": "Russian incursions into NATO territory increase after missiles land in Poland",
+   "summary": "NATO Secretary General Mark Rutte is seeking to reassure eastern European members after three Russian cruise missiles landed in Poland on Friday.",
+   "why": "Spillover from the war in Ukraine is testing the alliance.",
    "sources": [
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/c6wy4ng1rznxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/22/world/genocide-myanmar-un-climate-talks.html"
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6051013/russian-incursions-into-nato-territory-are-increasing"
     }
    ],
-   "time": "2026-11-23T21:03:34+00:00"
+   "time": "2026-11-23T23:08:51+00:00"
   },
   {
-   "id": "science-9",
-   "topic": "science",
-   "headline": "COP31 climate talks collapse in clash over fossil fuels",
-   "summary": "The longest UN climate talks ever ended without a deal. European and vulnerable nations rejected a draft after Saudi Arabia and other oil producers blocked any mention of phasing out coal, oil and gas.",
-   "why": "Without a deal, global climate commitments remain stalled.",
+   "id": "tech-4",
+   "topic": "tech",
+   "headline": "States sue SpaceX to stop Grok generating child sex images",
+   "summary": "State attorneys general say Grok is still producing child sexual abuse material and revenge porn. X says every Grok output is screened.",
+   "why": "It tests how AI image tools are held accountable.",
    "sources": [
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html"
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/"
     }
    ],
-   "time": "2026-11-23T19:27:13+00:00"
+   "time": "2026-11-23T21:30:44+00:00"
   },
   {
    "id": "science-5",
    "topic": "science",
-   "headline": "Measles a growing risk for U.S. adults, experts say",
-   "summary": "Danger is greatest for the unvaccinated, but vaccinated people born before 1989 may no longer be sufficiently protected, medical experts said.",
-   "why": "Adults may want to check their vaccination status with a doctor.",
+   "headline": "Measles is a growing risk for U.S. adults",
+   "summary": "Danger is greatest for the unvaccinated, but medical experts say vaccinated people born before 1989 may no longer be sufficiently protected.",
+   "why": "Some adults may want to check their vaccination status with a doctor.",
    "sources": [
     {
      "name": "New York Times",
@@ -223,7 +191,7 @@
    "id": "business-9",
    "topic": "business",
    "headline": "CrowdStrike to acquire Zscaler in $44 billion cybersecurity deal",
-   "summary": "CrowdStrike agreed to buy Zscaler, combining two major cybersecurity firms as worries grow about hacks fueled by advances in artificial intelligence.",
+   "summary": "The two major cybersecurity firms will combine as worries grow over hacks fueled by advances in artificial intelligence affecting companies and governments.",
    "why": "",
    "sources": [
     {
@@ -232,6 +200,20 @@
     }
    ],
    "time": "2026-11-23T13:08:06+00:00"
+  },
+  {
+   "id": "sports-10",
+   "topic": "sports",
+   "headline": "SEC schedules vote on possible LSU expulsion",
+   "summary": "LSU's standoff with the SEC over the RJ Luis dispute has escalated into a legal and political fight, with major penalties still possible.",
+   "why": "",
+   "sources": [
+    {
+     "name": "CBS Sports",
+     "url": "https://www.cbssports.com/college-basketball/news/sec-vote-lsu-expulsion-rj-luis/"
+    }
+   ],
+   "time": "2026-11-24T02:33:24+00:00"
   }
  ]
 }

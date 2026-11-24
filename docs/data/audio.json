@@ -1,8 +1,8 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-24T07:31:28+00:00",
- "url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261124-0732.mp3",
- "duration": 193.8,
+ "generated_at": "2026-11-24T07:34:26+00:00",
+ "url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261124-0735.mp3",
+ "duration": 176.5,
  "voice": "Azure en-US-Phoebe:DragonHDOmniLatestNeural",
  "style": "host",
  "chapters": [
@@ -10,73 +10,78 @@
    "t": 0.0,
    "label": "Intro",
    "sid": null,
-   "topic": null
+   "topic": null,
+   "text": "Morning. It's Tuesday, November 24th, and this is your Daily Brief. Grab your coffee, because we've got a lot to get through and I promise to keep it moving."
   },
   {
-   "t": 8.95,
+   "t": 8.6,
    "label": "🏆 My Teams · 1 of 1",
    "sid": "team-san-antonio-spurs",
-   "topic": "myteams"
+   "topic": "myteams",
+   "text": "First up, your teams. The Spurs took care of the Kings, 123 to 107, and they're now 15 and 3. Stephon Castle did a bit of everything, with 28 points, 8 rebounds and 11 assists. That's a monster stat line, and he's doing it for your team."
   },
   {
-   "t": 25.55,
+   "t": 22.7,
    "label": "🇺🇸 U.S. · 1 of 1",
    "sid": "us-10",
-   "topic": "us"
+   "topic": "us",
+   "text": "Now to U.S. news. President Trump gave a speech at the Justice Department about violent crime, and he went after California Governor Gavin Newsom for commuting hundreds of death sentences. Commuting means reducing a sentence, in this case from death to something less. The speech also took aim at Democrats more broadly."
   },
   {
-   "t": 43.35,
-   "label": "🏛️ Politics · 1 of 2",
+   "t": 40.25,
+   "label": "🏛️ Politics · 1 of 1",
    "sid": "politics-5",
-   "topic": "politics"
+   "topic": "politics",
+   "text": "On to politics. Iran says it'll end the U.S. naval blockade by, quote, all available means. Trump admitted Iran's attacks are increasing, but said they've, quote, done no damage. Why care? Because more confrontation at sea is exactly how a tense situation turns into a bigger conflict."
   },
   {
-   "t": 61.3,
-   "label": "🏛️ Politics · 2 of 2",
-   "sid": "politics-7",
-   "topic": "politics"
-  },
-  {
-   "t": 78.75,
-   "label": "🌍 World · 1 of 3",
-   "sid": "world-6",
-   "topic": "world"
-  },
-  {
-   "t": 96.65,
-   "label": "🌍 World · 2 of 3",
+   "t": 57.75,
+   "label": "🌍 World · 1 of 2",
    "sid": "world-4",
-   "topic": "world"
+   "topic": "world",
+   "text": "Now the world. An ICE arrest of a father and daughter at Seattle's airport has people furious. ICE is Immigration and Customs Enforcement. The arrest was filmed while passengers boarded an Alaska Airlines flight, and some crew members asked to be replaced because it was so distressing. It's raising real questions about how immigration agents make arrests in public places."
   },
   {
-   "t": 116.1,
-   "label": "🌍 World · 3 of 3",
-   "sid": "world-3",
-   "topic": "world"
+   "t": 78.4,
+   "label": "🌍 World · 2 of 2",
+   "sid": "world-6",
+   "topic": "world",
+   "text": "Also in world news, Russian incursions into NATO territory are rising after three Russian cruise missiles landed in Poland on Friday. NATO's Secretary General, Mark Rutte, is trying to reassure the alliance's eastern members. The bigger worry is that the war in Ukraine keeps spilling over its borders, and that's testing the alliance."
   },
   {
-   "t": 135.55,
-   "label": "🔬 Science & Health · 1 of 2",
-   "sid": "science-9",
-   "topic": "science"
+   "t": 97.25,
+   "label": "💻 Tech · 1 of 1",
+   "sid": "tech-4",
+   "topic": "tech",
+   "text": "In tech, a group of states is suing SpaceX to stop its Grok AI from generating child sexual abuse images. State attorneys general say Grok is still producing that material, plus revenge porn. X, which is tied to SpaceX, says every Grok output is screened. This case could set the tone for how AI image tools are held accountable."
   },
   {
-   "t": 154.05,
-   "label": "🔬 Science & Health · 2 of 2",
+   "t": 116.9,
+   "label": "🔬 Science & Health · 1 of 1",
    "sid": "science-5",
-   "topic": "science"
+   "topic": "science",
+   "text": "Science and health now. Measles is becoming a bigger risk for American adults. The danger is greatest for the unvaccinated, but medical experts say even vaccinated people born before 1989 may no longer be sufficiently protected. So if that's you, it's worth asking your doctor about your vaccination status."
+  },
+  {
+   "t": 135.0,
+   "label": "💼 Business (light) · 1 of 1",
+   "sid": "business-9",
+   "topic": "business",
+   "text": "In business, CrowdStrike plans to buy Zscaler in a $44 billion deal. Both are major cybersecurity companies, and they're teaming up as worries grow over hacks supercharged by artificial intelligence, hitting companies and governments alike. Nothing says confidence in the future like paying forty-four billion to keep the hackers out."
+  },
+  {
+   "t": 152.9,
+   "label": "🏈 Sports · 1 of 1",
+   "sid": "sports-10",
+   "topic": "sports",
+   "text": "Last up, sports. The SEC has scheduled a vote on possibly expelling LSU. That's the Southeastern Conference, one of college football's biggest leagues. LSU's standoff with the conference over the RJ Luis dispute has turned into a legal and political fight, and major penalties are still on the table."
   },
   {
    "t": 169.9,
-   "label": "💼 Business (light) · 1 of 1",
-   "sid": "business-9",
-   "topic": "business"
-  },
-  {
-   "t": 186.95,
    "label": "Wrapping up",
    "sid": null,
-   "topic": null
+   "topic": null,
+   "text": "And that's your brief. Go be smug at the office about knowing all this. Have a great day, and I'll catch you tomorrow."
   }
  ]
 }
