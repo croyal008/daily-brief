@@ -35,7 +35,7 @@ DATA_DIR = ROOT / "docs" / "data"
 ARCHIVE_DIR = DATA_DIR / "archive"
 HISTORY_FILE = DATA_DIR / "history.json"
 
-LOCAL_TZ = ZoneInfo(os.environ.get("BRIEF_TIMEZONE", "America/Chicago"))
+LOCAL_TZ = ZoneInfo(os.environ.get("BRIEF_TIMEZONE", "").strip() or "America/Chicago")
 MODEL = os.environ.get("BRIEF_MODEL", "").strip() or "claude-opus-5-5"
 MAX_AGE_HOURS = 36          # ignore anything older than this
 HISTORY_DAYS = 5            # don't repeat a story shown in the last N days
