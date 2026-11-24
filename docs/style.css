@@ -196,3 +196,14 @@ body.playing main { padding-bottom: 110px; }
   padding-top: env(safe-area-inset-top);
 }
 .ptr:empty { padding-top: 0; }
+.day-wrap { position: relative; display: inline-block; }
+.day-wrap[hidden] { display: none; }
+.day-wrap select {
+  position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0;
+  font-size: 16px; cursor: pointer; -webkit-appearance: none; appearance: none;
+}
+#day-label { display: inline-block; font-weight: 600; font-size: 0.8em; font-family: inherit; }
+.dateline-row { flex-wrap: nowrap; gap: 6px; min-width: 0; }
+#dateline { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.day-wrap { flex: none; }
+#day-label { font-size: 0.76em; white-space: nowrap; }

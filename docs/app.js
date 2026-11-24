@@ -255,13 +255,18 @@
     try {
       const { dates } = await loadJson("data/index.json");
       const picker = $("day-picker");
-      picker.replaceChildren(...dates.map((d, i) => el("option", { value: d, text: i === 0 ? "Past briefs ▾" : shortDate(d) })));
+      picker.replaceChildren(...dates.map((d, i) => el("option", { value: d, text: i === 0 ? `Today · ${shortDate(d)}` : shortDate(d) })));
+      const label = () => {
+        $("day-label").textContent = picker.selectedIndex <= 0 ? "Past briefs ▾" : `${shortDate(picker.value)} ▾`;
+      };
+      label();
       picker.addEventListener("change", () => {
+        label();
         stopListening();
         load(picker.selectedIndex === 0 ? null : picker.value);
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
-    } catch { $("day-picker").hidden = true; }
+    } catch { $("day-wrap").hidden = true; }
   }
 
 
