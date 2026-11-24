@@ -190,3 +190,9 @@ body.playing main { padding-bottom: 110px; }
 }
 .link-btn { border: 0; background: none; color: var(--accent); padding: 4px 0; font: inherit; font-size: 0.8em; cursor: pointer; }
 .toggles .tname .hint { display: block; margin: 2px 0 0; }
+.ptr {
+  height: 0; overflow: hidden; display: flex; align-items: flex-end; justify-content: center;
+  color: var(--muted); font-size: 0.8em; transition: height 0.15s;
+  padding-top: env(safe-area-inset-top);
+}
+.ptr:empty { padding-top: 0; }

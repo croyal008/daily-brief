@@ -617,5 +617,37 @@
   loadConfig().then((changed) => { if (changed) { applySize(); if (brief) render(); } });
   load(null);
   loadDays();
-  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+  let swReg = null;
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js").then((r) => { swReg = r; }).catch(() => {});
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible" && swReg) swReg.update().catch(() => {});
+    });
+  }
+
+  // ---- pull down at the top of the page to refresh (the home screen app has no reload button)
+  const ptr = $("ptr");
+  let pullStart = null, pullDist = 0;
+  const PULL_AT = 80;
+  window.addEventListener("touchstart", (e) => {
+    if (window.scrollY > 0 || $("settings").open || e.touches.length !== 1) { pullStart = null; return; }
+    pullStart = e.touches[0].clientY; pullDist = 0;
+  }, { passive: true });
+  window.addEventListener("touchmove", (e) => {
+    if (pullStart === null) return;
+    pullDist = Math.max(0, e.touches[0].clientY - pullStart);
+    if (window.scrollY > 0) pullDist = 0;
+    const shown = Math.min(pullDist, 120);
+    ptr.style.height = `${shown * 0.6}px`;
+    ptr.textContent = pullDist > PULL_AT ? "Release to refresh" : (pullDist > 15 ? "Pull to refresh" : "");
+  }, { passive: true });
+  window.addEventListener("touchend", async () => {
+    if (pullStart === null) return;
+    const go = pullDist > PULL_AT;
+    pullStart = null;
+    if (!go) { ptr.style.height = "0"; ptr.textContent = ""; return; }
+    ptr.textContent = "Refreshing…";
+    try { if (swReg) await swReg.update(); } catch {}
+    location.reload();
+  });
 })();

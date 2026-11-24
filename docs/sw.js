@@ -1,6 +1,6 @@
 // Keeps the app working offline: the app itself is cached, and the latest
 // brief is fetched fresh when online, falling back to the last saved copy.
-const CACHE = "daily-brief-v9";
+const CACHE = "daily-brief-v10";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest", "icons/icon-192.png"];
 
 self.addEventListener("install", (e) => {
@@ -21,7 +21,8 @@ self.addEventListener("fetch", (e) => {
   const key = url.origin + url.pathname; // ignore cache-busting query strings
   // Network first for everything, so updates show up right away; cache when offline.
   e.respondWith(
-    fetch(e.request)
+    // "no-cache" skips the browser's 10-minute cache of GitHub Pages files, so updates show up at once.
+    fetch(e.request.url, { cache: "no-cache", credentials: "same-origin" })
       .then((res) => {
         if (res.ok) {
           const copy = res.clone();
