@@ -1,6 +1,6 @@
 {
- "date": "2026-11-23",
- "generated_at": "2026-11-24T05:43:55+00:00",
+ "date": "2026-11-24",
+ "generated_at": "2026-11-24T06:26:12+00:00",
  "ai_summaries": false,
  "topics": [
   {
@@ -60,480 +60,400 @@
  ],
  "overview": [
   {
-   "topic": "tech",
-   "text": "With Jensen Huang’s Return as C.E.O., Trump Effectively Overrode Nvidia’s Board"
-  },
-  {
-   "topic": "us",
-   "text": "Appeals court clears way for Army to detonate Iowa explosives"
-  },
-  {
    "topic": "world",
-   "text": "Ukraine confirms it used naval drones to strike two Russian ships off Libya"
-  },
-  {
-   "topic": "science",
-   "text": "Five takeaways from the failed climate talks COP31"
+   "text": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book"
   },
   {
    "topic": "politics",
-   "text": "Rep. Jimmy Gomez Resigns After Panel Alleges Unwanted Sexual Contact With Aide"
+   "text": "No. 2 Official at F.B.I. Is Said to Be Retiring Before End of Year"
   },
   {
-   "topic": "sports",
-   "text": "NFL Week 11 grades for every team: Commanders earn 'A-' for stunning Monday win"
+   "topic": "science",
+   "text": "CVS Health’s Planned Breakup Hasn’t Quieted Antitrust Critics"
   },
   {
-   "topic": "culture",
-   "text": "Miley Cyrus marries Maxx Morando in California ceremony"
+   "topic": "us",
+   "text": "Let's talk turkey: Here's how Thanksgiving meal costs have changed this year"
+  },
+  {
+   "topic": "tech",
+   "text": "The rise and fall and rise again of Jensen Huang"
   },
   {
    "topic": "business",
-   "text": "Paolo Bulgari, Heir of Italian Jewelry Dynasty, Dies at 89"
+   "text": "They attended Trump's controversial meme coin dinner. It didn't go well"
+  },
+  {
+   "topic": "sports",
+   "text": "115 days, 39 private-jet flights, one election - Infantino's globetrotting"
+  },
+  {
+   "topic": "culture",
+   "text": "Jefferson Airplane's Jorma Kaukonen says guitar has always been a 'great refuge'"
   }
  ],
  "stories": [
   {
-   "headline": "✅ Cowboys 51, Titans 30",
-   "summary": "Final · vs. Titans · Record 5-6",
-   "stat": "Dak Prescott: 28/33, 325 YDS, 4 TD",
+   "headline": "✅ Spurs 123, Kings 107",
+   "summary": "Final · at Kings · Record 15-3",
+   "stat": "Stephon Castle: 28 PTS, 8 REB, 11 AST",
    "sources": [
     {
      "name": "ESPN recap",
-     "url": "https://www.espn.com/nfl/recap?gameId=401873073"
+     "url": "https://www.espn.com/nba/recap?gameId=401910045"
     }
    ],
-   "id": "team-dallas-cowboys",
+   "id": "team-san-antonio-spurs",
    "topic": "myteams",
    "why": ""
   },
   {
    "id": "us-1",
    "topic": "us",
-   "headline": "Appeals court clears way for Army to detonate Iowa explosives",
-   "summary": "Trump, on social media, tried to push responsibility of ‘any and all death or destruction’ on Democratic governor-elect The US army can proceed with detonating several tons of degraded bomb-making chemicals in Iowa, a federal appeals court ruled on Monday.",
+   "headline": "Let's talk turkey: Here's how Thanksgiving meal costs have changed this year",
+   "summary": "Grocery costs have been on the rise, but food-price analysts say it's unclear if you'll spend more on the Thanksgiving meal this year. Some people are deciding not to host or are hosting fewer guests.",
    "why": "",
    "sources": [
     {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/"
-    },
-    {
-     "name": "Al Jazeera",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/trump-postpones-us-army-plan-to-detonate-toxic-explosives-in-iowa?traffic_source=rss"
-    },
-    {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/us-news/2026/nov/23/iowa-lead-bomb-appeals-court"
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6044207/thanksgiving-meal-costs"
     }
    ],
-   "time": "2026-11-24T03:21:47+00:00"
+   "time": "2026-11-23T10:00:00+00:00"
   },
   {
    "id": "us-2",
    "topic": "us",
-   "headline": "Two central Ohio bus drivers killed, nine others injured after head-on crash",
-   "summary": "Two Columbus transit bus drivers have been killed and nine others injured after their vehicles collided during the morning rush hour in Ohio's state capital and one bus was struck by a third vehicle",
+   "headline": "Seniors embrace Tesla automated driving technology despite questions about safety",
+   "summary": "Older drivers are using Tesla's automated driving technology to stay on the road longer. But safety experts warn the company may be over-selling what its cars can do.",
    "why": "",
    "sources": [
     {
-     "name": "ABC News",
-     "url": "https://abcnews.com/US/wireStory/central-ohio-bus-drivers-killed-injured-after-head-138384467"
-    },
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/us/columbus-ohio-bus-crash.html"
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6020559/senior-drivers-tesla-automated-driving-safety"
     }
    ],
-   "time": "2026-11-23T22:13:03+00:00"
+   "time": "2026-11-23T10:00:00+00:00"
   },
   {
    "id": "us-3",
    "topic": "us",
-   "headline": "Federal court releases Rep. Ilhan Omar D.C. home raid documents",
-   "summary": "A federal court on Monday evening released documents regarding last month's raid at the Washington, D.C. home of Democratic Minnesota U.S. Rep. Ilhan Omar.",
+   "headline": "American vs. Chinese Mahjong: Why the Rivalry Is Stirring Controversy",
+   "summary": "American mahjong, with its own tiles and rules, has overshadowed the traditional Chinese game. The rivalry has fueled anger and cultural misunderstanding.",
    "why": "",
    "sources": [
     {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/congresswoman-ilhan-omar-house-raid-documents-release/"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/22/world/asia/mahjong-american-chinese-controversy.html"
     }
    ],
-   "time": "2026-11-24T02:21:00+00:00"
+   "time": "2026-11-23T21:46:33+00:00"
   },
   {
    "id": "politics-1",
    "topic": "politics",
-   "headline": "Rep. Jimmy Gomez Resigns After Panel Alleges Unwanted Sexual Contact With Aide",
-   "summary": "Democrat, who lost re-election bid, found to have made ‘unwelcome sexual advances’ towards House staffer Jimmy Gomez will resign from Congress after a House ethics report released on Monday found “substantial evidence” that the California…",
+   "headline": "No. 2 Official at F.B.I. Is Said to Be Retiring Before End of Year",
+   "summary": "The departure of Christopher G. Raia, a veteran agent, comes a few months after another deputy left the F.B.I.",
    "why": "",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/us/politics/jimmy-gomez-democrat-resigns.html"
-    },
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/house-ethics-investigation-jimmy-gomez-sexual-misconduct/"
-    },
-    {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/us-news/2026/nov/23/jimmy-gomez-congress-investigation-sexual-misconduct"
+     "url": "https://www.nytimes.com/2026/11/23/us/politics/fbi-raia-retiring.html"
     }
    ],
-   "time": "2026-11-23T23:23:01+00:00"
+   "time": "2026-11-24T04:38:48+00:00"
   },
   {
    "id": "politics-2",
    "topic": "politics",
-   "headline": "D.N.C. Plans 12 Debates for the 2028 Presidential Primary, Starting in June",
-   "summary": "The national party also revealed some initial criteria for participating, including a pledge to denounce spending from supportive groups that do not disclose their donors.",
+   "headline": "How a Scientist Behind the Mediterranean Diet Got Caught in Trump’s War on Harvard",
+   "summary": "Walter Willett studies the link between diet and health, a high priority for Health Secretary Robert F. Kennedy Jr. His grants were frozen anyway.",
    "why": "",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/us/politics/democrats-debates-2028-presidential-race.html"
-    },
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/2028-presidential-race-democratic-debates/"
+     "url": "https://www.nytimes.com/2026/11/23/us/politics/walter-willett-trump-harvard.html"
     }
    ],
-   "time": "2026-11-23T18:05:00+00:00"
+   "time": "2026-11-24T01:31:14+00:00"
   },
   {
    "id": "politics-3",
    "topic": "politics",
-   "headline": "Democrats have flipped 47 House seats. Here's the breakdown.",
-   "summary": "Democrats won control of the House by flipping dozens of Republican-held seats, picking up perennial swing districts and seats that were once considered deep red.",
+   "headline": "Democrats win House by largest margin in 50 years. And, COP31 ends with no deal",
+   "summary": "Democrats have currently flipped 47 House seats and could flip 49 total. And, climate change talks at COP31 ran two days longer than expected, becoming the longest conference in the summit's history.",
    "why": "",
    "sources": [
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/22/us/politics/democrats-midterm-house-majority-record.html"
-    },
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/house-districts-flipped-2026-midterm-elections/"
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/g-s1-155021/up-first-newsletter-midterms-house-ai-stocks-poland-nato-cop31"
     }
    ],
-   "time": "2026-11-23T20:38:00+00:00"
+   "time": "2026-11-23T12:42:03+00:00"
   },
   {
    "id": "world-1",
    "topic": "world",
-   "headline": "Ukraine confirms it used naval drones to strike two Russian ships off Libya",
-   "summary": "Ukraine’s security service says seven drones were launched from mothership in operation that sank Merkury warship Ukraine has confirmed it deployed naval drones in strikes on two Russian vessels off Libya on Sunday, including one that sank…",
+   "headline": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
+   "summary": "French woman says she will pursue legal action against publisher and author over use of photos taken by convicted husband Gisèle Pelicot has said she is “deeply shocked” that nude photographs of her had been used without her consent to…",
    "why": "",
    "sources": [
     {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya"
-    },
-    {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo?at_medium=RSS&at_campaign=rss"
+     "url": "https://www.bbc.co.uk/news/articles/cm3eg502nxw2o?at_medium=RSS&at_campaign=rss"
     },
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html"
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/nov/23/gisele-pelicot-deeply-shocked-nude-images-book-france"
     }
    ],
-   "time": "2026-11-23T20:48:35+00:00"
+   "time": "2026-11-23T21:24:47+00:00"
   },
   {
    "id": "world-2",
    "topic": "world",
-   "headline": "Pennsylvania reports ninth measles death in ongoing state outbreak",
-   "summary": "Measles cases are surging in the U.S., to the highest count it's seen in more than three decades. Pennsylvania has reported more than 1,600 confirmed cases and nine measles-related deaths in 2026 so far.",
+   "headline": "Iranian authorities flog singer who performed without hijab, lawyers say",
+   "summary": "Western governments and rights groups have criticised flogging as torture and a violation of international law An Iranian singer and four members of her production team ⁠have each received 74 lashes after being sentenced for “offending…",
    "why": "",
    "sources": [
     {
-     "name": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/11/24/pennsylvania-reports-ninth-measles-death-in-ongoing-state-outbreak?traffic_source=rss"
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss"
     },
     {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/pennsylvania-measles-outbreak-death/"
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/nov/23/iranian-singer-lashes-performing-without-hijab"
     }
    ],
-   "time": "2026-11-24T04:59:13+00:00"
+   "time": "2026-11-23T20:56:17+00:00"
   },
   {
    "id": "world-3",
    "topic": "world",
-   "headline": "24 Killed After Fire Rips Through Candy Factory in Indonesia",
-   "summary": "Rescuers brave unstable structures in search for missing as DNA needed to identify victims Indonesia has confirmed the deaths of 24 people in a fire that tore ⁠through a factory, as rescuers braved unstable structures in the burned…",
+   "headline": "UK sanctions top Myanmar military leaders after Rohingya genocide ruling",
+   "summary": "A U.N. court’s decision against Myanmar sets a precedent in international law with important implications for a similar case over Israel’s actions in Gaza.",
    "why": "",
    "sources": [
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/world/asia/indonesia-factory-fire.html"
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c6wy4ng1rznxo?at_medium=RSS&at_campaign=rss"
     },
     {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/world/2026/nov/22/fire-confectionary-factory-indonesia-jakarta"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/22/world/genocide-myanmar-un-climate-talks.html"
     }
    ],
-   "time": "2026-11-24T00:35:20+00:00"
+   "time": "2026-11-23T21:03:34+00:00"
   },
   {
    "id": "tech-1",
    "topic": "tech",
-   "headline": "With Jensen Huang’s Return as C.E.O., Trump Effectively Overrode Nvidia’s Board",
-   "summary": "Jensen Huang reinstated as Nvidia CEO after Trump intervenes Sign up to the Breaking News US email Nvidia ’s shares have surged by 31% at the start of trading following the news.",
+   "headline": "The rise and fall and rise again of Jensen Huang",
+   "summary": "Days after resigning while mired in scandal of extra-marital affairs, Nvidia's Jensen Huang is making a remarkable return.",
    "why": "",
    "sources": [
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/technology/jensen-huang-nvidia-board-trump.html"
-    },
-    {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump"
+     "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-24T04:58:02+00:00"
+   "time": "2026-11-23T15:49:52+00:00"
   },
   {
    "id": "tech-2",
    "topic": "tech",
-   "headline": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
-   "summary": "The Trump administration restricted Megaspeed from buying advanced semiconductor chips, after the firm's alleged links to China helped kick-start the scandal surrounding Nvidia CEO Jensen Huang.",
+   "headline": "Elon Musk Faces an A.I. Dilemma at SpaceX",
+   "summary": "Mr. Musk’s SpaceX is renting out computing power from its data centers to competitors, including Anthropic. That’s making it harder for his own A.I. effort.",
    "why": "",
    "sources": [
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss"
-    },
-    {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/business/trump-administration-megaspeed-trade-blacklist-nvidia.html"
-    },
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/megaspeed-trade-blacklist-nvidia-jensen-huang/"
+     "url": "https://www.nytimes.com/2026/11/23/business/elon-musk-ai-anthropic-google.html"
     }
    ],
-   "time": "2026-11-24T05:39:23+00:00"
+   "time": "2026-11-23T16:13:32+00:00"
   },
   {
    "id": "tech-3",
    "topic": "tech",
-   "headline": "Trump halts Iowa detonation, says new governor to blame if it blows accidentally",
-   "summary": "President Trump said he will wait for the courts and Iowa Gov.-elect Rob Sand to agree with the Army's plan.",
+   "headline": "Google alternative Kagi launches an email service",
+   "summary": "Kagi, which already offers a paid alternative to Google Search and its own Orion browser as a rival to Chrome, is taking on another Google service: Gmail.",
    "why": "",
    "sources": [
     {
-     "name": "Ars Technica",
-     "url": "https://arstechnica.com/health/2026/11/trump-halts-iowa-detonation-says-new-governor-to-blame-if-it-blows-accidentally/"
-    },
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/trump-tells-army-to-halt-detonation-in-iowa-this-week/"
+     "name": "The Verge",
+     "url": "https://www.theverge.com/tech/1041000/kagi-mail-email-google-gmail-alternative"
     }
    ],
-   "time": "2026-11-23T23:51:00+00:00"
+   "time": "2026-11-24T00:02:52+00:00"
   },
   {
    "id": "science-1",
    "topic": "science",
-   "headline": "Five takeaways from the failed climate talks COP31",
-   "summary": "Countries at the Cop31 climate summit failed to reach a keystone agreement for the first time in 17 years.",
+   "headline": "CVS Health’s Planned Breakup Hasn’t Quieted Antitrust Critics",
+   "summary": "Lawmakers are warning that spinning off the health care conglomerate’s drugstores will not end scrutiny over its power.",
    "why": "",
    "sources": [
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cm75237wlp3lo?at_medium=RSS&at_campaign=rss"
-    },
-    {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/climate/cop31-collapse-what-next.html"
-    },
-    {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/news/audio/2026/nov/23/cop31-collapses-why-did-climate-talks-fall-apart-the-latest"
+     "url": "https://www.nytimes.com/2026/11/23/business/cvs-pharmacy-health-federal-investigations-antitrust.html"
     }
    ],
-   "time": "2026-11-23T17:19:55+00:00"
+   "time": "2026-11-23T10:03:26+00:00"
   },
   {
    "id": "science-2",
    "topic": "science",
-   "headline": "'Medicare for all' is back on the drawing board. Does it stand a better chance this time?",
-   "summary": "Several newly elected Democratic U.S. senators campaigned on Medicare for All. Could this be the time it actually gets traction?",
+   "headline": "H.I.V. Research Networks May Again Seek Federal Funding, With a Twist",
+   "summary": "The Trump administration restarted the process for funding four large research networks after postponing it earlier this year.",
    "why": "",
    "sources": [
     {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/23/nx-s1-6047706/health-medicare-for-all-chances"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/20/science/hiv-research-funding-nih.html"
     }
    ],
-   "time": "2026-11-23T16:00:49+00:00"
+   "time": "2026-11-23T15:36:20+00:00"
   },
   {
    "id": "science-3",
    "topic": "science",
-   "headline": "What failure of COP31 reveals about a divided world",
-   "summary": "Interests of oil-producing countries, a US boycott and a dispute over finance may have torpedoed climate talks.",
-   "why": "",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cky970n83rvjo?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-23T17:24:25+00:00"
-  },
-  {
-   "id": "business-1",
-   "topic": "business",
-   "headline": "Paolo Bulgari, Heir of Italian Jewelry Dynasty, Dies at 89",
-   "summary": "As the chairman of his family’s company, Mr. Bulgari embraced maximalist aesthetics that recalled ancient Rome. After the 2008 financial crisis, he steered the sale of the business to LVMH.",
-   "why": "",
-   "sources": [
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/style/paolo-bulgari-dead.html"
-    },
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/c8e39qk5vrpdo?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-23T15:39:34+00:00"
-  },
-  {
-   "id": "business-2",
-   "topic": "business",
-   "headline": "Some women in tech have concerns about Huang's return",
-   "summary": "Women who have advocated for DEI in tech say Jensen Huang's return to NVIDIA as CEO sends a message that in Silicon Valley, all that matters is money. s",
+   "headline": "Invading armies, subterfuge and conquest: How fire ant wars affect ecosystems",
+   "summary": "Ants disperse seeds, scavenge, turn soil and serve as a food source in their ecosystems. If local ants are displaced by invasive ants from elsewhere, the effects are widely felt.",
    "why": "",
    "sources": [
     {
      "name": "NPR",
-     "url": "https://www.npr.org/2026/11/23/nx-s1-6045799/how-some-women-in-tech-are-responding-to-jensen-huangs-return-to-nvidia"
-    },
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/trump-elon-musk-business-leaders-cheer-jensen-huang-ceo-nvidia/"
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6037814/invading-armies-subterfuge-and-conquest-how-fire-ant-wars-affect-ecosystems"
     }
    ],
-   "time": "2026-11-23T22:03:57+00:00"
+   "time": "2026-11-23T23:12:05+00:00"
+  },
+  {
+   "id": "business-1",
+   "topic": "business",
+   "headline": "They attended Trump's controversial meme coin dinner. It didn't go well",
+   "summary": "Trump held another meme coin dinner for top holders of his cryptocurrency — an event that has raised intense controversy. Here's an inside account from two guests who attended.",
+   "why": "",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6045883/they-attended-trumps-controversial-meme-coin-dinner-it-didnt-go-well"
+    }
+   ],
+   "time": "2026-11-23T22:17:59+00:00"
+  },
+  {
+   "id": "business-2",
+   "topic": "business",
+   "headline": "Faisal Islam: Why Jensen Huang proved too big to fire",
+   "summary": "Huang's role at the centre of his company's journey to lynchpin of AI proved crucial.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/ckr5g8edl94eo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-23T17:11:58+00:00"
   },
   {
    "id": "business-3",
    "topic": "business",
-   "headline": "Trump’s Extraordinary Nvidia Intervention Sidelines National Security Concerns",
-   "summary": "President Trump’s move to put Jensen Huang back at the helm of Nvidia caps his indifference to the warnings of his own intelligence agencies.",
+   "headline": "Audra Fordin Fixes Cars, and Eases Women’s Fears",
+   "summary": "Audra Fordin recognized an undeniable need to make automobile education more accessible, and did something about it.",
    "why": "",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-national-security.html"
+     "url": "https://www.nytimes.com/2026/11/23/business/small-business/women-cars.html"
     }
    ],
-   "time": "2026-11-24T00:55:56+00:00"
+   "time": "2026-11-23T21:31:04+00:00"
   },
   {
    "id": "sports-1",
    "topic": "sports",
-   "headline": "NFL Week 11 grades for every team: Commanders earn 'A-' for stunning Monday win",
-   "summary": "The Commanders scored a touchdown late in the first half against Cincinnati, and proceeded to make field goals on their five drives that followed.",
+   "headline": "115 days, 39 private-jet flights, one election - Infantino's globetrotting",
+   "summary": "Fifa president Gianni Infantino's globe-trotting by private jet since his plan to sell of a stake in the World Cup has come under scrutiny.",
    "why": "",
    "sources": [
     {
-     "name": "CBS Sports",
-     "url": "https://www.cbssports.com/nfl/news/nfl-week-11-grades-every-team-cowboys-earn-a-high-flying-win-steelers-nearly-fail/"
-    },
-    {
-     "name": "Yahoo Sports",
-     "url": "https://sports.yahoo.com/articles/while-stunning-bengals-commanders-did-052659534.html"
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/sport/football/articles/cmkgk22w3vlvo?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-24T05:26:59+00:00"
+   "time": "2026-11-24T06:16:53+00:00"
   },
   {
    "id": "sports-2",
    "topic": "sports",
-   "headline": "England, Northern Ireland, Scotland & Wales to host 2035 Women's World Cup",
-   "summary": "FIFA has confirmed a United States-led bid to host the 2031 Women's World Cup and a U.K. project led by England for the 2035 edition.",
+   "headline": "Annual Turkey Trot road races bring families, runners together",
+   "summary": "Former Florida State runner Stan Linton looks to complete a rare sweep of the Turkey Trot's three primary distances.",
    "why": "",
    "sources": [
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/us-host-2031-fifa-women-world-cup-announcement/"
+     "name": "Yahoo Sports",
+     "url": "https://sports.yahoo.com/articles/annual-turkey-trot-road-races-061517033.html"
     }
    ],
-   "time": "2026-11-23T16:59:31+00:00"
+   "time": "2026-11-24T06:15:17+00:00"
   },
   {
    "id": "sports-3",
    "topic": "sports",
-   "headline": "Tarkowski's first Premier League red ruins Moyes' night - was it deserved?",
-   "summary": "Everton captain James Tarkowski was sent off for the first time in his Premier League career in Monday's 4-0 loss at Brentford - but was it a harsh decision?",
+   "headline": "2026 NFL playoff picture, standings: 49ers reign over NFC, Jaguars slip in AFC, wild-card battles heat up",
+   "summary": "A comprehensive look at all seven seeds in the AFC and NFC and the teams on the outside looking in",
    "why": "",
    "sources": [
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/sport/football/articles/cmqx5eynvpqno?at_medium=RSS&at_campaign=rss"
+     "name": "CBS Sports",
+     "url": "https://www.cbssports.com/nfl/news/2026-nfl-playoff-picture-standings-49ers-reign-over-nfc-jaguars-slip-in-afc/"
     }
    ],
-   "time": "2026-11-23T22:43:39+00:00"
+   "time": "2026-11-24T04:33:23+00:00"
   },
   {
    "id": "culture-1",
    "topic": "culture",
-   "headline": "Miley Cyrus marries Maxx Morando in California ceremony",
-   "summary": "Singer Miley Cyrus has married rock drummer Maxx Morando in an intimate ceremony in Palm Springs, California",
+   "headline": "Jefferson Airplane's Jorma Kaukonen says guitar has always been a 'great refuge'",
+   "summary": "Kaukonen helped define the sound of the '60s as the lead guitar player and a founding member of Jefferson Airplane. Now 85, he's still touring with his band Hot Tuna.",
    "why": "",
    "sources": [
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cq8e0p87l89lo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "name": "ABC News",
-     "url": "https://abcnews.com/US/wireStory/miley-cyrus-marries-rock-drummer-maxx-morando-intimate-138366725"
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6047437/jefferson-airplanes-jorma-kaukonen-says-guitar-has-always-been-a-great-refuge"
     }
    ],
-   "time": "2026-11-23T05:30:14+00:00"
+   "time": "2026-11-23T16:25:12+00:00"
   },
   {
    "id": "culture-2",
    "topic": "culture",
-   "headline": "US rapper postpones two arena shows after Manchester evacuation",
-   "summary": "Don Toliver's show on Sunday was evacuated after an \"unknown substance\" was released into the crowd.",
+   "headline": "Police investigate unknown substance that caused Manchester's Co-op Live evacuation",
+   "summary": "People describe a \"horrible smell\" and hearing screaming as they were evacuated from the Don Toliver gig.",
    "why": "",
    "sources": [
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/ck3rgp4gv9pxo?at_medium=RSS&at_campaign=rss"
+     "url": "https://www.bbc.co.uk/news/articles/c9e851dn8516o?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-23T20:49:08+00:00"
+   "time": "2026-11-23T17:34:24+00:00"
   },
   {
    "id": "culture-3",
    "topic": "culture",
-   "headline": "In Harlem, a New Museum Maps the Civil Rights Fight in the North",
-   "summary": "The Urban Civil Rights Museum, the first in New York dedicated to the history of the movement, aims to tell stories often overlooked in similar narratives.",
+   "headline": "A First for a ‘Curious Incident’ Production: A Cast of Neurodivergent Actors",
+   "summary": "A company for neurodivergent actors steps up to a bigger stage with its full-spectrum model of inclusion.",
    "why": "",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/arts/design/urban-civil-rights-museum-harlem.html"
+     "url": "https://www.nytimes.com/2026/11/23/theater/curious-incident-epic-players-neurodiverse.html"
     }
    ],
-   "time": "2026-11-23T10:03:04+00:00"
+   "time": "2026-11-23T18:06:14+00:00"
   }
  ]
 }

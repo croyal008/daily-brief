@@ -1,0 +1,153 @@
+{
+ "date": "2026-11-24",
+ "generated_at": "2026-11-24T06:26:12+00:00",
+ "url": "audio/brief.mp3?v=202611240628",
+ "duration": 371.5,
+ "voice": "af_heart",
+ "chapters": [
+  {
+   "t": 0.0,
+   "label": "Intro",
+   "sid": null,
+   "topic": null
+  },
+  {
+   "t": 5.34,
+   "label": "🏆 My Teams · 1 of 1",
+   "sid": "team-san-antonio-spurs",
+   "topic": "myteams"
+  },
+  {
+   "t": 19.1,
+   "label": "🇺🇸 U.S. · 1 of 3",
+   "sid": "us-1",
+   "topic": "us"
+  },
+  {
+   "t": 38.11,
+   "label": "🇺🇸 U.S. · 2 of 3",
+   "sid": "us-2",
+   "topic": "us"
+  },
+  {
+   "t": 55.6,
+   "label": "🇺🇸 U.S. · 3 of 3",
+   "sid": "us-3",
+   "topic": "us"
+  },
+  {
+   "t": 73.22,
+   "label": "🏛️ Politics · 1 of 3",
+   "sid": "politics-1",
+   "topic": "politics"
+  },
+  {
+   "t": 88.11,
+   "label": "🏛️ Politics · 2 of 3",
+   "sid": "politics-2",
+   "topic": "politics"
+  },
+  {
+   "t": 104.02,
+   "label": "🏛️ Politics · 3 of 3",
+   "sid": "politics-3",
+   "topic": "politics"
+  },
+  {
+   "t": 126.47,
+   "label": "🌍 World · 1 of 3",
+   "sid": "world-1",
+   "topic": "world"
+  },
+  {
+   "t": 148.08,
+   "label": "🌍 World · 2 of 3",
+   "sid": "world-2",
+   "topic": "world"
+  },
+  {
+   "t": 168.94,
+   "label": "🌍 World · 3 of 3",
+   "sid": "world-3",
+   "topic": "world"
+  },
+  {
+   "t": 187.52,
+   "label": "💻 Tech · 1 of 3",
+   "sid": "tech-1",
+   "topic": "tech"
+  },
+  {
+   "t": 200.75,
+   "label": "💻 Tech · 2 of 3",
+   "sid": "tech-2",
+   "topic": "tech"
+  },
+  {
+   "t": 216.53,
+   "label": "💻 Tech · 3 of 3",
+   "sid": "tech-3",
+   "topic": "tech"
+  },
+  {
+   "t": 232.26,
+   "label": "🔬 Science & Health · 1 of 3",
+   "sid": "science-1",
+   "topic": "science"
+  },
+  {
+   "t": 246.33,
+   "label": "🔬 Science & Health · 2 of 3",
+   "sid": "science-2",
+   "topic": "science"
+  },
+  {
+   "t": 260.54,
+   "label": "🔬 Science & Health · 3 of 3",
+   "sid": "science-3",
+   "topic": "science"
+  },
+  {
+   "t": 279.95,
+   "label": "💼 Business (light) · 1 of 3",
+   "sid": "business-1",
+   "topic": "business"
+  },
+  {
+   "t": 296.91,
+   "label": "💼 Business (light) · 2 of 3",
+   "sid": "business-2",
+   "topic": "business"
+  },
+  {
+   "t": 307.66,
+   "label": "💼 Business (light) · 3 of 3",
+   "sid": "business-3",
+   "topic": "business"
+  },
+  {
+   "t": 320.57,
+   "label": "🏈 Sports · 1 of 3",
+   "sid": "sports-1",
+   "topic": "sports"
+  },
+  {
+   "t": 337.74,
+   "label": "🏈 Sports · 2 of 3",
+   "sid": "sports-2",
+   "topic": "sports"
+  },
+  {
+   "t": 350.3,
+   "label": "🏈 Sports · 3 of 3",
+   "sid": "sports-3",
+   "topic": "sports"
+  },
+  {
+   "t": 369.34,
+   "label": "Wrapping up",
+   "sid": null,
+   "topic": null
+  }
+ ]
+}
