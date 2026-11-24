@@ -47,7 +47,7 @@ SOURCE_NAMES = {
     "bbc.com": "BBC", "cbsnews.com": "CBS News", "abcnews.go.com": "ABC News",
     "go.com": "ABC News", "abcnews.com": "ABC News", "bbci.co.uk": "BBC", "theguardian.com": "The Guardian",
     "aljazeera.com": "Al Jazeera", "arstechnica.com": "Ars Technica",
-    "theverge.com": "The Verge", "espn.com": "ESPN",
+    "theverge.com": "The Verge", "espn.com": "ESPN", "cbssports.com": "CBS Sports", "yahoo.com": "Yahoo Sports",
 }
 
 MARKET_WORDS = re.compile(
@@ -193,6 +193,7 @@ def collect(config: dict, now: datetime) -> list[dict]:
         parsed = parse_feed(raw, url)
         if parsed:
             ok += 1
+        kept = 0
         for it in parsed:
             if it["time"] and now - it["time"] > timedelta(hours=MAX_AGE_HOURS):
                 continue
@@ -202,6 +203,8 @@ def collect(config: dict, now: datetime) -> list[dict]:
             it["source"] = source_name(it["link"] or url)
             it["tokens"] = tokens(it["title"])
             items.append(it)
+            kept += 1
+        print(f"  {topic:9} {kept:3}/{len(parsed):3} recent  {url}")
     print(f"Fetched {ok}/{len(jobs)} feeds, {len(items)} recent headlines")
     return items
 
