@@ -1,8 +1,12 @@
 {
-  "_note": "Settings for the recorded morning podcast. 'voice': af_heart, af_bella, am_michael (and others from Kokoro). 'speed': 1.0 is normal. 'topics': which topics are read, in this order. Set 'enabled' to false to turn the recording off. 'host_style': when an Anthropic API key is set, Claude rewrites the script as a casual, witty host; set to false for the plain version.",
+  "_note": "Settings for the recorded morning podcast. 'engine': 'azure' (natural Microsoft voices, used when the AZURE_SPEECH_KEY secret is set) or 'kokoro' (free voice that runs on GitHub). 'azure_voice' e.g. en-US-AvaMultilingualNeural. 'voice' is the Kokoro voice, also used as the backup. 'speed': 1.0 is normal. 'topics': which topics are read, in this order. 'host_style': with an Anthropic API key, Claude rewrites the script as a casual, witty host. 'enabled': false turns the recording off.",
   "enabled": true,
+  "engine": "azure",
+  "azure_voice": "en-US-AvaMultilingualNeural",
+  "azure_style": "",
   "voice": "af_heart",
   "speed": 1.0,
+  "host_style": true,
   "topics": [
     "myteams",
     "us",
@@ -12,6 +16,5 @@
     "science",
     "business",
     "sports"
-  ],
-  "host_style": true
+  ]
 }

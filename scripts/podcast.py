@@ -202,41 +202,126 @@ def punch_up(segs: list[dict]) -> list[dict]:
     return segs
 
 
+# ---------------------------------------------------------------- voices
+
+AZURE_FORMAT = "riff-24khz-16bit-mono-pcm"
+
+
+class AzureVoice:
+    """Microsoft Azure neural voices over plain HTTPS. Free tier: ~500k characters a month."""
+
+    def __init__(self, key: str, region: str, voice: str, rate_pct: int = 0, style: str = ""):
+        self.url = f"https://{region}.tts.speech.microsoft.com/cognitiveservices/v1"
+        self.key, self.voice, self.rate_pct, self.style = key, voice, rate_pct, style
+        self.name = f"Azure {voice}"
+        self._last = 0.0
+
+    def ssml(self, text: str) -> str:
+        from xml.sax.saxutils import escape
+        body = f"<prosody rate='{self.rate_pct:+d}%'>{escape(text)}</prosody>"
+        if self.style:
+            body = f"<mstts:express-as style='{escape(self.style)}'>{body}</mstts:express-as>"
+        return ("<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' "
+                "xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='en-US'>"
+                f"<voice name='{escape(self.voice)}'>{body}</voice></speak>")
+
+    def create(self, text: str):
+        import io
+        import urllib.error
+        import urllib.request
+        import soundfile as sf
+        data = self.ssml(text).encode("utf-8")
+        for attempt in range(6):
+            # The free tier allows about 20 requests a minute: pace ourselves.
+            wait = 3.2 - (time.time() - self._last)
+            if wait > 0:
+                time.sleep(wait)
+            self._last = time.time()
+            req = urllib.request.Request(self.url, data=data, method="POST", headers={
+                "Ocp-Apim-Subscription-Key": self.key,
+                "Content-Type": "application/ssml+xml",
+                "X-Microsoft-OutputFormat": AZURE_FORMAT,
+                "User-Agent": "daily-brief",
+            })
+            try:
+                with urllib.request.urlopen(req, timeout=60) as r:
+                    audio, sr = sf.read(io.BytesIO(r.read()), dtype="float32")
+                    return audio, sr
+            except urllib.error.HTTPError as e:
+                if e.code in (429, 500, 502, 503) and attempt < 5:
+                    time.sleep(int(e.headers.get("Retry-After") or 10))
+                    continue
+                raise RuntimeError(f"Azure voice error {e.code}: {e.read()[:200]!r}") from None
+        raise RuntimeError("Azure voice kept refusing requests")
+
+
+class KokoroVoice:
+    """Free open-source voice that runs on the job itself."""
+
+    def __init__(self, voice: str, speed: float):
+        from kokoro_onnx import Kokoro
+        model, voices = MODELS / "kokoro-v1.0.int8.onnx", MODELS / "voices-v1.0.bin"
+        if not model.exists() or not voices.exists():
+            raise RuntimeError(f"Kokoro model files not found in {MODELS}")
+        self.k, self.voice, self.speed = Kokoro(str(model), str(voices)), voice, speed
+        self.name = f"Kokoro {voice}"
+
+    def create(self, text: str):
+        return self.k.create(text, voice=self.voice, speed=self.speed, lang="en-us")
+
+
+def pick_voices(settings: dict) -> list:
+    """Voices to try, best first. Azure when its key is set and chosen; Kokoro as the backup."""
+    out = []
+    key, region = os.environ.get("AZURE_SPEECH_KEY", "").strip(), os.environ.get("AZURE_SPEECH_REGION", "").strip()
+    if settings.get("engine", "azure") == "azure" and key and region:
+        speed = float(settings.get("speed", 1.0))
+        out.append(AzureVoice(key, region, settings.get("azure_voice", "en-US-AvaMultilingualNeural"),
+                              rate_pct=round((speed - 1) * 100), style=settings.get("azure_style", "")))
+    try:
+        out.append(KokoroVoice(settings.get("voice", "af_heart"), float(settings.get("speed", 1.0))))
+    except Exception as e:  # noqa: BLE001
+        print(f"  ! Kokoro backup unavailable: {e}", file=sys.stderr)
+    return out
+
+
+def record(segs: list[dict], engine) -> tuple[np.ndarray, int, list[dict], float]:
+    pieces, chapters, t, sr = [], [], 0.0, 24000
+    for seg in segs:
+        audio, sr = engine.create(seg["text"])
+        if audio.ndim > 1:
+            audio = audio.mean(axis=1)
+        chapters.append({"t": round(t, 2), "label": seg["label"], "sid": seg.get("sid"), "topic": seg.get("topic")})
+        pieces += [audio.astype(np.float32), np.zeros(int(sr * seg["gap"]), dtype=np.float32)]
+        t += len(audio) / sr + seg["gap"]
+    return np.concatenate(pieces), sr, chapters, t
+
+
 def main() -> int:
     brief = json.loads((DATA / "latest.json").read_text())
     settings = json.loads(SETTINGS.read_text()) if SETTINGS.exists() else {}
     if not settings.get("enabled", True):
         print("Podcast is turned off in scripts/podcast.json.")
         return 0
-    try:
-        from kokoro_onnx import Kokoro
-        import soundfile as sf
-    except ImportError as e:
-        print(f"! Podcast skipped, voice library missing: {e}", file=sys.stderr)
-        return 0
-    model = MODELS / "kokoro-v1.0.int8.onnx"
-    voices = MODELS / "voices-v1.0.bin"
-    if not model.exists() or not voices.exists():
-        print(f"! Podcast skipped, voice model files not found in {MODELS}", file=sys.stderr)
-        return 0
+    import soundfile as sf
 
-    kokoro = Kokoro(str(model), str(voices))
-    voice = settings.get("voice", "af_heart")
-    speed = float(settings.get("speed", 1.0))
     segs = build_script(brief, settings)
     if settings.get("host_style", True):
         segs = punch_up(segs)
 
     started = time.time()
-    pieces, chapters, t = [], [], 0.0
-    sr = 24000
-    for seg in segs:
-        audio, sr = kokoro.create(seg["text"], voice=voice, speed=speed, lang="en-us")
-        chapters.append({"t": round(t, 2), "label": seg["label"], "sid": seg.get("sid"), "topic": seg.get("topic")})
-        gap = np.zeros(int(sr * seg["gap"]), dtype=np.float32)
-        pieces += [audio.astype(np.float32), gap]
-        t += len(audio) / sr + seg["gap"]
-    full = np.concatenate(pieces)
+    result = None
+    for engine in pick_voices(settings):
+        try:
+            full, sr, chapters, t = record(segs, engine)
+            result = engine
+            break
+        except Exception as e:  # noqa: BLE001  fall through to the next voice
+            print(f"  ! {engine.name} failed ({e}); trying the backup voice", file=sys.stderr)
+    if not result:
+        print("! Podcast skipped: no voice worked today.", file=sys.stderr)
+        return 0
+    voice = result.name
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     for old in OUT_DIR.glob("brief-*.mp3"):
