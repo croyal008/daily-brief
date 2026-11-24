@@ -86,7 +86,8 @@
     const card = el("article", { class: "card story" + (readIds.has(s.id + brief.date) ? " read" : "") });
     const h = el("h3", {}, el("a", { href: safeUrl(first && first.url), target: "_blank", rel: "noopener", text: s.headline }));
     card.append(h);
-    if (s.summary) card.append(el("p", { text: s.summary }));
+    if (s.summary) card.append(el("p", { class: s.topic === "myteams" ? "gameline" : "", text: s.summary }));
+    if (s.stat) card.append(el("p", { class: "stat" }, el("b", { text: "⭐ Standout: " }), document.createTextNode(s.stat)));
     if (s.why) card.append(el("p", { class: "why" }, el("b", { text: "Why it matters: " }), document.createTextNode(s.why)));
     if (s.sources.length) {
       const meta = el("div", { class: "meta" }, document.createTextNode("Read more: "));

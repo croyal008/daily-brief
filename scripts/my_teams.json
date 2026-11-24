@@ -1,4 +1,8 @@
 {
-  "_note": "Your teams. 'league' is one of: nfl, nba, mlb, nhl, wnba, mls, college-football, college-basketball. 'name' must be the team's full name, e.g. 'Chicago Bears'. A team shows up only when it won last night or has big news (trades, signings, injuries, firings, clinching, etc.).",
-  "teams": []
+  "_note": "Your teams. 'league' is one of: nfl, nba, mlb, nhl, wnba, mls, college-football, college-basketball. 'name' is the team's full name as ESPN shows it. Each team gets a recap card the morning after it plays.",
+  "teams": [
+    {"name": "San Antonio Spurs", "league": "nba"},
+    {"name": "Dallas Cowboys", "league": "nfl"},
+    {"name": "UTSA Roadrunners", "league": "college-football"}
+  ]
 }

@@ -144,3 +144,6 @@ dialog::backdrop { background: rgba(0,0,0,0.35); }
 .seg span { display: block; padding: 6px; border-radius: 8px; font-size: 0.85em; cursor: pointer; }
 .seg input:checked + span { background: var(--card); font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,0.15); }
 .done:focus { outline: none; }
+.story .gameline { color: var(--muted); font-size: 0.88em; }
+.story .stat { margin-top: 6px; font-size: 0.9em; }
+.story .stat b { font-weight: 600; }

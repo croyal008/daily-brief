@@ -1,8 +1,10 @@
-"""'My Teams': last night's wins and big news for the reader's own teams.
+"""'My Teams': a recap of yesterday's game for each of the reader's teams.
 
-A team appears only when it (a) won a game yesterday, or (b) has big news today
-(a trade, signing, injury, firing, clinching, etc., or a story many outlets cover).
-Scores come from ESPN's public scoreboard; news comes from a Google News search.
+Each card has the same shape:
+  headline  "✅ Spurs 118, Lakers 112"        (✅ win, ❌ loss, ➖ tie)
+  summary   "Final/OT · vs. Lakers · Record 10-5"
+  stat      "Victor Wembanyama: 32 PTS, 14 REB, 5 BLK"   (only when a performance stands out)
+Teams that didn't play yesterday don't appear. Data comes from ESPN's public scoreboard.
 """
 from __future__ import annotations
 
@@ -23,17 +25,12 @@ LEAGUES = {
     "college-football": "football/college-football",
     "college-basketball": "basketball/mens-college-basketball",
 }
+BASKETBALL = {"nba", "wnba", "college-basketball"}
+FOOTBALL = {"nfl", "college-football"}
 
-BIG_NEWS = re.compile(
-    r"\b(trade[sd]?|acquire[sd]?|sign(s|ed|ing)?|extension|contract|re-?signs?|released|waive[sd]|"
-    r"fire[sd]|hire[sd]|names? .{0,20}(coach|manager|gm)|resign(s|ed)?|retire[sd]?|retirement|"
-    r"injur(y|ies|ed)|out for (the )?season|torn|acl|surgery|suspen(ded|sion)|arrest(ed)?|"
-    r"clinch(es|ed)?|eliminated|playoff berth|draft pick|no\.? ?1 pick|mvp|record-breaking|"
-    r"breaks? (the )?record|sold|sale of the team|new stadium|relocat)",
-    re.I,
-)
-SCORE_LINE = re.compile(r"\b\d{1,3}\s*[-–]\s*\d{1,3}\b")
-FILLER = re.compile(r"\b(odds|predictions?|picks|betting|best bets?|fantasy|how to watch|live stream|mock draft|power rankings?|grades)\b", re.I)
+# What counts as a standout line: (category, minimum yards/points, minimum TDs)
+FOOTBALL_BARS = {"passingYards": (275, 3), "rushingYards": (100, 2), "receivingYards": (100, 2)}
+BASKETBALL_MIN_POINTS = 20
 
 
 def load_teams(path: Path) -> list[dict]:
@@ -49,110 +46,155 @@ def load_teams(path: Path) -> list[dict]:
     return good
 
 
-def _matches(team: dict, comp_team: dict) -> bool:
+def _matches(team: dict, ct: dict) -> bool:
     want = team["name"].lower()
     names = {
-        (comp_team.get("displayName") or "").lower(),
-        f"{comp_team.get('location', '')} {comp_team.get('name', '')}".strip().lower(),
+        (ct.get("displayName") or "").lower(),
+        f"{ct.get('location', '')} {ct.get('name', '')}".strip().lower(),
+        (ct.get("abbreviation") or "").lower(),
     }
     return want in names
 
 
-def last_night_win(team: dict, yesterday: datetime, fetch_json) -> dict | None:
-    url = (f"https://site.api.espn.com/apis/site/v2/sports/{LEAGUES[team['league']]}/scoreboard"
+def _num(s) -> float:
+    m = re.search(r"-?\d+(\.\d+)?", str(s or ""))
+    return float(m.group()) if m else 0.0
+
+
+def _tds(display: str) -> int:
+    m = re.search(r"(\d+)\s*TD", display or "")
+    return int(m.group(1)) if m else 0
+
+
+def _athlete(leader: dict) -> str:
+    a = leader.get("athlete") or {}
+    return a.get("displayName") or a.get("fullName") or a.get("shortName") or ""
+
+
+def _my_leaders(comp: dict, mine: dict) -> dict[str, dict]:
+    """Category name -> top leader entry for my team, from wherever ESPN put them."""
+    out: dict[str, dict] = {}
+    team_id = str((mine.get("team") or {}).get("id") or mine.get("id") or "")
+    for cat in mine.get("leaders") or []:
+        if cat.get("leaders"):
+            out.setdefault(cat.get("name", ""), cat["leaders"][0])
+    for cat in comp.get("leaders") or []:
+        for l in cat.get("leaders") or []:
+            lt = str((l.get("team") or {}).get("id") or "")
+            if team_id and lt == team_id:
+                out.setdefault(cat.get("name", ""), l)
+                break
+    return out
+
+
+def standout(league: str, comp: dict, mine: dict) -> str:
+    leaders = _my_leaders(comp, mine)
+    if league in BASKETBALL:
+        pts = leaders.get("points")
+        if not pts or _num(pts.get("value") or pts.get("displayValue")) < BASKETBALL_MIN_POINTS:
+            return ""
+        who = _athlete(pts)
+        rating = leaders.get("rating")
+        if rating and _athlete(rating) == who and rating.get("displayValue"):
+            return f"{who}: {rating['displayValue']}"
+        parts = [f"{int(_num(pts.get('value') or pts.get('displayValue')))} PTS"]
+        for cat, label in (("rebounds", "REB"), ("assists", "AST")):
+            l = leaders.get(cat)
+            if l and _athlete(l) == who:
+                parts.append(f"{int(_num(l.get('value') or l.get('displayValue')))} {label}")
+        return f"{who}: {', '.join(parts)}"
+    if league in FOOTBALL:
+        best, best_score = None, 0.0
+        for cat, (yards_bar, td_bar) in FOOTBALL_BARS.items():
+            l = leaders.get(cat)
+            if not l:
+                continue
+            disp = l.get("displayValue", "")
+            m = re.search(r"(\d+)\s*YDS", disp.replace(",", ""))
+            yards = _num(l.get("value")) or (float(m.group(1)) if m else 0.0)
+            score = max(yards / yards_bar, _tds(disp) / td_bar)
+            if score >= 1 and score > best_score:
+                best, best_score = l, score
+        if best:
+            return f"{_athlete(best)}: {best.get('displayValue', '')}".strip()
+    return ""
+
+
+def yesterdays_game(team: dict, yesterday: datetime, fetch_json) -> dict | None:
+    league = team["league"]
+    url = (f"https://site.api.espn.com/apis/site/v2/sports/{LEAGUES[league]}/scoreboard"
            f"?dates={yesterday:%Y%m%d}&limit=400")
-    if team["league"].startswith("college"):
-        url += "&groups=50" if "basketball" in team["league"] else "&groups=80"
+    if league == "college-football":
+        url += "&groups=80"   # all FBS games
+    elif league == "college-basketball":
+        url += "&groups=50"   # all Division I games
     data = fetch_json(url)
     if not data:
         return None
     for ev in data.get("events", []):
         comp = (ev.get("competitions") or [{}])[0]
-        if not comp.get("status", ev.get("status", {})).get("type", {}).get("completed"):
+        status = comp.get("status") or ev.get("status") or {}
+        if not status.get("type", {}).get("completed"):
             continue
         sides = comp.get("competitors", [])
         mine = next((c for c in sides if _matches(team, c.get("team", {}))), None)
         if not mine or len(sides) != 2:
             continue
         other = next(c for c in sides if c is not mine)
-        if not mine.get("winner"):
-            return None  # they played and didn't win: stay quiet
-        my_name = mine["team"].get("shortDisplayName") or mine["team"].get("name") or team["name"]
-        opp = other["team"].get("shortDisplayName") or other["team"].get("displayName", "their opponent")
-        headline = f"{my_name} beat the {opp} {mine.get('score')}–{other.get('score')}"
-        blurb = ""
-        for h in comp.get("headlines", []) or []:
-            blurb = (h.get("description") or h.get("shortLinkText") or "").strip()
-            if blurb:
-                break
+        me = mine["team"].get("shortDisplayName") or mine["team"].get("name") or team["name"]
+        opp = other["team"].get("shortDisplayName") or other["team"].get("name") or "Opponent"
+        my_score, opp_score = mine.get("score", "?"), other.get("score", "?")
+        if mine.get("winner"):
+            mark = "✅"
+        elif other.get("winner"):
+            mark = "❌"
+        else:
+            mark = "➖"
+        where = "vs." if mine.get("homeAway") == "home" else "at"
+        detail = status.get("type", {}).get("shortDetail") or "Final"
+        bits = [detail, f"{where} {opp}"]
+        records = mine.get("records") or []
+        if records and records[0].get("summary"):
+            bits.append(f"Record {records[0]['summary']}")
         link = ""
         for l in ev.get("links", []) or []:
-            if "recap" in (l.get("rel") or []) or "summary" in (l.get("rel") or []):
+            rel = l.get("rel") or []
+            if "recap" in rel:
                 link = l.get("href", "")
-                if "recap" in l.get("rel", []):
-                    break
+                break
+            if "summary" in rel and not link:
+                link = l.get("href", "")
+        found = _my_leaders(comp, mine)
+        print("    leaders: " + "; ".join(f"{k}={_athlete(v)} {v.get('displayValue', '')}" for k, v in found.items()))
+        try:
+            stat = standout(league, comp, mine)
+        except Exception as e:  # stats are a bonus; never lose the score over them
+            print(f"  ! stat line for {team['name']}: {e}", file=sys.stderr)
+            stat = ""
         return {
-            "headline": headline,
-            "summary": blurb or f"Final score from last night: {my_name} {mine.get('score')}, {opp} {other.get('score')}.",
-            "sources": [{"name": "ESPN", "url": link or f"https://www.espn.com/search/_/q/{quote_plus(team['name'])}"}],
+            "headline": f"{mark} {me} {my_score}, {opp} {opp_score}",
+            "summary": " · ".join(bits),
+            "stat": stat,
+            "sources": [{"name": "ESPN recap", "url": link or
+                         f"https://www.espn.com/search/_/q/{quote_plus(team['name'])}"}],
         }
     return None
 
 
-def big_news(team: dict, fetch, parse_feed, tokens, same_story, is_repeat_title) -> dict | None:
-    q = quote_plus(f"\"{team['name']}\" when:1d")
-    raw = fetch(f"https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en")
-    if not raw:
-        return None
-    items = parse_feed(raw, "news.google.com")
-    nick = team["name"].split()[-1].lower()
-    groups: list[dict] = []
-    for it in items[:40]:
-        title, _, source = it["title"].rpartition(" - ")
-        if not title:
-            title, source = it["title"], "News"
-        if nick not in title.lower() or FILLER.search(title) or SCORE_LINE.search(title):
-            continue
-        toks = tokens(title)
-        for g in groups:
-            if same_story(toks, g["tokens"]):
-                g["sources"].setdefault(source, it["link"])
-                g["tokens"] |= toks
-                break
-        else:
-            groups.append({"title": title, "tokens": set(toks), "sources": {source: it["link"]},
-                           "desc": it["desc"], "rank": it["rank"]})
-    for g in groups:
-        g["big"] = bool(BIG_NEWS.search(g["title"])) or len(g["sources"]) >= 4
-    picks = [g for g in groups if g["big"] and not is_repeat_title(g["title"])]
-    if not picks:
-        return None
-    best = max(picks, key=lambda g: (len(g["sources"]), -g["rank"]))
-    return {
-        "headline": best["title"],
-        "summary": "",
-        "sources": [{"name": n, "url": u} for n, u in list(best["sources"].items())[:3]],
-    }
-
-
 def team_stories(teams_file: Path, today_local: datetime, helpers: dict) -> list[dict]:
     teams = load_teams(teams_file)
-    if not teams:
-        return []
     yesterday = today_local - timedelta(days=1)
     out = []
     for team in teams:
         try:
-            win = last_night_win(team, yesterday, helpers["fetch_json"])
-            news = big_news(team, helpers["fetch"], helpers["parse_feed"], helpers["tokens"],
-                            helpers["same_story"], helpers["is_repeat_title"])
+            game = yesterdays_game(team, yesterday, helpers["fetch_json"])
         except Exception as e:  # never let one team break the brief
             print(f"  ! team {team['name']}: {e}", file=sys.stderr)
             continue
-        for kind, s in (("win", win), ("news", news)):
-            if s:
-                s.update(id=f"team-{re.sub(r'[^a-z0-9]+', '-', team['name'].lower())}-{kind}",
-                         topic="myteams", why="")
-                out.append(s)
-        print(f"  team {team['name']}: win={'yes' if win else 'no'}, big news={'yes' if news else 'no'}")
+        print(f"  team {team['name']}: {'played ' + game['headline'] if game else 'no game'}"
+              f"{' | ' + game['stat'] if game and game['stat'] else ''}")
+        if game:
+            game.update(id=f"team-{re.sub(r'[^a-z0-9]+', '-', team['name'].lower())}",
+                        topic="myteams", why="")
+            out.append(game)
     return out
