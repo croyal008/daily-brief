@@ -1,9 +1,10 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-24T06:35:15+00:00",
- "url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261124-0637.mp3",
- "duration": 368.8,
- "voice": "af_heart",
+ "generated_at": "2026-11-24T07:31:28+00:00",
+ "url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261124-0732.mp3",
+ "duration": 193.8,
+ "voice": "Azure en-US-Phoebe:DragonHDOmniLatestNeural",
+ "style": "host",
  "chapters": [
   {
    "t": 0.0,
@@ -12,139 +13,67 @@
    "topic": null
   },
   {
-   "t": 5.34,
+   "t": 8.95,
    "label": "🏆 My Teams · 1 of 1",
    "sid": "team-san-antonio-spurs",
    "topic": "myteams"
   },
   {
-   "t": 19.15,
-   "label": "🇺🇸 U.S. · 1 of 3",
-   "sid": "us-1",
+   "t": 25.55,
+   "label": "🇺🇸 U.S. · 1 of 1",
+   "sid": "us-10",
    "topic": "us"
   },
   {
-   "t": 38.07,
-   "label": "🇺🇸 U.S. · 2 of 3",
-   "sid": "us-2",
-   "topic": "us"
-  },
-  {
-   "t": 55.58,
-   "label": "🇺🇸 U.S. · 3 of 3",
-   "sid": "us-3",
-   "topic": "us"
-  },
-  {
-   "t": 73.31,
-   "label": "🏛️ Politics · 1 of 3",
-   "sid": "politics-1",
+   "t": 43.35,
+   "label": "🏛️ Politics · 1 of 2",
+   "sid": "politics-5",
    "topic": "politics"
   },
   {
-   "t": 88.2,
-   "label": "🏛️ Politics · 2 of 3",
-   "sid": "politics-2",
+   "t": 61.3,
+   "label": "🏛️ Politics · 2 of 2",
+   "sid": "politics-7",
    "topic": "politics"
   },
   {
-   "t": 104.26,
-   "label": "🏛️ Politics · 3 of 3",
-   "sid": "politics-3",
-   "topic": "politics"
-  },
-  {
-   "t": 126.68,
+   "t": 78.75,
    "label": "🌍 World · 1 of 3",
-   "sid": "world-1",
+   "sid": "world-6",
    "topic": "world"
   },
   {
-   "t": 148.33,
+   "t": 96.65,
    "label": "🌍 World · 2 of 3",
-   "sid": "world-2",
+   "sid": "world-4",
    "topic": "world"
   },
   {
-   "t": 169.13,
+   "t": 116.1,
    "label": "🌍 World · 3 of 3",
    "sid": "world-3",
    "topic": "world"
   },
   {
-   "t": 187.63,
-   "label": "💻 Tech · 1 of 3",
-   "sid": "tech-1",
-   "topic": "tech"
-  },
-  {
-   "t": 200.81,
-   "label": "💻 Tech · 2 of 3",
-   "sid": "tech-2",
-   "topic": "tech"
-  },
-  {
-   "t": 216.61,
-   "label": "💻 Tech · 3 of 3",
-   "sid": "tech-3",
-   "topic": "tech"
-  },
-  {
-   "t": 232.34,
-   "label": "🔬 Science & Health · 1 of 3",
-   "sid": "science-1",
+   "t": 135.55,
+   "label": "🔬 Science & Health · 1 of 2",
+   "sid": "science-9",
    "topic": "science"
   },
   {
-   "t": 246.46,
-   "label": "🔬 Science & Health · 2 of 3",
-   "sid": "science-2",
+   "t": 154.05,
+   "label": "🔬 Science & Health · 2 of 2",
+   "sid": "science-5",
    "topic": "science"
   },
   {
-   "t": 260.71,
-   "label": "🔬 Science & Health · 3 of 3",
-   "sid": "science-3",
-   "topic": "science"
-  },
-  {
-   "t": 280.19,
-   "label": "💼 Business (light) · 1 of 3",
-   "sid": "business-1",
+   "t": 169.9,
+   "label": "💼 Business (light) · 1 of 1",
+   "sid": "business-9",
    "topic": "business"
   },
   {
-   "t": 297.15,
-   "label": "💼 Business (light) · 2 of 3",
-   "sid": "business-2",
-   "topic": "business"
-  },
-  {
-   "t": 307.89,
-   "label": "💼 Business (light) · 3 of 3",
-   "sid": "business-3",
-   "topic": "business"
-  },
-  {
-   "t": 320.83,
-   "label": "🏈 Sports · 1 of 3",
-   "sid": "sports-1",
-   "topic": "sports"
-  },
-  {
-   "t": 337.93,
-   "label": "🏈 Sports · 2 of 3",
-   "sid": "sports-2",
-   "topic": "sports"
-  },
-  {
-   "t": 347.55,
-   "label": "🏈 Sports · 3 of 3",
-   "sid": "sports-3",
-   "topic": "sports"
-  },
-  {
-   "t": 366.58,
+   "t": 186.95,
    "label": "Wrapping up",
    "sid": null,
    "topic": null
