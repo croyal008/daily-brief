@@ -1,3 +1,39 @@
 {
- "ai_summaries": true
+ "ai_summaries": true,
+ "app": {
+  "topics": [
+   "myteams",
+   "sports",
+   "us",
+   "world",
+   "culture",
+   "science",
+   "business"
+  ],
+  "known": [
+   "myteams",
+   "us",
+   "politics",
+   "world",
+   "tech",
+   "science",
+   "business",
+   "sports",
+   "culture"
+  ],
+  "order": [
+   "myteams",
+   "sports",
+   "culture",
+   "us",
+   "world",
+   "politics",
+   "tech",
+   "science",
+   "business"
+  ],
+  "size": "normal",
+  "rate": "1",
+  "updated": 1795508238573
+ }
 }
