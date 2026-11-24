@@ -1,8 +1,8 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-24T08:20:28+00:00",
- "url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261124-0822.mp3",
- "duration": 350.9,
+ "generated_at": "2026-11-24T08:32:36+00:00",
+ "url": "https://cdn.jsdelivr.net/gh/croyal008/daily-brief@55e3509816b9fb82ecdf61d83ba3f082bf3227b4/brief-20261124-0834.mp3",
+ "duration": 392.5,
  "voice": "Azure en-US-Phoebe:DragonHDOmniLatestNeural",
  "style": "host",
  "chapters": [
@@ -11,77 +11,78 @@
    "label": "Intro",
    "sid": null,
    "topic": null,
-   "text": "Happy Tuesday. The Spurs won, a tech CEO got his job back like nothing happened, and FIFA's president has apparently been living on a plane. Let's get into it."
+   "text": "Happy Tuesday, it's November 24th. The Spurs are rolling, Nvidia's boss had a very short vacation, and the SEC is weighing whether to evict one of its own. Let's get into it."
   },
   {
-   "t": 9.95,
+   "t": 11.55,
    "label": "🏆 My Teams",
    "sid": "team-san-antonio-spurs",
    "topic": "myteams",
-   "text": "Start with the good stuff: the Spurs beat the Kings 123 to 107 and they're 15 and 3. Stephon Castle did a bit of everything, 28 points, 8 rebounds and 11 assists. That's a point guard stat line with a scorer's bonus. Fifteen and 3 is the kind of record you check twice. Sacramento never really got a say."
+   "text": "Spurs first, because they earned it. San Antonio beat the Kings last night, 123 to 107, and they're now 15 and 3. Stephon Castle did a little of everything: 28 points, 8 rebounds and 11 assists. That's a near triple-double on a night when the game was never really in doubt. Fifteen and three. I'm just going to say that again and enjoy it."
   },
   {
-   "t": 27.8,
-   "label": "🏛️ Politics",
-   "sid": "politics-7",
-   "topic": "politics",
-   "text": "Jensen Huang is back as CEO of Nvidia, the chip giant at the center of the AI boom. He resigned less than two weeks ago after reports of extramarital affairs, one of them with an alleged Chinese spy. The board reinstated him Monday, and President Trump took some credit. Congress was not charmed. A House Intelligence spokesperson said the reinstatement quote changes nothing, and Huang is still due for a transcribed interview on December 1 with three House panels, including the Select Committee on China. Nvidia's general counsel appears December 2, and Huang is due before Senate Banking on December 3. So the man who got fired over his pillow talk now gets to explain it to people with subpoena power and no sense of humor. National security is the actual concern here, and chips are the thing China wants most."
+   "t": 32.0,
+   "label": "💻 Tech",
+   "sid": "tech-1",
+   "topic": "tech",
+   "text": "Jensen Huang, the leather-jacket guy who runs Nvidia, has had quite a month. The BBC calls him the Taylor Swift of tech, which makes the news hit harder: allegations of two affairs, one with a businesswoman suspected of being a Chinese spy. He resigned, and the story rattled the stock market. Eleven days later, the board put him back. They say he's the right person to lead the company, which is a confident read for a guy whose alleged pillow talk drew a counterintelligence angle. In fairness, Nvidia makes the chips that power basically all of the AI boom, so the board's priorities are visible from space. His fortune went from nearly two hundred billion dollars to around a hundred and five billion, so he's still doing fine. He's a Taiwan-born, Oregon State engineer who sold the American Dream and the family-man image for years. Now he gets to explain how that squares with a spy-adjacent love life."
   },
   {
-   "t": 72.75,
-   "label": "🇺🇸 U.S.",
-   "sid": "us-4",
-   "topic": "us",
-   "text": "Jose Castillo is an American citizen, and he says he felt useless. On Saturday, masked ICE agents arrested his wife, Sofia Hernandez Mejia, and his father-in-law, Ricardo Larrondo Mendoza, inside a jetway at Seattle-Tacoma airport. Video of it went viral, with her crying out that she has a valid work permit and bystanders demanding answers. The Department of Homeland Security says both are Mexican nationals who overstayed their visas, and that agents were targeting the father-in-law when other passengers got in the way. It also accuses her of assault, saying she threw hot coffee on officers. Castillo says she did nothing, that she was being shoved, and that when people come at you like that, quote, obviously coffee's going to be spilled. DHS has said she will face charges."
-  },
-  {
-   "t": 114.05,
+   "t": 78.95,
    "label": "🏈 Sports",
-   "sid": "sports-1",
+   "sid": "sports-10",
    "topic": "sports",
-   "text": "Thirty-nine private jet flights in a hundred and fifteen days. That's FIFA president Gianni Infantino since the news broke on July 28 that he wanted to sell off a stake in the World Cup, according to BBC Sport. He hit 32 countries, flew more than 102,000 miles and spent nearly nine days in the air. Last year he visited 18 countries over the same stretch. FIFA says he has a duty to keep relationships healthy with its 211 member associations. Critics call it a campaign tour ahead of his re-election vote next March, and a former head of FIFA's governance committee says it's exactly that. The loophole is that FIFA has no campaign funding rules, so it's all just official business. And it seems to be working, since he's now the favorite."
+   "text": "The SEC and LSU are in a full custody battle, and it's getting ugly. It started with LSU rostering RJ Luis, a former professional player, against conference rules. The SEC passed a penalty structure this summer, including a half-season coach suspension and fines up to half a sport's annual budget. Then it admitted in a court filing that it has no avenue to penalize LSU, because a Louisiana judge issued an injunction protecting the school. So the conference went for the one option the injunction doesn't cover. On December 3rd, two days before the SEC title game, the presidents and chancellors will meet to consider kicking LSU out entirely. It takes a two-thirds vote, and expulsion is still considered unlikely. But sources say enough of them are fed up that some might vote yes. When your punishment system collapses, you can always just try the door."
   },
   {
-   "t": 155.25,
+   "t": 125.05,
    "label": "🏈 Sports",
    "sid": "sports-2",
    "topic": "sports",
-   "text": "Florida State got its man. Georgia defensive coordinator Glenn Schumann agreed to a five-year deal to replace Mike Norvell, who was fired after a 3 and 5 start. Schumann has six national titles from his time at Alabama and Georgia, and Georgia is ranked number one in the playoff rankings. He'll stay put through the postseason, so he's basically coaching a title run with one eye on a moving truck. The new athletic director, Jeff Purinton, worked with him under Nick Saban at Alabama. Schumann's grandfather even coached on Florida State's very first team in 1947, so this is a homecoming of sorts."
+   "text": "Florida State has its guy. After a three-week search, the Seminoles hired Georgia defensive coordinator Glenn Schumann to replace Mike Norvell, who was fired November 1st at three and five. Norvell had won just ten games over three seasons, so fans were ready for anyone with a pulse and a plan. Schumann is thirty-six, has been with Kirby Smart since 2016, and runs the number six defense in the country, giving up 267 yards a game. He has never been a head coach. And he can't start yet, because Georgia is expected to be the top seed in the playoff, so he's busy trying to win a title for somebody else until at least late December. FSU's new coach doesn't show up until January. Tallahassee has seen long engagements, but this one's a bit much."
   },
   {
-   "t": 187.6,
-   "label": "🏈 Sports",
-   "sid": "sports-3",
-   "topic": "sports",
-   "text": "Micah Parsons is expected to make his season debut Wednesday night for the Packers against the Rams. Sources say he got final clearance Monday from Dr. Neal ElAttrache, the surgeon who fixed the knee he wrecked in Week 15 last year, when he tore both his ACL and his meniscus against Denver. That's 347 days between snaps. The Packers are 6 and 4 and somehow in last place in the NFC North, where the Bears, Lions and Vikings are all 7 and 2. Parsons said he understands what this game means for the playoffs. Green Bay needs a pass rusher who can wreck a game, and now it has one."
+   "t": 165.3,
+   "label": "💼 Business (light)",
+   "sid": "business-1",
+   "topic": "business",
+   "text": "President Trump held another dinner for the top holders of his meme coin on Monday night, at his golf club in Northern Virginia. The pitch was the most exclusive dinner in the world. The more coin you hold, the closer you get to the president, and in the past plenty of attendees were from outside the U.S., which raises obvious influence questions. The White House denies any problem. The twist this time is the coin has cratered in price. One guest, crypto investor Morten Christensen, says a clever trading strategy meant he and his sister basically got in for free. They took an Uber. The most exclusive dinner in the world, and a guy rode up with his little sister and a coupon, essentially. It also lands as Democrats win majorities in Congress, which means the billions the Trump family has made in crypto will likely get investigated."
   },
   {
-   "t": 221.05,
-   "label": "🎬 Culture & Entertainment",
-   "sid": "culture-6",
-   "topic": "culture",
-   "text": "A Don Toliver concert at Co-op Live in Manchester ended in an evacuation on Sunday night. Around 10 p.m., an unknown substance was released into the crowd. Fans described a horrible smell, screaming and people struggling to breathe. About 12,000 people were evacuated, one woman went to hospital and 88 others were checked by paramedics for eye and respiratory symptoms. Police declared a major incident and first thought it was tear gas. No arrests yet, and detectives are still working out what the substance was and whether a crime was committed. Some fans are also complaining about the lack of searches at the door, which is a question the venue is going to have to answer."
+   "t": 206.65,
+   "label": "💻 Tech",
+   "sid": "tech-4",
+   "topic": "tech",
+   "text": "Virginia and Oregon are the first states to sue SpaceX over Grok, the AI chatbot from Elon Musk's xAI, which SpaceX bought in February. The attorneys general say Grok is still generating sexualized images of real people, mostly women and children, including child sexual abuse material and non-consensual intimate images. This follows the rollout of a Grok image feature Musk hyped, which turned out to generate a flood of that content, sometimes without being asked. Musk's companies apologized and said they'd added safeguards. The states call those claims misleading and say the company quietly embraced sexualized content to grab AI market share. X says every Grok output is screened. The complaint's main argument is that once these images exist, they can never be fully erased, and could resurface for a child's whole life. The states want to protect every user in their borders, which makes this one to watch."
   },
   {
-   "t": 255.75,
-   "label": "🎬 Culture & Entertainment",
-   "sid": "culture-1",
-   "topic": "culture",
-   "text": "The first ever Children's Booker Prize has a shortlist: eight books, aimed at kids eight to twelve, with fifty thousand pounds on the line. Five novels, two graphic novels and an illustrated short story collection. Eoin Colfer, of Artemis Fowl fame, is in there. The fun part is the judges: four kids picked from more than 4,000 entrants, including twelve-year-old Ibrahim from Hampshire, who says being a judge on his CV will take him a long way. Chair Frank Cottrell-Boyce is blunt about it: if the children don't love a book, it won't win. Ibrahim won't reveal his favorite, but he did say his mum confiscated one of the shortlisted books because he couldn't stop reading it and it was giving him a headache. That's the best blurb I've heard all year."
+   "t": 254.9,
+   "label": "🌍 World",
+   "sid": "world-6",
+   "topic": "world",
+   "text": "Three Russian cruise missiles landed in Poland on Friday. Nobody was hurt, but that's a NATO country, so the world noticed. The missiles hit a rural part of southeastern Poland, about thirty miles from the Ukrainian border, during one of Russia's biggest air attacks on Ukraine of the war. European forces were holding a military exercise in the region at the time. Prime Minister Donald Tusk called it an intentional provocation. NATO Secretary General Mark Rutte was in Germany today trying to reassure the alliance's eastern members, who have been warning for years that spillover was coming. Ukraine hit back over the weekend, with a sanctioned Russian cargo ship in the Baltic struck by what's suspected to be a Ukrainian sea drone. Kyiv also took credit for sinking a Russian warship in the Libyan port of Benghazi, thousands of miles from the front. Libya condemned it. The war keeps getting bigger on the map."
   },
   {
-   "t": 297.3,
+   "t": 303.35,
+   "label": "🌍 World",
+   "sid": "world-4",
+   "topic": "world",
+   "text": "Five days after the International Court of Justice ruled that Myanmar committed genocide against its Rohingya minority, the fallout is starting. The BBC says it's the first time a state has been found guilty of the crime. Britain just sanctioned five senior Myanmar military leaders and said it will pass legislation to cut off aviation fuel to the country. Foreign Secretary Ed Miliband said President Min Aung Hlaing, who was head of the military during the 2017 crackdown, is directly responsible for many of the atrocities. That crackdown killed thousands and forced more than seven hundred thousand Rohingya to flee. Australia, Belgium, Portugal, Spain and Canada also acknowledged the ruling. It also sets a precedent that could matter for the case over Israel's actions in Gaza."
+  },
+  {
+   "t": 343.2,
    "label": "⚡ Quick hits",
    "sid": null,
    "topic": null,
-   "text": "Quick hits. The Pentagon put out an unusually blunt fact sheet saying Canada has fallen short as a defense partner, citing its military spending and its second look at buying American F-35 fighter jets. Three Russian cruise missiles landed in rural southeastern Poland on Friday, and no one was hurt. Poland's prime minister called it an intentional provocation, and NATO's Mark Rutte is trying to calm eastern members. Ousted Bangladeshi leader Sheikh Hasina says she'll return from exile in India on December 16, though she's been sentenced to death in absentia and is expected to be arrested on arrival. Virginia and Oregon became the first states to sue SpaceX, which now owns xAI, claiming Grok still generates sexual images of real people, including children. And the COP31 climate talks collapsed after oil producers blocked any mention of phasing out fossil fuels."
+   "text": "Quick hits. Sheikh Hasina, Bangladesh's ousted prime minister, says she'll fly home from exile in India on December 16th, despite a death sentence handed down in her absence. The government says she can only come back through extradition, and she's expected to be arrested if she lands. The Pentagon issued an unusually blunt rebuke of Canada over defense spending and its review of American-made F-35 fighter jets, saying Canada must get serious. Malaysia says it will send more than sixty-five hundred Rohingya and other Myanmar refugees back to Myanmar next month, just days after that genocide ruling. And the first-ever Children's Booker Prize has its shortlist of eight books, with a fifty-thousand-pound prize and four kid judges who get a say. If the children don't love a book, it won't win, which is a standard most adult prizes could stand to adopt."
   },
   {
-   "t": 344.15,
+   "t": 387.35,
    "label": "Wrapping up",
    "sid": null,
    "topic": null,
-   "text": "That's your Tuesday. Go Spurs, and may your boss never need a congressional hearing to explain his weekend. Talk tomorrow."
+   "text": "That's your Tuesday. Go Spurs, stay skeptical of dinner invitations, and I'll catch you tomorrow."
   }
- ]
+ ],
+ "backup_url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261124-0834.mp3"
 }

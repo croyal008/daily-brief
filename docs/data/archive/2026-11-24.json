@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-24T08:20:28+00:00",
+ "generated_at": "2026-11-24T08:32:36+00:00",
  "ai_summaries": true,
  "topics": [
   {
@@ -61,27 +61,27 @@
  "overview": [
   {
    "topic": "world",
-   "text": "Russian cruise missiles landed in Poland on Friday, and NATO's Rutte is reassuring eastern members as incursions into NATO territory increase."
+   "text": "Russian cruise missiles landing in Poland have NATO's Rutte reassuring eastern members, amid reports Moscow plans a nuclear-armed satellite."
   },
   {
    "topic": "politics",
-   "text": "Iran vows to end the U.S. naval blockade by all available means, while Trump says Iran's attacks have done no damage."
+   "text": "Iran vows to end the U.S. naval blockade by all available means, while Trump says Iranian attacks have done no damage."
+  },
+  {
+   "topic": "world",
+   "text": "Malaysia plans to return thousands of Rohingya to Myanmar days after the ICJ ruled Myanmar committed genocide, and the UK sanctioned Myanmar's military leaders."
   },
   {
    "topic": "us",
-   "text": "Immigration agents' arrest of a father and daughter at Seattle-Tacoma airport has drawn outrage, with the family now speaking out."
+   "text": "Ousted Bangladeshi leader Sheikh Hasina says she will return from exile in India on December 16."
   },
   {
-   "topic": "politics",
-   "text": "Nvidia's Jensen Huang is still set to testify before Congress next week after being reinstated as CEO."
+   "topic": "us",
+   "text": "The Pentagon sharply rebuked Canada over defense spending and its review of F-35 purchases."
   },
   {
-   "topic": "science",
-   "text": "The longest UN climate talks ever ended with no deal as oil producers blocked any mention of phasing out fossil fuels."
-  },
-  {
-   "topic": "sports",
-   "text": "Georgia defensive coordinator Glenn Schumann agreed to a five-year deal to become Florida State's next football coach."
+   "topic": "business",
+   "text": "CrowdStrike agreed to buy Zscaler in a $44 billion cybersecurity deal."
   }
  ],
  "stories": [
@@ -100,39 +100,11 @@
    "why": ""
   },
   {
-   "id": "us-4",
-   "topic": "us",
-   "headline": "Family speaks out after ICE arrests woman at Seattle airport",
-   "summary": "Jose Castillo says he felt useless watching his wife and father-in-law taken into federal custody at Seattle-Tacoma airport. He called the arrest unjust.",
-   "why": "The case highlights growing scrutiny of how immigration arrests are carried out in public places.",
-   "sources": [
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/ice-arrest-seattle-airport-husband/"
-    }
-   ],
-   "time": "2026-11-24T01:49:00+00:00"
-  },
-  {
-   "id": "us-12",
-   "topic": "us",
-   "headline": "Pentagon rebukes Canada over defense spending and F-35 review",
-   "summary": "The Pentagon accused Canada of falling short as a credible partner in defending North America. It criticized Canada's military spending and its reconsideration of American-made F-35 fighter jets.",
-   "why": "It signals strain between close allies on continental defense.",
-   "sources": [
-    {
-     "name": "ABC News",
-     "url": "https://abcnews.com/US/wireStory/pentagon-sharply-rebukes-canada-defense-spending-35-fighter-138393776"
-    }
-   ],
-   "time": "2026-11-24T02:10:24+00:00"
-  },
-  {
    "id": "us-1",
    "topic": "us",
-   "headline": "Ousted Bangladeshi leader Sheikh Hasina plans return from exile Dec. 16",
-   "summary": "A spokesperson says Hasina, ousted as Bangladesh's prime minister, plans to return home from exile in India on December 16.",
-   "why": "",
+   "headline": "Sheikh Hasina says she will return to Bangladesh December 16",
+   "summary": "A spokesperson says the ousted Bangladeshi prime minister plans to return home from exile in India on Dec. 16.",
+   "why": "Her return could reshape Bangladesh's politics.",
    "sources": [
     {
      "name": "ABC News",
@@ -150,11 +122,39 @@
    "time": "2026-11-24T07:35:02+00:00"
   },
   {
+   "id": "us-12",
+   "topic": "us",
+   "headline": "Pentagon rebukes Canada over defense spending and F-35 review",
+   "summary": "The Pentagon accused Canada of falling short as a credible partner in defending North America. It criticized Canadian military spending and Ottawa's reconsideration of American-made F-35 fighter jets.",
+   "why": "It strains a key alliance on continental defense.",
+   "sources": [
+    {
+     "name": "ABC News",
+     "url": "https://abcnews.com/US/wireStory/pentagon-sharply-rebukes-canada-defense-spending-35-fighter-138393776"
+    }
+   ],
+   "time": "2026-11-24T02:10:24+00:00"
+  },
+  {
+   "id": "us-7",
+   "topic": "us",
+   "headline": "Judge ruled Omar could assert congressional privacy protections during home search",
+   "summary": "Records show a magistrate judge who authorized the federal search of Rep. Ilhan Omar's home ruled she was entitled to assert protections afforded to sitting members of Congress at the search's outset.",
+   "why": "",
+   "sources": [
+    {
+     "name": "ABC News",
+     "url": "https://abcnews.com/US/wireStory/records-government-judge-debated-constitutional-implications-searching-rep-138398454"
+    }
+   ],
+   "time": "2026-11-24T03:40:48+00:00"
+  },
+  {
    "id": "politics-5",
    "topic": "politics",
-   "headline": "Iran vows to end U.S. naval blockade by 'all available means'",
-   "summary": "Iran says it will force the U.S. to lift its blockade. Trump acknowledges Iran's increasing attacks but says they have done no damage.",
-   "why": "Escalation at sea risks a wider conflict and affects global shipping.",
+   "headline": "Iran vows to end U.S. naval blockade by all means",
+   "summary": "Iran says it will force the U.S. to lift its blockade. Trump acknowledges increasing Iranian attacks but says they have done no damage.",
+   "why": "Escalation at sea risks wider conflict and energy disruption.",
    "sources": [
     {
      "name": "CBS News",
@@ -164,39 +164,39 @@
    "time": "2026-11-24T06:42:21+00:00"
   },
   {
-   "id": "politics-7",
+   "id": "politics-1",
    "topic": "politics",
-   "headline": "Nvidia's Jensen Huang still to testify before Congress next week",
-   "summary": "Congressional panels confirmed Huang will still testify after being reinstated as Nvidia CEO on Monday. He had resigned earlier this month amid allegations of affairs.",
-   "why": "Lawmakers' questions may shape scrutiny of a central AI chip company.",
+   "headline": "FBI's No. 2 official reportedly retiring before year's end",
+   "summary": "Christopher Raia, a veteran agent, is said to be leaving a few months after another deputy departed the FBI.",
+   "why": "Leadership turnover at the bureau continues.",
    "sources": [
     {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/jensen-huang-congress-reinstatement-nvidia/"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/us/politics/fbi-raia-retiring.html"
     }
    ],
-   "time": "2026-11-24T01:18:24+00:00"
+   "time": "2026-11-24T04:38:48+00:00"
   },
   {
-   "id": "politics-11",
+   "id": "politics-9",
    "topic": "politics",
-   "headline": "Republicans debate path forward after midterm losses",
-   "summary": "After their midterm defeats, Republicans are discussing what went wrong and what direction the party should take.",
-   "why": "The outcome will shape the party's strategy against a larger Democratic House majority.",
+   "headline": "China-aligned fake personas target Taiwan's election, researchers say",
+   "summary": "A Vanderbilt tool is detecting AI-generated social media posts that support Chinese Communist Party policies and are aimed at Taiwan's election.",
+   "why": "Shows AI-driven influence efforts targeting democratic elections.",
    "sources": [
     {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/23/nx-s1-6044259/after-midterm-losses-republicans-debate-whats-next-for-the-party"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/us/politics/taiwan-elections-misinformation.html"
     }
    ],
-   "time": "2026-11-23T09:45:06+00:00"
+   "time": "2026-11-23T21:32:05+00:00"
   },
   {
-   "id": "world-7",
+   "id": "world-6",
    "topic": "world",
-   "headline": "Russian cruise missiles land in Poland; NATO seeks to reassure allies",
-   "summary": "NATO Secretary General Mark Rutte is reassuring eastern European members after three Russian cruise missiles landed in Poland on Friday. Russian incursions into NATO territory are increasing.",
-   "why": "Spillover from the Ukraine war raises risks for NATO members.",
+   "headline": "Russian missiles land in Poland; NATO chief reassures allies",
+   "summary": "NATO Secretary General Mark Rutte is seeking to reassure eastern members after three Russian cruise missiles landed in Poland on Friday. Russian incursions into NATO territory are increasing.",
+   "why": "Direct spillover from the Ukraine war tests NATO.",
    "sources": [
     {
      "name": "NPR",
@@ -206,11 +206,25 @@
    "time": "2026-11-23T23:08:51+00:00"
   },
   {
+   "id": "world-10",
+   "topic": "world",
+   "headline": "Malaysia to return thousands of Rohingya refugees to Myanmar",
+   "summary": "The announcement comes five days after the ICJ ruled that Myanmar committed genocide against its Rohingya minority.",
+   "why": "Raises safety concerns for refugees being sent back.",
+   "sources": [
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/24/malaysia-set-to-return-thousands-of-rohingya-refugees-to-myanmar-2?traffic_source=rss"
+    }
+   ],
+   "time": "2026-11-24T08:21:41+00:00"
+  },
+  {
    "id": "world-4",
    "topic": "world",
-   "headline": "UK sanctions Myanmar military leaders after UN court genocide ruling",
-   "summary": "Britain sanctioned top Myanmar military leaders after a U.N. court ruled against Myanmar over the Rohingya. The decision sets a precedent in international law.",
-   "why": "It could influence a similar case over Israel's actions in Gaza.",
+   "headline": "UK sanctions Myanmar military leaders after genocide ruling",
+   "summary": "Britain sanctioned top Myanmar military leaders after the U.N. court's decision, which sets an international law precedent with implications for the case over Israel's actions in Gaza.",
+   "why": "",
    "sources": [
     {
      "name": "BBC",
@@ -224,25 +238,11 @@
    "time": "2026-11-23T21:03:34+00:00"
   },
   {
-   "id": "world-12",
-   "topic": "world",
-   "headline": "WFP warns wars are choking food routes, threatening aid for 7.3 million",
-   "summary": "The World Food Programme says conflicts are blocking global food routes, and grain is not reaching the people who need it.",
-   "why": "",
-   "sources": [
-    {
-     "name": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/11/24/wars-choke-global-food-routes-threatening-aid-for-7-3-million-wfp-warns?traffic_source=rss"
-    }
-   ],
-   "time": "2026-11-24T07:52:44+00:00"
-  },
-  {
    "id": "tech-4",
    "topic": "tech",
-   "headline": "States sue SpaceX to stop Grok generating child sex images",
-   "summary": "State attorneys general say Grok is still producing child sexual abuse material and revenge porn, despite X saying every output is screened.",
-   "why": "The suit tests how AI companies are held responsible for harmful content.",
+   "headline": "States sue SpaceX over Grok generating child sex images",
+   "summary": "State attorneys general say Grok is still producing child sexual abuse material and revenge porn. X says every Grok output is screened.",
+   "why": "Tests legal accountability for AI image tools.",
    "sources": [
     {
      "name": "Ars Technica",
@@ -252,10 +252,24 @@
    "time": "2026-11-23T21:30:44+00:00"
   },
   {
+   "id": "tech-1",
+   "topic": "tech",
+   "headline": "The rise and fall and rise again of Jensen Huang",
+   "summary": "Days after resigning while mired in scandal of extra-marital affairs, Nvidia's Jensen Huang is making a remarkable return.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-23T15:49:52+00:00"
+  },
+  {
    "id": "tech-2",
    "topic": "tech",
-   "headline": "SpaceX renting computing power to rivals complicates Musk's AI effort",
-   "summary": "SpaceX is renting data center computing power to competitors including Anthropic, which is making it harder for Musk's own AI effort.",
+   "headline": "Elon Musk Faces an A.I. Dilemma at SpaceX",
+   "summary": "Mr. Musk’s SpaceX is renting out computing power from its data centers to competitors, including Anthropic. That’s making it harder for his own A.I. effort.",
    "why": "",
    "sources": [
     {
@@ -266,39 +280,11 @@
    "time": "2026-11-23T16:13:32+00:00"
   },
   {
-   "id": "tech-6",
-   "topic": "tech",
-   "headline": "San Francisco AI boom prompts growing worries of a crash",
-   "summary": "AI employees in San Francisco, the industry's epicenter, worry the sector is overheated.",
-   "why": "An AI downturn could affect jobs and investment well beyond tech.",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cqe9k09j9jv4o?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-23T00:08:00+00:00"
-  },
-  {
-   "id": "science-9",
-   "topic": "science",
-   "headline": "COP31 climate talks collapse over fossil fuels",
-   "summary": "European and vulnerable nations rejected a proposed agreement after Saudi Arabia and other oil producers blocked any mention of phasing out coal, oil and gas. The talks were the longest UN climate negotiations ever.",
-   "why": "No deal leaves global emissions-cutting efforts without new commitments.",
-   "sources": [
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html"
-    }
-   ],
-   "time": "2026-11-23T19:27:13+00:00"
-  },
-  {
    "id": "science-5",
    "topic": "science",
-   "headline": "Measles a growing risk for U.S. adults",
-   "summary": "Unvaccinated adults face the greatest danger, but experts say vaccinated people born before 1989 may no longer be sufficiently protected.",
-   "why": "Some adults may want to check their vaccination status with a doctor.",
+   "headline": "Measles a growing risk for adults, experts say",
+   "summary": "The danger is greatest for the unvaccinated, but vaccinated people born before 1989 may no longer be sufficiently protected, medical experts said.",
+   "why": "Some adults may want to check their vaccination status.",
    "sources": [
     {
      "name": "New York Times",
@@ -311,8 +297,8 @@
    "id": "science-1",
    "topic": "science",
    "headline": "CVS breakup hasn't quieted antitrust critics",
-   "summary": "Lawmakers warn that spinning off CVS Health's drugstores will not end scrutiny of the health care conglomerate's power.",
-   "why": "",
+   "summary": "Lawmakers warn that spinning off CVS Health's drugstores will not end scrutiny over the conglomerate's power.",
+   "why": "Affects health care competition and costs.",
    "sources": [
     {
      "name": "New York Times",
@@ -322,11 +308,25 @@
    "time": "2026-11-23T10:03:26+00:00"
   },
   {
+   "id": "science-2",
+   "topic": "science",
+   "headline": "H.I.V. Research Networks May Again Seek Federal Funding, With a Twist",
+   "summary": "The Trump administration restarted the process for funding four large research networks after postponing it earlier this year.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/20/science/hiv-research-funding-nih.html"
+    }
+   ],
+   "time": "2026-11-23T15:36:20+00:00"
+  },
+  {
    "id": "business-9",
    "topic": "business",
-   "headline": "CrowdStrike to acquire Zscaler in $44 billion cybersecurity deal",
-   "summary": "CrowdStrike agreed to buy Zscaler as worries about hacks fueled by advances in artificial intelligence trouble companies and governments.",
-   "why": "Consolidation in cybersecurity reflects rising AI-driven security threats.",
+   "headline": "CrowdStrike to buy Zscaler in $44 billion deal",
+   "summary": "The two major cybersecurity firms will combine as worries grow about hacks fueled by advances in artificial intelligence.",
+   "why": "Signals consolidation as AI raises cyber risks for companies and governments.",
    "sources": [
     {
      "name": "New York Times",
@@ -336,100 +336,82 @@
    "time": "2026-11-23T13:08:06+00:00"
   },
   {
-   "id": "business-11",
+   "id": "business-1",
    "topic": "business",
-   "headline": "Grocers take losses on Thanksgiving meal bundles to draw shoppers",
-   "summary": "Retailers like Walmart may profit from the deals because of their size, but smaller grocery chains are feeling the squeeze.",
-   "why": "Holiday deals may help your budget, but they pressure smaller stores.",
+   "headline": "They attended Trump's controversial meme coin dinner. It didn't go well",
+   "summary": "Trump held another meme coin dinner for top holders of his cryptocurrency — an event that has raised intense controversy. Here's an inside account from two guests who attended.",
+   "why": "",
    "sources": [
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/business/thanksgiving-grocery-prices.html"
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6045883/they-attended-trumps-controversial-meme-coin-dinner-it-didnt-go-well"
     }
    ],
-   "time": "2026-11-23T10:03:47+00:00"
+   "time": "2026-11-23T22:17:59+00:00"
   },
   {
-   "id": "business-12",
+   "id": "business-2",
    "topic": "business",
-   "headline": "UK minister to recommend overhaul of disability payment assessments",
-   "summary": "Disability Minister Sir Stephen Timms says he will recommend major reforms to the personal independence payment, with assessments needing a fundamental overhaul.",
+   "headline": "Britain's landlords are getting bigger. A two-tier rental market may follow",
+   "summary": "Increasing numbers of corporate landlords could usher in big changes for renters",
    "why": "",
    "sources": [
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cvlyj3rn201xo?at_medium=RSS&at_campaign=rss"
+     "url": "https://www.bbc.co.uk/news/articles/c6n90g2l82d1o?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-23T17:59:55+00:00"
+   "time": "2026-11-24T00:28:48+00:00"
+  },
+  {
+   "id": "sports-10",
+   "topic": "sports",
+   "headline": "SEC schedules vote on possible LSU expulsion",
+   "summary": "LSU's standoff with the SEC over the RJ Luis dispute has escalated into a legal and political fight, with major penalties still possible.",
+   "why": "",
+   "sources": [
+    {
+     "name": "CBS Sports",
+     "url": "https://www.cbssports.com/college-basketball/news/sec-vote-lsu-expulsion-rj-luis/"
+    }
+   ],
+   "time": "2026-11-24T02:33:24+00:00"
   },
   {
    "id": "sports-2",
    "topic": "sports",
-   "headline": "Florida State hires Georgia's Glenn Schumann as football coach",
-   "summary": "Schumann, Georgia's defensive coordinator, agreed to a five-year deal to replace Mike Norvell. Georgia is ranked No. 1 in the CFP rankings.",
+   "headline": "Florida State hires Georgia's Glenn Schumann as head coach",
+   "summary": "After a three-week search, Florida State tapped Georgia defensive coordinator Glenn Schumann to replace Mike Norvell.",
    "why": "",
    "sources": [
     {
-     "name": "ESPN",
-     "url": "https://www.espn.com/college-football/story/_/id/50577665/uga-defensive-coordinator-schumann-coach-florida-state"
+     "name": "Yahoo Sports",
+     "url": "https://sports.yahoo.com/articles/uga-glenn-schumann-become-head-234005675.html"
     },
     {
      "name": "CBS Sports",
      "url": "https://www.cbssports.com/college-football/news/florida-state-hires-glenn-schumann-seminoles-head-coach/"
     }
    ],
-   "time": "2026-11-24T07:13:31+00:00"
-  },
-  {
-   "id": "sports-3",
-   "topic": "sports",
-   "headline": "Packers' Micah Parsons cleared to make season debut Wednesday",
-   "summary": "Sources say the Packers star is cleared to play against the Rams on Wednesday night.",
-   "why": "",
-   "sources": [
-    {
-     "name": "ESPN",
-     "url": "https://www.espn.com/nfl/story/_/id/50577301/sources-packers-micah-parsons-cleared-return-wednesday"
-    },
-    {
-     "name": "CBS Sports",
-     "url": "https://www.cbssports.com/nfl/news/micah-parsons-injury-update-packers-return-rams-2026/"
-    }
-   ],
-   "time": "2026-11-24T07:13:31+00:00"
+   "time": "2026-11-24T08:21:24+00:00"
   },
   {
    "id": "sports-1",
    "topic": "sports",
-   "headline": "Infantino's private-jet travel draws scrutiny amid World Cup stake sale plan",
-   "summary": "FIFA president Gianni Infantino has made 39 private-jet flights in 115 days since his plan to sell a World Cup stake came under scrutiny.",
+   "headline": "Is Hamilton and Leclerc's Ferrari partnership sustainable? F1 Q&A",
+   "summary": "BBC F1 correspondent Andrew Benson answers your latest questions after the Las Vegas Grand Prix.",
    "why": "",
    "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/sport/football/articles/cmkgk22w3vlvo?at_medium=RSS&at_campaign=rss"
-    },
     {
      "name": "Yahoo Sports",
-     "url": "https://sports.yahoo.com/articles/115-days-39-private-jet-061658607.html"
-    }
-   ],
-   "time": "2026-11-24T07:46:23+00:00"
-  },
-  {
-   "id": "culture-6",
-   "topic": "culture",
-   "headline": "Police investigate unknown substance that forced Manchester concert evacuation",
-   "summary": "People described a horrible smell and screaming as the Don Toliver show at Co-op Live was evacuated. Police are investigating an unknown substance.",
-   "why": "",
-   "sources": [
+     "url": "https://sports.yahoo.com/articles/hamilton-leclercs-ferrari-partnership-sustainable-081020598.html"
+    },
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/c9e851dn8516o?at_medium=RSS&at_campaign=rss"
+     "url": "https://www.bbc.co.uk/sport/formula1/articles/cw30gq2633ljo?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-23T17:34:24+00:00"
+   "time": "2026-11-24T08:22:56+00:00"
   },
   {
    "id": "culture-1",
@@ -458,6 +440,20 @@
     }
    ],
    "time": "2026-11-23T16:25:12+00:00"
+  },
+  {
+   "id": "culture-3",
+   "topic": "culture",
+   "headline": "A First for a ‘Curious Incident’ Production: A Cast of Neurodivergent Actors",
+   "summary": "A company for neurodivergent actors steps up to a bigger stage with its full-spectrum model of inclusion.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/theater/curious-incident-epic-players-neurodiverse.html"
+    }
+   ],
+   "time": "2026-11-23T18:06:14+00:00"
   }
  ]
 }
