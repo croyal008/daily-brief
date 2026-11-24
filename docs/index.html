@@ -26,9 +26,14 @@
           <select id="day-picker" class="day-picker" aria-label="Show an earlier brief"></select>
         </div>
       </div>
+      <div class="top-actions">
+      <button id="listen" class="icon-btn listen-btn" aria-label="Listen to the brief" hidden>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 0 0-9 9v5a3 3 0 0 0 3 3h1a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H5a7 7 0 0 1 14 0h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h1a3 3 0 0 0 3-3v-5a9 9 0 0 0-9-9z"/></svg>
+      </button>
       <button id="open-settings" class="icon-btn" aria-label="Settings">
         <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M19.4 13a7.6 7.6 0 0 0 0-2l2.1-1.6-2-3.4-2.5 1a7.4 7.4 0 0 0-1.7-1L15 3.3h-4L10.6 6a7.4 7.4 0 0 0-1.7 1l-2.5-1-2 3.4L6.6 11a7.6 7.6 0 0 0 0 2l-2.1 1.6 2 3.4 2.5-1a7.4 7.4 0 0 0 1.7 1l.4 2.7h4l.4-2.7a7.4 7.4 0 0 0 1.7-1l2.5 1 2-3.4zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg>
       </button>
+      </div>
     </div>
     <nav id="chips" class="chips" aria-label="Topics"></nav>
   </header>
@@ -41,6 +46,19 @@
     <div id="sections"></div>
     <p id="status" class="status"></p>
   </main>
+
+  <div id="player" class="player" hidden>
+    <div class="player-label">
+      <span class="player-kicker">Listening</span>
+      <span id="player-now">Intro</span>
+    </div>
+    <div class="player-buttons">
+      <button id="p-prev" aria-label="Previous story">⏮</button>
+      <button id="p-toggle" aria-label="Pause">⏸</button>
+      <button id="p-next" aria-label="Next story">⏭</button>
+      <button id="p-stop" aria-label="Stop listening">✕</button>
+    </div>
+  </div>
 
   <dialog id="settings">
     <form method="dialog" class="sheet">
@@ -56,6 +74,16 @@
         <label><input type="radio" name="size" value="normal"><span>Normal</span></label>
         <label><input type="radio" name="size" value="large"><span>Large</span></label>
       </div>
+      <h3>Listening</h3>
+      <div class="seg" role="radiogroup" aria-label="Reading speed">
+        <label><input type="radio" name="rate" value="1"><span>Normal</span></label>
+        <label><input type="radio" name="rate" value="1.15"><span>Faster</span></label>
+        <label><input type="radio" name="rate" value="1.3"><span>Fastest</span></label>
+      </div>
+      <label class="voice-row">Voice
+        <select id="voice-picker"></select>
+      </label>
+      <p class="hint">Tip: for a more natural voice, download an "Enhanced" or "Premium" voice in iPhone Settings → Accessibility → Spoken Content → Voices → English, then pick it here.</p>
       <p class="hint small" id="about"></p>
     </form>
   </dialog>

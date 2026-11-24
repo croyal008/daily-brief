@@ -46,6 +46,7 @@ Off (turn on in Settings): Sports, Culture & Entertainment.
 
 ## Changing things later
 
+- **Listen:** tap the headphones to hear the brief read aloud. Speed and voice are in Settings.
 - **Topic order:** in the app, tap the gear and use the ▲ ▼ arrows.
 - **My Teams:** list your teams in `scripts/my_teams.json`, e.g.
   `{"name": "Chicago Bears", "league": "nfl"}`. A team only shows up when it won last night or has big

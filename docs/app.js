@@ -3,7 +3,7 @@
   const READ_KEY = "brief-read-v1";
   const $ = (id) => document.getElementById(id);
 
-  const prefs = Object.assign({ topics: null, size: "normal" }, safeParse(localStorage.getItem(PREFS_KEY)));
+  const prefs = Object.assign({ topics: null, size: "normal", rate: "1", voice: "" }, safeParse(localStorage.getItem(PREFS_KEY)));
   let readIds = new Set(safeParse(localStorage.getItem(READ_KEY)) || []);
   let brief = null;
 
@@ -58,7 +58,8 @@
     for (const s of brief.stories) if (byTopic[s.topic]) byTopic[s.topic].push(s);
 
     const updated = new Date(brief.generated_at);
-    $("dateline").textContent = `${prettyDate(brief.date)} · updated ${updated.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}`;
+    const d = new Date(brief.date + "T12:00:00").toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" });
+    $("dateline").textContent = `${d} · ${updated.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}`;
 
     // Overview
     const rank = Object.fromEntries(topics.map((t, i) => [t.id, i]));
@@ -89,7 +90,7 @@
 
   function storyCard(s) {
     const first = s.sources[0];
-    const card = el("article", { class: "card story" + (readIds.has(s.id + brief.date) ? " read" : "") });
+    const card = el("article", { class: "card story" + (readIds.has(s.id + brief.date) ? " read" : ""), "data-sid": s.id });
     const h = el("h3", {}, el("a", { href: safeUrl(first && first.url), target: "_blank", rel: "noopener", text: s.headline }));
     card.append(h);
     if (s.summary) card.append(el("p", { class: s.topic === "myteams" ? "gameline" : "", text: s.summary }));
@@ -174,13 +175,191 @@
       const picker = $("day-picker");
       picker.replaceChildren(...dates.map((d, i) => el("option", { value: d, text: i === 0 ? "Past briefs ▾" : shortDate(d) })));
       picker.addEventListener("change", () => {
+        stopListening();
         load(picker.selectedIndex === 0 ? null : picker.value);
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
     } catch { $("day-picker").hidden = true; }
   }
 
-  $("open-settings").addEventListener("click", () => { if (brief) { renderSettings(); $("settings").showModal(); } });
+
+  // ------------------------------------------------------------ listening
+  // Reads the brief aloud with the phone's built-in voice, like a short podcast.
+  const synth = window.speechSynthesis;
+  const player = { queue: [], index: 0, playing: false, paused: false };
+
+  const UNITS = [
+    [/(\d+)\/(\d+)/g, "$1 of $2"], [/\bYDS\b/g, "yards"], [/\bTD\b/g, "touchdown"], [/\bTDs\b/g, "touchdowns"],
+    [/\bINT\b/g, "interception"], [/\bCAR\b/g, "carries"], [/\bREC\b/g, "catches"], [/\bPTS\b/g, "points"],
+    [/\bREB\b/g, "rebounds"], [/\bAST\b/g, "assists"], [/\bBLK\b/g, "blocks"], [/\bSTL\b/g, "steals"],
+  ];
+  function spokenStat(t) {
+    let out = t;
+    for (const [re, rep] of UNITS) out = out.replace(re, rep);
+    return out.replace(/(\d+) touchdown\b/g, (m, n) => (n === "1" ? "1 touchdown" : `${n} touchdowns`));
+  }
+
+  function spokenGame(s) {
+    const m = s.headline.match(/^(✅|❌|➖)\s+(.+?)\s+(\d+),\s+(.+?)\s+(\d+)$/);
+    if (!m) return `${s.headline}.`;
+    const [, mark, me, a, opp, b] = m;
+    let line = mark === "✅" ? `The ${me} beat the ${opp}, ${a} to ${b}.`
+      : mark === "❌" ? `The ${me} lost to the ${opp}, ${b} to ${a}.`
+      : `The ${me} and the ${opp} tied at ${a}.`;
+    const rec = (s.summary || "").match(/Record (\d+)-(\d+)(?:-(\d+))?/);
+    if (rec) line += ` They're now ${rec[1]} and ${rec[2]}${rec[3] ? ` and ${rec[3]}` : ""}.`;
+    if (s.stat) {
+      const [who, what] = s.stat.split(/:\s*/, 2);
+      line += ` ${who} led the way with ${spokenStat(what || "").replace(/, ([^,]+)$/, " and $1")}.`;
+    }
+    return line;
+  }
+
+  const clean = (t) => (t || "").replace(/[“”]/g, '"').replace(/\s+/g, " ").trim();
+  const endStop = (t) => (/[.!?]"?$/.test(t) ? t : t + ".");
+
+  function buildScript() {
+    const on = enabledTopics();
+    const topics = orderedTopics().filter((t) => on.includes(t.id));
+    const q = [];
+    const day = new Date(brief.date + "T12:00:00").toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
+    const hour = new Date().getHours();
+    const hello = hour < 12 ? "Good morning" : hour < 17 ? "Good afternoon" : "Good evening";
+    q.push({ text: `${hello}. Here's your Daily Brief for ${day}.`, label: "Intro" });
+    let first = true;
+    for (const t of topics) {
+      const stories = brief.stories.filter((s) => s.topic === t.id);
+      if (!stories.length) continue;
+      const name = { myteams: "your teams", us: "U.S. news", world: "world news" }[t.id]
+        || t.name.replace(/\s*\(light\)/i, "").replace(/&/g, "and").toLowerCase();
+      const lead = first ? `First up, ${name}.` : `Next, ${name}.`;
+      first = false;
+      stories.forEach((s, i) => {
+        let text = t.id === "myteams" ? spokenGame(s)
+          : [endStop(clean(s.headline)), s.summary ? endStop(clean(s.summary)) : "", s.why ? `Why it matters: ${endStop(clean(s.why))}` : ""].filter(Boolean).join(" ");
+        if (i === 0) text = `${lead} ${text}`;
+        else if (t.id !== "myteams") text = `${["Also,", "Meanwhile,", "And finally,"][i === stories.length - 1 && i > 1 ? 2 : (i - 1) % 2]} ${text}`;
+        q.push({ text, sid: s.id, label: `${t.emoji} ${t.name} · ${i + 1} of ${stories.length}` });
+      });
+    }
+    q.push({ text: "That's your brief. Have a great day.", label: "Wrapping up" });
+    return q;
+  }
+
+  function pickVoice() {
+    const voices = synth.getVoices().filter((v) => /^en(-|_|$)/i.test(v.lang));
+    if (prefs.voice) {
+      const v = voices.find((x) => x.voiceURI === prefs.voice);
+      if (v) return v;
+    }
+    const us = voices.filter((v) => /en[-_]US/i.test(v.lang));
+    return us.find((v) => /premium/i.test(v.name)) || us.find((v) => /enhanced/i.test(v.name))
+      || us.find((v) => /^(Ava|Samantha|Allison|Evan|Zoe|Nathan|Tom)\b/.test(v.name))
+      || us.find((v) => v.default) || us[0] || voices[0] || null;
+  }
+
+  function highlight(item) {
+    document.querySelectorAll(".story.speaking").forEach((c) => c.classList.remove("speaking"));
+    $("player-now").textContent = item ? item.label : "";
+    if (item && item.sid) {
+      const card = document.querySelector(`.story[data-sid="${CSS.escape(item.sid)}"]`);
+      if (card) {
+        card.classList.add("speaking");
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }
+  }
+
+  // Queue everything from `start` onward in one go: iPhone only lets speech start from a tap,
+  // and a pre-filled queue keeps playing from one story to the next without another tap.
+  function speakFrom(start) {
+    synth.cancel();
+    player.index = Math.max(0, Math.min(start, player.queue.length - 1));
+    player.playing = true;
+    player.paused = false;
+    $("p-toggle").textContent = "⏸";
+    $("p-toggle").setAttribute("aria-label", "Pause");
+    const voice = pickVoice();
+    player.queue.slice(player.index).forEach((item, k) => {
+      const u = new SpeechSynthesisUtterance(item.text);
+      if (voice) { u.voice = voice; u.lang = voice.lang; } else u.lang = "en-US";
+      u.rate = parseFloat(prefs.rate) || 1;
+      const idx = player.index + k;
+      u.onstart = () => { player.index = idx; highlight(item); };
+      if (idx === player.queue.length - 1) u.onend = () => { if (player.playing && !player.paused) stopListening(); };
+      synth.speak(u);
+    });
+  }
+
+  function startListening() {
+    if (!synth || !brief) return;
+    player.queue = buildScript();
+    $("player").hidden = false;
+    document.body.classList.add("playing");
+    speakFrom(0);
+  }
+
+  function stopListening() {
+    player.playing = false;
+    player.paused = false;
+    synth.cancel();
+    highlight(null);
+    $("player").hidden = true;
+    document.body.classList.remove("playing");
+  }
+
+  function togglePause() {
+    if (!player.playing) return;
+    if (player.paused) {
+      // Resuming by re-speaking the current story is more reliable on iPhone than resume().
+      speakFrom(player.index);
+    } else {
+      player.paused = true;
+      synth.cancel();
+      $("p-toggle").textContent = "▶";
+      $("p-toggle").setAttribute("aria-label", "Play");
+    }
+  }
+
+  function renderVoices() {
+    const sel = $("voice-picker");
+    if (!synth) { sel.closest("label").hidden = true; return; }
+    const voices = synth.getVoices().filter((v) => /^en(-|_|$)/i.test(v.lang));
+    const current = pickVoice();
+    sel.replaceChildren(...voices.map((v) => {
+      const o = el("option", { value: v.voiceURI, text: `${v.name} (${v.lang.replace("_", "-")})` });
+      if (current && v.voiceURI === current.voiceURI) o.selected = true;
+      return o;
+    }));
+  }
+
+  if (synth) {
+    $("listen").hidden = false;
+    $("listen").addEventListener("click", () => (player.playing ? stopListening() : startListening()));
+    $("p-toggle").addEventListener("click", togglePause);
+    $("p-stop").addEventListener("click", stopListening);
+    $("p-next").addEventListener("click", () => player.playing && speakFrom(player.index + 1));
+    $("p-prev").addEventListener("click", () => player.playing && speakFrom(player.index - 1));
+    $("voice-picker").addEventListener("change", (e) => {
+      prefs.voice = e.target.value; savePrefs();
+      const u = new SpeechSynthesisUtterance("This is how your brief will sound.");
+      const v = pickVoice(); if (v) { u.voice = v; u.lang = v.lang; }
+      u.rate = parseFloat(prefs.rate) || 1;
+      synth.cancel(); synth.speak(u);
+    });
+    document.querySelectorAll('input[name="rate"]').forEach((r) => r.addEventListener("change", () => {
+      prefs.rate = r.value; savePrefs();
+    }));
+    synth.addEventListener?.("voiceschanged", () => { if ($("settings").open) renderVoices(); });
+  }
+
+  $("open-settings").addEventListener("click", () => {
+    if (!brief) return;
+    renderSettings();
+    renderVoices();
+    document.querySelectorAll('input[name="rate"]').forEach((r) => { r.checked = r.value === String(prefs.rate); });
+    $("settings").showModal();
+  });
   document.querySelectorAll('input[name="size"]').forEach((r) => r.addEventListener("change", () => {
     prefs.size = r.value; savePrefs(); applySize();
   }));
@@ -188,7 +367,7 @@
 
   // Opening the app from the home screen after a while: fetch the newest brief.
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible" && $("day-picker").selectedIndex <= 0) load(null);
+    if (document.visibilityState === "visible" && $("day-picker").selectedIndex <= 0 && !player.playing) load(null);
   });
 
   applySize();
