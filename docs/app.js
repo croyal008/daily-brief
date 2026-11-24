@@ -32,12 +32,14 @@
 
   // Topics in the reader's chosen order; topics they've never ordered keep their default spot.
   function orderedTopics() {
-    const order = prefs.order || [];
-    const pos = (t) => {
-      const i = order.indexOf(t.id);
-      return i >= 0 ? i : order.length + brief.topics.indexOf(t);
-    };
-    return [...brief.topics].sort((a, b) => pos(a) - pos(b));
+    // Start from the reader's saved order, then slot any topic they haven't ordered yet
+    // (like a newly added one) into its default position, so new sections don't sink to the bottom.
+    const byId = Object.fromEntries(brief.topics.map((t) => [t.id, t]));
+    const list = (prefs.order || []).filter((id) => byId[id]).map((id) => byId[id]);
+    brief.topics.forEach((t, i) => {
+      if (!list.includes(t)) list.splice(Math.min(i, list.length), 0, t);
+    });
+    return list;
   }
 
   function prettyDate(iso) {
