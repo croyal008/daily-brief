@@ -8,7 +8,86 @@
   let brief = null;
 
   function safeParse(s) { try { return JSON.parse(s); } catch { return null; } }
-  function savePrefs() { localStorage.setItem(PREFS_KEY, JSON.stringify(prefs)); }
+  function savePrefs(sync = true) {
+    if (sync) prefs.updated = Date.now();
+    localStorage.setItem(PREFS_KEY, JSON.stringify(prefs));
+    if (sync) scheduleSync();
+  }
+
+  // ---- settings saved to the project (docs/config.json), so they survive the phone wiping
+  // its storage, and so the daily job can read the AI switch. Writing needs a GitHub token
+  // (fine-grained, this repo only, Contents read and write) pasted once in Settings.
+  const TOKEN_KEY = "brief-gh-token";
+  const REPO = "croyal008/daily-brief";
+  const CONFIG_PATH = "docs/config.json";
+  let config = { ai_summaries: true };
+  let syncTimer = null;
+
+  async function loadConfig() {
+    try {
+      const r = await fetch(`config.json?t=${Date.now()}`, { cache: "no-store" });
+      if (r.ok) config = Object.assign({ ai_summaries: true }, await r.json());
+    } catch {}
+    const saved = config.app;
+    // Adopt the saved copy when this phone has nothing (storage wiped) or the saved copy is newer.
+    if (saved && (!prefs.updated || (saved.updated || 0) > prefs.updated)) {
+      for (const k of ["topics", "known", "order", "size", "rate", "listenMode"]) {
+        if (saved[k] !== undefined) prefs[k] = saved[k];
+      }
+      prefs.updated = saved.updated || Date.now();
+      savePrefs(false);
+      return true;
+    }
+    return false;
+  }
+
+  function scheduleSync() {
+    if (!localStorage.getItem(TOKEN_KEY)) return;
+    clearTimeout(syncTimer);
+    syncTimer = setTimeout(syncConfig, 1500);
+  }
+
+  async function syncConfig() {
+    const token = localStorage.getItem(TOKEN_KEY);
+    if (!token) return false;
+    const api = `https://api.github.com/repos/${REPO}/contents/${CONFIG_PATH}`;
+    const headers = { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json" };
+    config.app = {
+      topics: prefs.topics, known: prefs.known, order: prefs.order, size: prefs.size,
+      rate: prefs.rate, listenMode: prefs.listenMode, updated: prefs.updated || Date.now(),
+    };
+    try {
+      for (let attempt = 0; attempt < 2; attempt++) {
+        const cur = await fetch(`${api}?ref=main&t=${Date.now()}`, { headers, cache: "no-store" });
+        if (cur.status === 401 || cur.status === 403) { setSyncStatus("GitHub token was rejected. Paste a new one."); return false; }
+        const sha = cur.ok ? (await cur.json()).sha : undefined;
+        const body = JSON.stringify(config, null, 1) + "\n";
+        const res = await fetch(api, {
+          method: "PUT", headers,
+          body: JSON.stringify({
+            message: "Update app settings", branch: "main", sha,
+            content: btoa(unescape(encodeURIComponent(body))),
+          }),
+        });
+        if (res.ok) { setSyncStatus("Saved to your project ✓"); return true; }
+        if (res.status !== 409) { setSyncStatus(`Couldn't save (GitHub said ${res.status}).`); return false; }
+      }
+    } catch { setSyncStatus("Couldn't reach GitHub. Try again when you're online."); }
+    return false;
+  }
+
+  function setSyncStatus(t) { const n = $("sync-status"); if (n) n.textContent = t; }
+
+  function renderSync() {
+    const has = !!localStorage.getItem(TOKEN_KEY);
+    $("ai-toggle").checked = config.ai_summaries !== false;
+    $("token-row").hidden = has;
+    $("sync-forget").hidden = !has;
+    if (!$("sync-status").textContent) {
+      setSyncStatus(has ? "Your settings are saved to your project, so they come back if the phone resets them."
+                        : "Paste a GitHub token once so the AI switch works and your topic settings are backed up.");
+    }
+  }
 
   function el(tag, attrs = {}, ...kids) {
     const n = document.createElement(tag);
@@ -371,6 +450,9 @@
   // If the recording can't be loaded, fall back to the phone's own voice.
   audioEl.addEventListener("error", () => {
     if (player.mode !== "recorded" || !player.playing || !synth) return;
+    const code = audioEl.error ? audioEl.error.code : "?";
+    localStorage.setItem("brief-audio-error", `${new Date().toLocaleString()} (error ${code})`);
+    $("player-now").textContent = "Podcast didn't load, using iPhone voice";
     player.mode = "device";
     player.queue = buildScript();
     speakFrom(0);
@@ -381,8 +463,9 @@
   });
 
   // ---- shared controls
-  function startListening() {
+  async function startListening() {
     if (!brief) return;
+    if (!podcast && prefs.listenMode !== "device") await loadPodcast();
     $("player").hidden = false;
     document.body.classList.add("playing");
     if (useRecorded()) {
@@ -477,6 +560,11 @@
     document.querySelectorAll('input[name="mode"]').forEach((r) => { r.checked = r.value === (prefs.listenMode || "recorded"); });
     $("mode-row").hidden = !podcast || !synth;
     updateVoiceRow();
+    setSyncStatus("");
+    renderSync();
+    const err = localStorage.getItem("brief-audio-error");
+    $("audio-error").hidden = !err;
+    $("audio-error").textContent = err ? `Last time the podcast wouldn't load: ${err}` : "";
     $("settings").showModal();
   });
   document.querySelectorAll('input[name="size"]').forEach((r) => r.addEventListener("change", () => {
@@ -489,7 +577,36 @@
     if (document.visibilityState === "visible" && $("day-picker").selectedIndex <= 0 && !player.playing) load(null);
   });
 
+  $("ai-toggle").addEventListener("change", async (e) => {
+    if (!localStorage.getItem(TOKEN_KEY)) {
+      e.target.checked = config.ai_summaries !== false;
+      setSyncStatus("Paste a GitHub token below first, then flip this again.");
+      $("token-input").focus();
+      return;
+    }
+    const before = config.ai_summaries;
+    config.ai_summaries = e.target.checked;
+    setSyncStatus("Saving…");
+    if (!(await syncConfig())) { config.ai_summaries = before; e.target.checked = before !== false; }
+    else setSyncStatus(e.target.checked ? "AI is on, starting with the next brief ✓" : "AI is off, starting with the next brief ✓");
+  });
+  $("token-save").addEventListener("click", async () => {
+    const t = $("token-input").value.trim();
+    if (!t) return;
+    localStorage.setItem(TOKEN_KEY, t);
+    $("token-input").value = "";
+    setSyncStatus("Checking…");
+    if (await syncConfig()) renderSync();
+    else localStorage.removeItem(TOKEN_KEY);
+  });
+  $("sync-forget").addEventListener("click", () => {
+    localStorage.removeItem(TOKEN_KEY);
+    setSyncStatus("Token removed from this phone.");
+    renderSync();
+  });
+
   applySize();
+  loadConfig().then((changed) => { if (changed) { applySize(); if (brief) render(); } });
   load(null);
   loadDays();
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});

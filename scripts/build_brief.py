@@ -379,6 +379,12 @@ Neutral, calm, factual tone. Return stories using the candidate ids you were giv
 
 
 def ai_brief(candidates: dict[str, list[dict]], config: dict, history: list[dict]) -> dict | None:
+    try:
+        if json.loads((ROOT / "docs" / "config.json").read_text()).get("ai_summaries", True) is False:
+            print("AI summaries are switched off in the app's settings: using outlet descriptions.")
+            return None
+    except (OSError, ValueError):
+        pass
     if not os.environ.get("ANTHROPIC_API_KEY"):
         print("No ANTHROPIC_API_KEY set: using outlet descriptions instead of AI summaries.")
         return None

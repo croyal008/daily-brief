@@ -1,20 +1,21 @@
 {
-  "_note": "Settings for the recorded morning podcast. 'engine': 'azure' (natural Microsoft voices, used when the AZURE_SPEECH_KEY secret is set) or 'kokoro' (free voice that runs on GitHub). 'azure_voice' e.g. en-US-AvaMultilingualNeural. 'voice' is the Kokoro voice, also used as the backup. 'speed': 1.0 is normal. 'topics': which topics are read, in this order. 'host_style': with an Anthropic API key, Claude rewrites the script as a casual, witty host. 'enabled': false turns the recording off.",
-  "enabled": true,
-  "engine": "azure",
-  "azure_voice": "en-US-Phoebe:DragonHDOmniLatestNeural",
-  "azure_style": "",
-  "voice": "af_heart",
-  "speed": 1.0,
-  "host_style": true,
-  "topics": [
-    "myteams",
-    "us",
-    "politics",
-    "world",
-    "tech",
-    "science",
-    "business",
-    "sports"
-  ]
+ "_note": "Settings for the recorded morning podcast. 'engine': 'azure' (natural Microsoft voices, used when the AZURE_SPEECH_KEY secret is set) or 'kokoro' (free voice that runs on GitHub). 'azure_voice' e.g. en-US-AvaMultilingualNeural. 'voice' is the Kokoro voice, also used as the backup. 'speed': 1.0 is normal. 'topics': which topics are read, in this order. 'host_style': with an Anthropic API key, Claude rewrites the script as a casual, witty host. 'enabled': false turns the recording off.",
+ "enabled": true,
+ "engine": "azure",
+ "azure_voice": "en-US-Phoebe:DragonHDOmniLatestNeural",
+ "azure_style": "",
+ "voice": "af_heart",
+ "speed": 1.0,
+ "host_style": true,
+ "topics": [
+  "myteams",
+  "us",
+  "politics",
+  "world",
+  "tech",
+  "science",
+  "business",
+  "sports"
+ ],
+ "headliners": true
 }

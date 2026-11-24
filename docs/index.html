@@ -89,6 +89,16 @@
         <select id="voice-picker"></select>
       </label>
       <p class="hint" id="voice-tip">Tip: for a more natural voice, download an "Enhanced" or "Premium" voice in iPhone Settings → Accessibility → Spoken Content → Voices → English, then pick it here.</p>
+      <p class="hint" id="audio-error" hidden></p>
+      <h3>AI</h3>
+      <div class="toggles"><div class="row"><span class="tname">AI summaries &amp; podcast host<br><span class="hint">Starts with the next morning's brief</span></span>
+        <input type="checkbox" id="ai-toggle" aria-label="Use AI summaries"></div></div>
+      <p class="hint" id="sync-status"></p>
+      <div id="token-row" class="token-row">
+        <input type="password" id="token-input" placeholder="GitHub token" autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="button" id="token-save">Save</button>
+      </div>
+      <button type="button" id="sync-forget" class="link-btn" hidden>Remove token from this phone</button>
       <p class="hint small" id="about"></p>
     </form>
   </dialog>

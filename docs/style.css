@@ -178,3 +178,15 @@ body.playing main { padding-bottom: 110px; }
 .top-row > div:first-child { flex: 1; min-width: 0; }
 .top-actions { flex: none; margin-top: 2px; }
 .seg[hidden], .voice-row[hidden], .hint[hidden] { display: none; }
+.token-row { display: flex; gap: 8px; margin: 4px 0 8px; }
+.token-row[hidden], #sync-forget[hidden] { display: none; }
+.token-row input {
+  flex: 1; min-width: 0; padding: 9px 10px; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--chip); color: var(--text); font: inherit; font-size: 16px;
+}
+.token-row button {
+  border: 0; border-radius: 10px; padding: 0 14px; background: var(--accent); color: #fff;
+  font: 600 0.9em inherit; cursor: pointer;
+}
+.link-btn { border: 0; background: none; color: var(--accent); padding: 4px 0; font: inherit; font-size: 0.8em; cursor: pointer; }
+.toggles .tname .hint { display: block; margin: 2px 0 0; }

@@ -87,4 +87,4 @@ jobs:
           git add docs/data
           git diff --cached --quiet && exit 0
           git commit -m "Brief for $(date -u +%Y-%m-%d)"
-          git push
+          git pull --rebase -q origin main && git push
