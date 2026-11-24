@@ -159,7 +159,7 @@ def punch_up(segs: list[dict]) -> list[dict]:
         import anthropic
     except ImportError:
         return segs
-    model = os.environ.get("PODCAST_MODEL", "").strip() or os.environ.get("BRIEF_MODEL", "").strip() or "claude-opus-5-5"
+    model = os.environ.get("PODCAST_MODEL", "").strip() or os.environ.get("BRIEF_MODEL", "").strip() or "claude-sonnet-5-5"
     numbered = "\n\n".join(f"[{i}] ({s.get('label', '')})\n{s['text']}" for i, s in enumerate(segs))
     kwargs = dict(
         model=model,

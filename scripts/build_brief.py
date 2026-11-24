@@ -38,7 +38,7 @@ TEAMS_FILE = ROOT / "scripts" / "my_teams.json"
 MY_TEAMS_TOPIC = {"id": "myteams", "name": "My Teams", "emoji": "🏆", "default_on": True}
 
 LOCAL_TZ = ZoneInfo(os.environ.get("BRIEF_TIMEZONE", "").strip() or "America/Chicago")
-MODEL = os.environ.get("BRIEF_MODEL", "").strip() or "claude-opus-5-5"
+MODEL = os.environ.get("BRIEF_MODEL", "").strip() or "claude-sonnet-5-5"
 MAX_AGE_HOURS = 36          # ignore anything older than this
 HISTORY_DAYS = 5            # don't repeat a story shown in the last N days
 ARCHIVE_DAYS = 14           # how many past days the app can look back on

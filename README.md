@@ -58,7 +58,7 @@ Off (turn on in Settings): Sports, Culture & Entertainment.
 - **Topics and sources:** edit `scripts/feeds.json` (add or remove feed links, change how many
   stories a topic gets, or which topics are on by default).
 - **Time of day:** edit the `cron` line in `.github/workflows/daily-brief.yml` (times are UTC).
-- **Cost:** the default model is Claude Opus 5.5, roughly 15–25 cents a day. To make it about a cent
-  a day, add a repository *variable* (Settings → Secrets and variables → Actions → Variables)
-  named `BRIEF_MODEL` with the value `claude-haiku-5-5`.
+- **Cost:** the default model is Claude Sonnet 5.5, roughly $3–5 a month for the summaries and the podcast
+  host together. For pennies a month, add a repository *variable* (Settings → Secrets and variables → Actions →
+  Variables) named `BRIEF_MODEL` with the value `claude-haiku-5-5` (less witty).
 - **Time zone** for "today": add a variable `BRIEF_TIMEZONE`, e.g. `America/New_York`.
