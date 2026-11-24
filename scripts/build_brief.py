@@ -45,7 +45,7 @@ CANDIDATES_PER_TOPIC = 12   # how many ranked stories per topic Claude chooses f
 SOURCE_NAMES = {
     "npr.org": "NPR", "nytimes.com": "New York Times", "bbc.co.uk": "BBC",
     "bbc.com": "BBC", "cbsnews.com": "CBS News", "abcnews.go.com": "ABC News",
-    "go.com": "ABC News", "bbci.co.uk": "BBC", "theguardian.com": "The Guardian",
+    "go.com": "ABC News", "abcnews.com": "ABC News", "bbci.co.uk": "BBC", "theguardian.com": "The Guardian",
     "aljazeera.com": "Al Jazeera", "arstechnica.com": "Ars Technica",
     "theverge.com": "The Verge", "espn.com": "ESPN",
 }
@@ -89,6 +89,7 @@ def clean_text(s: str | None) -> str:
     s = re.sub(r"<[^>]+>", " ", s)
     s = html.unescape(s)
     s = re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"^(This live blog is (now )?closed\.?|Live updates?:?)\s*", "", s, flags=re.I)
     s = re.sub(r"\s*(Continue reading|Read more|\.\.\.)\s*\.?\s*$", "", s, flags=re.I)
     return s
 
