@@ -42,6 +42,10 @@
     return list;
   }
 
+  function shortDate(iso) {
+    return new Date(iso + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+  }
+
   function prettyDate(iso) {
     const d = new Date(iso + "T12:00:00");
     return d.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
@@ -168,12 +172,12 @@
     try {
       const { dates } = await loadJson("data/index.json");
       const picker = $("day-picker");
-      picker.replaceChildren(...dates.map((d, i) => el("option", { value: d, text: i === 0 ? "Today" : prettyDate(d) })));
+      picker.replaceChildren(...dates.map((d, i) => el("option", { value: d, text: i === 0 ? "Past briefs ▾" : shortDate(d) })));
       picker.addEventListener("change", () => {
         load(picker.selectedIndex === 0 ? null : picker.value);
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
-    } catch { $("day-picker").parentElement.hidden = true; }
+    } catch { $("day-picker").hidden = true; }
   }
 
   $("open-settings").addEventListener("click", () => { if (brief) { renderSettings(); $("settings").showModal(); } });
