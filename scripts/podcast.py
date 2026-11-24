@@ -22,7 +22,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "docs" / "data"
-AUDIO_DIR = ROOT / "docs" / "audio"
+OUT_DIR = ROOT / "build"   # not saved in the project; the daily job uploads it to the "podcast" release
 SETTINGS = ROOT / "scripts" / "podcast.json"
 MODELS = Path(os.environ.get("KOKORO_DIR", ROOT / "models"))
 
@@ -142,14 +142,18 @@ def main() -> int:
         t += len(audio) / sr + seg["gap"]
     full = np.concatenate(pieces)
 
-    AUDIO_DIR.mkdir(parents=True, exist_ok=True)
-    out = AUDIO_DIR / "brief.mp3"
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    for old in OUT_DIR.glob("brief-*.mp3"):
+        old.unlink()
+    stamp = datetime.now().strftime("%Y%m%d-%H%M")
+    out = OUT_DIR / f"brief-{stamp}.mp3"
     sf.write(out, full, sr, format="MP3", bitrate_mode="CONSTANT", compression_level=0.75)
-    stamp = datetime.now().strftime("%Y%m%d%H%M")
-    (DATA / "audio.json").write_text(json.dumps({
+    repo = os.environ.get("GITHUB_REPOSITORY", "croyal008/daily-brief")
+    # audio.json goes to build/ too; the job copies it into the site only after the upload succeeds.
+    (OUT_DIR / "audio.json").write_text(json.dumps({
         "date": brief["date"],
         "generated_at": brief["generated_at"],
-        "url": f"audio/brief.mp3?v={stamp}",
+        "url": f"https://github.com/{repo}/releases/download/podcast/{out.name}",
         "duration": round(t, 1),
         "voice": voice,
         "chapters": chapters,

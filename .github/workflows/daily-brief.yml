@@ -57,12 +57,29 @@ jobs:
           KOKORO_DIR: models
         run: python scripts/podcast.py
 
+      # Keep only today's episode: upload it to the "podcast" release, then delete older ones.
+      # (Audio is kept out of the project's history so storage never grows.)
+      - name: Publish the podcast
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ls build/brief-*.mp3 >/dev/null 2>&1 || { echo "No recording today"; exit 0; }
+          new=$(basename build/brief-*.mp3)
+          gh release view podcast >/dev/null 2>&1 || \
+            gh release create podcast --title "Daily podcast" --latest=false \
+              --notes "Today's recorded brief. Replaced every morning; only the newest episode is kept."
+          gh release upload podcast "build/$new" --clobber
+          for old in $(gh release view podcast --json assets -q '.assets[].name'); do
+            if [ "$old" != "$new" ]; then gh release delete-asset podcast "$old" -y; fi
+          done
+          cp build/audio.json docs/data/audio.json
+
       - name: Save it
         run: |
           git config user.name "daily-brief-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data
-          if [ -d docs/audio ]; then git add docs/audio; fi
           git diff --cached --quiet && exit 0
           git commit -m "Brief for $(date -u +%Y-%m-%d)"
           git push

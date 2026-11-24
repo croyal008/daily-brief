@@ -368,6 +368,13 @@
   });
   audioEl.addEventListener("play", () => setToggle(true));
   audioEl.addEventListener("pause", () => setToggle(false));
+  // If the recording can't be loaded, fall back to the phone's own voice.
+  audioEl.addEventListener("error", () => {
+    if (player.mode !== "recorded" || !player.playing || !synth) return;
+    player.mode = "device";
+    player.queue = buildScript();
+    speakFrom(0);
+  });
   audioEl.addEventListener("ended", () => {
     if (podcast) localStorage.removeItem("brief-pos-" + podcast.url);
     stopListening();
