@@ -57,6 +57,14 @@ MARKET_WORDS = re.compile(
     re.I,
 )
 
+# Service pieces and filler that aren't news: betting tips, fantasy advice, how-to-watch, quizzes.
+FILLER_WORDS = re.compile(
+    r"\b(odds|predictions?|best bets?|betting|picks|fantasy|how to watch|live stream|"
+    r"where to watch|quiz|crossword|wordle|horoscope|deals? of the day|promo code|"
+    r"wants to know|tell us|newsletter)\b",
+    re.I,
+)
+
 STOPWORDS = set("""
 a an the and or but if of to in on at by for with from as is are was were be been
 being it its this that these those he she they them his her their we you your our
@@ -232,11 +240,12 @@ def cluster(items: list[dict], config: dict) -> list[dict]:
             topic_votes[i["topic"]] = topic_votes.get(i["topic"], 0) + 1 / (1 + 0.25 * i["rank"])
         c["topic"] = max(topic_votes, key=lambda t: (topic_votes[t], -topic_order.index(t)))
         c["is_markets"] = bool(MARKET_WORDS.search(" ".join(i["title"] for i in its[:3])))
-        c["drop"] = False
+        # Skip filler and service pieces (betting tips, fantasy advice, how-to-watch, reader callouts).
+        c["drop"] = any(FILLER_WORDS.search(i["title"]) for i in its[:2])
         if c["is_markets"]:
             # Day-to-day market moves are skipped; only genuinely big ones (many outlets) survive.
             c["score"] *= 0.35
-            c["drop"] = c["topic"] in low_market_topics and len(sources) < 4
+            c["drop"] = c["drop"] or (c["topic"] in low_market_topics and len(sources) < 4)
         lead = min(its, key=lambda i: (i["rank"], -len(i["desc"])))
         c["headline"] = lead["title"]
         c["desc"] = max((i["desc"] for i in its), key=len, default="")

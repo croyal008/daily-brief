@@ -87,11 +87,10 @@
       "default_on": false,
       "max_stories": 3,
       "feeds": [
-        "https://www.espn.com/espn/rss/news",
         "https://feeds.bbci.co.uk/sport/rss.xml",
         "https://www.cbssports.com/rss/headlines/",
         "https://sports.yahoo.com/rss/",
-        "https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml"
+        "https://www.espn.com/espn/rss/news"
       ]
     },
     {
