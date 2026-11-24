@@ -358,7 +358,8 @@ Choose stories:
 - Pick the stories that matter most: real consequences for people, major decisions, big events.
   Prefer stories several outlets are covering. Skip celebrity gossip, listicles, opinion pieces,
   how-to/service pieces, quizzes, live-blog shells and minor local crime.
-- Respect each topic's limit. It's fine to pick fewer if the candidates are weak.
+- Fill each topic up to its limit with the best available candidates. Only pick fewer when the
+  remaining candidates are genuinely not news (filler, gossip, service pieces).
 - Do not pick a story the reader already saw unless there is a clearly new development; then
   write about only what is new.
 - Business: favour things that affect everyday life (jobs, prices, big company decisions, tech

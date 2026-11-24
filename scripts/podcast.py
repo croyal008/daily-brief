@@ -291,7 +291,8 @@ def record(segs: list[dict], engine) -> tuple[np.ndarray, int, list[dict], float
         audio, sr = engine.create(seg["text"])
         if audio.ndim > 1:
             audio = audio.mean(axis=1)
-        chapters.append({"t": round(t, 2), "label": seg["label"], "sid": seg.get("sid"), "topic": seg.get("topic")})
+        chapters.append({"t": round(t, 2), "label": seg["label"], "sid": seg.get("sid"), "topic": seg.get("topic"),
+                         "text": seg["text"]})
         pieces += [audio.astype(np.float32), np.zeros(int(sr * seg["gap"]), dtype=np.float32)]
         t += len(audio) / sr + seg["gap"]
     return np.concatenate(pieces), sr, chapters, t
