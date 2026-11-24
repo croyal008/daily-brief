@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "generated_at": "2026-11-24T05:38:16+00:00",
+ "generated_at": "2026-11-24T05:43:55+00:00",
  "ai_summaries": false,
  "topics": [
   {
@@ -80,16 +80,16 @@
    "text": "Rep. Jimmy Gomez Resigns After Panel Alleges Unwanted Sexual Contact With Aide"
   },
   {
+   "topic": "sports",
+   "text": "NFL Week 11 grades for every team: Commanders earn 'A-' for stunning Monday win"
+  },
+  {
    "topic": "culture",
    "text": "Miley Cyrus marries Maxx Morando in California ceremony"
   },
   {
    "topic": "business",
    "text": "Paolo Bulgari, Heir of Italian Jewelry Dynasty, Dies at 89"
-  },
-  {
-   "topic": "sports",
-   "text": "England, Northern Ireland, Scotland & Wales to host 2035 Women's World Cup"
   }
  ],
  "stories": [
@@ -162,34 +162,6 @@
    "time": "2026-11-24T02:21:00+00:00"
   },
   {
-   "id": "us-4",
-   "topic": "us",
-   "headline": "Let's talk turkey: Here's how Thanksgiving meal costs have changed this year",
-   "summary": "Grocery costs have been on the rise, but food-price analysts say it's unclear if you'll spend more on the Thanksgiving meal this year. Some people are deciding not to host or are hosting fewer guests.",
-   "why": "",
-   "sources": [
-    {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/23/nx-s1-6044207/thanksgiving-meal-costs"
-    }
-   ],
-   "time": "2026-11-23T10:00:00+00:00"
-  },
-  {
-   "id": "us-5",
-   "topic": "us",
-   "headline": "Seniors embrace Tesla automated driving technology despite questions about safety",
-   "summary": "Older drivers are using Tesla's automated driving technology to stay on the road longer. But safety experts warn the company may be over-selling what its cars can do.",
-   "why": "",
-   "sources": [
-    {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/23/nx-s1-6020559/senior-drivers-tesla-automated-driving-safety"
-    }
-   ],
-   "time": "2026-11-23T10:00:00+00:00"
-  },
-  {
    "id": "politics-1",
    "topic": "politics",
    "headline": "Rep. Jimmy Gomez Resigns After Panel Alleges Unwanted Sexual Contact With Aide",
@@ -246,20 +218,6 @@
     }
    ],
    "time": "2026-11-23T20:38:00+00:00"
-  },
-  {
-   "id": "politics-4",
-   "topic": "politics",
-   "headline": "No. 2 Official at F.B.I. Is Said to Be Retiring Before End of Year",
-   "summary": "The departure of Christopher G. Raia, a veteran agent, comes a few months after another deputy left the F.B.I.",
-   "why": "",
-   "sources": [
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/us/politics/fbi-raia-retiring.html"
-    }
-   ],
-   "time": "2026-11-24T04:38:48+00:00"
   },
   {
    "id": "world-1",
@@ -320,42 +278,6 @@
    "time": "2026-11-24T00:35:20+00:00"
   },
   {
-   "id": "world-4",
-   "topic": "world",
-   "headline": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
-   "summary": "French woman says she will pursue legal action against publisher and author over use of photos taken by convicted husband Gisèle Pelicot has said she is “deeply shocked” that nude photographs of her had been used without her consent to…",
-   "why": "",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cm3eg502nxw2o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/world/2026/nov/23/gisele-pelicot-deeply-shocked-nude-images-book-france"
-    }
-   ],
-   "time": "2026-11-23T21:24:47+00:00"
-  },
-  {
-   "id": "world-5",
-   "topic": "world",
-   "headline": "UK sanctions top Myanmar military leaders after Rohingya genocide ruling",
-   "summary": "A U.N. court’s decision against Myanmar sets a precedent in international law with important implications for a similar case over Israel’s actions in Gaza.",
-   "why": "",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/c6wy4ng1rznxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/22/world/genocide-myanmar-un-climate-talks.html"
-    }
-   ],
-   "time": "2026-11-23T21:03:34+00:00"
-  },
-  {
    "id": "tech-1",
    "topic": "tech",
    "headline": "With Jensen Huang’s Return as C.E.O., Trump Effectively Overrode Nvidia’s Board",
@@ -397,7 +319,7 @@
      "url": "https://www.cbsnews.com/news/megaspeed-trade-blacklist-nvidia-jensen-huang/"
     }
    ],
-   "time": "2026-11-24T03:12:26+00:00"
+   "time": "2026-11-24T05:39:23+00:00"
   },
   {
    "id": "tech-3",
@@ -416,20 +338,6 @@
     }
    ],
    "time": "2026-11-23T23:51:00+00:00"
-  },
-  {
-   "id": "tech-4",
-   "topic": "tech",
-   "headline": "The rise and fall and rise again of Jensen Huang",
-   "summary": "Days after resigning while mired in scandal of extra-marital affairs, Nvidia's Jensen Huang is making a remarkable return.",
-   "why": "",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-23T15:49:52+00:00"
   },
   {
    "id": "science-1",
@@ -480,20 +388,6 @@
     }
    ],
    "time": "2026-11-23T17:24:25+00:00"
-  },
-  {
-   "id": "science-4",
-   "topic": "science",
-   "headline": "CVS Health’s Planned Breakup Hasn’t Quieted Antitrust Critics",
-   "summary": "Lawmakers are warning that spinning off the health care conglomerate’s drugstores will not end scrutiny over its power.",
-   "why": "",
-   "sources": [
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/business/cvs-pharmacy-health-federal-investigations-antitrust.html"
-    }
-   ],
-   "time": "2026-11-23T10:03:26+00:00"
   },
   {
    "id": "business-1",
@@ -548,6 +442,24 @@
   {
    "id": "sports-1",
    "topic": "sports",
+   "headline": "NFL Week 11 grades for every team: Commanders earn 'A-' for stunning Monday win",
+   "summary": "The Commanders scored a touchdown late in the first half against Cincinnati, and proceeded to make field goals on their five drives that followed.",
+   "why": "",
+   "sources": [
+    {
+     "name": "CBS Sports",
+     "url": "https://www.cbssports.com/nfl/news/nfl-week-11-grades-every-team-cowboys-earn-a-high-flying-win-steelers-nearly-fail/"
+    },
+    {
+     "name": "Yahoo Sports",
+     "url": "https://sports.yahoo.com/articles/while-stunning-bengals-commanders-did-052659534.html"
+    }
+   ],
+   "time": "2026-11-24T05:26:59+00:00"
+  },
+  {
+   "id": "sports-2",
+   "topic": "sports",
    "headline": "England, Northern Ireland, Scotland & Wales to host 2035 Women's World Cup",
    "summary": "FIFA has confirmed a United States-led bid to host the 2031 Women's World Cup and a U.K. project led by England for the 2035 edition.",
    "why": "",
@@ -564,7 +476,7 @@
    "time": "2026-11-23T16:59:31+00:00"
   },
   {
-   "id": "sports-2",
+   "id": "sports-3",
    "topic": "sports",
    "headline": "Tarkowski's first Premier League red ruins Moyes' night - was it deserved?",
    "summary": "Everton captain James Tarkowski was sent off for the first time in his Premier League career in Monday's 4-0 loss at Brentford - but was it a harsh decision?",
@@ -576,20 +488,6 @@
     }
    ],
    "time": "2026-11-23T22:43:39+00:00"
-  },
-  {
-   "id": "sports-3",
-   "topic": "sports",
-   "headline": "2026 NFL playoff picture, standings: 49ers reign over NFC, Jaguars slip in AFC, wild-card battles heat up",
-   "summary": "A comprehensive look at all seven seeds in the AFC and NFC and the teams on the outside looking in",
-   "why": "",
-   "sources": [
-    {
-     "name": "CBS Sports",
-     "url": "https://www.cbssports.com/nfl/news/2026-nfl-playoff-picture-standings-49ers-reign-over-nfc-jaguars-slip-in-afc/"
-    }
-   ],
-   "time": "2026-11-24T04:33:23+00:00"
   },
   {
    "id": "culture-1",
