@@ -16,20 +16,33 @@ TEXT = ("Morning. It's Tuesday, November 24th, and this is your Daily Brief. Gra
         "Next, Thanksgiving dinner. Some people are hosting fewer guests, or bailing on hosting entirely. Which, "
         "if you've ever had to seat your uncle next to your other uncle, might be the real savings.")
 
-VOICES = [
-    ("ava", "en-US-AvaMultilingualNeural", ""),
-    ("emma", "en-US-EmmaMultilingualNeural", ""),
-    ("jenny-chatty", "en-US-JennyNeural", "chat"),
-    ("andrew", "en-US-AndrewMultilingualNeural", ""),
-    ("brian", "en-US-BrianMultilingualNeural", ""),
-    ("ava-hd", "en-US-Ava:DragonHDLatestNeural", ""),
-    ("andrew-hd", "en-US-Andrew:DragonHDLatestNeural", ""),
-]
+def female_voices(key: str, region: str, skip: set) -> list:
+    """Every natural-sounding US English female voice on the account (HD and multilingual ones)."""
+    import json
+    import urllib.request
+    req = urllib.request.Request(f"https://{region}.tts.speech.microsoft.com/cognitiveservices/voices/list",
+                                 headers={"Ocp-Apim-Subscription-Key": key})
+    voices = json.load(urllib.request.urlopen(req, timeout=30))
+    picks = []
+    for v in voices:
+        short = v.get("ShortName", "")
+        if v.get("Locale") != "en-US" or v.get("Gender") != "Female":
+            continue
+        if not ("DragonHD" in short or "Multilingual" in short):
+            continue
+        name = short.replace("en-US-", "").replace(":DragonHDLatestNeural", "-hd").replace("MultilingualNeural", "")
+        name = name.replace("DragonHDLatestNeural", "-hd").replace("Neural", "").lower()
+        if name in skip:
+            continue
+        picks.append((name, short, ""))
+    print("Voices found:", ", ".join(p[0] for p in picks))
+    return picks[:16]
+
 
 out = Path(__file__).resolve().parent.parent / "docs" / "samples"
 out.mkdir(parents=True, exist_ok=True)
 key, region = os.environ["AZURE_SPEECH_KEY"], os.environ["AZURE_SPEECH_REGION"]
-for name, voice, style in VOICES:
+for name, voice, style in female_voices(key, region, skip={"ava", "ava-hd"}):
     try:
         audio, sr = AzureVoice(key, region, voice, style=style).create(TEXT)
         sf.write(out / f"{name}.mp3", audio, sr, format="MP3")
