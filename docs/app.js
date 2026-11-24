@@ -7,6 +7,7 @@
   let readIds = new Set(safeParse(localStorage.getItem(READ_KEY)) || []);
   let brief = null;
 
+  if (prefs.rate === "1.3") prefs.rate = "1.15"; // "Fastest" was replaced by "Slower"
   function safeParse(s) { try { return JSON.parse(s); } catch { return null; } }
   function savePrefs(sync = true) {
     if (sync) prefs.updated = Date.now();
