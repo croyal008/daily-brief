@@ -27,13 +27,13 @@
    "culture",
    "us",
    "world",
-   "politics",
-   "tech",
    "science",
-   "business"
+   "business",
+   "politics",
+   "tech"
   ],
   "size": "normal",
   "rate": "1",
-  "updated": 1795508238573
+  "updated": 1795508255467
  }
 }
