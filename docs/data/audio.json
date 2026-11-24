@@ -1,8 +1,8 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-24T07:37:53+00:00",
- "url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261124-0740.mp3",
- "duration": 374.3,
+ "generated_at": "2026-11-24T08:20:28+00:00",
+ "url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261124-0822.mp3",
+ "duration": 350.9,
  "voice": "Azure en-US-Phoebe:DragonHDOmniLatestNeural",
  "style": "host",
  "chapters": [
@@ -11,168 +11,77 @@
    "label": "Intro",
    "sid": null,
    "topic": null,
-   "text": "Good morning, and welcome to your Daily Brief for Tuesday, November 24th. Grab your coffee. I've read the news so you don't have to, and I'll keep it quick."
+   "text": "Happy Tuesday. The Spurs won, a tech CEO got his job back like nothing happened, and FIFA's president has apparently been living on a plane. Let's get into it."
   },
   {
-   "t": 8.5,
-   "label": "🏆 My Teams · 1 of 1",
+   "t": 9.95,
+   "label": "🏆 My Teams",
    "sid": "team-san-antonio-spurs",
    "topic": "myteams",
-   "text": "First up, your Spurs. They beat the Kings, 123 to 107, and they're now 15 and 3. Stephon Castle was the star with 28 points, 8 rebounds and 11 assists. That's a triple-double-ish kind of night, and the Kings never really got a say."
+   "text": "Start with the good stuff: the Spurs beat the Kings 123 to 107 and they're 15 and 3. Stephon Castle did a bit of everything, 28 points, 8 rebounds and 11 assists. That's a point guard stat line with a scorer's bonus. Fifteen and 3 is the kind of record you check twice. Sacramento never really got a say."
   },
   {
-   "t": 23.5,
-   "label": "🇺🇸 U.S. · 1 of 3",
-   "sid": "us-12",
-   "topic": "us",
-   "text": "Now to U.S. news. The magistrate judge who approved the federal search of Congresswoman Ilhan Omar's home ruled she could assert congressional privacy protections right from the start. Records show the government and the judge went back and forth over the constitutional questions. It matters because it tests how far investigators can go when searching a sitting member of Congress."
-  },
-  {
-   "t": 43.35,
-   "label": "🇺🇸 U.S. · 2 of 3",
-   "sid": "us-1",
-   "topic": "us",
-   "text": "Also, Sheikh Hasina, Bangladesh's ousted prime minister, has been living in exile in India. A spokesperson says she plans to head home on December 16. At least she's giving advance notice, which is more than most comebacks get."
-  },
-  {
-   "t": 55.15,
-   "label": "🇺🇸 U.S. · 3 of 3",
-   "sid": "us-2",
-   "topic": "us",
-   "text": "And finally, Thanksgiving math. Grocery prices have been climbing, but food-price analysts say it's honestly unclear whether your dinner will cost more this year. Some people are skipping hosting or inviting fewer guests, which is one way to beat inflation: just uninvite the cousin who eats the most."
-  },
-  {
-   "t": 71.2,
-   "label": "🏛️ Politics · 1 of 3",
-   "sid": "politics-5",
+   "t": 27.8,
+   "label": "🏛️ Politics",
+   "sid": "politics-7",
    "topic": "politics",
-   "text": "Next, politics. Iran is vowing to end the U.S. naval blockade by all available means. Trump acknowledged that Iran's attacks are increasing, but says they've done no damage. That's a bold review of an attack. The worry is that escalation in a standoff at sea could widen the conflict."
+   "text": "Jensen Huang is back as CEO of Nvidia, the chip giant at the center of the AI boom. He resigned less than two weeks ago after reports of extramarital affairs, one of them with an alleged Chinese spy. The board reinstated him Monday, and President Trump took some credit. Congress was not charmed. A House Intelligence spokesperson said the reinstatement quote changes nothing, and Huang is still due for a transcribed interview on December 1 with three House panels, including the Select Committee on China. Nvidia's general counsel appears December 2, and Huang is due before Senate Banking on December 3. So the man who got fired over his pillow talk now gets to explain it to people with subpoena power and no sense of humor. National security is the actual concern here, and chips are the thing China wants most."
   },
   {
-   "t": 88.3,
-   "label": "🏛️ Politics · 2 of 3",
-   "sid": "politics-1",
-   "topic": "politics",
-   "text": "Also, the number two official at the F.B.I., Christopher Raia, a veteran agent, is reportedly retiring before the end of the year. That comes a few months after another deputy left. At this point the deputy's office has a revolving door and a very nice parking spot."
+   "t": 72.75,
+   "label": "🇺🇸 U.S.",
+   "sid": "us-4",
+   "topic": "us",
+   "text": "Jose Castillo is an American citizen, and he says he felt useless. On Saturday, masked ICE agents arrested his wife, Sofia Hernandez Mejia, and his father-in-law, Ricardo Larrondo Mendoza, inside a jetway at Seattle-Tacoma airport. Video of it went viral, with her crying out that she has a valid work permit and bystanders demanding answers. The Department of Homeland Security says both are Mexican nationals who overstayed their visas, and that agents were targeting the father-in-law when other passengers got in the way. It also accuses her of assault, saying she threw hot coffee on officers. Castillo says she did nothing, that she was being shoved, and that when people come at you like that, quote, obviously coffee's going to be spilled. DHS has said she will face charges."
   },
   {
-   "t": 101.85,
-   "label": "🏛️ Politics · 3 of 3",
-   "sid": "politics-2",
-   "topic": "politics",
-   "text": "And finally, Walter Willett is a Harvard scientist who helped build the research behind the Mediterranean diet. He studies how food affects health, which is a top priority for Health Secretary Robert F. Kennedy Jr. His grants got frozen anyway, because it turns out olive oil won't shield you from a political feud."
-  },
-  {
-   "t": 118.25,
-   "label": "🌍 World · 1 of 3",
-   "sid": "world-6",
-   "topic": "world",
-   "text": "Next, world news. NATO's chief, Mark Rutte, is working to reassure eastern European members after three Russian cruise missiles landed in Poland on Friday. Russian incursions into NATO territory are increasing. Reassurance is the job, but it's a tough sell when the missiles are in your neighbor's yard, and repeated spillover raises the risk for the whole alliance."
-  },
-  {
-   "t": 137.9,
-   "label": "🌍 World · 2 of 3",
-   "sid": "world-4",
-   "topic": "world",
-   "text": "Also, at Seattle-Tacoma airport, unmarked ICE agents, that's Immigration and Customs Enforcement, arrested a father and his adult daughter as passengers boarded a flight. Bystanders filmed it, and some crew members asked to be replaced. The story has drawn outrage, and it shows how immigration enforcement is increasingly playing out in public places."
-  },
-  {
-   "t": 156.1,
-   "label": "🌍 World · 3 of 3",
-   "sid": "world-1",
-   "topic": "world",
-   "text": "And finally, Gisèle Pelicot, the French woman whose husband was convicted of abusing her, says she's humiliated and deeply shocked. Nude photos of her, taken by him, were sent to media to promote a book, without her consent. She says she'll pursue legal action against the publisher and the author."
-  },
-  {
-   "t": 174.1,
-   "label": "💻 Tech · 1 of 3",
-   "sid": "tech-4",
-   "topic": "tech",
-   "text": "Next, tech. A group of state attorneys general is suing SpaceX over Grok, the AI chatbot. They say it still produces child sexual abuse material and revenge porn. X says every Grok output is screened. The case tests whether AI companies are legally responsible for what their systems produce."
-  },
-  {
-   "t": 191.05,
-   "label": "💻 Tech · 2 of 3",
-   "sid": "tech-1",
-   "topic": "tech",
-   "text": "Also, Jensen Huang, the Nvidia boss, resigned while mired in a scandal over extramarital affairs. Just days later, he's making what's being called a remarkable return. That's a shorter break than most people last on a gym membership."
-  },
-  {
-   "t": 203.9,
-   "label": "💻 Tech · 3 of 3",
-   "sid": "tech-2",
-   "topic": "tech",
-   "text": "And finally, Elon Musk has an AI problem of his own making. SpaceX is renting out computing power from its data centers to competitors, including Anthropic, the company behind the Claude chatbot. That's making life harder for his own AI effort. Nothing like becoming a landlord to the people you're trying to beat."
-  },
-  {
-   "t": 221.55,
-   "label": "🔬 Science & Health · 1 of 3",
-   "sid": "science-5",
-   "topic": "science",
-   "text": "Next, science and health. Measles is a growing risk for U.S. adults. Unvaccinated people face the greatest danger, but medical experts say vaccinated adults born before 1989 may no longer be sufficiently protected. So it might be time to dig out your old vaccine records, or ask your doctor, and find out where you stand."
-  },
-  {
-   "t": 239.75,
-   "label": "🔬 Science & Health · 2 of 3",
-   "sid": "science-1",
-   "topic": "science",
-   "text": "Also, CVS Health plans to split up, spinning off its drugstores. But lawmakers are warning that the breakup won't end scrutiny over its power. Antitrust critics, the folks who worry about companies getting too big, are still watching. Corporate breakup, and Congress is still texting."
-  },
-  {
-   "t": 255.8,
-   "label": "🔬 Science & Health · 3 of 3",
-   "sid": "science-2",
-   "topic": "science",
-   "text": "And finally, the Trump administration has restarted the process for funding four large H.I.V. research networks, after postponing it earlier this year. That means the networks may seek federal money again. The headline promises a twist, though the details are thin so far."
-  },
-  {
-   "t": 271.7,
-   "label": "💼 Business (light) · 1 of 3",
-   "sid": "business-9",
-   "topic": "business",
-   "text": "Next, business. CrowdStrike is acquiring Zscaler in a deal worth 44 billion dollars. Both are cybersecurity firms, and they're teaming up as worries grow about hacks fueled by advances in artificial intelligence, hitting companies and governments alike. Basically, the security guards are merging because the burglars got smarter."
-  },
-  {
-   "t": 289.3,
-   "label": "💼 Business (light) · 2 of 3",
-   "sid": "business-1",
-   "topic": "business",
-   "text": "Also, Trump held another dinner for the top holders of his meme coin. That's a cryptocurrency built on internet-joke energy. The events have raised intense controversy, and two guests who attended gave an inside account. Their verdict: it didn't go well. Shocking, I know, a pay-to-dine crypto dinner that didn't feel like a classy affair."
-  },
-  {
-   "t": 307.85,
-   "label": "💼 Business (light) · 3 of 3",
-   "sid": "business-2",
-   "topic": "business",
-   "text": "And finally, Britain's landlords are getting bigger. More corporate landlords could usher in big changes for renters, including a possible two-tier rental market. Soon renters may choose between a landlord who ignores your emails and a corporation that ignores them at scale."
-  },
-  {
-   "t": 321.85,
-   "label": "🏈 Sports · 1 of 3",
-   "sid": "sports-8",
-   "topic": "sports",
-   "text": "Next, sports. The SEC, the Southeastern Conference, has scheduled a vote on possibly expelling LSU. A dispute over RJ Luis has escalated into a legal and political fight between LSU and the conference, and major penalties are still possible. Nothing says college sports like a lawsuit over eligibility."
-  },
-  {
-   "t": 339.55,
-   "label": "🏈 Sports · 2 of 3",
-   "sid": "sports-2",
-   "topic": "sports",
-   "text": "Also, in the NFL, the 49ers won in Mexico, and the Bills stayed on top in Week 11. San Francisco and Buffalo remain the pacesetters in the NFC and AFC. So the standings have the top teams looking comfortable, and everyone else is still hoping."
-  },
-  {
-   "t": 353.75,
-   "label": "🏈 Sports · 3 of 3",
+   "t": 114.05,
+   "label": "🏈 Sports",
    "sid": "sports-1",
    "topic": "sports",
-   "text": "And finally, Arsenal have made an impressive start to the season, but it's been a frustrating one for striker Viktor Gyokeres. He has just two goals in 15 games. For a center forward, that's not the stat line you want. Everyone is asking what's going on, and so, I bet, is he."
+   "text": "Thirty-nine private jet flights in a hundred and fifteen days. That's FIFA president Gianni Infantino since the news broke on July 28 that he wanted to sell off a stake in the World Cup, according to BBC Sport. He hit 32 countries, flew more than 102,000 miles and spent nearly nine days in the air. Last year he visited 18 countries over the same stretch. FIFA says he has a duty to keep relationships healthy with its 211 member associations. Critics call it a campaign tour ahead of his re-election vote next March, and a former head of FIFA's governance committee says it's exactly that. The loophole is that FIFA has no campaign funding rules, so it's all just official business. And it seems to be working, since he's now the favorite."
   },
   {
-   "t": 369.25,
+   "t": 155.25,
+   "label": "🏈 Sports",
+   "sid": "sports-2",
+   "topic": "sports",
+   "text": "Florida State got its man. Georgia defensive coordinator Glenn Schumann agreed to a five-year deal to replace Mike Norvell, who was fired after a 3 and 5 start. Schumann has six national titles from his time at Alabama and Georgia, and Georgia is ranked number one in the playoff rankings. He'll stay put through the postseason, so he's basically coaching a title run with one eye on a moving truck. The new athletic director, Jeff Purinton, worked with him under Nick Saban at Alabama. Schumann's grandfather even coached on Florida State's very first team in 1947, so this is a homecoming of sorts."
+  },
+  {
+   "t": 187.6,
+   "label": "🏈 Sports",
+   "sid": "sports-3",
+   "topic": "sports",
+   "text": "Micah Parsons is expected to make his season debut Wednesday night for the Packers against the Rams. Sources say he got final clearance Monday from Dr. Neal ElAttrache, the surgeon who fixed the knee he wrecked in Week 15 last year, when he tore both his ACL and his meniscus against Denver. That's 347 days between snaps. The Packers are 6 and 4 and somehow in last place in the NFC North, where the Bears, Lions and Vikings are all 7 and 2. Parsons said he understands what this game means for the playoffs. Green Bay needs a pass rusher who can wreck a game, and now it has one."
+  },
+  {
+   "t": 221.05,
+   "label": "🎬 Culture & Entertainment",
+   "sid": "culture-6",
+   "topic": "culture",
+   "text": "A Don Toliver concert at Co-op Live in Manchester ended in an evacuation on Sunday night. Around 10 p.m., an unknown substance was released into the crowd. Fans described a horrible smell, screaming and people struggling to breathe. About 12,000 people were evacuated, one woman went to hospital and 88 others were checked by paramedics for eye and respiratory symptoms. Police declared a major incident and first thought it was tear gas. No arrests yet, and detectives are still working out what the substance was and whether a crime was committed. Some fans are also complaining about the lack of searches at the door, which is a question the venue is going to have to answer."
+  },
+  {
+   "t": 255.75,
+   "label": "🎬 Culture & Entertainment",
+   "sid": "culture-1",
+   "topic": "culture",
+   "text": "The first ever Children's Booker Prize has a shortlist: eight books, aimed at kids eight to twelve, with fifty thousand pounds on the line. Five novels, two graphic novels and an illustrated short story collection. Eoin Colfer, of Artemis Fowl fame, is in there. The fun part is the judges: four kids picked from more than 4,000 entrants, including twelve-year-old Ibrahim from Hampshire, who says being a judge on his CV will take him a long way. Chair Frank Cottrell-Boyce is blunt about it: if the children don't love a book, it won't win. Ibrahim won't reveal his favorite, but he did say his mum confiscated one of the shortlisted books because he couldn't stop reading it and it was giving him a headache. That's the best blurb I've heard all year."
+  },
+  {
+   "t": 297.3,
+   "label": "⚡ Quick hits",
+   "sid": null,
+   "topic": null,
+   "text": "Quick hits. The Pentagon put out an unusually blunt fact sheet saying Canada has fallen short as a defense partner, citing its military spending and its second look at buying American F-35 fighter jets. Three Russian cruise missiles landed in rural southeastern Poland on Friday, and no one was hurt. Poland's prime minister called it an intentional provocation, and NATO's Mark Rutte is trying to calm eastern members. Ousted Bangladeshi leader Sheikh Hasina says she'll return from exile in India on December 16, though she's been sentenced to death in absentia and is expected to be arrested on arrival. Virginia and Oregon became the first states to sue SpaceX, which now owns xAI, claiming Grok still generates sexual images of real people, including children. And the COP31 climate talks collapsed after oil producers blocked any mention of phasing out fossil fuels."
+  },
+  {
+   "t": 344.15,
    "label": "Wrapping up",
    "sid": null,
    "topic": null,
-   "text": "That's your brief. Go be the best-informed person at the coffee machine today, and have a great one."
+   "text": "That's your Tuesday. Go Spurs, and may your boss never need a congressional hearing to explain his weekend. Talk tomorrow."
   }
  ]
 }
