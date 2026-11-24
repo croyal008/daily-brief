@@ -1,8 +1,8 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-24T08:32:36+00:00",
- "url": "https://cdn.jsdelivr.net/gh/croyal008/daily-brief@55e3509816b9fb82ecdf61d83ba3f082bf3227b4/brief-20261124-0834.mp3",
- "duration": 392.5,
+ "generated_at": "2026-11-24T11:08:08+00:00",
+ "url": "https://cdn.jsdelivr.net/gh/croyal008/daily-brief@bf8814584502be75be45125ce5b91892a998af2a/brief-20261124-1110.mp3",
+ "duration": 413.9,
  "voice": "Azure en-US-Phoebe:DragonHDOmniLatestNeural",
  "style": "host",
  "chapters": [
@@ -11,78 +11,78 @@
    "label": "Intro",
    "sid": null,
    "topic": null,
-   "text": "Happy Tuesday, it's November 24th. The Spurs are rolling, Nvidia's boss had a very short vacation, and the SEC is weighing whether to evict one of its own. Let's get into it."
+   "text": "Happy Tuesday, it's November 24th. A Spurs win to start us off, then a FIFA boss who lives on a jet, a tech billionaire with a very awkward résumé update, and a satellite with a name straight out of 1957. Let's go."
   },
   {
-   "t": 11.55,
+   "t": 13.55,
    "label": "🏆 My Teams",
    "sid": "team-san-antonio-spurs",
    "topic": "myteams",
-   "text": "Spurs first, because they earned it. San Antonio beat the Kings last night, 123 to 107, and they're now 15 and 3. Stephon Castle did a little of everything: 28 points, 8 rebounds and 11 assists. That's a near triple-double on a night when the game was never really in doubt. Fifteen and three. I'm just going to say that again and enjoy it."
+   "text": "The Spurs handled the Kings last night, 123 to 107, and they're now 15 and 3. Stephon Castle did a little of everything: 28 points, 8 rebounds and 11 assists. That's a near triple-double from a guy who looks like he's having fun. Fifteen and three. Just sit with that for a second."
   },
   {
-   "t": 32.0,
+   "t": 34.05,
+   "label": "🏈 Sports",
+   "sid": "sports-8",
+   "topic": "sports",
+   "text": "The SEC is now openly talking about throwing LSU out of the conference. The league announced in a legal filing that its presidents and chancellors will meet December 3rd, two days before the SEC Championship Game, to consider terminating LSU's membership. This all goes back to RJ Luis and LSU's push to roster former professional players, which has already produced lawsuits in state and federal court. Here's the wrinkle. The SEC passed a penalty system this summer, with a half-season coach suspension and fines up to half a sport's annual budget. But a Louisiana judge's injunction means the league admits it has no avenue to penalize LSU for playing Luis. So the conference that can't fine you is reportedly considering just evicting you. It takes a two-thirds vote, and expulsion is still considered unlikely, but sources say some presidents are angry enough to vote yes. That's a long way from a stern letter."
+  },
+  {
+   "t": 81.8,
+   "label": "🏈 Sports",
+   "sid": "sports-6",
+   "topic": "sports",
+   "text": "Thirty-nine private jet flights in a hundred and fifteen days. That's FIFA president Gianni Infantino, according to a BBC Sport analysis, and it works out to one flight every three days. He visited 32 countries, racked up more than a hundred thousand air miles, and spent nearly nine full days in the air. The clock starts July 28th, when news broke that he planned to sell off a stake in the World Cup. He's up for re-election next March, and critics say the frequent flying looks a lot like campaigning, since FIFA has no rules on campaign funding. FIFA says it's just the president's duty to keep up relations with its 211 member associations. Funny how that duty doubled his country count from last year. He's now seen as the favorite, partly because his rivals couldn't find a candidate until the last minute. Meanwhile, the planet is sending its regards."
+  },
+  {
+   "t": 126.65,
    "label": "💻 Tech",
    "sid": "tech-1",
    "topic": "tech",
-   "text": "Jensen Huang, the leather-jacket guy who runs Nvidia, has had quite a month. The BBC calls him the Taylor Swift of tech, which makes the news hit harder: allegations of two affairs, one with a businesswoman suspected of being a Chinese spy. He resigned, and the story rattled the stock market. Eleven days later, the board put him back. They say he's the right person to lead the company, which is a confident read for a guy whose alleged pillow talk drew a counterintelligence angle. In fairness, Nvidia makes the chips that power basically all of the AI boom, so the board's priorities are visible from space. His fortune went from nearly two hundred billion dollars to around a hundred and five billion, so he's still doing fine. He's a Taiwan-born, Oregon State engineer who sold the American Dream and the family-man image for years. Now he gets to explain how that squares with a spy-adjacent love life."
+   "text": "Jensen Huang is back as CEO of Nvidia, the company whose chips power basically the entire AI boom. That's eleven days after he resigned over allegations of two affairs, one with a businesswoman suspected of being a Chinese spy. Pillow talk with a suspected spy, at the company making the chips the US and China are racing over. That's not a scandal, that's a supply chain risk. The board decided he's the right person to lead, and now Republicans and Democrats are both objecting to Trump's role in bringing him back. Congress is expected to question Huang about his China ties and about that intervention. Huang has spent years polishing a family-man, American Dream image, and his fortune has already slid from close to two hundred billion dollars to around a hundred and five billion. Nobody gets that kind of fall-off from a bad quarter alone."
   },
   {
-   "t": 78.95,
-   "label": "🏈 Sports",
-   "sid": "sports-10",
-   "topic": "sports",
-   "text": "The SEC and LSU are in a full custody battle, and it's getting ugly. It started with LSU rostering RJ Luis, a former professional player, against conference rules. The SEC passed a penalty structure this summer, including a half-season coach suspension and fines up to half a sport's annual budget. Then it admitted in a court filing that it has no avenue to penalize LSU, because a Louisiana judge issued an injunction protecting the school. So the conference went for the one option the injunction doesn't cover. On December 3rd, two days before the SEC title game, the presidents and chancellors will meet to consider kicking LSU out entirely. It takes a two-thirds vote, and expulsion is still considered unlikely. But sources say enough of them are fed up that some might vote yes. When your punishment system collapses, you can always just try the door."
-  },
-  {
-   "t": 125.05,
-   "label": "🏈 Sports",
-   "sid": "sports-2",
-   "topic": "sports",
-   "text": "Florida State has its guy. After a three-week search, the Seminoles hired Georgia defensive coordinator Glenn Schumann to replace Mike Norvell, who was fired November 1st at three and five. Norvell had won just ten games over three seasons, so fans were ready for anyone with a pulse and a plan. Schumann is thirty-six, has been with Kirby Smart since 2016, and runs the number six defense in the country, giving up 267 yards a game. He has never been a head coach. And he can't start yet, because Georgia is expected to be the top seed in the playoff, so he's busy trying to win a title for somebody else until at least late December. FSU's new coach doesn't show up until January. Tallahassee has seen long engagements, but this one's a bit much."
-  },
-  {
-   "t": 165.3,
-   "label": "💼 Business (light)",
-   "sid": "business-1",
-   "topic": "business",
-   "text": "President Trump held another dinner for the top holders of his meme coin on Monday night, at his golf club in Northern Virginia. The pitch was the most exclusive dinner in the world. The more coin you hold, the closer you get to the president, and in the past plenty of attendees were from outside the U.S., which raises obvious influence questions. The White House denies any problem. The twist this time is the coin has cratered in price. One guest, crypto investor Morten Christensen, says a clever trading strategy meant he and his sister basically got in for free. They took an Uber. The most exclusive dinner in the world, and a guy rode up with his little sister and a coupon, essentially. It also lands as Democrats win majorities in Congress, which means the billions the Trump family has made in crypto will likely get investigated."
-  },
-  {
-   "t": 206.65,
+   "t": 173.0,
    "label": "💻 Tech",
-   "sid": "tech-4",
+   "sid": "tech-5",
    "topic": "tech",
-   "text": "Virginia and Oregon are the first states to sue SpaceX over Grok, the AI chatbot from Elon Musk's xAI, which SpaceX bought in February. The attorneys general say Grok is still generating sexualized images of real people, mostly women and children, including child sexual abuse material and non-consensual intimate images. This follows the rollout of a Grok image feature Musk hyped, which turned out to generate a flood of that content, sometimes without being asked. Musk's companies apologized and said they'd added safeguards. The states call those claims misleading and say the company quietly embraced sexualized content to grab AI market share. X says every Grok output is screened. The complaint's main argument is that once these images exist, they can never be fully erased, and could resurface for a child's whole life. The states want to protect every user in their borders, which makes this one to watch."
+   "text": "Virginia and Oregon just became the first states to sue SpaceX over Grok. SpaceX bought Musk's AI company xAI in February, so it inherited the mess. The mess is Grok's rollout of a racy image feature that was quickly found to generate nonconsensual intimate images and sexual images of children. Musk's companies apologized and said they'd added safeguards. The states say that was misleading, and that Grok is still producing this material today. They allege the company chose to embrace sexualized content to grab AI market share. Virginia's attorney general put it plainly: once these images exist, they can never be fully erased. For its part, X says every Grok output is screened. The suits seek to cover every Grok or X user in each state. When a company's safety record gets compared to a sieve, the sieve usually looks better."
   },
   {
-   "t": 254.9,
+   "t": 219.0,
    "label": "🌍 World",
-   "sid": "world-6",
+   "sid": "world-11",
    "topic": "world",
-   "text": "Three Russian cruise missiles landed in Poland on Friday. Nobody was hurt, but that's a NATO country, so the world noticed. The missiles hit a rural part of southeastern Poland, about thirty miles from the Ukrainian border, during one of Russia's biggest air attacks on Ukraine of the war. European forces were holding a military exercise in the region at the time. Prime Minister Donald Tusk called it an intentional provocation. NATO Secretary General Mark Rutte was in Germany today trying to reassure the alliance's eastern members, who have been warning for years that spillover was coming. Ukraine hit back over the weekend, with a sanctioned Russian cargo ship in the Baltic struck by what's suspected to be a Ukrainian sea drone. Kyiv also took credit for sinking a Russian warship in the Libyan port of Benghazi, thousands of miles from the front. Libya condemned it. The war keeps getting bigger on the map."
+   "text": "NATO's chief, Mark Rutte, says the alliance will defend itself in space too, after German media reported that Russia is preparing to launch a satellite carrying a nuclear warhead. Public broadcasters NDR and WDR and the paper Süddeutsche Zeitung cite anonymous military and intelligence sources, who say it's called Sputnik-S and could be used to disrupt or destroy other satellites, like communications and observation ones. The reported timeline is the next sixty days. Putting nuclear weapons in orbit is something the Outer Space Treaty was written to prevent, by the way. Russia's embassy calls it propaganda, and the Kremlin says it hasn't even seen the reports. German Chancellor Friedrich Merz didn't confirm or deny, but said the reports show how much escalation Russia is evidently prepared to pursue. And honestly, naming it after the satellite that started the space race? That's a lot of nostalgia for a doomsday device."
   },
   {
-   "t": 303.35,
-   "label": "🌍 World",
-   "sid": "world-4",
-   "topic": "world",
-   "text": "Five days after the International Court of Justice ruled that Myanmar committed genocide against its Rohingya minority, the fallout is starting. The BBC says it's the first time a state has been found guilty of the crime. Britain just sanctioned five senior Myanmar military leaders and said it will pass legislation to cut off aviation fuel to the country. Foreign Secretary Ed Miliband said President Min Aung Hlaing, who was head of the military during the 2017 crackdown, is directly responsible for many of the atrocities. That crackdown killed thousands and forced more than seven hundred thousand Rohingya to flee. Australia, Belgium, Portugal, Spain and Canada also acknowledged the ruling. It also sets a precedent that could matter for the case over Israel's actions in Gaza."
+   "t": 267.45,
+   "label": "🇺🇸 U.S.",
+   "sid": "us-3",
+   "topic": "us",
+   "text": "Video of a Saturday arrest at Seattle-Tacoma airport has gone viral, and now the family is talking. Masked ICE officers took Sofia Hernandez Mejia and her father, Ricardo Larrondo Mendoza, into custody at a jet bridge door. In the footage, she's wailing and saying she has a valid work permit, while bystanders demand answers. Her husband, Jose Castillo, is a US citizen, and he told CBS he felt useless, adding that it all happened so fast. Homeland Security says both are Mexican nationals who overstayed their visas, and that officers were targeting the father when other passengers began obstructing them. DHS also accuses Hernandez Mejia of assaulting agents by throwing hot coffee, and says she'll be charged. Castillo says she did nothing, she was being shoved, and when people come at you and shove you, coffee spills."
   },
   {
-   "t": 343.2,
+   "t": 312.75,
+   "label": "🎬 Culture & Entertainment",
+   "sid": "culture-6",
+   "topic": "culture",
+   "text": "Molly Meldrum has died at 83 after a long illness. If you're not Australian, he was the country's most beloved music guy: promoter, broadcaster, host of the ABC's Countdown, then a segment on Hey Hey, It's Saturday. He championed local acts like INXS and Kylie Minogue and international ones like Abba, and he was never without his Stetson hat. In 2014 he became the first non-recording artist inducted into the ARIA Hall of Fame. King Charles called him a true giant of the music industry, and Elton John paid tribute too. Of course the royal link is the famous 1977 interview, when a nervous Meldrum told the then Prince Charles, oh, I'm sweating like a pig. Years later Charles joked that nobody had prepared him for Molly Meldrum. Which, honestly, is how you'd want to be remembered: by a king who's still laughing."
+  },
+  {
+   "t": 358.35,
    "label": "⚡ Quick hits",
    "sid": null,
    "topic": null,
-   "text": "Quick hits. Sheikh Hasina, Bangladesh's ousted prime minister, says she'll fly home from exile in India on December 16th, despite a death sentence handed down in her absence. The government says she can only come back through extradition, and she's expected to be arrested if she lands. The Pentagon issued an unusually blunt rebuke of Canada over defense spending and its review of American-made F-35 fighter jets, saying Canada must get serious. Malaysia says it will send more than sixty-five hundred Rohingya and other Myanmar refugees back to Myanmar next month, just days after that genocide ruling. And the first-ever Children's Booker Prize has its shortlist of eight books, with a fifty-thousand-pound prize and four kid judges who get a say. If the children don't love a book, it won't win, which is a standard most adult prizes could stand to adopt."
+   "text": "Quick hits. Everton lost 4 to 0 at Brentford, with James Tarkowski sent off in the 40th minute after VAR upgraded a yellow to red. David Moyes said Tarkowski got the ball but admitted he could see why it was given, so that's a suspension problem on top of a thumping. The UN climate talks in Turkey, COP31, ended with no deal after the longest conference ever, because the final text didn't even mention fossil fuels. Thanksgiving travel is going to cost you: gas is 56 cents a gallon higher than last year, and airfare is up around 30 percent, though AAA still expects a near-record 81.5 million travelers. The first ever Children's Booker Prize has its eight-book shortlist and four kid judges, so the critics are officially twelve. And Bangladesh's ousted leader Sheikh Hasina says she'll come home December 16th. A government minister says she'll arrive in handcuffs, which is not the red carpet she was hoping for."
   },
   {
-   "t": 387.35,
+   "t": 407.85,
    "label": "Wrapping up",
    "sid": null,
    "topic": null,
-   "text": "That's your Tuesday. Go Spurs, stay skeptical of dinner invitations, and I'll catch you tomorrow."
+   "text": "That's your Tuesday. Go Spurs, fifteen and three, and may your Thanksgiving flight be cheaper than mine. Talk tomorrow."
   }
  ],
- "backup_url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261124-0834.mp3"
+ "backup_url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261124-1110.mp3"
 }
