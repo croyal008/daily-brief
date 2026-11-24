@@ -1,8 +1,8 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-24T07:34:26+00:00",
- "url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261124-0735.mp3",
- "duration": 176.5,
+ "generated_at": "2026-11-24T07:37:53+00:00",
+ "url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261124-0740.mp3",
+ "duration": 374.3,
  "voice": "Azure en-US-Phoebe:DragonHDOmniLatestNeural",
  "style": "host",
  "chapters": [
@@ -11,77 +11,168 @@
    "label": "Intro",
    "sid": null,
    "topic": null,
-   "text": "Morning. It's Tuesday, November 24th, and this is your Daily Brief. Grab your coffee, because we've got a lot to get through and I promise to keep it moving."
+   "text": "Good morning, and welcome to your Daily Brief for Tuesday, November 24th. Grab your coffee. I've read the news so you don't have to, and I'll keep it quick."
   },
   {
-   "t": 8.6,
+   "t": 8.5,
    "label": "🏆 My Teams · 1 of 1",
    "sid": "team-san-antonio-spurs",
    "topic": "myteams",
-   "text": "First up, your teams. The Spurs took care of the Kings, 123 to 107, and they're now 15 and 3. Stephon Castle did a bit of everything, with 28 points, 8 rebounds and 11 assists. That's a monster stat line, and he's doing it for your team."
+   "text": "First up, your Spurs. They beat the Kings, 123 to 107, and they're now 15 and 3. Stephon Castle was the star with 28 points, 8 rebounds and 11 assists. That's a triple-double-ish kind of night, and the Kings never really got a say."
   },
   {
-   "t": 22.7,
-   "label": "🇺🇸 U.S. · 1 of 1",
-   "sid": "us-10",
+   "t": 23.5,
+   "label": "🇺🇸 U.S. · 1 of 3",
+   "sid": "us-12",
    "topic": "us",
-   "text": "Now to U.S. news. President Trump gave a speech at the Justice Department about violent crime, and he went after California Governor Gavin Newsom for commuting hundreds of death sentences. Commuting means reducing a sentence, in this case from death to something less. The speech also took aim at Democrats more broadly."
+   "text": "Now to U.S. news. The magistrate judge who approved the federal search of Congresswoman Ilhan Omar's home ruled she could assert congressional privacy protections right from the start. Records show the government and the judge went back and forth over the constitutional questions. It matters because it tests how far investigators can go when searching a sitting member of Congress."
   },
   {
-   "t": 40.25,
-   "label": "🏛️ Politics · 1 of 1",
+   "t": 43.35,
+   "label": "🇺🇸 U.S. · 2 of 3",
+   "sid": "us-1",
+   "topic": "us",
+   "text": "Also, Sheikh Hasina, Bangladesh's ousted prime minister, has been living in exile in India. A spokesperson says she plans to head home on December 16. At least she's giving advance notice, which is more than most comebacks get."
+  },
+  {
+   "t": 55.15,
+   "label": "🇺🇸 U.S. · 3 of 3",
+   "sid": "us-2",
+   "topic": "us",
+   "text": "And finally, Thanksgiving math. Grocery prices have been climbing, but food-price analysts say it's honestly unclear whether your dinner will cost more this year. Some people are skipping hosting or inviting fewer guests, which is one way to beat inflation: just uninvite the cousin who eats the most."
+  },
+  {
+   "t": 71.2,
+   "label": "🏛️ Politics · 1 of 3",
    "sid": "politics-5",
    "topic": "politics",
-   "text": "On to politics. Iran says it'll end the U.S. naval blockade by, quote, all available means. Trump admitted Iran's attacks are increasing, but said they've, quote, done no damage. Why care? Because more confrontation at sea is exactly how a tense situation turns into a bigger conflict."
+   "text": "Next, politics. Iran is vowing to end the U.S. naval blockade by all available means. Trump acknowledged that Iran's attacks are increasing, but says they've done no damage. That's a bold review of an attack. The worry is that escalation in a standoff at sea could widen the conflict."
   },
   {
-   "t": 57.75,
-   "label": "🌍 World · 1 of 2",
-   "sid": "world-4",
-   "topic": "world",
-   "text": "Now the world. An ICE arrest of a father and daughter at Seattle's airport has people furious. ICE is Immigration and Customs Enforcement. The arrest was filmed while passengers boarded an Alaska Airlines flight, and some crew members asked to be replaced because it was so distressing. It's raising real questions about how immigration agents make arrests in public places."
+   "t": 88.3,
+   "label": "🏛️ Politics · 2 of 3",
+   "sid": "politics-1",
+   "topic": "politics",
+   "text": "Also, the number two official at the F.B.I., Christopher Raia, a veteran agent, is reportedly retiring before the end of the year. That comes a few months after another deputy left. At this point the deputy's office has a revolving door and a very nice parking spot."
   },
   {
-   "t": 78.4,
-   "label": "🌍 World · 2 of 2",
+   "t": 101.85,
+   "label": "🏛️ Politics · 3 of 3",
+   "sid": "politics-2",
+   "topic": "politics",
+   "text": "And finally, Walter Willett is a Harvard scientist who helped build the research behind the Mediterranean diet. He studies how food affects health, which is a top priority for Health Secretary Robert F. Kennedy Jr. His grants got frozen anyway, because it turns out olive oil won't shield you from a political feud."
+  },
+  {
+   "t": 118.25,
+   "label": "🌍 World · 1 of 3",
    "sid": "world-6",
    "topic": "world",
-   "text": "Also in world news, Russian incursions into NATO territory are rising after three Russian cruise missiles landed in Poland on Friday. NATO's Secretary General, Mark Rutte, is trying to reassure the alliance's eastern members. The bigger worry is that the war in Ukraine keeps spilling over its borders, and that's testing the alliance."
+   "text": "Next, world news. NATO's chief, Mark Rutte, is working to reassure eastern European members after three Russian cruise missiles landed in Poland on Friday. Russian incursions into NATO territory are increasing. Reassurance is the job, but it's a tough sell when the missiles are in your neighbor's yard, and repeated spillover raises the risk for the whole alliance."
   },
   {
-   "t": 97.25,
-   "label": "💻 Tech · 1 of 1",
+   "t": 137.9,
+   "label": "🌍 World · 2 of 3",
+   "sid": "world-4",
+   "topic": "world",
+   "text": "Also, at Seattle-Tacoma airport, unmarked ICE agents, that's Immigration and Customs Enforcement, arrested a father and his adult daughter as passengers boarded a flight. Bystanders filmed it, and some crew members asked to be replaced. The story has drawn outrage, and it shows how immigration enforcement is increasingly playing out in public places."
+  },
+  {
+   "t": 156.1,
+   "label": "🌍 World · 3 of 3",
+   "sid": "world-1",
+   "topic": "world",
+   "text": "And finally, Gisèle Pelicot, the French woman whose husband was convicted of abusing her, says she's humiliated and deeply shocked. Nude photos of her, taken by him, were sent to media to promote a book, without her consent. She says she'll pursue legal action against the publisher and the author."
+  },
+  {
+   "t": 174.1,
+   "label": "💻 Tech · 1 of 3",
    "sid": "tech-4",
    "topic": "tech",
-   "text": "In tech, a group of states is suing SpaceX to stop its Grok AI from generating child sexual abuse images. State attorneys general say Grok is still producing that material, plus revenge porn. X, which is tied to SpaceX, says every Grok output is screened. This case could set the tone for how AI image tools are held accountable."
+   "text": "Next, tech. A group of state attorneys general is suing SpaceX over Grok, the AI chatbot. They say it still produces child sexual abuse material and revenge porn. X says every Grok output is screened. The case tests whether AI companies are legally responsible for what their systems produce."
   },
   {
-   "t": 116.9,
-   "label": "🔬 Science & Health · 1 of 1",
+   "t": 191.05,
+   "label": "💻 Tech · 2 of 3",
+   "sid": "tech-1",
+   "topic": "tech",
+   "text": "Also, Jensen Huang, the Nvidia boss, resigned while mired in a scandal over extramarital affairs. Just days later, he's making what's being called a remarkable return. That's a shorter break than most people last on a gym membership."
+  },
+  {
+   "t": 203.9,
+   "label": "💻 Tech · 3 of 3",
+   "sid": "tech-2",
+   "topic": "tech",
+   "text": "And finally, Elon Musk has an AI problem of his own making. SpaceX is renting out computing power from its data centers to competitors, including Anthropic, the company behind the Claude chatbot. That's making life harder for his own AI effort. Nothing like becoming a landlord to the people you're trying to beat."
+  },
+  {
+   "t": 221.55,
+   "label": "🔬 Science & Health · 1 of 3",
    "sid": "science-5",
    "topic": "science",
-   "text": "Science and health now. Measles is becoming a bigger risk for American adults. The danger is greatest for the unvaccinated, but medical experts say even vaccinated people born before 1989 may no longer be sufficiently protected. So if that's you, it's worth asking your doctor about your vaccination status."
+   "text": "Next, science and health. Measles is a growing risk for U.S. adults. Unvaccinated people face the greatest danger, but medical experts say vaccinated adults born before 1989 may no longer be sufficiently protected. So it might be time to dig out your old vaccine records, or ask your doctor, and find out where you stand."
   },
   {
-   "t": 135.0,
-   "label": "💼 Business (light) · 1 of 1",
+   "t": 239.75,
+   "label": "🔬 Science & Health · 2 of 3",
+   "sid": "science-1",
+   "topic": "science",
+   "text": "Also, CVS Health plans to split up, spinning off its drugstores. But lawmakers are warning that the breakup won't end scrutiny over its power. Antitrust critics, the folks who worry about companies getting too big, are still watching. Corporate breakup, and Congress is still texting."
+  },
+  {
+   "t": 255.8,
+   "label": "🔬 Science & Health · 3 of 3",
+   "sid": "science-2",
+   "topic": "science",
+   "text": "And finally, the Trump administration has restarted the process for funding four large H.I.V. research networks, after postponing it earlier this year. That means the networks may seek federal money again. The headline promises a twist, though the details are thin so far."
+  },
+  {
+   "t": 271.7,
+   "label": "💼 Business (light) · 1 of 3",
    "sid": "business-9",
    "topic": "business",
-   "text": "In business, CrowdStrike plans to buy Zscaler in a $44 billion deal. Both are major cybersecurity companies, and they're teaming up as worries grow over hacks supercharged by artificial intelligence, hitting companies and governments alike. Nothing says confidence in the future like paying forty-four billion to keep the hackers out."
+   "text": "Next, business. CrowdStrike is acquiring Zscaler in a deal worth 44 billion dollars. Both are cybersecurity firms, and they're teaming up as worries grow about hacks fueled by advances in artificial intelligence, hitting companies and governments alike. Basically, the security guards are merging because the burglars got smarter."
   },
   {
-   "t": 152.9,
-   "label": "🏈 Sports · 1 of 1",
-   "sid": "sports-10",
+   "t": 289.3,
+   "label": "💼 Business (light) · 2 of 3",
+   "sid": "business-1",
+   "topic": "business",
+   "text": "Also, Trump held another dinner for the top holders of his meme coin. That's a cryptocurrency built on internet-joke energy. The events have raised intense controversy, and two guests who attended gave an inside account. Their verdict: it didn't go well. Shocking, I know, a pay-to-dine crypto dinner that didn't feel like a classy affair."
+  },
+  {
+   "t": 307.85,
+   "label": "💼 Business (light) · 3 of 3",
+   "sid": "business-2",
+   "topic": "business",
+   "text": "And finally, Britain's landlords are getting bigger. More corporate landlords could usher in big changes for renters, including a possible two-tier rental market. Soon renters may choose between a landlord who ignores your emails and a corporation that ignores them at scale."
+  },
+  {
+   "t": 321.85,
+   "label": "🏈 Sports · 1 of 3",
+   "sid": "sports-8",
    "topic": "sports",
-   "text": "Last up, sports. The SEC has scheduled a vote on possibly expelling LSU. That's the Southeastern Conference, one of college football's biggest leagues. LSU's standoff with the conference over the RJ Luis dispute has turned into a legal and political fight, and major penalties are still on the table."
+   "text": "Next, sports. The SEC, the Southeastern Conference, has scheduled a vote on possibly expelling LSU. A dispute over RJ Luis has escalated into a legal and political fight between LSU and the conference, and major penalties are still possible. Nothing says college sports like a lawsuit over eligibility."
   },
   {
-   "t": 169.9,
+   "t": 339.55,
+   "label": "🏈 Sports · 2 of 3",
+   "sid": "sports-2",
+   "topic": "sports",
+   "text": "Also, in the NFL, the 49ers won in Mexico, and the Bills stayed on top in Week 11. San Francisco and Buffalo remain the pacesetters in the NFC and AFC. So the standings have the top teams looking comfortable, and everyone else is still hoping."
+  },
+  {
+   "t": 353.75,
+   "label": "🏈 Sports · 3 of 3",
+   "sid": "sports-1",
+   "topic": "sports",
+   "text": "And finally, Arsenal have made an impressive start to the season, but it's been a frustrating one for striker Viktor Gyokeres. He has just two goals in 15 games. For a center forward, that's not the stat line you want. Everyone is asking what's going on, and so, I bet, is he."
+  },
+  {
+   "t": 369.25,
    "label": "Wrapping up",
    "sid": null,
    "topic": null,
-   "text": "And that's your brief. Go be smug at the office about knowing all this. Have a great day, and I'll catch you tomorrow."
+   "text": "That's your brief. Go be the best-informed person at the coffee machine today, and have a great one."
   }
  ]
 }

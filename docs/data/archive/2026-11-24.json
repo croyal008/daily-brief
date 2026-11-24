@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-24T07:34:26+00:00",
+ "generated_at": "2026-11-24T07:37:53+00:00",
  "ai_summaries": true,
  "topics": [
   {
@@ -60,28 +60,28 @@
  ],
  "overview": [
   {
-   "topic": "us",
-   "text": "Trump condemned California Gov. Newsom's commutation of hundreds of death sentences in a Justice Department speech on violent crime."
-  },
-  {
    "topic": "politics",
    "text": "Iran vowed to end the U.S. naval blockade by all available means, while Trump said Iranian attacks have done no damage."
   },
   {
    "topic": "world",
-   "text": "Three Russian cruise missiles landed in Poland, and NATO's Rutte is working to reassure eastern allies as incursions rise."
+   "text": "Russian cruise missiles landed in Poland, and NATO's Rutte sought to reassure eastern allies as Russian incursions into NATO territory increase."
   },
   {
    "topic": "us",
-   "text": "Video of ICE agents arresting a father and daughter at Seattle airport has drawn outrage, with some flight crew asking to be replaced."
+   "text": "A judge ruled Rep. Ilhan Omar could assert congressional privacy protections at the start of the search of her home."
   },
   {
-   "topic": "science",
-   "text": "Measles poses a growing risk to U.S. adults, including some vaccinated people born before 1989, experts say."
+   "topic": "world",
+   "text": "The arrest of a father and daughter by ICE at Seattle airport has drawn outrage, and the family is speaking out."
   },
   {
    "topic": "business",
    "text": "CrowdStrike agreed to buy Zscaler in a $44 billion deal combining two major cybersecurity firms."
+  },
+  {
+   "topic": "science",
+   "text": "Measles poses a growing risk to U.S. adults, including some vaccinated before 1989, medical experts say."
   }
  ],
  "stories": [
@@ -100,25 +100,57 @@
    "why": ""
   },
   {
-   "id": "us-10",
+   "id": "us-12",
    "topic": "us",
-   "headline": "Trump targets Newsom over death sentence commutations in Justice Department speech",
-   "summary": "President Trump condemned California Gov. Gavin Newsom's decision to commute hundreds of death sentences. The speech at the Justice Department focused on violent crime and targeted Democrats.",
+   "headline": "Judge says Omar could assert privacy protections during home search",
+   "summary": "A magistrate judge who authorized the federal search of Rep. Ilhan Omar's home ruled she was entitled to assert congressional privacy protections at the outset. Records show the government and judge debated constitutional implications.",
+   "why": "It tests limits on searches of sitting members of Congress.",
+   "sources": [
+    {
+     "name": "ABC News",
+     "url": "https://abcnews.com/US/wireStory/records-government-judge-debated-constitutional-implications-searching-rep-138398454"
+    }
+   ],
+   "time": "2026-11-24T03:40:48+00:00"
+  },
+  {
+   "id": "us-1",
+   "topic": "us",
+   "headline": "A spokesperson says ousted Bangladeshi Prime Minister Sheikh Hasina plans to return home from exile in India on Dec. 16",
+   "summary": "",
    "why": "",
    "sources": [
     {
      "name": "ABC News",
-     "url": "https://abcnews.com/US/wireStory/trump-targets-newsom-democrats-justice-department-speech-focused-138377257"
+     "url": "https://abcnews.com/US/wireStory/spokesperson-ousted-bangladeshi-prime-minister-sheikh-hasina-plans-138398761"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c60rk1yj07xeo?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-24T03:08:51+00:00"
+   "time": "2026-11-24T06:23:01+00:00"
+  },
+  {
+   "id": "us-2",
+   "topic": "us",
+   "headline": "Let's talk turkey: Here's how Thanksgiving meal costs have changed this year",
+   "summary": "Grocery costs have been on the rise, but food-price analysts say it's unclear if you'll spend more on the Thanksgiving meal this year. Some people are deciding not to host or are hosting fewer guests.",
+   "why": "",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6044207/thanksgiving-meal-costs"
+    }
+   ],
+   "time": "2026-11-23T10:00:00+00:00"
   },
   {
    "id": "politics-5",
    "topic": "politics",
    "headline": "Iran vows to end U.S. naval blockade by 'all available means'",
-   "summary": "Iran said it will force the U.S. to lift its blockade. Trump acknowledged Iran's increasing attacks but said they have \"done no damage.\"",
-   "why": "Rising confrontation at sea could escalate the conflict.",
+   "summary": "Iran said it will force the U.S. to lift its blockade. Trump acknowledged Iran's increasing attacks but said they have done no damage.",
+   "why": "Escalation in a naval standoff could widen the conflict.",
    "sources": [
     {
      "name": "CBS News",
@@ -128,11 +160,53 @@
    "time": "2026-11-24T06:42:21+00:00"
   },
   {
+   "id": "politics-1",
+   "topic": "politics",
+   "headline": "No. 2 Official at F.B.I. Is Said to Be Retiring Before End of Year",
+   "summary": "The departure of Christopher G. Raia, a veteran agent, comes a few months after another deputy left the F.B.I.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/us/politics/fbi-raia-retiring.html"
+    }
+   ],
+   "time": "2026-11-24T04:38:48+00:00"
+  },
+  {
+   "id": "politics-2",
+   "topic": "politics",
+   "headline": "How a Scientist Behind the Mediterranean Diet Got Caught in Trump’s War on Harvard",
+   "summary": "Walter Willett studies the link between diet and health, a high priority for Health Secretary Robert F. Kennedy Jr. His grants were frozen anyway.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/us/politics/walter-willett-trump-harvard.html"
+    }
+   ],
+   "time": "2026-11-24T01:31:14+00:00"
+  },
+  {
+   "id": "world-6",
+   "topic": "world",
+   "headline": "Russian incursions into NATO territory are increasing",
+   "summary": "NATO chief Mark Rutte is trying to reassure eastern European members after three Russian cruise missiles landed in Poland on Friday.",
+   "why": "Repeated spillover raises risks for the NATO alliance.",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6051013/russian-incursions-into-nato-territory-are-increasing"
+    }
+   ],
+   "time": "2026-11-23T23:08:51+00:00"
+  },
+  {
    "id": "world-4",
    "topic": "world",
-   "headline": "ICE arrest of father and daughter at Seattle airport sparks outrage",
-   "summary": "An ICE arrest was filmed as passengers boarded an Alaska Airlines flight. Some crew members asked to be replaced because the event was so distressing.",
-   "why": "It raises questions about how immigration agents carry out arrests in public places.",
+   "headline": "ICE arrest of father and daughter at Seattle airport draws outrage",
+   "summary": "Unmarked ICE agents arrested a father and his adult daughter at Seattle-Tacoma airport as passengers boarded a flight, and the scene was filmed. Some crew members asked to be replaced.",
+   "why": "Shows how immigration enforcement is playing out in public places.",
    "sources": [
     {
      "name": "BBC",
@@ -146,25 +220,29 @@
    "time": "2026-11-23T22:59:07+00:00"
   },
   {
-   "id": "world-6",
+   "id": "world-1",
    "topic": "world",
-   "headline": "Russian incursions into NATO territory increase after missiles land in Poland",
-   "summary": "NATO Secretary General Mark Rutte is seeking to reassure eastern European members after three Russian cruise missiles landed in Poland on Friday.",
-   "why": "Spillover from the war in Ukraine is testing the alliance.",
+   "headline": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
+   "summary": "French woman says she will pursue legal action against publisher and author over use of photos taken by convicted husband Gisèle Pelicot has said she is “deeply shocked” that nude photographs of her had been used without her consent to…",
+   "why": "",
    "sources": [
     {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/23/nx-s1-6051013/russian-incursions-into-nato-territory-are-increasing"
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cm3eg502nxw2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/nov/23/gisele-pelicot-deeply-shocked-nude-images-book-france"
     }
    ],
-   "time": "2026-11-23T23:08:51+00:00"
+   "time": "2026-11-23T21:24:47+00:00"
   },
   {
    "id": "tech-4",
    "topic": "tech",
-   "headline": "States sue SpaceX to stop Grok generating child sex images",
-   "summary": "State attorneys general say Grok is still producing child sexual abuse material and revenge porn. X says every Grok output is screened.",
-   "why": "It tests how AI image tools are held accountable.",
+   "headline": "States sue SpaceX over Grok generating child sex images",
+   "summary": "State attorneys general say Grok still produces child sexual abuse material and revenge porn. X says every Grok output is screened.",
+   "why": "Tests legal responsibility of AI companies for harmful output.",
    "sources": [
     {
      "name": "Ars Technica",
@@ -174,11 +252,39 @@
    "time": "2026-11-23T21:30:44+00:00"
   },
   {
+   "id": "tech-1",
+   "topic": "tech",
+   "headline": "The rise and fall and rise again of Jensen Huang",
+   "summary": "Days after resigning while mired in scandal of extra-marital affairs, Nvidia's Jensen Huang is making a remarkable return.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-23T15:49:52+00:00"
+  },
+  {
+   "id": "tech-2",
+   "topic": "tech",
+   "headline": "Elon Musk Faces an A.I. Dilemma at SpaceX",
+   "summary": "Mr. Musk’s SpaceX is renting out computing power from its data centers to competitors, including Anthropic. That’s making it harder for his own A.I. effort.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/business/elon-musk-ai-anthropic-google.html"
+    }
+   ],
+   "time": "2026-11-23T16:13:32+00:00"
+  },
+  {
    "id": "science-5",
    "topic": "science",
    "headline": "Measles is a growing risk for U.S. adults",
-   "summary": "Danger is greatest for the unvaccinated, but medical experts say vaccinated people born before 1989 may no longer be sufficiently protected.",
-   "why": "Some adults may want to check their vaccination status with a doctor.",
+   "summary": "Unvaccinated people face the greatest danger, but vaccinated adults born before 1989 may no longer be sufficiently protected, medical experts said.",
+   "why": "Some adults may need to check their own protection.",
    "sources": [
     {
      "name": "New York Times",
@@ -188,11 +294,39 @@
    "time": "2026-11-23T22:19:34+00:00"
   },
   {
+   "id": "science-1",
+   "topic": "science",
+   "headline": "CVS Health’s Planned Breakup Hasn’t Quieted Antitrust Critics",
+   "summary": "Lawmakers are warning that spinning off the health care conglomerate’s drugstores will not end scrutiny over its power.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/business/cvs-pharmacy-health-federal-investigations-antitrust.html"
+    }
+   ],
+   "time": "2026-11-23T10:03:26+00:00"
+  },
+  {
+   "id": "science-2",
+   "topic": "science",
+   "headline": "H.I.V. Research Networks May Again Seek Federal Funding, With a Twist",
+   "summary": "The Trump administration restarted the process for funding four large research networks after postponing it earlier this year.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/20/science/hiv-research-funding-nih.html"
+    }
+   ],
+   "time": "2026-11-23T15:36:20+00:00"
+  },
+  {
    "id": "business-9",
    "topic": "business",
-   "headline": "CrowdStrike to acquire Zscaler in $44 billion cybersecurity deal",
-   "summary": "The two major cybersecurity firms will combine as worries grow over hacks fueled by advances in artificial intelligence affecting companies and governments.",
-   "why": "",
+   "headline": "CrowdStrike to acquire Zscaler in $44 billion deal",
+   "summary": "The two cybersecurity firms will combine as worries grow about hacks fueled by advances in artificial intelligence affecting companies and governments.",
+   "why": "Signals rising concern about AI-driven cyber threats.",
    "sources": [
     {
      "name": "New York Times",
@@ -202,10 +336,38 @@
    "time": "2026-11-23T13:08:06+00:00"
   },
   {
-   "id": "sports-10",
+   "id": "business-1",
+   "topic": "business",
+   "headline": "They attended Trump's controversial meme coin dinner. It didn't go well",
+   "summary": "Trump held another meme coin dinner for top holders of his cryptocurrency — an event that has raised intense controversy. Here's an inside account from two guests who attended.",
+   "why": "",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6045883/they-attended-trumps-controversial-meme-coin-dinner-it-didnt-go-well"
+    }
+   ],
+   "time": "2026-11-23T22:17:59+00:00"
+  },
+  {
+   "id": "business-2",
+   "topic": "business",
+   "headline": "Britain's landlords are getting bigger. A two-tier rental market may follow",
+   "summary": "Increasing numbers of corporate landlords could usher in big changes for renters",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c6n90g2l82d1o?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-24T00:28:48+00:00"
+  },
+  {
+   "id": "sports-8",
    "topic": "sports",
    "headline": "SEC schedules vote on possible LSU expulsion",
-   "summary": "LSU's standoff with the SEC over the RJ Luis dispute has escalated into a legal and political fight, with major penalties still possible.",
+   "summary": "A dispute over RJ Luis has escalated into a legal and political fight between LSU and the SEC, with major penalties still possible.",
    "why": "",
    "sources": [
     {
@@ -214,6 +376,84 @@
     }
    ],
    "time": "2026-11-24T02:33:24+00:00"
+  },
+  {
+   "id": "sports-2",
+   "topic": "sports",
+   "headline": "49ers win in Mexico, Bills stay on top in NFL Week 11",
+   "summary": "The San Francisco 49ers and Buffalo Bills remain the pacesetters in the NFC and AFC respectively.",
+   "why": "",
+   "sources": [
+    {
+     "name": "Yahoo Sports",
+     "url": "https://sports.yahoo.com/articles/49ers-win-mexico-bills-stay-065934069.html"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/sport/american-football/articles/c3zxv0nyxl8ro?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-24T07:14:52+00:00"
+  },
+  {
+   "id": "sports-1",
+   "topic": "sports",
+   "headline": "Two goals in 15 games - what's going on with Gyokeres?",
+   "summary": "Arsenal have made an impressive start to the campaign but it has been a frustrating one for striker Viktor Gyokeres.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/sport/football/articles/cklylr15gr2do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "Yahoo Sports",
+     "url": "https://sports.yahoo.com/articles/two-goals-15-games-whats-064533119.html"
+    }
+   ],
+   "time": "2026-11-24T07:29:01+00:00"
+  },
+  {
+   "id": "culture-1",
+   "topic": "culture",
+   "headline": "First Children's Booker prize reveals shortlist - and its child judges",
+   "summary": "The eight books in contention include War by Artemis Fowl author Eoin Colfer and Andrew Donkin.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c65y18gl23gko?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-24T07:29:37+00:00"
+  },
+  {
+   "id": "culture-2",
+   "topic": "culture",
+   "headline": "Jefferson Airplane's Jorma Kaukonen says guitar has always been a 'great refuge'",
+   "summary": "Kaukonen helped define the sound of the '60s as the lead guitar player and a founding member of Jefferson Airplane. Now 85, he's still touring with his band Hot Tuna.",
+   "why": "",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6047437/jefferson-airplanes-jorma-kaukonen-says-guitar-has-always-been-a-great-refuge"
+    }
+   ],
+   "time": "2026-11-23T16:25:12+00:00"
+  },
+  {
+   "id": "culture-3",
+   "topic": "culture",
+   "headline": "A First for a ‘Curious Incident’ Production: A Cast of Neurodivergent Actors",
+   "summary": "A company for neurodivergent actors steps up to a bigger stage with its full-spectrum model of inclusion.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/theater/curious-incident-epic-players-neurodiverse.html"
+    }
+   ],
+   "time": "2026-11-23T18:06:14+00:00"
   }
  ]
 }
