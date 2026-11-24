@@ -1,0 +1,571 @@
+{
+ "date": "2026-11-23",
+ "generated_at": "2026-11-24T05:13:39+00:00",
+ "ai_summaries": false,
+ "topics": [
+  {
+   "id": "us",
+   "name": "U.S.",
+   "emoji": "🇺🇸",
+   "default_on": true
+  },
+  {
+   "id": "politics",
+   "name": "Politics",
+   "emoji": "🏛️",
+   "default_on": true
+  },
+  {
+   "id": "world",
+   "name": "World",
+   "emoji": "🌍",
+   "default_on": true
+  },
+  {
+   "id": "tech",
+   "name": "Tech",
+   "emoji": "💻",
+   "default_on": true
+  },
+  {
+   "id": "science",
+   "name": "Science & Health",
+   "emoji": "🔬",
+   "default_on": true
+  },
+  {
+   "id": "business",
+   "name": "Business (light)",
+   "emoji": "💼",
+   "default_on": true
+  },
+  {
+   "id": "sports",
+   "name": "Sports",
+   "emoji": "🏈",
+   "default_on": false
+  },
+  {
+   "id": "culture",
+   "name": "Culture & Entertainment",
+   "emoji": "🎬",
+   "default_on": false
+  }
+ ],
+ "overview": [
+  {
+   "topic": "tech",
+   "text": "With Jensen Huang’s Return as C.E.O., Trump Effectively Overrode Nvidia’s Board"
+  },
+  {
+   "topic": "us",
+   "text": "Appeals court clears way for Army to detonate Iowa explosives"
+  },
+  {
+   "topic": "world",
+   "text": "Ukraine confirms it used naval drones to strike two Russian ships off Libya"
+  },
+  {
+   "topic": "science",
+   "text": "Five takeaways from the failed climate talks COP31"
+  },
+  {
+   "topic": "politics",
+   "text": "Rep. Jimmy Gomez Resigns After Panel Alleges Unwanted Sexual Contact With Aide"
+  },
+  {
+   "topic": "business",
+   "text": "Paolo Bulgari, Heir of Italian Jewelry Dynasty, Dies at 89"
+  },
+  {
+   "topic": "culture",
+   "text": "Mending relationships over the holidays? Considering a truce? NPR wants to know"
+  }
+ ],
+ "stories": [
+  {
+   "id": "us-1",
+   "topic": "us",
+   "headline": "Appeals court clears way for Army to detonate Iowa explosives",
+   "summary": "Trump, on social media, tried to push responsibility of ‘any and all death or destruction’ on Democratic governor-elect The US army can proceed with detonating several tons of degraded bomb-making chemicals in Iowa, a federal appeals court ruled on Monday.",
+   "why": "",
+   "sources": [
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/"
+    },
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/trump-postpones-us-army-plan-to-detonate-toxic-explosives-in-iowa?traffic_source=rss"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/us-news/2026/nov/23/iowa-lead-bomb-appeals-court"
+    }
+   ],
+   "time": "2026-11-24T03:21:47+00:00"
+  },
+  {
+   "id": "us-2",
+   "topic": "us",
+   "headline": "Miley Cyrus marries rock drummer Maxx Morando in an intimate Palm Springs wedding",
+   "summary": "Singer Miley Cyrus has married rock drummer Maxx Morando in an intimate ceremony in Palm Springs, California",
+   "why": "",
+   "sources": [
+    {
+     "name": "Abcnews",
+     "url": "https://abcnews.com/US/wireStory/miley-cyrus-marries-rock-drummer-maxx-morando-intimate-138366725"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cq8e0p87l89lo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-23T05:30:14+00:00"
+  },
+  {
+   "id": "us-3",
+   "topic": "us",
+   "headline": "Two central Ohio bus drivers killed, nine others injured after head-on crash",
+   "summary": "Two Columbus transit bus drivers have been killed and nine others injured after their vehicles collided during the morning rush hour in Ohio's state capital and one bus was struck by a third vehicle",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/us/columbus-ohio-bus-crash.html"
+    },
+    {
+     "name": "Abcnews",
+     "url": "https://abcnews.com/US/wireStory/central-ohio-bus-drivers-killed-injured-after-head-138384467"
+    }
+   ],
+   "time": "2026-11-23T22:13:03+00:00"
+  },
+  {
+   "id": "us-4",
+   "topic": "us",
+   "headline": "Federal court releases Rep. Ilhan Omar D.C. home raid documents",
+   "summary": "A federal court on Monday evening released documents regarding last month's raid at the Washington, D.C. home of Democratic Minnesota U.S. Rep. Ilhan Omar.",
+   "why": "",
+   "sources": [
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/congresswoman-ilhan-omar-house-raid-documents-release/"
+    }
+   ],
+   "time": "2026-11-24T02:21:00+00:00"
+  },
+  {
+   "id": "us-5",
+   "topic": "us",
+   "headline": "Let's talk turkey: Here's how Thanksgiving meal costs have changed this year",
+   "summary": "Grocery costs have been on the rise, but food-price analysts say it's unclear if you'll spend more on the Thanksgiving meal this year. Some people are deciding not to host or are hosting fewer guests.",
+   "why": "",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6044207/thanksgiving-meal-costs"
+    }
+   ],
+   "time": "2026-11-23T10:00:00+00:00"
+  },
+  {
+   "id": "politics-1",
+   "topic": "politics",
+   "headline": "Rep. Jimmy Gomez Resigns After Panel Alleges Unwanted Sexual Contact With Aide",
+   "summary": "Democrat, who lost re-election bid, found to have made ‘unwelcome sexual advances’ towards House staffer Jimmy Gomez will resign from Congress after a House ethics report released on Monday found “substantial evidence” that the California…",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/us/politics/jimmy-gomez-democrat-resigns.html"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/house-ethics-investigation-jimmy-gomez-sexual-misconduct/"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/us-news/2026/nov/23/jimmy-gomez-congress-investigation-sexual-misconduct"
+    }
+   ],
+   "time": "2026-11-23T23:23:01+00:00"
+  },
+  {
+   "id": "politics-2",
+   "topic": "politics",
+   "headline": "D.N.C. Plans 12 Debates for the 2028 Presidential Primary, Starting in June",
+   "summary": "The national party also revealed some initial criteria for participating, including a pledge to denounce spending from supportive groups that do not disclose their donors.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/us/politics/democrats-debates-2028-presidential-race.html"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/2028-presidential-race-democratic-debates/"
+    }
+   ],
+   "time": "2026-11-23T18:05:00+00:00"
+  },
+  {
+   "id": "politics-3",
+   "topic": "politics",
+   "headline": "Democrats have flipped 47 House seats. Here's the breakdown.",
+   "summary": "Democrats won control of the House by flipping dozens of Republican-held seats, picking up perennial swing districts and seats that were once considered deep red.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/22/us/politics/democrats-midterm-house-majority-record.html"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/house-districts-flipped-2026-midterm-elections/"
+    }
+   ],
+   "time": "2026-11-23T20:38:00+00:00"
+  },
+  {
+   "id": "politics-4",
+   "topic": "politics",
+   "headline": "No. 2 Official at F.B.I. Is Said to Be Retiring Before End of Year",
+   "summary": "The departure of Christopher G. Raia, a veteran agent, comes a few months after another deputy left the F.B.I.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/us/politics/fbi-raia-retiring.html"
+    }
+   ],
+   "time": "2026-11-24T04:38:48+00:00"
+  },
+  {
+   "id": "world-1",
+   "topic": "world",
+   "headline": "Ukraine confirms it used naval drones to strike two Russian ships off Libya",
+   "summary": "Ukraine’s security service says seven drones were launched from mothership in operation that sank Merkury warship Ukraine has confirmed it deployed naval drones in strikes on two Russian vessels off Libya on Sunday, including one that sank…",
+   "why": "",
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html"
+    }
+   ],
+   "time": "2026-11-23T20:48:35+00:00"
+  },
+  {
+   "id": "world-2",
+   "topic": "world",
+   "headline": "24 Killed After Fire Rips Through Candy Factory in Indonesia",
+   "summary": "Rescuers brave unstable structures in search for missing as DNA needed to identify victims Indonesia has confirmed the deaths of 24 people in a fire that tore ⁠through a factory, as rescuers braved unstable structures in the burned…",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/world/asia/indonesia-factory-fire.html"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/nov/22/fire-confectionary-factory-indonesia-jakarta"
+    }
+   ],
+   "time": "2026-11-24T00:35:20+00:00"
+  },
+  {
+   "id": "world-3",
+   "topic": "world",
+   "headline": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
+   "summary": "French woman says she will pursue legal action against publisher and author over use of photos taken by convicted husband Gisèle Pelicot has said she is “deeply shocked” that nude photographs of her had been used without her consent to…",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cm3eg502nxw2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/nov/23/gisele-pelicot-deeply-shocked-nude-images-book-france"
+    }
+   ],
+   "time": "2026-11-23T21:24:47+00:00"
+  },
+  {
+   "id": "world-4",
+   "topic": "world",
+   "headline": "UK sanctions top Myanmar military leaders after Rohingya genocide ruling",
+   "summary": "A U.N. court’s decision against Myanmar sets a precedent in international law with important implications for a similar case over Israel’s actions in Gaza.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c6wy4ng1rznxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/22/world/genocide-myanmar-un-climate-talks.html"
+    }
+   ],
+   "time": "2026-11-23T21:03:34+00:00"
+  },
+  {
+   "id": "world-5",
+   "topic": "world",
+   "headline": "Iranian authorities flog singer who performed without hijab, lawyers say",
+   "summary": "Western governments and rights groups have criticised flogging as torture and a violation of international law An Iranian singer and four members of her production team ⁠have each received 74 lashes after being sentenced for “offending…",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/nov/23/iranian-singer-lashes-performing-without-hijab"
+    }
+   ],
+   "time": "2026-11-23T20:56:17+00:00"
+  },
+  {
+   "id": "tech-1",
+   "topic": "tech",
+   "headline": "With Jensen Huang’s Return as C.E.O., Trump Effectively Overrode Nvidia’s Board",
+   "summary": "This live blog is now closed. Jensen Huang reinstated as Nvidia CEO after Trump intervenes Sign up to the Breaking News US email Nvidia ’s shares have surged by 31% at the start of trading following the news.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/technology/jensen-huang-nvidia-board-trump.html"
+    },
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump"
+    }
+   ],
+   "time": "2026-11-24T04:58:02+00:00"
+  },
+  {
+   "id": "tech-2",
+   "topic": "tech",
+   "headline": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+   "summary": "The administration added Megaspeed to the entity list, a trade blacklist, after weeks of sparring among top officials on the decision.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/business/trump-administration-megaspeed-trade-blacklist-nvidia.html"
+    }
+   ],
+   "time": "2026-11-24T03:12:26+00:00"
+  },
+  {
+   "id": "tech-3",
+   "topic": "tech",
+   "headline": "Trump halts Iowa detonation, says new governor to blame if it blows accidentally",
+   "summary": "President Trump said he will wait for the courts and Iowa Gov.-elect Rob Sand to agree with the Army's plan.",
+   "why": "",
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/health/2026/11/trump-halts-iowa-detonation-says-new-governor-to-blame-if-it-blows-accidentally/"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/trump-tells-army-to-halt-detonation-in-iowa-this-week/"
+    }
+   ],
+   "time": "2026-11-23T23:51:00+00:00"
+  },
+  {
+   "id": "tech-4",
+   "topic": "tech",
+   "headline": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+   "summary": "Virginia and Oregon filed separate lawsuits on Monday, accusing the company of promoting Grok's 'spicy mode'.",
+   "why": "",
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/"
+    },
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/economy/2026/11/23/us-states-sue-spacex-over-grok-ais-creation-of-child-sexual-abuse-material?traffic_source=rss"
+    }
+   ],
+   "time": "2026-11-23T21:30:44+00:00"
+  },
+  {
+   "id": "science-1",
+   "topic": "science",
+   "headline": "Five takeaways from the failed climate talks COP31",
+   "summary": "Countries at the Cop31 climate summit failed to reach a keystone agreement for the first time in 17 years.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cm75237wlp3lo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/climate/cop31-collapse-what-next.html"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/news/audio/2026/nov/23/cop31-collapses-why-did-climate-talks-fall-apart-the-latest"
+    }
+   ],
+   "time": "2026-11-23T17:19:55+00:00"
+  },
+  {
+   "id": "science-2",
+   "topic": "science",
+   "headline": "'Medicare for all' is back on the drawing board. Does it stand a better chance this time?",
+   "summary": "Several newly elected Democratic U.S. senators campaigned on Medicare for All. Could this be the time it actually gets traction?",
+   "why": "",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6047706/health-medicare-for-all-chances"
+    }
+   ],
+   "time": "2026-11-23T16:00:49+00:00"
+  },
+  {
+   "id": "science-3",
+   "topic": "science",
+   "headline": "What failure of COP31 reveals about a divided world",
+   "summary": "Interests of oil-producing countries, a US boycott and a dispute over finance may have torpedoed climate talks.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cky970n83rvjo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-23T17:24:25+00:00"
+  },
+  {
+   "id": "science-4",
+   "topic": "science",
+   "headline": "CVS Health’s Planned Breakup Hasn’t Quieted Antitrust Critics",
+   "summary": "Lawmakers are warning that spinning off the health care conglomerate’s drugstores will not end scrutiny over its power.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/business/cvs-pharmacy-health-federal-investigations-antitrust.html"
+    }
+   ],
+   "time": "2026-11-23T10:03:26+00:00"
+  },
+  {
+   "id": "business-1",
+   "topic": "business",
+   "headline": "Paolo Bulgari, Heir of Italian Jewelry Dynasty, Dies at 89",
+   "summary": "As the chairman of his family’s company, Mr. Bulgari embraced maximalist aesthetics that recalled ancient Rome. After the 2008 financial crisis, he steered the sale of the business to LVMH.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/style/paolo-bulgari-dead.html"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c8e39qk5vrpdo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-23T15:39:34+00:00"
+  },
+  {
+   "id": "business-2",
+   "topic": "business",
+   "headline": "Some women in tech have concerns about Huang's return",
+   "summary": "Women who have advocated for DEI in tech say Jensen Huang's return to NVIDIA as CEO sends a message that in Silicon Valley, all that matters is money. s",
+   "why": "",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/nx-s1-6045799/how-some-women-in-tech-are-responding-to-jensen-huangs-return-to-nvidia"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/trump-elon-musk-business-leaders-cheer-jensen-huang-ceo-nvidia/"
+    }
+   ],
+   "time": "2026-11-23T22:03:57+00:00"
+  },
+  {
+   "id": "business-3",
+   "topic": "business",
+   "headline": "Trump’s Extraordinary Nvidia Intervention Sidelines National Security Concerns",
+   "summary": "President Trump’s move to put Jensen Huang back at the helm of Nvidia caps his indifference to the warnings of his own intelligence agencies.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-national-security.html"
+    }
+   ],
+   "time": "2026-11-24T00:55:56+00:00"
+  },
+  {
+   "id": "culture-1",
+   "topic": "culture",
+   "headline": "Mending relationships over the holidays? Considering a truce? NPR wants to know",
+   "summary": "Has a political or social issue broken down a relationship that was important to you? Can it be repaired? Tell us what's going on. You might be asked to participate in a possible upcoming segment on All Things Considered.",
+   "why": "",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/23/g-s1-155085/holidays-relationships-politics-dispute"
+    }
+   ],
+   "time": "2026-11-23T20:53:12+00:00"
+  },
+  {
+   "id": "culture-2",
+   "topic": "culture",
+   "headline": "US rapper postpones two arena shows after Manchester evacuation",
+   "summary": "Don Toliver's show on Sunday was evacuated after an \"unknown substance\" was released into the crowd.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/ck3rgp4gv9pxo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-23T20:49:08+00:00"
+  },
+  {
+   "id": "culture-3",
+   "topic": "culture",
+   "headline": "In Harlem, a New Museum Maps the Civil Rights Fight in the North",
+   "summary": "The Urban Civil Rights Museum, the first in New York dedicated to the history of the movement, aims to tell stories often overlooked in similar narratives.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/23/arts/design/urban-civil-rights-museum-harlem.html"
+    }
+   ],
+   "time": "2026-11-23T10:03:04+00:00"
+  }
+ ]
+}
