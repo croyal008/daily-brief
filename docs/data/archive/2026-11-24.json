@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-24T06:26:12+00:00",
+ "generated_at": "2026-11-24T06:35:15+00:00",
  "ai_summaries": false,
  "topics": [
   {
@@ -60,6 +60,10 @@
  ],
  "overview": [
   {
+   "topic": "sports",
+   "text": "115 days, 39 private-jet flights, one election - Infantino's globetrotting"
+  },
+  {
    "topic": "world",
    "text": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book"
   },
@@ -82,10 +86,6 @@
   {
    "topic": "business",
    "text": "They attended Trump's controversial meme coin dinner. It didn't go well"
-  },
-  {
-   "topic": "sports",
-   "text": "115 days, 39 private-jet flights, one election - Infantino's globetrotting"
   },
   {
    "topic": "culture",
@@ -381,23 +381,27 @@
     {
      "name": "BBC",
      "url": "https://www.bbc.co.uk/sport/football/articles/cmkgk22w3vlvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "Yahoo Sports",
+     "url": "https://sports.yahoo.com/articles/115-days-39-private-jet-061658607.html"
     }
    ],
-   "time": "2026-11-24T06:16:53+00:00"
+   "time": "2026-11-24T06:16:58+00:00"
   },
   {
    "id": "sports-2",
    "topic": "sports",
-   "headline": "Annual Turkey Trot road races bring families, runners together",
-   "summary": "Former Florida State runner Stan Linton looks to complete a rare sweep of the Turkey Trot's three primary distances.",
+   "headline": "Hopes of over-50s football league for county",
+   "summary": "Paul Shackley says he is blown away by the interest in a proposal floated on social media.",
    "why": "",
    "sources": [
     {
      "name": "Yahoo Sports",
-     "url": "https://sports.yahoo.com/articles/annual-turkey-trot-road-races-061517033.html"
+     "url": "https://sports.yahoo.com/articles/hopes-over-50s-football-league-062706992.html"
     }
    ],
-   "time": "2026-11-24T06:15:17+00:00"
+   "time": "2026-11-24T06:27:06+00:00"
   },
   {
    "id": "sports-3",
