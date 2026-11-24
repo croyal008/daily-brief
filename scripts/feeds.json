@@ -1,0 +1,107 @@
+{
+  "_note": "Topics and the free RSS feeds each one draws from. 'default_on' is what the app shows until you change Settings. 'max_stories' caps how many stories the topic gets per day.",
+  "topics": [
+    {
+      "id": "us",
+      "name": "U.S.",
+      "emoji": "🇺🇸",
+      "default_on": true,
+      "max_stories": 5,
+      "feeds": [
+        "https://feeds.npr.org/1003/rss.xml",
+        "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
+        "https://www.cbsnews.com/latest/rss/us",
+        "https://abcnews.go.com/abcnews/usheadlines"
+      ]
+    },
+    {
+      "id": "politics",
+      "name": "Politics",
+      "emoji": "🏛️",
+      "default_on": true,
+      "max_stories": 4,
+      "feeds": [
+        "https://feeds.npr.org/1014/rss.xml",
+        "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
+        "https://www.cbsnews.com/latest/rss/politics"
+      ]
+    },
+    {
+      "id": "world",
+      "name": "World",
+      "emoji": "🌍",
+      "default_on": true,
+      "max_stories": 5,
+      "feeds": [
+        "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "https://feeds.npr.org/1004/rss.xml",
+        "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+        "https://www.theguardian.com/world/rss",
+        "https://www.aljazeera.com/xml/rss/all.xml"
+      ]
+    },
+    {
+      "id": "tech",
+      "name": "Tech",
+      "emoji": "💻",
+      "default_on": true,
+      "max_stories": 4,
+      "feeds": [
+        "https://feeds.arstechnica.com/arstechnica/index",
+        "https://www.theverge.com/rss/index.xml",
+        "https://feeds.bbci.co.uk/news/technology/rss.xml",
+        "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"
+      ]
+    },
+    {
+      "id": "science",
+      "name": "Science & Health",
+      "emoji": "🔬",
+      "default_on": true,
+      "max_stories": 4,
+      "feeds": [
+        "https://feeds.npr.org/1007/rss.xml",
+        "https://feeds.npr.org/1128/rss.xml",
+        "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+        "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
+        "https://rss.nytimes.com/services/xml/rss/nyt/Health.xml"
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business (light)",
+      "emoji": "💼",
+      "default_on": true,
+      "max_stories": 3,
+      "low_markets": true,
+      "feeds": [
+        "https://feeds.npr.org/1006/rss.xml",
+        "https://feeds.bbci.co.uk/news/business/rss.xml",
+        "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "emoji": "🏈",
+      "default_on": false,
+      "max_stories": 3,
+      "feeds": [
+        "https://www.espn.com/espn/rss/news",
+        "https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml"
+      ]
+    },
+    {
+      "id": "culture",
+      "name": "Culture & Entertainment",
+      "emoji": "🎬",
+      "default_on": false,
+      "max_stories": 3,
+      "feeds": [
+        "https://feeds.npr.org/1008/rss.xml",
+        "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml",
+        "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml"
+      ]
+    }
+  ]
+}

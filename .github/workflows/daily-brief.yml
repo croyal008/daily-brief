@@ -1,0 +1,44 @@
+name: Daily brief
+
+on:
+  schedule:
+    # Every day at 10:15 UTC = 4:15 AM Central (5:15 AM during daylight time).
+    - cron: "15 10 * * *"
+  workflow_dispatch: {}   # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-brief
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install --quiet "anthropic>=2.13"
+
+      - name: Build today's brief
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BRIEF_MODEL: ${{ vars.BRIEF_MODEL }}
+          BRIEF_TIMEZONE: ${{ vars.BRIEF_TIMEZONE }}
+        run: python scripts/build_brief.py
+
+      - name: Save it
+        run: |
+          git config user.name "daily-brief-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          git diff --cached --quiet && exit 0
+          git commit -m "Brief for $(date -u +%Y-%m-%d)"
+          git push

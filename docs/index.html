@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Daily Brief</title>
+  <meta name="description" content="A short daily summary of the news that matters.">
+  <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16181c" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Daily Brief">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-row">
+      <div>
+        <h1>Daily Brief</h1>
+        <p id="dateline" class="dateline">Loading…</p>
+      </div>
+      <button id="open-settings" class="icon-btn" aria-label="Settings">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M19.4 13a7.6 7.6 0 0 0 0-2l2.1-1.6-2-3.4-2.5 1a7.4 7.4 0 0 0-1.7-1L15 3.3h-4L10.6 6a7.4 7.4 0 0 0-1.7 1l-2.5-1-2 3.4L6.6 11a7.6 7.6 0 0 0 0 2l-2.1 1.6 2 3.4 2.5-1a7.4 7.4 0 0 0 1.7 1l.4 2.7h4l.4-2.7a7.4 7.4 0 0 0 1.7-1l2.5 1 2-3.4zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg>
+      </button>
+    </div>
+    <nav id="chips" class="chips" aria-label="Topics"></nav>
+  </header>
+
+  <main id="content">
+    <section id="overview" class="card overview" hidden>
+      <h2>The day in 60 seconds</h2>
+      <ul id="overview-list"></ul>
+    </section>
+    <div id="sections"></div>
+    <p id="status" class="status"></p>
+    <section class="earlier">
+      <label for="day-picker">Earlier briefs</label>
+      <select id="day-picker"></select>
+    </section>
+  </main>
+
+  <dialog id="settings">
+    <form method="dialog" class="sheet">
+      <div class="sheet-head">
+        <h2>Settings</h2>
+        <button class="done" value="done">Done</button>
+      </div>
+      <h3>Topics</h3>
+      <p class="hint">Turn on the topics you want in your brief.</p>
+      <div id="topic-toggles" class="toggles"></div>
+      <h3>Text size</h3>
+      <div class="seg" role="radiogroup" aria-label="Text size">
+        <label><input type="radio" name="size" value="normal"><span>Normal</span></label>
+        <label><input type="radio" name="size" value="large"><span>Large</span></label>
+      </div>
+      <p class="hint small" id="about"></p>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
