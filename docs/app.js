@@ -421,6 +421,10 @@
     const hello = hour < 12 ? "Good morning" : hour < 17 ? "Good afternoon" : "Good evening";
     q.push({ text: `${hello}. Here's your Daily Brief for ${day}.`, label: "Intro" });
     let first = true;
+    if (brief.weather && on.includes("weather")) {
+      q.push({ text: `First, the weather in ${brief.weather.location}. ${brief.weather.today.summary}`, label: "🌤️ Weather" });
+      first = false;
+    }
     for (const t of topics) {
       const stories = brief.stories.filter((s) => s.topic === t.id);
       if (!stories.length) continue;
