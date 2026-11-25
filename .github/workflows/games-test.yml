@@ -1,0 +1,34 @@
+name: Games test
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: |
+          cd scripts && python - <<'PY'
+          import json, sys
+          from datetime import datetime, timedelta
+          from zoneinfo import ZoneInfo
+          from pathlib import Path
+          import build_brief as B, my_teams as M
+          tz = ZoneInfo("America/Chicago")
+          today = datetime.now(tz).replace(tzinfo=None)
+          for team in M.load_teams(Path("my_teams.json")):
+              for d in range(0, 10):
+                  g = M.todays_game(team, today + timedelta(days=d), B.fetch_json, tz)
+                  if g:
+                      print("NEXT", team["name"], (today + timedelta(days=d)).date(), json.dumps(g)); break
+              else:
+                  print("NONE", team["name"])
+          PY
