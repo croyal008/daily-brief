@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-25T03:10:39+00:00",
+ "generated_at": "2026-11-25T03:16:18+00:00",
  "ai_summaries": true,
  "topics": [
   {
@@ -73,19 +73,15 @@
  "overview": [
   {
    "topic": "us",
-   "text": "The Army plans to detonate five tons of lead azide in Iowa on Wednesday, and residents are bracing for a possible lead dust plume."
+   "text": "The Army's plan to detonate five tons of lead azide in Iowa is back on after a court lifted a stay, with residents bracing for a lead dust plume."
   },
   {
    "topic": "politics",
-   "text": "The Justice Department apologized for making a false statement to a judge in the Ilhan Omar search case."
+   "text": "The Justice Department apologized for a false statement to a judge in the Ilhan Omar home search case."
   },
   {
    "topic": "world",
-   "text": "Kilmar Abrego Garcia is leaving the U.S. for Spain, ending a 20-month legal fight after his wrongful deportation."
-  },
-  {
-   "topic": "politics",
-   "text": "Republican Dan Sullivan conceded the Alaska Senate race to Mary Peltola."
+   "text": "Kilmar Abrego Garcia is leaving the U.S. for Spain, ending a 20-month legal ordeal after his wrongful deportation last year."
   },
   {
    "topic": "tech",
@@ -93,10 +89,54 @@
   },
   {
    "topic": "science",
-   "text": "Wisconsin reported its third measles death a day after Pennsylvania's ninth, bringing the U.S. tally to 14."
+   "text": "Wisconsin reported its third measles death, a day after Pennsylvania's ninth, bringing the U.S. tally to 14."
+  },
+  {
+   "topic": "local",
+   "text": "San Antonio airport says it has enough staff for the Thanksgiving rush, and new nonstop Caribbean flights were announced."
   }
  ],
- "upcoming": [],
+ "upcoming": [
+  {
+   "team": "Spurs",
+   "opponent": "Trail Blazers",
+   "home": false,
+   "matchup": "Spurs at Trail Blazers",
+   "time": "9:00 PM",
+   "start": "2026-11-25T21:00:00-06:00",
+   "today": false,
+   "tv": "ESPN, KUNP 16",
+   "record": "15-3",
+   "opp_record": "11-6",
+   "live": false
+  },
+  {
+   "team": "Cowboys",
+   "opponent": "Eagles",
+   "home": true,
+   "matchup": "Cowboys vs. Eagles",
+   "time": "3:30 PM",
+   "start": "2026-11-26T15:30:00-06:00",
+   "today": false,
+   "tv": "Fox",
+   "record": "5-6",
+   "opp_record": "3-7",
+   "live": false
+  },
+  {
+   "team": "UTSA",
+   "opponent": "Tulsa",
+   "home": true,
+   "matchup": "UTSA vs. Tulsa",
+   "time": "11:00 AM",
+   "start": "2026-11-27T11:00:00-06:00",
+   "today": false,
+   "tv": "ESPN",
+   "record": "9-2",
+   "opp_record": "7-4",
+   "live": false
+  }
+ ],
  "stories": [
   {
    "headline": "✅ Spurs 123, Kings 107",
@@ -113,33 +153,11 @@
    "why": ""
   },
   {
-   "id": "local-1",
-   "topic": "local",
-   "headline": "BermudAir adds nonstop San Antonio flights to Belize City and Grand Cayman",
-   "summary": "Two seasonal nonstop Caribbean routes were announced out of San Antonio International Airport. The airport waived landing and departure fees to land the new service.",
-   "why": "New nonstop options expand vacation travel from San Antonio.",
-   "sources": [
-    {
-     "name": "WOAI",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVTFtZGNza0N3ZXJ6WUJJTW9jcEk2N0hnb0lzNTh2Tk1SWkctOVVfdloxWDhrdk5PdlpIRW0yY0FpZFVLdnRfQTkyUFByTGNRbVRHdmxfWnZDdHlOMWtPb1YyMkYtTXRQLWF6TlBHb2F3Y09kV3JZVWRaS2R1Sk5MTnhLX3p1dkRGSk9uTnVlTVM3ZEVESzViampzaGI4dlctVlpEeldQbXlWRi1jQUpKQmJaRXVwQV92eW5F?oc=5"
-    },
-    {
-     "name": "KABB",
-     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxONk9wOFowLWpZRUZIRFZkV3B1dTFRUW1uZUxDQ3J2S190RGdNbExVb2dUb1d2NXk4MTlJOWRURXNqSE9LYV9JUWpEaG1fQ1N2SFVueGtxT19aenFCOWg2aXhsWlQzQXhUbC1IbW1iYXJYNlV5VHB6ajJnNnhWc1BWczVJZEM1ZllEb3hOUE5NTFVlRDN6ckdyV3ZJNVRDeTcwSWc3RVdOU0FLczZ5LVRFUGp5cVZlUElZUEoxZDQ2NndFWkFfVFVGeXREc3ZJdnJBOXFLdkdzVks3RzZVV2lz?oc=5"
-    },
-    {
-     "name": "CultureMap San Antonio",
-     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRFRkQ1Q5NXdMeUxmbmI1QVVkenc5bEZYZ3RXeDdJQk9UQkZlbFo5TTRZUFJfci1rM0hlWmhyVEZVVWhPRExOcHZ4Y3NBVzhDcEI3YndSWXZoaTdUam5IcVpSWWUxOGhFZDRiVFRSbDR3Q1p5c3RjVlMwLU1IVmhnWXdTdWJZUQ?oc=5"
-    }
-   ],
-   "time": "2026-11-24T22:27:13+00:00"
-  },
-  {
    "id": "local-3",
    "topic": "local",
-   "headline": "San Antonio airport says it has staff for Thanksgiving rush",
-   "summary": "San Antonio International Airport says it has enough staff for the Thanksgiving crowds as hiring continues. Travel is already picking up at the airport.",
-   "why": "Helps travelers plan for a busy holiday week.",
+   "headline": "San Antonio airport says staffing is enough for Thanksgiving rush",
+   "summary": "San Antonio International Airport says it has enough staff for holiday travel as hiring continues, and Thanksgiving travel is picking up.",
+   "why": "Helps if you're flying out this week.",
    "sources": [
     {
      "name": "Texas Public Radio | TPR",
@@ -157,11 +175,33 @@
    "time": "2026-11-24T23:47:04+00:00"
   },
   {
-   "id": "local-7",
+   "id": "local-1",
+   "topic": "local",
+   "headline": "BermudAir launches nonstop San Antonio flights to Belize City, Grand Cayman",
+   "summary": "Two seasonal nonstop Caribbean routes were announced from San Antonio International Airport.",
+   "why": "",
+   "sources": [
+    {
+     "name": "WOAI",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVTFtZGNza0N3ZXJ6WUJJTW9jcEk2N0hnb0lzNTh2Tk1SWkctOVVfdloxWDhrdk5PdlpIRW0yY0FpZFVLdnRfQTkyUFByTGNRbVRHdmxfWnZDdHlOMWtPb1YyMkYtTXRQLWF6TlBHb2F3Y09kV3JZVWRaS2R1Sk5MTnhLX3p1dkRGSk9uTnVlTVM3ZEVESzViampzaGI4dlctVlpEeldQbXlWRi1jQUpKQmJaRXVwQV92eW5F?oc=5"
+    },
+    {
+     "name": "KABB",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxONk9wOFowLWpZRUZIRFZkV3B1dTFRUW1uZUxDQ3J2S190RGdNbExVb2dUb1d2NXk4MTlJOWRURXNqSE9LYV9JUWpEaG1fQ1N2SFVueGtxT19aenFCOWg2aXhsWlQzQXhUbC1IbW1iYXJYNlV5VHB6ajJnNnhWc1BWczVJZEM1ZllEb3hOUE5NTFVlRDN6ckdyV3ZJNVRDeTcwSWc3RVdOU0FLczZ5LVRFUGp5cVZlUElZUEoxZDQ2NndFWkFfVFVGeXREc3ZJdnJBOXFLdkdzVks3RzZVV2lz?oc=5"
+    },
+    {
+     "name": "CultureMap San Antonio",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRFRkQ1Q5NXdMeUxmbmI1QVVkenc5bEZYZ3RXeDdJQk9UQkZlbFo5TTRZUFJfci1rM0hlWmhyVEZVVWhPRExOcHZ4Y3NBVzhDcEI3YndSWXZoaTdUam5IcVpSWWUxOGhFZDRiVFRSbDR3Q1p5c3RjVlMwLU1IVmhnWXdTdWJZUQ?oc=5"
+    }
+   ],
+   "time": "2026-11-24T22:27:13+00:00"
+  },
+  {
+   "id": "local-8",
    "topic": "local",
    "headline": "Mayor says ICE arrest at West Side site had no city link",
    "summary": "San Antonio's mayor said an ICE arrest at a West Side waste collection site involved no city association.",
-   "why": "Shows how federal immigration enforcement is touching local city operations.",
+   "why": "",
    "sources": [
     {
      "name": "KSAT",
@@ -175,33 +215,39 @@
    "time": "2026-11-25T02:43:18+00:00"
   },
   {
-   "id": "us-1",
+   "id": "us-12",
    "topic": "us",
-   "headline": "Army to detonate five tons of lead azide in Iowa",
-   "summary": "The Army plans to detonate 68 barrels of lead azide at an Iowa ammunition plant Wednesday morning after delays. Residents were warned to stay indoors amid conflicting information on how far toxic lead dust could travel.",
-   "why": "Affects the health and safety of residents in the plume's path.",
+   "headline": "Court allows Army's Iowa lead azide detonation to proceed",
+   "summary": "A court lifted an administrative stay, letting the Army move forward with detonating about five tons of degraded lead azide in Iowa. The plan has gone on, off and on again, with President Trump weighing in.",
+   "why": "Residents in the plume's path face possible lead dust exposure.",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/24/nx-s1-6051547/court-lifts-administrative-stay-allowing-lead-azide-detonation-to-move-forward"
+    }
+   ],
+   "time": "2026-11-24T11:42:15+00:00"
+  },
+  {
+   "id": "us-9",
+   "topic": "us",
+   "headline": "Maps show how far Iowa detonation lead dust could travel",
+   "summary": "Forecast maps show the plume stretching from near Burlington toward Macon, Missouri, by noon Wednesday. Forecasts will change with the weather.",
+   "why": "Shows who may need to take precautions.",
    "sources": [
     {
      "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/"
-    },
-    {
-     "name": "The Verge",
-     "url": "https://www.theverge.com/science/1041819/us-army-detonation-lead-explosives-iowa"
-    },
-    {
-     "name": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/11/24/us-army-to-detonate-more-than-4-tonnes-of-lead-azide-in-iowa-on-wednesday?traffic_source=rss"
+     "url": "https://www.cbsnews.com/news/maps-show-how-far-lead-dust-from-about-5-tons-of-iowa-explosives-could-spread/"
     }
    ],
-   "time": "2026-11-25T01:49:43+00:00"
+   "time": "2026-11-25T02:22:30+00:00"
   },
   {
    "id": "us-2",
    "topic": "us",
    "headline": "Alaska ends voter data sharing with Justice Department",
-   "summary": "Alaska's Republican elections chief ended an agreement that gave the Justice Department the state's detailed voter list and let it flag voters for removal.",
-   "why": "Touches on voter privacy and federal searches for noncitizen voters.",
+   "summary": "Alaska's Republican elections chief ended an agreement that shared the state's detailed voter registration list with the Justice Department, which had used it to flag voters for removal.",
+   "why": "Raises questions about federal access to voter data.",
    "sources": [
     {
      "name": "ABC News",
@@ -215,25 +261,11 @@
    "time": "2026-11-25T00:28:28+00:00"
   },
   {
-   "id": "us-10",
-   "topic": "us",
-   "headline": "Student who lost eye at 'No Kings' protest sues government",
-   "summary": "Tucker Collins, 19, says a federal agent shot him in the eye with a projectile while he documented a Los Angeles protest. He is suing the federal government.",
-   "why": "Raises questions about federal agents' use of force at protests.",
-   "sources": [
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/us/los-angeles-no-kings-protest-lawsuit.html"
-    }
-   ],
-   "time": "2026-11-25T03:03:26+00:00"
-  },
-  {
    "id": "politics-2",
    "topic": "politics",
-   "headline": "Justice Department apologizes for false statement to judge in Omar case",
-   "summary": "The department acknowledged making a false statement to a judge hours after the House's top lawyer said it mischaracterized his view on constitutional protections for lawmakers.",
-   "why": "Bears on limits of federal searches of sitting members of Congress.",
+   "headline": "Justice Dept. apologizes for false statement to judge in Omar case",
+   "summary": "The department acknowledged the misstatement hours after the House's top lawyer said it mischaracterized his view on constitutional protections for lawmakers.",
+   "why": "Bears on limits of searches of sitting members of Congress.",
    "sources": [
     {
      "name": "New York Times",
@@ -246,8 +278,8 @@
    "id": "politics-4",
    "topic": "politics",
    "headline": "Sullivan concedes Alaska Senate race to Peltola",
-   "summary": "The Republican conceded five days after the Trump administration gave up on a long-shot lawsuit meant to potentially block certification of the race.",
-   "why": "Settles a Senate seat and affects the chamber's balance.",
+   "summary": "The Republican conceded five days after the Trump administration dropped a long-shot lawsuit meant to potentially block certification of the race.",
+   "why": "",
    "sources": [
     {
      "name": "New York Times",
@@ -259,9 +291,9 @@
   {
    "id": "politics-1",
    "topic": "politics",
-   "headline": "Trump awards Rudy Giuliani the Presidential Medal of Freedom",
-   "summary": "Trump presented the honor to Giuliani, a longtime ally whose reputation was tarnished by his efforts to overturn the 2020 election on Trump's behalf.",
-   "why": "A notable use of the nation's highest civilian honor.",
+   "headline": "Trump awards Rudy Giuliani Presidential Medal of Freedom",
+   "summary": "Trump presented the honor to Giuliani, a longtime ally whose reputation was tarnished by efforts to overturn the 2020 election on Trump's behalf.",
+   "why": "",
    "sources": [
     {
      "name": "New York Times",
@@ -277,9 +309,9 @@
   {
    "id": "world-1",
    "topic": "world",
-   "headline": "Abrego Garcia leaves U.S. for Spain, ending legal fight",
-   "summary": "Kilmar Abrego Garcia, wrongly deported last year, is voluntarily leaving for Spain. He had faced the prospect of deportation to Liberia.",
-   "why": "Closes a high-profile immigration case lasting 20 months.",
+   "headline": "Abrego Garcia leaves U.S. for Spain after long legal fight",
+   "summary": "Kilmar Abrego Garcia, wrongfully deported last year, is self-deporting to Spain. He had faced possible deportation to Liberia.",
+   "why": "Ends a closely watched immigration case.",
    "sources": [
     {
      "name": "Al Jazeera",
@@ -299,9 +331,9 @@
   {
    "id": "world-2",
    "topic": "world",
-   "headline": "Iranian singer and four crew receive 74 lashes each",
-   "summary": "Parastoo Ahmadi and four production team members were flogged after being sentenced for offending public decency by publishing content online. Western governments and rights groups call flogging torture.",
-   "why": "Shows Iran's continued harsh enforcement of dress and content rules.",
+   "headline": "Iranian singer receives 74 lashes for performing without hijab",
+   "summary": "Singer Parastoo Ahmadi and four production team members each received 74 lashes after being convicted of offending public decency, an Iranian news site said.",
+   "why": "Western governments and rights groups call flogging torture.",
    "sources": [
     {
      "name": "New York Times",
@@ -319,25 +351,29 @@
    "time": "2026-11-24T12:34:52+00:00"
   },
   {
-   "id": "world-11",
+   "id": "world-5",
    "topic": "world",
-   "headline": "Leaked data: over 300 Russians killed propping up Mali's junta",
-   "summary": "Leaked records list 349 deaths in three years among Russian fighters in Mali. They also shed light on Russia's military activity elsewhere in Africa.",
-   "why": "Reveals the scale of Russia's military role in Africa.",
+   "headline": "Thomas Markle indicted on child sexual abuse material charges",
+   "summary": "A Los Angeles federal grand jury indicted Thomas Markle, 82, on possession charges. He is expected to be arraigned in the coming weeks.",
+   "why": "",
    "sources": [
     {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/world/2026/nov/24/russian-fighters-killed-in-mali-africa-leaked-data"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/world/europe/thomas-markle-indicted.html"
+    },
+    {
+     "name": "MySA",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcC1XdFZkclJxNkE5T3B4OXFybEVYLVNTWlpHZHRjcTUtd0NkOXZlWGI3WldvY0NpQXlLbUNFNGNBZld0bk5yQ0hsdmxJUGR1Sy0zbnh5WXNFVjQzN0NQRGpPVkxab1NTRGw2ZHFUYWRPa2RlVmxBUHYwUEJCMmpOWHU0UjcxVVhuZ0lDeTctejgxWGlFeWZ0UUJKNlk5VUhZVUE?oc=5"
     }
    ],
-   "time": "2026-11-24T16:00:50+00:00"
+   "time": "2026-11-25T02:55:17+00:00"
   },
   {
    "id": "tech-2",
    "topic": "tech",
    "headline": "Huawei found guilty of stealing U.S. trade secrets",
-   "summary": "A New York federal jury found Huawei guilty of stealing source code and technology from companies including T-Mobile and Cisco, but acquitted it of racketeering.",
-   "why": "A major ruling in the U.S.-China technology fight.",
+   "summary": "A New York federal jury convicted Huawei of stealing trade secrets from companies including T-Mobile and Cisco, but acquitted it of racketeering.",
+   "why": "Escalates U.S.-China technology tensions.",
    "sources": [
     {
      "name": "BBC",
@@ -358,8 +394,8 @@
    "id": "tech-3",
    "topic": "tech",
    "headline": "Investigators find Nvidia chips illegally diverted to China",
-   "summary": "Justice Department investigators have gathered evidence of Nvidia chips being illegally diverted by other firms to China, while Attorney General Blanche downplayed questions about Nvidia.",
-   "why": "Ties into export controls and the ongoing Nvidia controversy.",
+   "summary": "Justice Department investigators have gathered evidence of Nvidia chips being illegally diverted by other firms to China, while Attorney General Blanche downplays questions about Nvidia.",
+   "why": "",
    "sources": [
     {
      "name": "New York Times",
@@ -371,9 +407,9 @@
   {
    "id": "tech-7",
    "topic": "tech",
-   "headline": "Treasury's financial crimes bureau discloses cybersecurity incident",
-   "summary": "FinCEN said unauthorized access affected a limited subset of its systems. It has not disclosed the full scope or source.",
-   "why": "The bureau holds sensitive financial intelligence data.",
+   "headline": "FinCEN discloses cybersecurity incident",
+   "summary": "The Treasury's Financial Crimes Enforcement Network said unauthorized access hit a limited subset of its systems. It has not shared the scope or source.",
+   "why": "",
    "sources": [
     {
      "name": "The Verge",
@@ -383,11 +419,25 @@
    "time": "2026-11-25T01:45:35+00:00"
   },
   {
+   "id": "science-8",
+   "topic": "science",
+   "headline": "Public health guidance on possible lead exposure in Iowa",
+   "summary": "The Iowa Poison Control Center's medical director explains how people can protect themselves after the Army detonates degraded lead azide.",
+   "why": "Practical steps for those near the blast.",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/24/nx-s1-6052351/heres-the-public-health-guidance-for-possible-lead-exposure-in-iowa"
+    }
+   ],
+   "time": "2026-11-24T21:16:46+00:00"
+  },
+  {
    "id": "science-2",
    "topic": "science",
    "headline": "Medicare hospice caps leave some patients without care",
-   "summary": "Critics say payment limits to hospice companies penalize patients who are not dying on the government's timetable.",
-   "why": "Affects care for seriously ill Medicare patients and their families.",
+   "summary": "Critics say payment limits penalize patients who are not dying on the government's timetable, leaving some without hospice care.",
+   "why": "",
    "sources": [
     {
      "name": "New York Times",
@@ -395,20 +445,6 @@
     }
    ],
    "time": "2026-11-24T10:02:48+00:00"
-  },
-  {
-   "id": "science-11",
-   "topic": "science",
-   "headline": "Doctors struggle to save babies after parents refuse vitamin K",
-   "summary": "Doctors say disinformation is driving refusals of routine newborn vitamin K shots, which prevent a rare but devastating bleeding disorder.",
-   "why": "A preventable risk to newborns.",
-   "sources": [
-    {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/24/nx-s1-6001723/vitamin-k-deficiency-refusal-vaccine-misinformation-newborn-bleeding"
-    }
-   ],
-   "time": "2026-11-24T10:00:00+00:00"
   },
   {
    "id": "science-1",
@@ -427,9 +463,9 @@
   {
    "id": "business-8",
    "topic": "business",
-   "headline": "U.S. preparing new tariffs on major trading partners",
+   "headline": "U.S. preparing new tariffs on global trading partners",
    "summary": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
-   "why": "Tariffs can raise prices for consumers.",
+   "why": "Tariffs can raise consumer prices.",
    "sources": [
     {
      "name": "BBC",
@@ -441,9 +477,9 @@
   {
    "id": "business-3",
    "topic": "business",
-   "headline": "UK households face soaring gas bills under new price cap",
-   "summary": "Regulator Ofgem's new price cap will raise domestic gas prices significantly in January.",
-   "why": "Signals higher household costs in Britain this winter.",
+   "headline": "UK gas prices to rise significantly in January under new cap",
+   "summary": "Regulator Ofgem's new price cap will push domestic gas prices up significantly in January.",
+   "why": "",
    "sources": [
     {
      "name": "BBC",
@@ -455,8 +491,8 @@
   {
    "id": "business-1",
    "topic": "business",
-   "headline": "‘Carthage Resident Al Gore’ Buys His Hometown Tennessee Newspaper",
-   "summary": "Former vice-president, who started his career as a journalist, purchases Carthage Courier in Smith county Al Gore, who started his career as a journalist, is returning to the industry as a newspaper owner in his Tennessee town.",
+   "headline": "Al Gore buys hometown Tennessee newspaper Carthage Courier",
+   "summary": "The Lake family, which has run the weekly for five decades, will sell it to the former vice president in the coming weeks.",
    "why": "",
    "sources": [
     {
@@ -471,10 +507,32 @@
    "time": "2026-11-25T02:31:42+00:00"
   },
   {
+   "id": "sports-2",
+   "topic": "sports",
+   "headline": "Indiana tumbles from 12-team field in fourth CFP rankings",
+   "summary": "Upset losses by UCLA and Indiana would leave the Big Ten with one bid if the playoff opened now. Tennessee and Texas jumped Alabama.",
+   "why": "",
+   "sources": [
+    {
+     "name": "ESPN",
+     "url": "https://www.espn.com/college-football/story/_/id/50588082/indiana-top-12-cfp-rankings-texas-tennessee-leap-alabama"
+    },
+    {
+     "name": "Tampa Bay Times",
+     "url": "https://sports.yahoo.com/college-football/articles/indiana-tumbles-cfp-rankings-sec-025513714.html"
+    },
+    {
+     "name": "MySA",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQmExdFd2dGVlTXJ6S2Rvc09pRzd0ZXNwWTdzUW5LeVR3bzdDTmUwcHpGZ2E2Q1dsTmxsRWpVMC1RTnY5TndDdmdkV0MtMmtxUXkydGVRN0tYNHdRblkwWHdHeFdZZ0pyZ09jTmlsakdqRDd3Smt4b1cwLXRtbFRpVHNvYVJSNHRDU213S05EUm5lUEFnNWtMTkJOcWJtUWJfcThVdWxn?oc=5"
+    }
+   ],
+   "time": "2026-11-25T02:55:13+00:00"
+  },
+  {
    "id": "sports-1",
    "topic": "sports",
-   "headline": "Boise State drops out of College Football Playoff rankings",
-   "summary": "After a chaotic Week 12, Boise State fell from 17th to unranked after a last-second loss. No Group of 6 team is in the rankings, though Boise remains in the projected field.",
+   "headline": "Boise State drops out of CFP rankings after late loss",
+   "summary": "A last-second loss dropped Boise State from 17th to unranked, leaving no Group of 6 team in the rankings.",
    "why": "",
    "sources": [
     {
@@ -493,50 +551,22 @@
    "time": "2026-11-25T02:51:34+00:00"
   },
   {
-   "id": "sports-2",
+   "id": "sports-5",
    "topic": "sports",
-   "headline": "CFP committee moves Tennessee ahead of Alabama",
-   "summary": "The committee vaulted Tennessee past Alabama in the rankings. Committee chair Hunter Yurachek said it was not due to public pressure.",
+   "headline": "Broncos suspend J.K. Dobbins one game",
+   "summary": "Denver suspended Dobbins for conduct detrimental to the team. He will miss Friday's game against the Steelers as Denver holds a slight AFC West lead.",
    "why": "",
    "sources": [
     {
-     "name": "Knox News | The Knoxville News-Sentinel",
-     "url": "https://sports.yahoo.com/college-football/articles/did-cfp-committee-succumb-tennessee-024230014.html"
+     "name": "ESPN",
+     "url": "https://www.espn.com/nfl/story/_/id/50586087/broncos-payton-says-rb-dobbins-suspended-one-game"
     },
     {
-     "name": "The Tennessean",
-     "url": "https://sports.yahoo.com/college-football/articles/did-cfp-committee-succumb-tennessee-024230277.html"
+     "name": "CBS Sports",
+     "url": "https://www.cbssports.com/nfl/news/broncos-suspend-rb-j-k-dobbins-one-game-conduct-detrimental-team/"
     }
    ],
-   "time": "2026-11-25T02:42:30+00:00"
-  },
-  {
-   "id": "sports-3",
-   "topic": "sports",
-   "headline": "'Pass, pass, slow, slow' - Man City's slick machine grinding to a halt",
-   "summary": "Manchester City's slick footballing machine is starting to grind to a halt, as displayed in their laborious Champions League draw against Napoli.",
-   "why": "",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/sport/football/articles/cj3vgdp2edpxo?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-24T23:17:42+00:00"
-  },
-  {
-   "id": "culture-10",
-   "topic": "culture",
-   "headline": "Smithsonian head defends autonomy after report of Trump overhaul plan",
-   "summary": "Lonnie Bunch wrote to staff after an outline of major personnel and programming changes was seen on a White House aide's computer.",
-   "why": "Concerns the independence of the nation's museums.",
-   "sources": [
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/arts/design/smithsonian-letter-lonnie-bunch-white-house.html"
-    }
-   ],
-   "time": "2026-11-24T19:25:21+00:00"
+   "time": "2026-11-25T02:37:29+00:00"
   },
   {
    "id": "culture-1",
@@ -565,6 +595,20 @@
     }
    ],
    "time": "2026-11-24T22:01:30+00:00"
+  },
+  {
+   "id": "culture-3",
+   "topic": "culture",
+   "headline": "‘The Further Mis-Adventures of Cliff Booth’ Review: Golden-Boy Fumes",
+   "summary": "Quentin Tarantino wrote, and David Fincher directed, this movie starring Brad Pitt, which picks up with the stuntman character he played in “Once Upon a Time … in Hollywood.”",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/movies/the-further-mis-adventures-of-cliff-booth-review.html"
+    }
+   ],
+   "time": "2026-11-24T20:24:55+00:00"
   }
  ],
  "weather": {
