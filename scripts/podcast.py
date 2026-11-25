@@ -188,6 +188,20 @@ def ai_enabled() -> bool:
     except (OSError, ValueError):
         return True
 
+STATES = dict(zip("AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC".split(),
+    ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida",
+     "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine",
+     "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska",
+     "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio",
+     "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
+     "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "D.C."]))
+
+
+def spoken_place(name: str) -> str:
+    """'San Antonio, TX' -> 'San Antonio, Texas' so the voice doesn't spell the letters."""
+    city, _, st = name.rpartition(", ")
+    return f"{city}, {STATES[st]}" if city and st in STATES else name
+
 
 def weather_facts(brief: dict) -> str:
     """Plain weather facts for the podcast, or "" if there's no weather or the listener turned it off."""
@@ -205,7 +219,7 @@ def weather_facts(brief: dict) -> str:
                       for x in t.get("slots", []))
     week = "; ".join(f"{datetime.fromisoformat(x['date']):%A} {x['desc'].lower()}, high {x['high']}, low {x['low']}, "
                      f"{x['rain']} percent rain" for x in w.get("days", []))
-    return (f"Weather for {w['location']}. Today: {t['summary']} Through the day: {slots}. "
+    return (f"Weather for {spoken_place(w['location'])}. Today: {t['summary']} Through the day: {slots}. "
             f"Wind up to {t['wind']} mph, gusts {t['gust']}. Feels like {t['feels_low']} to {t['feels_high']}. "
             f"Next seven days: {week}.")
 
@@ -217,7 +231,7 @@ def weather_line(brief: dict) -> str:
     w = brief["weather"]
     t = w["today"]
     rainy = [x for x in w.get("days", [])[:3] if x["rain"] >= 50]
-    line = f"First, the weather in {w['location']}. {t['summary']}"
+    line = f"First, the weather in {spoken_place(w['location'])}. {t['summary'].replace('°', ' degrees')}"
     if rainy:
         line += f" Rain looks likely {datetime.fromisoformat(rainy[0]['date']):%A}."
     return line
