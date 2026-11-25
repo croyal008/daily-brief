@@ -34,6 +34,10 @@ jobs:
           BRIEF_TIMEZONE: ${{ vars.BRIEF_TIMEZONE }}
         run: python scripts/build_brief.py
 
+      - name: Add the weather
+        continue-on-error: true
+        run: python scripts/weather.py
+
       # The podcast voice (Kokoro, free and open source). The model files are downloaded
       # once and then reused from GitHub's cache.
       - name: Get the podcast voice

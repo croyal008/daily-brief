@@ -78,6 +78,67 @@
     return false;
   }
 
+  function renderWeatherLoc() {
+    const name = (config.weather && config.weather.name) || (brief && brief.weather && brief.weather.location) || "San Antonio, TX";
+    $("wx-current").textContent = name;
+    $("wx-results").replaceChildren();
+  }
+
+  async function findPlaces() {
+    const text = $("wx-input").value.trim();
+    if (!text) return;
+    const [city, ...rest] = text.split(",").map((x) => x.trim());
+    const want = rest.join(" ").toLowerCase();
+    $("wx-status").textContent = "Searching…";
+    try {
+      const r = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=10&language=en&format=json`);
+      let found = ((await r.json()).results || []);
+      if (want) {
+        const hit = (p) => [p.admin1, p.country, p.country_code, US_STATES[p.admin1]].some((v) => v && v.toLowerCase().startsWith(want));
+        found = found.filter(hit).concat(found.filter((p) => !hit(p)));
+      }
+      found = found.slice(0, 5);
+      $("wx-status").textContent = found.length ? "Tap your location:" : "No places found. Try just the city name.";
+      $("wx-results").replaceChildren(...found.map((p) => {
+        const label = p.country_code === "US"
+          ? `${p.name}, ${US_STATES[p.admin1] || p.admin1 || "US"}`
+          : [p.name, p.admin1, p.country].filter(Boolean).join(", ");
+        const b = el("button", { type: "button", class: "wx-pick", text: label });
+        b.addEventListener("click", () => pickPlace({ name: label, lat: p.latitude, lon: p.longitude }));
+        return b;
+      }));
+    } catch { $("wx-status").textContent = "Couldn't search right now. Check your connection."; }
+  }
+
+  async function pickPlace(place) {
+    if (!localStorage.getItem(TOKEN_KEY)) {
+      $("wx-status").textContent = "Paste your GitHub token in the AI section below first, then pick again.";
+      return;
+    }
+    const before = config.weather;
+    config.weather = place;
+    $("wx-status").textContent = "Saving…";
+    if (await syncConfig()) {
+      renderWeatherLoc();
+      $("wx-input").value = "";
+      $("wx-status").textContent = `Weather will be for ${place.name}, starting with tomorrow's brief ✓`;
+    } else {
+      config.weather = before;
+      $("wx-status").textContent = "Couldn't save. Try again in a moment.";
+    }
+  }
+
+  const US_STATES = {
+    Alabama: "AL", Alaska: "AK", Arizona: "AZ", Arkansas: "AR", California: "CA", Colorado: "CO", Connecticut: "CT",
+    Delaware: "DE", Florida: "FL", Georgia: "GA", Hawaii: "HI", Idaho: "ID", Illinois: "IL", Indiana: "IN", Iowa: "IA",
+    Kansas: "KS", Kentucky: "KY", Louisiana: "LA", Maine: "ME", Maryland: "MD", Massachusetts: "MA", Michigan: "MI",
+    Minnesota: "MN", Mississippi: "MS", Missouri: "MO", Montana: "MT", Nebraska: "NE", Nevada: "NV", "New Hampshire": "NH",
+    "New Jersey": "NJ", "New Mexico": "NM", "New York": "NY", "North Carolina": "NC", "North Dakota": "ND", Ohio: "OH",
+    Oklahoma: "OK", Oregon: "OR", Pennsylvania: "PA", "Rhode Island": "RI", "South Carolina": "SC", "South Dakota": "SD",
+    Tennessee: "TN", Texas: "TX", Utah: "UT", Vermont: "VT", Virginia: "VA", Washington: "WA", "West Virginia": "WV",
+    Wisconsin: "WI", Wyoming: "WY", "District of Columbia": "DC",
+  };
+
   function setSyncStatus(t) { const n = $("sync-status"); if (n) n.textContent = t; }
 
   function renderSync() {
@@ -157,6 +218,13 @@
     // Chips + sections
     const chips = [], sections = [];
     for (const t of topics) {
+      if (t.id === "weather") {
+        if (brief.weather) {
+          chips.push(el("a", { href: "#t-weather", text: `${t.emoji} ${t.name}` }));
+          sections.push(weatherSection(t, brief.weather));
+        }
+        continue;
+      }
       const stories = byTopic[t.id];
       if (!stories.length) continue;
       chips.push(el("a", { href: `#t-${t.id}`, text: `${t.emoji} ${t.name}` }));
@@ -167,6 +235,45 @@
     $("chips").replaceChildren(...chips);
     $("sections").replaceChildren(...sections);
     $("status").textContent = sections.length ? "" : "No stories for your topics today. Try turning on more in Settings.";
+  }
+
+  function weatherSection(t, w) {
+    const sec = el("section", { class: "topic", id: "t-weather" }, el("h2", { text: `${t.emoji}  ${t.name} · ${w.location}` }));
+    const d = w.today;
+    const today = el("article", { class: "card weather" });
+    today.append(el("div", { class: "wx-now" },
+      el("span", { class: "wx-big", text: d.emoji }),
+      el("div", {},
+        el("div", { class: "wx-temps" }, el("b", { text: `${d.high}°` }), document.createTextNode(` / ${d.low}°`)),
+        el("div", { class: "wx-desc", text: `${d.desc} · ${d.rain}% chance of rain` }))));
+    today.append(el("p", { text: d.summary }));
+    if (d.slots && d.slots.length) {
+      today.append(el("div", { class: "wx-slots" }, ...d.slots.map((x) => el("div", { class: "wx-slot" },
+        el("span", { class: "wx-label", text: x.label }),
+        el("span", { class: "wx-emoji", text: x.emoji }),
+        el("b", { text: `${x.temp}°` }),
+        el("span", { class: "wx-rain", text: `💧${x.rain}%` })))));
+    }
+    const facts = [`Feels like ${d.feels_low}° to ${d.feels_high}°`,
+      `Wind ${d.wind} mph` + (d.gust > d.wind + 5 ? `, gusts ${d.gust}` : ""),
+      `UV ${d.uv}`, `Sunrise ${d.sunrise}`, `Sunset ${d.sunset}`];
+    if (d.precip_in >= 0.05) facts.splice(1, 0, `Rain ${d.precip_in} in`);
+    today.append(el("p", { class: "wx-facts", text: facts.join(" · ") }));
+    sec.append(today);
+    if (w.days && w.days.length) {
+      const week = el("article", { class: "card weather" }, el("h3", { text: "Next 7 days" }));
+      for (const x of w.days) {
+        const name = new Date(x.date + "T12:00:00").toLocaleDateString(undefined, { weekday: "short" });
+        week.append(el("div", { class: "wx-day" },
+          el("span", { class: "wx-dname", text: name }),
+          el("span", { class: "wx-emoji", text: x.emoji }),
+          el("span", { class: "wx-ddesc", text: x.desc }),
+          el("span", { class: "wx-rain", text: x.rain >= 10 ? `💧${x.rain}%` : "" }),
+          el("span", { class: "wx-hl" }, el("b", { text: `${x.high}°` }), document.createTextNode(` ${x.low}°`))));
+      }
+      sec.append(week);
+    }
+    return sec;
   }
 
   function storyCard(s) {
@@ -575,6 +682,8 @@
     updateVoiceRow();
     setSyncStatus("");
     renderSync();
+    renderWeatherLoc();
+    $("wx-status").textContent = "";
     const err = localStorage.getItem("brief-audio-error");
     $("audio-error").hidden = !err;
     $("audio-error").textContent = err ? `Last time the podcast wouldn't load: ${err}` : "";
@@ -603,6 +712,8 @@
     if (!(await syncConfig())) { config.ai_summaries = before; e.target.checked = before !== false; }
     else setSyncStatus(e.target.checked ? "AI is on, starting with the next brief ✓" : "AI is off, starting with the next brief ✓");
   });
+  $("wx-find").addEventListener("click", findPlaces);
+  $("wx-input").addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); findPlaces(); } });
   $("token-save").addEventListener("click", async () => {
     const t = $("token-input").value.trim();
     if (!t) return;

@@ -1,0 +1,26 @@
+name: Weather only
+
+on:
+  workflow_dispatch: {}   # refresh just the weather on today's brief (no news, no podcast)
+
+permissions:
+  contents: write
+
+jobs:
+  weather:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python scripts/weather.py
+      - name: Save it
+        run: |
+          git config user.name "daily-brief-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          git diff --cached --quiet && exit 0
+          git commit -m "Weather for $(date -u +%Y-%m-%d)"
+          git pull --rebase -q origin main && git push

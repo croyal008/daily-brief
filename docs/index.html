@@ -91,6 +91,14 @@
       </label>
       <p class="hint" id="voice-tip">Tip: for a more natural voice, download an "Enhanced" or "Premium" voice in iPhone Settings → Accessibility → Spoken Content → Voices → English, then pick it here.</p>
       <p class="hint" id="audio-error" hidden></p>
+      <h3>Weather location</h3>
+      <p class="hint">Now: <b id="wx-current"></b>. A new location starts with the next morning's brief.</p>
+      <div class="token-row">
+        <input type="text" id="wx-input" placeholder="City, e.g. Austin, TX" autocomplete="off" spellcheck="false" enterkeyhint="search">
+        <button type="button" id="wx-find">Find</button>
+      </div>
+      <p class="hint" id="wx-status"></p>
+      <div id="wx-results" class="wx-results"></div>
       <h3>AI</h3>
       <div class="toggles"><div class="row"><span class="tname">AI summaries &amp; podcast host<br><span class="hint">Starts with the next morning's brief</span></span>
         <input type="checkbox" id="ai-toggle" aria-label="Use AI summaries"></div></div>

@@ -1,6 +1,6 @@
 // Keeps the app working offline: the app itself is cached, and the latest
 // brief is fetched fresh when online, falling back to the last saved copy.
-const CACHE = "daily-brief-v11";
+const CACHE = "daily-brief-v12";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest", "icons/icon-192.png"];
 
 self.addEventListener("install", (e) => {
