@@ -46,7 +46,7 @@ jobs:
       # The podcast voice (Kokoro, free and open source). The model files are downloaded
       # once and then reused from GitHub's cache.
       - name: Get the podcast voice
-        if: inputs.podcast != false
+        if: github.event_name != 'workflow_dispatch' || inputs.podcast
         id: voice-cache
         uses: actions/cache@v4
         with:
@@ -54,7 +54,7 @@ jobs:
           key: kokoro-v1.0-int8
 
       - name: Download the podcast voice
-        if: inputs.podcast != false && (steps.voice-cache.outputs.cache-hit != 'true')
+        if: (github.event_name != 'workflow_dispatch' || inputs.podcast) && (steps.voice-cache.outputs.cache-hit != 'true')
         run: |
           mkdir -p models
           base=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
@@ -62,7 +62,7 @@ jobs:
           curl -sSL -o models/voices-v1.0.bin $base/voices-v1.0.bin
 
       - name: Record the podcast
-        if: inputs.podcast != false
+        if: github.event_name != 'workflow_dispatch' || inputs.podcast
         continue-on-error: true   # if this fails, the written brief still goes out
         env:
           KOKORO_DIR: models
@@ -76,7 +76,7 @@ jobs:
       # Keep only today's episode: upload it to the "podcast" release, then delete older ones.
       # (Audio is kept out of the project's history so storage never grows.)
       - name: Publish the podcast
-        if: inputs.podcast != false
+        if: github.event_name != 'workflow_dispatch' || inputs.podcast
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
