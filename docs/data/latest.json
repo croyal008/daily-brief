@@ -1,6 +1,6 @@
 {
- "date": "2026-11-24",
- "generated_at": "2026-11-25T03:16:18+00:00",
+ "date": "2026-11-25",
+ "generated_at": "2026-11-25T11:13:48+00:00",
  "ai_summaries": true,
  "topics": [
   {
@@ -73,27 +73,27 @@
  "overview": [
   {
    "topic": "us",
-   "text": "The Army's plan to detonate five tons of lead azide in Iowa is back on after a court lifted a stay, with residents bracing for a lead dust plume."
-  },
-  {
-   "topic": "politics",
-   "text": "The Justice Department apologized for a false statement to a judge in the Ilhan Omar home search case."
+   "text": "The Army plans to detonate the nation's lead azide stockpile in Iowa Wednesday morning, as residents brace for a lead dust cloud."
   },
   {
    "topic": "world",
-   "text": "Kilmar Abrego Garcia is leaving the U.S. for Spain, ending a 20-month legal ordeal after his wrongful deportation last year."
+   "text": "China is investigating Shanghai party chief Chen Jining, the fourth Politburo member probed since 2025, as Xi's purges expand."
   },
   {
    "topic": "tech",
-   "text": "A federal jury found Huawei guilty of stealing U.S. trade secrets but acquitted it of racketeering."
+   "text": "Jensen Huang returned as Nvidia CEO after Trump pushed for it, effectively overriding the company's board."
   },
   {
-   "topic": "science",
-   "text": "Wisconsin reported its third measles death, a day after Pennsylvania's ninth, bringing the U.S. tally to 14."
+   "topic": "politics",
+   "text": "Intelligence agencies told congressional aides there was no evidence the woman at the center of the Nvidia scandal took direction from Chinese intelligence."
   },
   {
-   "topic": "local",
-   "text": "San Antonio airport says it has enough staff for the Thanksgiving rush, and new nonstop Caribbean flights were announced."
+   "topic": "world",
+   "text": "Solomon Islands replaced its security pact with China with a treaty with Australia that precludes foreign military bases."
+  },
+  {
+   "topic": "us",
+   "text": "Six people, including two children, were found dead after a small plane crashed off Mississippi's coast."
   }
  ],
  "upcoming": [
@@ -104,7 +104,7 @@
    "matchup": "Spurs at Trail Blazers",
    "time": "9:00 PM",
    "start": "2026-11-25T21:00:00-06:00",
-   "today": false,
+   "today": true,
    "tv": "ESPN, KUNP 16",
    "record": "15-3",
    "opp_record": "11-6",
@@ -139,517 +139,475 @@
  ],
  "stories": [
   {
-   "headline": "✅ Spurs 123, Kings 107",
-   "summary": "Final · at Kings · Record 15-3",
-   "stat": "Stephon Castle: 28 PTS, 8 REB, 11 AST",
-   "sources": [
-    {
-     "name": "ESPN recap",
-     "url": "https://www.espn.com/nba/recap?gameId=401910045"
-    }
-   ],
-   "id": "team-san-antonio-spurs",
-   "topic": "myteams",
-   "why": ""
-  },
-  {
-   "id": "local-3",
+   "id": "local-8",
    "topic": "local",
-   "headline": "San Antonio airport says staffing is enough for Thanksgiving rush",
-   "summary": "San Antonio International Airport says it has enough staff for holiday travel as hiring continues, and Thanksgiving travel is picking up.",
-   "why": "Helps if you're flying out this week.",
+   "headline": "Near-freezing mornings expected in San Antonio through Friday",
+   "summary": "Parts of San Antonio could hit freezing temperatures overnight, with near-freezing mornings forecast through Friday.",
+   "why": "Matters for Thanksgiving week plans, plants and pets.",
    "sources": [
     {
-     "name": "Texas Public Radio | TPR",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSVY0M3hzbllsNHR5VFdRWllFcm14LTl5bnhZSm9kdzhhNC00a1JKbFFNSS1ZY20wS2ZCd1lNQngyUkpYclVrQVRMdWxWaERNYXE1bEFIMTc4c1lrOGtTS0ZBVng5dENtemhQXzU2ZWdPcmZLY0x2Ml9IMU9XZ3NQNUtJWVNLZnpDNzlsXzBMUUxNVV9yVXBDM2IwX2d6U0tUWktpcjBR?oc=5"
-    },
-    {
-     "name": "kens5.com",
-     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPcjdWZXdGNmZaamhTMmxlZjd4MXhhV205dlRaYk81MmtQU19jMkRSVGhhUkNCd2tDZWVkNlZmOUk5NUNWWEVZVUswOV9HV1Y3SzJqeFFrZVphTjZyY0hpUXJIeDFDQVNtdXRjTDFpVXh2cFpFczZrN1p2RGpzSVQ0ck8zLVhQRE5zR21yckctemkwb3FYU0xsRVNZSTA3Vm11SEowRTZITXpVWHJvbllLc2YtUXBKZXR6TnFYRmVuT2I0bm1jQVhuY2FRdURsa0xUTERMUW5mczQ1a1dEaGh0S2s0eWlIU0xWcTdlQnJwcUtPVTZyS1BvYkxhNko?oc=5"
+     "name": "San Antonio Express-News",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUUdhT3FoMndIeFdzMC1nRkNDcDQtTkswMkFMOU9semxCcFpZTUJ0akxocHNCWDRFaDhKWGtRUkRmOG9mY0dZQTlYRTUwTXBpNG5FZHZYTy1hdjVpc2M5T1VJd2VzbFVMc3dsSjFCXzRKSVE4em5pQWhYSlJ3eHAxN1RxZUdaUHNuZXYzQWoyVWJ3TF90bjBHSmZ2ZFNEVFRGT3BnaUtmWDdUd20zVUltc2g0dV95ODl0VDVBQzBXYw?oc=5"
     },
     {
      "name": "KSAT",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQjFaUWgzSDJMaW1SRGhNSTEyYkwzZmt3eWx5WE55dlJHRWtqSVFkSTJOX2l4b3BmaldOTk4zdUljZ3J3OGxmaWN2cDM5T3d3X1czOUw4RTh0cElENlV6ZzBkcnRpV0ZBSUJUSy1PdzRTSjNsQTdtZTFTSUw2X0RNLUJubmxCWWFOUWMydlN6QU9FV2NUdnZEMWhIM1cwWWtDMGprdExUT3dIT0w2NEE?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRzFYRXMxMllSd09WaUUydTh2UXdEd283TV9Geng0cS1PVmlFOWIzWTFmUkRlOEhLY0NFd3RSTFlLTGVXQkVLNEZ6dVVmaUVwcG5pbFBwNTYwTmtmV2EzTmd5a1h1UXhLUVFGUUh0WElGaWlETlJoQjRZbU5nTFItUXY5REZBNmFmTGpUZ3VkQW0yZXpBYTl2V0sweHhhdw?oc=5"
     }
    ],
-   "time": "2026-11-24T23:47:04+00:00"
+   "time": "2026-11-25T10:10:44+00:00"
   },
   {
-   "id": "local-1",
+   "id": "local-12",
    "topic": "local",
-   "headline": "BermudAir launches nonstop San Antonio flights to Belize City, Grand Cayman",
-   "summary": "Two seasonal nonstop Caribbean routes were announced from San Antonio International Airport.",
+   "headline": "San Antonio poverty report: 44% can't afford essentials",
+   "summary": "The Ready to Work program reports job gains, while a city poverty report finds 44% of residents cannot afford essentials.",
+   "why": "Shows the city's economic strain and whether job training is helping.",
+   "sources": [
+    {
+     "name": "KSAT",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNY2ozRUxsZlRRUW12Q0dfQ0RYQ295NEdDRVkwaDFYd1RVVWlWdDhaX2NvUTFaRlFZV1JVUEtNSzR5QVpGY1ZxQmVQVlpIbmozVzNPVzNvV2hRR2dDRXRhNm4zb2xITi1RTUxLY1k3R3hwMnBlYm9ublNOdW1wcjg1aGowd2s2TkFSUTR2ekhRdmFkZ0NxQjZ4NFZ5Nmk0MUhOTUlMNFl1c2RMWS1kZ3JkT0JlRUFBVEJ2eUpCQ29Tc0pmMTU3Wk0xdDhETmdjd1htMHBPTmlnb1NsLURReGc?oc=5"
+    }
+   ],
+   "time": "2026-11-24T22:31:31+00:00"
+  },
+  {
+   "id": "local-9",
+   "topic": "local",
+   "headline": "Texas leaders see hope for high-speed rail after midterms",
+   "summary": "State and local leaders say the Democratic midterm gains have renewed hope for a Texas high-speed rail project.",
    "why": "",
    "sources": [
     {
      "name": "WOAI",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVTFtZGNza0N3ZXJ6WUJJTW9jcEk2N0hnb0lzNTh2Tk1SWkctOVVfdloxWDhrdk5PdlpIRW0yY0FpZFVLdnRfQTkyUFByTGNRbVRHdmxfWnZDdHlOMWtPb1YyMkYtTXRQLWF6TlBHb2F3Y09kV3JZVWRaS2R1Sk5MTnhLX3p1dkRGSk9uTnVlTVM3ZEVESzViampzaGI4dlctVlpEeldQbXlWRi1jQUpKQmJaRXVwQV92eW5F?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbk5saGxxc0tZd1h4VzVhUkRMTmd3ODM2NGt2NU1McE54NUdxWmNqNG1pZmF4NGpDNGpUc0k3R1JJemFPdmFNWkswS2t1b2JTdHZ0SHZlclBuTW5scHZyRXh6dnp0cnM5TjFOVzNyalJRU1J6S09xMWwtcHlQLWx6b0daZ2dhMWx4TURTX25zX2hRY0gxczY2S0NWaTEtM0tjMTNzVnRmSFVtNWNBSW5yYVJ0X1N2Zw?oc=5"
     },
     {
      "name": "KABB",
-     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxONk9wOFowLWpZRUZIRFZkV3B1dTFRUW1uZUxDQ3J2S190RGdNbExVb2dUb1d2NXk4MTlJOWRURXNqSE9LYV9JUWpEaG1fQ1N2SFVueGtxT19aenFCOWg2aXhsWlQzQXhUbC1IbW1iYXJYNlV5VHB6ajJnNnhWc1BWczVJZEM1ZllEb3hOUE5NTFVlRDN6ckdyV3ZJNVRDeTcwSWc3RVdOU0FLczZ5LVRFUGp5cVZlUElZUEoxZDQ2NndFWkFfVFVGeXREc3ZJdnJBOXFLdkdzVks3RzZVV2lz?oc=5"
-    },
-    {
-     "name": "CultureMap San Antonio",
-     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRFRkQ1Q5NXdMeUxmbmI1QVVkenc5bEZYZ3RXeDdJQk9UQkZlbFo5TTRZUFJfci1rM0hlWmhyVEZVVWhPRExOcHZ4Y3NBVzhDcEI3YndSWXZoaTdUam5IcVpSWWUxOGhFZDRiVFRSbDR3Q1p5c3RjVlMwLU1IVmhnWXdTdWJZUQ?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOd0F2aHhpZHU3ZFN4SWJDNjcwQlN5NGhCdkphMjE4MUdxdmFtai1iTl9hRHhJWTA1ZXctRG53M09ReEt4OThsZWMzamxCT3lKbS0tckgwemVFU2N5ajNPNldHLVBnSHdRalNjQzhIT3E5Z1pkRDdqa0NPZy1BUFlTR3pzVWdDRGxjazJZQllSZmhOWUpnOGlleG9uOURnbk9zU21EQ2pnd0IxWmdueEVmSFBNWQ?oc=5"
     }
    ],
-   "time": "2026-11-24T22:27:13+00:00"
+   "time": "2026-11-25T06:33:45+00:00"
   },
   {
-   "id": "local-8",
-   "topic": "local",
-   "headline": "Mayor says ICE arrest at West Side site had no city link",
-   "summary": "San Antonio's mayor said an ICE arrest at a West Side waste collection site involved no city association.",
+   "id": "us-1",
+   "topic": "us",
+   "headline": "Army to detonate nation's lead azide stockpile in Iowa Wednesday",
+   "summary": "The Army plans to detonate nearly five tons of lead azide at the Iowa ammunition plant in Middletown around 9 a.m. CST. Nearby residents are bracing for a toxic lead dust cloud, and the Army says there is no reason to panic.",
+   "why": "Nearby residents face possible health and environmental effects from lead dust.",
+   "sources": [
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/iowa-army-ammunition-plant-unstable-explosives-detonation/"
+    },
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/25/nx-s1-6052338/army-plans-to-detonate-nearly-five-tons-of-lead-based-explosives-in-iowa"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/science/1041819/us-army-detonation-lead-explosives-iowa"
+    }
+   ],
+   "time": "2026-11-25T10:00:09+00:00"
+  },
+  {
+   "id": "us-3",
+   "topic": "us",
+   "headline": "Plane crash off Mississippi coast kills six, including two children",
+   "summary": "The Coast Guard says six people were found dead after a small plane crashed off Mississippi, near Horn Island. Crews had found the cabin, a life raft and life jackets.",
    "why": "",
    "sources": [
     {
-     "name": "KSAT",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQOE9ROHBpT1dfcVFrUGFzU053WG5MMzFmVGt1TTZ6OUVWNzVwc3pKMGlsdDlubkJMM205akRRbWc3dTZrcFhnM1JjSFM3YkZJaVQ0U3NrMjZWWUNxVlZZR2pfaFRoZV9wNHlqR3VQaWtYVEJYTUl6b0tWV1VhM2NaOTZWTGx2VnBabFgwSV9oS1JEZmZZWk5hTXI2Zko4VjZSVkpJQWRWTFZrb0lJR2VnYnJnUnozWm1HNVpDR3psWUtySEFvNGNEQUZTZEtyZmpqY1NPVnA4dnk?oc=5"
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/"
     },
     {
-     "name": "kens5.com",
-     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQN0Q3MDVNN0ZCZ0FCaG0tQk5lWk9WWFNjQmZPSW9HVUVYV2ozV1BwR1NzYm90d2x6VVBXQmJPWlFYSGpTMjNPdkdjb1FmUDEyV2toY2V6RzlVT0xTY0dXY2F4NU40aEpyYVFUZXRHYVhaU0h2WVVNb2RTM1QtTEtEcUFGMUUxY0c3SlFCOERlTll5dUNWekRxZWk1cmNmdUlvUnFjbzdwc25yWUFBVU01Q19MMVZzdlpkYkk3N2FfU1R3TlcwZnQ1aS1UbkptMkpsWWF2R2Zn?oc=5"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/25/us/mississippi-plane-crash-horn-island.html"
     }
    ],
-   "time": "2026-11-25T02:43:18+00:00"
-  },
-  {
-   "id": "us-12",
-   "topic": "us",
-   "headline": "Court allows Army's Iowa lead azide detonation to proceed",
-   "summary": "A court lifted an administrative stay, letting the Army move forward with detonating about five tons of degraded lead azide in Iowa. The plan has gone on, off and on again, with President Trump weighing in.",
-   "why": "Residents in the plume's path face possible lead dust exposure.",
-   "sources": [
-    {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/24/nx-s1-6051547/court-lifts-administrative-stay-allowing-lead-azide-detonation-to-move-forward"
-    }
-   ],
-   "time": "2026-11-24T11:42:15+00:00"
+   "time": "2026-11-25T08:57:18+00:00"
   },
   {
    "id": "us-9",
    "topic": "us",
-   "headline": "Maps show how far Iowa detonation lead dust could travel",
-   "summary": "Forecast maps show the plume stretching from near Burlington toward Macon, Missouri, by noon Wednesday. Forecasts will change with the weather.",
-   "why": "Shows who may need to take precautions.",
-   "sources": [
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/maps-show-how-far-lead-dust-from-about-5-tons-of-iowa-explosives-could-spread/"
-    }
-   ],
-   "time": "2026-11-25T02:22:30+00:00"
-  },
-  {
-   "id": "us-2",
-   "topic": "us",
-   "headline": "Alaska ends voter data sharing with Justice Department",
-   "summary": "Alaska's Republican elections chief ended an agreement that shared the state's detailed voter registration list with the Justice Department, which had used it to flag voters for removal.",
-   "why": "Raises questions about federal access to voter data.",
-   "sources": [
-    {
-     "name": "ABC News",
-     "url": "https://abcnews.com/US/wireStory/alaska-ends-voter-data-agreement-justice-department-searching-138422801"
-    },
-    {
-     "name": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/11/25/alaska-ends-deal-to-give-voter-records-to-us-justice-department?traffic_source=rss"
-    }
-   ],
-   "time": "2026-11-25T00:28:28+00:00"
-  },
-  {
-   "id": "politics-2",
-   "topic": "politics",
-   "headline": "Justice Dept. apologizes for false statement to judge in Omar case",
-   "summary": "The department acknowledged the misstatement hours after the House's top lawyer said it mischaracterized his view on constitutional protections for lawmakers.",
-   "why": "Bears on limits of searches of sitting members of Congress.",
-   "sources": [
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/us/politics/house-lawyer-ilhan-omar-search.html"
-    }
-   ],
-   "time": "2026-11-25T02:20:55+00:00"
-  },
-  {
-   "id": "politics-4",
-   "topic": "politics",
-   "headline": "Sullivan concedes Alaska Senate race to Peltola",
-   "summary": "The Republican conceded five days after the Trump administration dropped a long-shot lawsuit meant to potentially block certification of the race.",
+   "headline": "Fort Hood shooter Nidal Hasan to petition to delay execution",
+   "summary": "Hasan, who killed 13 people at the Texas Army post in 2009, told a federal court he will file a petition to delay his execution by firing squad.",
    "why": "",
    "sources": [
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/us/politics/dan-sullivan-concedes-alaska-senate-race-mary-peltola.html"
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/nidal-hasan-delay-execution-petition/"
     }
    ],
-   "time": "2026-11-24T23:58:18+00:00"
+   "time": "2026-11-25T01:49:00+00:00"
+  },
+  {
+   "id": "politics-3",
+   "topic": "politics",
+   "headline": "Intelligence officials brief Congress on Nvidia scandal",
+   "summary": "After Trump said Jensen Huang was not a security threat, intelligence agencies told congressional aides there was no evidence the woman at the center of the scandal took direction from Chinese intelligence.",
+   "why": "It bears on questions about Trump's role in Huang's reinstatement.",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html"
+    }
+   ],
+   "time": "2026-11-25T03:15:54+00:00"
   },
   {
    "id": "politics-1",
    "topic": "politics",
-   "headline": "Trump awards Rudy Giuliani Presidential Medal of Freedom",
-   "summary": "Trump presented the honor to Giuliani, a longtime ally whose reputation was tarnished by efforts to overturn the 2020 election on Trump's behalf.",
-   "why": "",
+   "headline": "Three-hour flight delays on tarmacs hit highest level in 15 years",
+   "summary": "Long tarmac delays have risen to levels not seen in more than 15 years under Trump, with no enforcement in sight.",
+   "why": "Relevant for holiday travelers.",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/us/politics/trump-rudy-giuliani-presidential-medal-of-freedom.html"
-    },
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/trump-rudy-giuliani-presidential-medal-of-freedom-white-house/"
+     "url": "https://www.nytimes.com/2026/11/25/upshot/tarmac-delays-flights-trump.html"
     }
    ],
-   "time": "2026-11-24T21:32:54+00:00"
+   "time": "2026-11-25T10:03:47+00:00"
+  },
+  {
+   "id": "politics-6",
+   "topic": "politics",
+   "headline": "U.S. probes Iranian ties to up to 50 hacked ships",
+   "summary": "The U.S. government is investigating possible Iranian links to as many as 50 hacked commercial vessels, officials told NPR, in what may be the latest Iranian cyberattack on critical infrastructure during the war with the U.S.",
+   "why": "Signals cyber threats to global shipping and infrastructure.",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/24/nx-s1-6052994/hack-commercial-vessels-iran"
+    }
+   ],
+   "time": "2026-11-24T21:04:50+00:00"
   },
   {
    "id": "world-1",
    "topic": "world",
-   "headline": "Abrego Garcia leaves U.S. for Spain after long legal fight",
-   "summary": "Kilmar Abrego Garcia, wrongfully deported last year, is self-deporting to Spain. He had faced possible deportation to Liberia.",
-   "why": "Ends a closely watched immigration case.",
+   "headline": "China investigates Shanghai party chief Chen Jining",
+   "summary": "Xinhua announced an investigation of Politburo member Chen Jining, once seen as a contender for higher office. He is the fourth Politburo member investigated since 2025.",
+   "why": "Shows how far Xi's purges now reach into the top leadership.",
    "sources": [
     {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/25/nx-s1-6053801/china-investigation-politburo-shanghai-party"
+    },
+    {
      "name": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/11/25/kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us-legal-battle?traffic_source=rss"
+     "url": "https://www.aljazeera.com/news/2026/11/25/who-is-chen-jining-chinas-latest-politburo-member-under-investigation?traffic_source=rss"
     },
     {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/kilmar-abrego-garcia-leaving-us-europe/"
-    },
-    {
-     "name": "MySA",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNXh6dlBleE9NTXFUQldYVXJuTG1iZFhzdEFPZG9RNmNVS25rRTRKcnUwZHpCSy1xcmVnOF9KSnlvaVN4dFAzN2ZGZlZzdTFXdGtzTC1wZDhCWG1JM0Ztd05jSEs2eGV1Ry04S3NKS2d2TUdJbzdKV0k2SGc1Y2lUaV9KMnQxLXRKYW1oMU1ZMTBOQUtnTTVhOUl0SGxVSlB4VXpXbll3UE1ZRWhrSjFV?oc=5"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/world/asia/shanghai-party-leader-investigation-china-xi.html"
     }
    ],
-   "time": "2026-11-25T02:40:59+00:00"
+   "time": "2026-11-25T10:50:26+00:00"
   },
   {
    "id": "world-2",
    "topic": "world",
-   "headline": "Iranian singer receives 74 lashes for performing without hijab",
-   "summary": "Singer Parastoo Ahmadi and four production team members each received 74 lashes after being convicted of offending public decency, an Iranian news site said.",
-   "why": "Western governments and rights groups call flogging torture.",
+   "headline": "Solomon Islands signs security treaty with Australia, ending China pact",
+   "summary": "The Solomon Islands ended its 2022 security agreement with China in favor of a treaty with Australia. The new accord precludes foreign military bases.",
+   "why": "A shift in Pacific influence away from Beijing.",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/world/middleeast/iran-singer-parastoo-ahmadi-flogging-lashes.html"
+     "url": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html"
     },
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/world/2026/nov/23/iranian-singer-lashes-performing-without-hijab"
+     "url": "https://www.bbc.co.uk/news/articles/ckdd1z2gvlgno?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-24T12:34:52+00:00"
+   "time": "2026-11-25T05:24:36+00:00"
   },
   {
-   "id": "world-5",
+   "id": "world-8",
    "topic": "world",
-   "headline": "Thomas Markle indicted on child sexual abuse material charges",
-   "summary": "A Los Angeles federal grand jury indicted Thomas Markle, 82, on possession charges. He is expected to be arraigned in the coming weeks.",
-   "why": "",
-   "sources": [
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/world/europe/thomas-markle-indicted.html"
-    },
-    {
-     "name": "MySA",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcC1XdFZkclJxNkE5T3B4OXFybEVYLVNTWlpHZHRjcTUtd0NkOXZlWGI3WldvY0NpQXlLbUNFNGNBZld0bk5yQ0hsdmxJUGR1Sy0zbnh5WXNFVjQzN0NQRGpPVkxab1NTRGw2ZHFUYWRPa2RlVmxBUHYwUEJCMmpOWHU0UjcxVVhuZ0lDeTctejgxWGlFeWZ0UUJKNlk5VUhZVUE?oc=5"
-    }
-   ],
-   "time": "2026-11-25T02:55:17+00:00"
-  },
-  {
-   "id": "tech-2",
-   "topic": "tech",
-   "headline": "Huawei found guilty of stealing U.S. trade secrets",
-   "summary": "A New York federal jury convicted Huawei of stealing trade secrets from companies including T-Mobile and Cisco, but acquitted it of racketeering.",
-   "why": "Escalates U.S.-China technology tensions.",
+   "headline": "Leaked figures show Russia has lost almost 500,000 people in Ukraine war",
+   "summary": "Russia's own leaked data indicate nearly 500,000 deaths tied to the full-scale invasion, which has changed mortality patterns in Russia.",
+   "why": "Shows the scale of the war's human cost.",
    "sources": [
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss"
+     "url": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-25T00:56:51+00:00"
+  },
+  {
+   "id": "tech-1",
+   "topic": "tech",
+   "headline": "Jensen Huang returns as Nvidia CEO after Trump pushes for reinstatement",
+   "summary": "Nvidia's board had said Huang would not return, but Trump pushed for it, effectively overriding the board, governance experts say. Huang apologized to employees and said he is in therapy.",
+   "why": "A president's intervention in a major company's leadership is unusual.",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/technology/jensen-huang-apology-nvidia-ceo.html"
     },
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/24/nx-s1-6051532/jensen-huang-returns-to-nvidia-as-ceo-after-scandal"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-challenges/"
+    }
+   ],
+   "time": "2026-11-25T00:33:07+00:00"
+  },
+  {
+   "id": "tech-4",
+   "topic": "tech",
+   "headline": "Microsoft declares 'Code Red' after major Outlook outage",
+   "summary": "A nearly 24-hour Exchange Online and Outlook outage took down email for millions of customers. A bug on networking gateway servers since July triggered it.",
+   "why": "Shows how fragile widely used cloud services can be.",
+   "sources": [
     {
      "name": "The Verge",
-     "url": "https://www.theverge.com/tech/1041820/huawei-guilty-trade-secrets-trial"
-    },
-    {
-     "name": "Al Jazeera",
-     "url": "https://www.aljazeera.com/economy/2026/11/24/chinese-tech-giant-huawei-found-guilty-of-conspiracy-to-steal-trade-secrets?traffic_source=rss"
+     "url": "https://www.theverge.com/news/1042025/microsoft-code-red-outlook-outage"
     }
    ],
-   "time": "2026-11-25T02:59:27+00:00"
+   "time": "2026-11-25T11:13:02+00:00"
   },
   {
    "id": "tech-3",
    "topic": "tech",
-   "headline": "Investigators find Nvidia chips illegally diverted to China",
-   "summary": "Justice Department investigators have gathered evidence of Nvidia chips being illegally diverted by other firms to China, while Attorney General Blanche downplays questions about Nvidia.",
+   "headline": "Half of NASA's aging Mars fleet knocked offline",
+   "summary": "Perseverance is having trouble transmitting to Earth, while Odyssey is rapidly burning through its dwindling fuel supply.",
    "why": "",
    "sources": [
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/us/politics/nvidia-justice-department-todd-blanche.html"
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/space/2026/11/half-of-nasas-aging-mars-fleet-knocked-offline-by-technical-issues/"
     }
    ],
-   "time": "2026-11-24T23:27:37+00:00"
-  },
-  {
-   "id": "tech-7",
-   "topic": "tech",
-   "headline": "FinCEN discloses cybersecurity incident",
-   "summary": "The Treasury's Financial Crimes Enforcement Network said unauthorized access hit a limited subset of its systems. It has not shared the scope or source.",
-   "why": "",
-   "sources": [
-    {
-     "name": "The Verge",
-     "url": "https://www.theverge.com/policy/1041957/fincen-treasury-cybersecurity-incident"
-    }
-   ],
-   "time": "2026-11-25T01:45:35+00:00"
-  },
-  {
-   "id": "science-8",
-   "topic": "science",
-   "headline": "Public health guidance on possible lead exposure in Iowa",
-   "summary": "The Iowa Poison Control Center's medical director explains how people can protect themselves after the Army detonates degraded lead azide.",
-   "why": "Practical steps for those near the blast.",
-   "sources": [
-    {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/24/nx-s1-6052351/heres-the-public-health-guidance-for-possible-lead-exposure-in-iowa"
-    }
-   ],
-   "time": "2026-11-24T21:16:46+00:00"
+   "time": "2026-11-24T22:50:11+00:00"
   },
   {
    "id": "science-2",
    "topic": "science",
-   "headline": "Medicare hospice caps leave some patients without care",
-   "summary": "Critics say payment limits penalize patients who are not dying on the government's timetable, leaving some without hospice care.",
+   "headline": "China launches Shenzhou-24 with Pakistan's first astronaut",
+   "summary": "China sent three astronauts to its Tiangong station, including Pakistan's Muhammad Zeeshan Ali, the first foreigner on a Chinese crewed mission.",
    "why": "",
    "sources": [
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/business/medicare-hospice-caps-patients-lose-care.html"
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/videos/cj5y1p067kxno?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-24T10:02:48+00:00"
+   "time": "2026-11-25T10:26:50+00:00"
   },
   {
-   "id": "science-1",
+   "id": "science-8",
    "topic": "science",
-   "headline": "This group of seamstresses mends shirts to make chemo easier for cancer patients",
-   "summary": "Seamstresses in Ohio and other states are making zippered shirts for cancer patients so they can more comfortably undergo chemotherapy treatments.",
-   "why": "",
+   "headline": "Doctors struggle as parents refuse newborn vitamin K shots",
+   "summary": "Doctors say disinformation is driving refusals of routine vitamin K shots, which help prevent a rare but devastating bleeding disorder in newborns.",
+   "why": "Shows a preventable health risk to infants.",
    "sources": [
     {
      "name": "NPR",
-     "url": "https://www.npr.org/2026/11/24/nx-s1-6044239-e1/this-group-of-seamstresses-mends-shirts-to-make-chemo-easier-for-cancer-patients"
+     "url": "https://www.npr.org/2026/11/24/nx-s1-6001723/vitamin-k-deficiency-refusal-vaccine-misinformation-newborn-bleeding"
     }
    ],
-   "time": "2026-11-24T21:19:27+00:00"
+   "time": "2026-11-24T10:00:00+00:00"
   },
   {
-   "id": "business-8",
-   "topic": "business",
-   "headline": "U.S. preparing new tariffs on global trading partners",
-   "summary": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
-   "why": "Tariffs can raise consumer prices.",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-25T00:38:01+00:00"
-  },
-  {
-   "id": "business-3",
-   "topic": "business",
-   "headline": "UK gas prices to rise significantly in January under new cap",
-   "summary": "Regulator Ofgem's new price cap will push domestic gas prices up significantly in January.",
-   "why": "",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-25T00:33:25+00:00"
-  },
-  {
-   "id": "business-1",
-   "topic": "business",
-   "headline": "Al Gore buys hometown Tennessee newspaper Carthage Courier",
-   "summary": "The Lake family, which has run the weekly for five decades, will sell it to the former vice president in the coming weeks.",
+   "id": "science-6",
+   "topic": "science",
+   "headline": "Mortality gap between Black and white Americans is shrinking",
+   "summary": "A new report shows significant progress on racial health disparities, though many persist.",
    "why": "",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/business/media/al-gore-newspaper-carthage-courier.html"
-    },
-    {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/us-news/2026/nov/24/al-gore-newspaper-tennessee"
+     "url": "https://www.nytimes.com/2026/11/24/well/black-white-americans-health-death-rates.html"
     }
    ],
-   "time": "2026-11-25T02:31:42+00:00"
+   "time": "2026-11-24T19:00:00+00:00"
   },
   {
-   "id": "sports-2",
-   "topic": "sports",
-   "headline": "Indiana tumbles from 12-team field in fourth CFP rankings",
-   "summary": "Upset losses by UCLA and Indiana would leave the Big Ten with one bid if the playoff opened now. Tennessee and Texas jumped Alabama.",
+   "id": "business-9",
+   "topic": "business",
+   "headline": "Trump's rescue of Nvidia's Huang brings political risks",
+   "summary": "The president's intercession to reinstate Huang has linked their fates. Nvidia's board is also facing criticism over its handling of the crisis.",
+   "why": "Ties a major tech firm's fortunes to the White House.",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/ckj05m2zdyryo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-25T01:03:05+00:00"
+  },
+  {
+   "id": "business-11",
+   "topic": "business",
+   "headline": "California homeowners say wildfire-proofing barely cuts insurance bills",
+   "summary": "Some homeowners have spent thousands making homes safer from wildfires, yet their insurance bills have barely dropped.",
+   "why": "Affects insurance costs in fire-prone areas.",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/sections/planet-money/2026/11/24/g-s1-154477/what-should-it-cost-to-insure-a-home-in-wildfire-country"
+    }
+   ],
+   "time": "2026-11-24T11:30:00+00:00"
+  },
+  {
+   "id": "business-12",
+   "topic": "business",
+   "headline": "Detroit Lions owner Martha Firestone Ford dies at 101",
+   "summary": "Ford took over the team after her husband's 2014 death and was one of a handful of female NFL owners.",
    "why": "",
    "sources": [
     {
-     "name": "ESPN",
-     "url": "https://www.espn.com/college-football/story/_/id/50588082/indiana-top-12-cfp-rankings-texas-tennessee-leap-alabama"
-    },
-    {
-     "name": "Tampa Bay Times",
-     "url": "https://sports.yahoo.com/college-football/articles/indiana-tumbles-cfp-rankings-sec-025513714.html"
-    },
-    {
-     "name": "MySA",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQmExdFd2dGVlTXJ6S2Rvc09pRzd0ZXNwWTdzUW5LeVR3bzdDTmUwcHpGZ2E2Q1dsTmxsRWpVMC1RTnY5TndDdmdkV0MtMmtxUXkydGVRN0tYNHdRblkwWHdHeFdZZ0pyZ09jTmlsakdqRDd3Smt4b1cwLXRtbFRpVHNvYVJSNHRDU213S05EUm5lUEFnNWtMTkJOcWJtUWJfcThVdWxn?oc=5"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/business/martha-firestone-ford-dead.html"
     }
    ],
-   "time": "2026-11-25T02:55:13+00:00"
+   "time": "2026-11-25T03:52:08+00:00"
+  },
+  {
+   "id": "sports-3",
+   "topic": "sports",
+   "headline": "Steelers bench Aaron Rodgers, start Mason Rudolph against Broncos",
+   "summary": "Pittsburgh benched Rodgers after offensive struggles led to consecutive losses following a 6-2 start.",
+   "why": "",
+   "sources": [
+    {
+     "name": "CBS Sports",
+     "url": "https://www.cbssports.com/nfl/news/steelers-bench-aaron-rodgers-make-qb-inactive-friday-broncos/"
+    }
+   ],
+   "time": "2026-11-25T05:18:04+00:00"
   },
   {
    "id": "sports-1",
    "topic": "sports",
-   "headline": "Boise State drops out of CFP rankings after late loss",
-   "summary": "A last-second loss dropped Boise State from 17th to unranked, leaving no Group of 6 team in the rankings.",
-   "why": "",
+   "headline": "NFL Thanksgiving slate: Eagles visit Cowboys in middle game",
+   "summary": "The Eagles visit the Cowboys in the middle game of the NFL's Thanksgiving tripleheader.",
+   "why": "Useful for holiday viewing plans.",
    "sources": [
     {
-     "name": "CBS Sports",
-     "url": "https://www.cbssports.com/college-football/news/college-football-playoff-bracket-12-team-field-rankings/"
+     "name": "Eagles Wire",
+     "url": "https://sports.yahoo.com/nfl/articles/nfl-thanksgiving-tv-schedule-kickoff-110912124.html"
     },
     {
-     "name": "SB Nation",
-     "url": "https://sports.yahoo.com/college-football/articles/college-football-playoff-rankings-boise-025134811.html"
+     "name": "The Oklahoman",
+     "url": "https://sports.yahoo.com/nfl/articles/playing-nfl-thanksgiving-eve-game-110810042.html"
     },
     {
-     "name": "Sooners Wire",
-     "url": "https://sports.yahoo.com/college-football/articles/oklahoma-sooners-climb-latest-college-024827931.html"
+     "name": "The Tennessean",
+     "url": "https://sports.yahoo.com/nfl/articles/nfl-games-tv-week-nfl-110431220.html"
     }
    ],
-   "time": "2026-11-25T02:51:34+00:00"
+   "time": "2026-11-25T11:09:12+00:00"
   },
   {
-   "id": "sports-5",
+   "id": "sports-8",
    "topic": "sports",
-   "headline": "Broncos suspend J.K. Dobbins one game",
-   "summary": "Denver suspended Dobbins for conduct detrimental to the team. He will miss Friday's game against the Steelers as Denver holds a slight AFC West lead.",
+   "headline": "CFP committee rewards Tennessee, drops Indiana in rankings",
+   "summary": "The latest playoff rankings gave Tennessee more credit, while Indiana fell after weeks of close calls.",
    "why": "",
    "sources": [
     {
-     "name": "ESPN",
-     "url": "https://www.espn.com/nfl/story/_/id/50586087/broncos-payton-says-rb-dobbins-suspended-one-game"
-    },
-    {
      "name": "CBS Sports",
-     "url": "https://www.cbssports.com/nfl/news/broncos-suspend-rb-j-k-dobbins-one-game-conduct-detrimental-team/"
+     "url": "https://www.cbssports.com/college-football/news/cfp-selection-committee-tennessee-indiana-rankings/"
     }
    ],
-   "time": "2026-11-25T02:37:29+00:00"
+   "time": "2026-11-25T02:33:06+00:00"
   },
   {
    "id": "culture-1",
    "topic": "culture",
-   "headline": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
-   "summary": "Washington's $9 billion industry grows more than 70% of the nation's fresh apples. Farmers are being pressed by high costs, tariffs and a strong dollar that diminishes foreign purchasing power.",
-   "why": "",
-   "sources": [
-    {
-     "name": "NPR",
-     "url": "https://www.npr.org/sections/the-picture-show/2026/11/24/g-s1-154620/how-high-costs-are-squeezing-apple-producers"
-    }
-   ],
-   "time": "2026-11-24T21:09:29+00:00"
-  },
-  {
-   "id": "culture-2",
-   "topic": "culture",
-   "headline": "Substance released at concert could be linked to robberies, police say",
-   "summary": "Police are investigating a possible link between the Co-op Live evacuation and reported robberies.",
-   "why": "",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cqrmgvnzwrm3o?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-24T22:01:30+00:00"
-  },
-  {
-   "id": "culture-3",
-   "topic": "culture",
-   "headline": "‘The Further Mis-Adventures of Cliff Booth’ Review: Golden-Boy Fumes",
-   "summary": "Quentin Tarantino wrote, and David Fincher directed, this movie starring Brad Pitt, which picks up with the stuntman character he played in “Once Upon a Time … in Hollywood.”",
+   "headline": "Macy's Thanksgiving Day Parade marks 100th year with 100 inflatables",
+   "summary": "New York's parade celebrates its 100th procession with 100 inflatables, including new characters.",
    "why": "",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/movies/the-further-mis-adventures-of-cliff-booth-review.html"
+     "url": "https://www.nytimes.com/2026/11/25/arts/television/macys-thanksgiving-day-parade-prep-planning.html"
+    },
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/25/nx-s1-6037568/100th-macys-thanksgiving-day-parade-balloons"
     }
    ],
-   "time": "2026-11-24T20:24:55+00:00"
+   "time": "2026-11-25T10:02:54+00:00"
+  },
+  {
+   "id": "culture-6",
+   "topic": "culture",
+   "headline": "Nollywood actor Pete Edochie dies at 79",
+   "summary": "The veteran Nigerian actor rose to prominence in 1987 in a TV adaptation of Chinua Achebe's novel Things Fall Apart.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cqwy0rr4rr4yo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-25T10:37:23+00:00"
+  },
+  {
+   "id": "culture-9",
+   "topic": "culture",
+   "headline": "New London Museum opens Saturday at Smithfield Market",
+   "summary": "The museum's new site opens following a £437m restoration project.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cky9708qj7wdo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-25T05:50:53+00:00"
   }
  ],
  "weather": {
   "location": "San Antonio, TX",
   "today": {
-   "date": "2026-11-24",
-   "emoji": "☁️",
-   "desc": "Cloudy",
-   "summary": "Cloudy today, with a high of 56° and a low of 43°. No rain expected.",
-   "high": 56,
-   "low": 43,
-   "rain": 4,
-   "feels_high": 49,
-   "feels_low": 39,
+   "date": "2026-11-25",
+   "emoji": "☀️",
+   "desc": "Clear",
+   "summary": "Clear today, with a high of 58° and a low of 36°. No rain expected.",
+   "high": 58,
+   "low": 36,
+   "rain": 0,
+   "feels_high": 50,
+   "feels_low": 31,
    "precip_in": 0,
-   "wind": 12,
-   "gust": 24,
-   "uv": 1,
-   "sunrise": "7:05 AM",
+   "wind": 10,
+   "gust": 21,
+   "uv": 5,
+   "sunrise": "7:06 AM",
    "sunset": "5:35 PM",
    "slots": [
     {
      "label": "Morning",
-     "temp": 51,
+     "temp": 38,
      "emoji": "☀️",
      "desc": "Clear",
-     "rain": 2
+     "rain": 0
     },
     {
      "label": "Midday",
-     "temp": 56,
-     "emoji": "☁️",
-     "desc": "Cloudy",
-     "rain": 4
+     "temp": 54,
+     "emoji": "☀️",
+     "desc": "Clear",
+     "rain": 0
     },
     {
      "label": "Afternoon",
-     "temp": 52,
-     "emoji": "☁️",
-     "desc": "Cloudy",
-     "rain": 4
+     "temp": 58,
+     "emoji": "☀️",
+     "desc": "Clear",
+     "rain": 0
     },
     {
      "label": "Evening",
@@ -662,18 +620,10 @@
   },
   "days": [
    {
-    "date": "2026-11-25",
-    "emoji": "☀️",
-    "desc": "Clear",
-    "high": 59,
-    "low": 37,
-    "rain": 0
-   },
-   {
     "date": "2026-11-26",
     "emoji": "☁️",
     "desc": "Cloudy",
-    "high": 60,
+    "high": 59,
     "low": 36,
     "rain": 0
    },
@@ -687,35 +637,43 @@
    },
    {
     "date": "2026-11-28",
-    "emoji": "🌤️",
-    "desc": "Mostly clear",
-    "high": 71,
+    "emoji": "☀️",
+    "desc": "Clear",
+    "high": 72,
     "low": 48,
     "rain": 0
    },
    {
     "date": "2026-11-29",
-    "emoji": "🌫️",
-    "desc": "Foggy",
-    "high": 71,
+    "emoji": "☁️",
+    "desc": "Cloudy",
+    "high": 78,
     "low": 57,
     "rain": 0
    },
    {
     "date": "2026-11-30",
-    "emoji": "☁️",
-    "desc": "Cloudy",
-    "high": 78,
-    "low": 61,
+    "emoji": "☀️",
+    "desc": "Clear",
+    "high": 77,
+    "low": 55,
     "rain": 0
    },
    {
     "date": "2026-12-01",
+    "emoji": "☀️",
+    "desc": "Clear",
+    "high": 82,
+    "low": 59,
+    "rain": 1
+   },
+   {
+    "date": "2026-12-02",
     "emoji": "☁️",
     "desc": "Cloudy",
-    "high": 82,
-    "low": 60,
-    "rain": 1
+    "high": 79,
+    "low": 58,
+    "rain": 3
    }
   ]
  }
