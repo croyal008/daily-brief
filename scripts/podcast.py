@@ -368,6 +368,8 @@ If weather is given, the very first segment after the intro is a quick local for
 "weather", 40 to 70 words): today's high, low and rain odds, what the day feels like and when it
 changes, plus a heads-up on anything notable later in the week (a cold front, a rainy day, a warm
 spell). Keep it conversational and useful, like a friend telling you whether you need a jacket.
+Use only the weather numbers given. Never mention warnings, watches, advisories or records
+unless they are in the weather facts, because they aren't checked.
 The listener's own teams (if any are given) come next, in their own short segment each,
 before the headliners. If one of their teams plays today, say when and where to watch, in that
 team's segment (or its own short segment, story id "tonight", if the team has no recap). Then the headliners, then quick hits as a single segment, then a sign-off.
