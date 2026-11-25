@@ -86,6 +86,8 @@ def build(loc: dict, f: dict) -> dict:
         if i is None:
             continue
         c_desc, c_emoji = code(h["weather_code"][i])
+        if hr >= 19 and int(h["weather_code"][i] or 0) in (0, 1):
+            c_emoji = "🌙"
         slots.append({"label": label, "temp": round(h["temperature_2m"][i]), "emoji": c_emoji,
                       "desc": c_desc, "rain": int(h["precipitation_probability"][i] or 0)})
 
