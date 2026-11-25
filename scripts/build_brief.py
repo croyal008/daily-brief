@@ -162,7 +162,13 @@ def parse_feed(raw: bytes, feed_url: str) -> list[dict]:
                 if local(c.tag) == "link" and c.get("href") and c.get("rel", "alternate") == "alternate":
                     link = c.get("href")
                     break
+        src_el = next((c for c in el if local(c.tag) == "source"), None)
+        outlet = clean_text(src_el.text or "") if src_el is not None else ""
+        if outlet and title.endswith(" - " + outlet):
+            title = title[: -len(outlet) - 3].strip()
         desc = clean_text(child_text(el, "description", "summary", "content"))
+        if outlet and "news.google." in (link or ""):
+            desc = ""  # Google News descriptions are just link lists
         when = parse_date(child_text(el, "pubDate", "published", "updated", "date"))
         items.append({
             "title": title,
@@ -170,6 +176,7 @@ def parse_feed(raw: bytes, feed_url: str) -> list[dict]:
             "desc": desc[:600],
             "time": when,
             "rank": len(items),
+            "outlet": outlet,
         })
     return items
 
@@ -221,7 +228,7 @@ def collect(config: dict, now: datetime) -> list[dict]:
             if not it["time"] and it["rank"] > 10:
                 continue
             it["topic"] = topic
-            it["source"] = source_name(it["link"] or url)
+            it["source"] = it.get("outlet") or source_name(it["link"] or url)
             it["tokens"] = tokens(it["title"])
             items.append(it)
             kept += 1
@@ -364,6 +371,10 @@ Choose stories:
   write about only what is new.
 - Business: favour things that affect everyday life (jobs, prices, big company decisions, tech
   shifts). Skip day-to-day stock, index, earnings or crypto moves unless truly historic.
+- If the reader's reactions are given, lean toward the kinds of stories they liked and away from
+  the kinds they weren't interested in, but never drop news that truly matters.
+- Local: real local news for the reader's area (city decisions, schools, traffic, weather impacts,
+  local business, notable events). Minor crime blotter items only if nothing better.
 - Use only facts present in the candidate text. Do not add outside facts, numbers or quotes.
 
 Write each chosen story:
@@ -376,6 +387,19 @@ Also write overview: 5 or 6 one-sentence bullets (each at most 25 words) that to
 the story's topic id.
 
 Neutral, calm, factual tone. Return stories using the candidate ids you were given."""
+
+
+def reader_taste() -> str:
+    """The reader's recent thumbs up and down from the app, as a note for the editor."""
+    fb = (app_config().get("feedback") or [])[-60:]
+    up = [f"- [{f.get('topic', '')}] {f.get('headline', '')}" for f in fb if f.get("vote") == 1]
+    down = [f"- [{f.get('topic', '')}] {f.get('headline', '')}" for f in fb if f.get("vote") == -1]
+    if not up and not down:
+        return ""
+    return ("The reader's recent reactions (learn the kinds of stories, subjects and angles they want; "
+            "don't just look for the same story):\n"
+            + ("Liked:\n" + "\n".join(up) + "\n" if up else "")
+            + ("Not interested:\n" + "\n".join(down) + "\n" if down else "") + "\n")
 
 
 def ai_brief(candidates: dict[str, list[dict]], config: dict, history: list[dict]) -> dict | None:
@@ -406,7 +430,7 @@ def ai_brief(candidates: dict[str, list[dict]], config: dict, history: list[dict
             lines.append(f"- id {c['id']} | outlets: {len(c['sources'])} ({srcs})\n"
                          f"  headlines: {heads}\n  text: {c['desc'][:400]}")
     seen = "\n".join(f"- {h['date']}: {h['headline']}" for h in history[-80:]) or "(none)"
-    user = (f"Already shown in recent days:\n{seen}\n\nToday's candidates:\n" + "\n".join(lines))
+    user = (f"Already shown in recent days:\n{seen}\n\n{reader_taste()}Today's candidates:\n" + "\n".join(lines))
 
     client = anthropic.Anthropic()
     kwargs = dict(
@@ -502,8 +526,32 @@ def finalize(brief: dict, candidates: dict[str, list[dict]], config: dict) -> li
 
 # ---------------------------------------------------------------- main
 
+def app_config() -> dict:
+    try:
+        return json.loads((ROOT / "docs" / "config.json").read_text())
+    except (OSError, ValueError):
+        return {}
+
+
+def local_topic() -> dict:
+    """Local news for the weather location, from Google News (free, works for any town)."""
+    from urllib.parse import quote
+    name = ((app_config().get("weather") or {}).get("name") or "San Antonio, TX").strip()
+    city, _, region = name.partition(",")
+    city, region = city.strip(), region.strip()
+    q = quote(f'"{city}" when:1d')
+    geo = quote(f"{city}, {region}" if region else city)
+    tail = "hl=en-US&gl=US&ceid=US:en"
+    return {
+        "id": "local", "name": f"Local · {city}", "emoji": "📍", "default_on": True, "max_stories": 3,
+        "feeds": [f"https://news.google.com/rss/headlines/section/geo/{geo}?{tail}",
+                  f"https://news.google.com/rss/search?q={q}&{tail}"],
+    }
+
+
 def main() -> int:
     config = json.loads(FEEDS_FILE.read_text())
+    config["topics"].insert(0, local_topic())
     now = datetime.now(timezone.utc)
     today = now.astimezone(LOCAL_TZ).date().isoformat()
     history = load_history(today)
@@ -543,6 +591,12 @@ def main() -> int:
         "same_story": same_story,
         "is_repeat_title": lambda title: is_repeat({"headline": title}, history),
     })
+    from my_teams import upcoming_games
+    try:
+        upcoming = upcoming_games(TEAMS_FILE, datetime.fromisoformat(today), {"fetch_json": fetch_json}, LOCAL_TZ)
+    except Exception as e:  # noqa: BLE001  a bonus; never break the brief over it
+        print(f"! Upcoming games skipped: {e}", file=sys.stderr)
+        upcoming = []
     topics_out = [{k: t[k] for k in ("id", "name", "emoji", "default_on")} for t in config["topics"]]
     if TEAMS_FILE.exists() and json.loads(TEAMS_FILE.read_text()).get("teams"):
         topics_out.insert(0, MY_TEAMS_TOPIC)
@@ -559,6 +613,7 @@ def main() -> int:
         "ai_summaries": used_ai,
         "topics": topics_out,
         "overview": overview,
+        "upcoming": upcoming,
         "stories": [{k: v for k, v in s.items() if not k.startswith("_")} for s in stories],
     }
 

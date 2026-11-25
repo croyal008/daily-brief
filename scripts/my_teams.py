@@ -198,3 +198,75 @@ def team_stories(teams_file: Path, today_local: datetime, helpers: dict) -> list
                         topic="myteams", why="")
             out.append(game)
     return out
+
+
+def _broadcasts(comp: dict) -> str:
+    """'ESPN' or 'FanDuel SN, KENS' — national networks first."""
+    national, local = [], []
+    for b in comp.get("broadcasts") or []:
+        dest = national if (b.get("market") or "").lower() == "national" else local
+        dest.extend(b.get("names") or [])
+    for g in comp.get("geoBroadcasts") or []:
+        name = ((g.get("media") or {}).get("shortName") or "").strip()
+        if name:
+            ((national if (g.get("market") or {}).get("type", "").lower() == "national" else local)).append(name)
+    names = list(dict.fromkeys(n for n in national + local if n))
+    return ", ".join(names[:2])
+
+
+def todays_game(team: dict, today: datetime, fetch_json, tz) -> dict | None:
+    """The team's game later today, if any: who, when (local time) and where to watch."""
+    league = team["league"]
+    url = (f"https://site.api.espn.com/apis/site/v2/sports/{LEAGUES[league]}/scoreboard"
+           f"?dates={today:%Y%m%d}&limit=400")
+    if league == "college-football":
+        url += "&groups=80"
+    elif league == "college-basketball":
+        url += "&groups=50"
+    data = fetch_json(url)
+    if not data:
+        return None
+    for ev in data.get("events", []):
+        comp = (ev.get("competitions") or [{}])[0]
+        state = ((comp.get("status") or ev.get("status") or {}).get("type") or {}).get("state", "")
+        if state == "post":
+            continue
+        sides = comp.get("competitors", [])
+        mine = next((c for c in sides if _matches(team, c.get("team", {}))), None)
+        if not mine or len(sides) != 2:
+            continue
+        other = next(c for c in sides if c is not mine)
+        me = mine["team"].get("shortDisplayName") or mine["team"].get("name") or team["name"]
+        opp = other["team"].get("shortDisplayName") or other["team"].get("name") or "Opponent"
+        when = ""
+        try:
+            start = datetime.fromisoformat((ev.get("date") or comp.get("date")).replace("Z", "+00:00")).astimezone(tz)
+            when = start.strftime("%-I:%M %p")
+            if start.date() != today.date():
+                when = start.strftime("%a %-I:%M %p")
+        except (AttributeError, ValueError, TypeError):
+            pass
+        rec = lambda c: ((c.get("records") or [{}])[0].get("summary") or "")
+        return {
+            "team": me, "opponent": opp,
+            "home": mine.get("homeAway") == "home",
+            "matchup": f"{me} {'vs.' if mine.get('homeAway') == 'home' else 'at'} {opp}",
+            "time": when, "tv": _broadcasts(comp),
+            "record": rec(mine), "opp_record": rec(other),
+            "live": state == "in",
+        }
+    return None
+
+
+def upcoming_games(teams_file: Path, today_local: datetime, helpers: dict, tz) -> list[dict]:
+    out = []
+    for team in load_teams(teams_file):
+        try:
+            g = todays_game(team, today_local, helpers["fetch_json"], tz)
+        except Exception as e:  # noqa: BLE001
+            print(f"  ! today's game for {team['name']}: {e}", file=sys.stderr)
+            continue
+        if g:
+            print(f"  today: {g['matchup']} {g['time']} {g['tv']}")
+            out.append(g)
+    return out

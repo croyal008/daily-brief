@@ -226,10 +226,12 @@
         continue;
       }
       const stories = byTopic[t.id];
-      if (!stories.length) continue;
+      const games = t.id === "myteams" ? (brief.upcoming || []) : [];
+      if (!stories.length && !games.length) continue;
       chips.push(el("a", { href: `#t-${t.id}`, text: `${t.emoji} ${t.name}` }));
       const sec = el("section", { class: "topic", id: `t-${t.id}` }, el("h2", { text: `${t.emoji}  ${t.name}` }));
       for (const s of stories) sec.append(storyCard(s));
+      if (games.length) sec.append(upcomingCard(games));
       sections.push(sec);
     }
     $("chips").replaceChildren(...chips);
@@ -284,14 +286,17 @@
     if (s.summary) card.append(el("p", { class: s.topic === "myteams" ? "gameline" : "", text: s.summary }));
     if (s.stat) card.append(el("p", { class: "stat" }, el("b", { text: "⭐ Standout: " }), document.createTextNode(s.stat)));
     if (s.why) card.append(el("p", { class: "why" }, el("b", { text: "Why it matters: " }), document.createTextNode(s.why)));
+    const foot = el("div", { class: "foot" });
     if (s.sources.length) {
       const meta = el("div", { class: "meta" }, document.createTextNode("Read more: "));
       s.sources.forEach((src, i) => {
         if (i) meta.append(document.createTextNode(" · "));
         meta.append(el("a", { href: safeUrl(src.url), target: "_blank", rel: "noopener", text: src.name }));
       });
-      card.append(meta);
+      foot.append(meta);
     }
+    if (s.topic !== "myteams") foot.append(thumbs(s));
+    card.append(foot);
     card.addEventListener("click", (e) => {
       if (e.target.closest("a")) {
         readIds.add(s.id + brief.date);
@@ -299,6 +304,50 @@
         card.classList.add("read");
       }
     });
+    return card;
+  }
+
+  // ---- thumbs up/down: saved with your settings; the next morning's picks lean toward what you like
+  const VOTES_KEY = "brief-votes-v1";
+  const votes = safeParse(localStorage.getItem(VOTES_KEY)) || {};
+  function thumbs(s) {
+    const key = `${brief.date}|${s.id}`;
+    const box = el("div", { class: "thumbs" });
+    const up = el("button", { type: "button", class: "thumb", "aria-label": "More stories like this", text: "👍" });
+    const down = el("button", { type: "button", class: "thumb", "aria-label": "Fewer stories like this", text: "👎" });
+    const paint = () => {
+      up.classList.toggle("on", votes[key] === 1);
+      down.classList.toggle("on", votes[key] === -1);
+      up.setAttribute("aria-pressed", String(votes[key] === 1));
+      down.setAttribute("aria-pressed", String(votes[key] === -1));
+    };
+    const vote = (v) => {
+      const now = votes[key] === v ? 0 : v;
+      if (now) votes[key] = now; else delete votes[key];
+      const keys = Object.keys(votes);
+      if (keys.length > 300) keys.slice(0, keys.length - 300).forEach((k) => delete votes[k]);
+      localStorage.setItem(VOTES_KEY, JSON.stringify(votes));
+      const fb = (config.feedback || []).filter((f) => f.key !== key);
+      if (now) fb.push({ key, date: brief.date, topic: s.topic, headline: s.headline, vote: now });
+      config.feedback = fb.slice(-100);
+      paint();
+      if (localStorage.getItem(TOKEN_KEY)) { clearTimeout(syncTimer); syncTimer = setTimeout(syncConfig, 2500); }
+    };
+    up.addEventListener("click", (e) => { e.stopPropagation(); vote(1); });
+    down.addEventListener("click", (e) => { e.stopPropagation(); vote(-1); });
+    paint();
+    box.append(up, down);
+    return box;
+  }
+
+  function upcomingCard(games) {
+    const card = el("article", { class: "card story upcoming" }, el("h3", { text: "🏟️ Today" }));
+    for (const g of games) {
+      const bits = [g.live ? "Live now" : g.time, g.tv && `📺 ${g.tv}`].filter(Boolean).join(" · ");
+      card.append(el("div", { class: "game-row" },
+        el("b", { text: g.matchup }),
+        el("span", { class: "gameline", text: bits + (g.record ? ` · ${g.team} ${g.record}` : "") })));
+    }
     return card;
   }
 

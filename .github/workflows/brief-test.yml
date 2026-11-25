@@ -1,0 +1,37 @@
+name: Brief test (no save)
+
+on:
+  workflow_dispatch: {}   # builds today's brief and prints parts of it; saves nothing, records nothing
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet "anthropic>=2.13"
+      - name: Build (not saved)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BRIEF_MODEL: ${{ vars.BRIEF_MODEL }}
+          BRIEF_TIMEZONE: ${{ vars.BRIEF_TIMEZONE }}
+        run: |
+          python scripts/build_brief.py
+          python scripts/weather.py
+      - name: Show it
+        run: |
+          python - <<'PY'
+          import json
+          b = json.load(open("docs/data/latest.json"))
+          print("TOPICS:", [t["id"] for t in b["topics"]])
+          print("UPCOMING:", json.dumps(b.get("upcoming"), ensure_ascii=False))
+          for s in b["stories"]:
+              if s["topic"] in ("local", "myteams"):
+                  print(f"[{s['topic']}] {s['headline']} | {s.get('summary', '')} | {[x['name'] for x in s['sources']]}")
+          PY

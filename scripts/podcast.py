@@ -107,6 +107,11 @@ def build_script(brief: dict, settings: dict) -> list[dict]:
             segs.append({"text": text, "sid": s["id"], "topic": tid,
                          "label": f"{t['emoji']} {t['name']} · {i + 1} of {len(stories)}",
                          "gap": SECTION_GAP if i == len(stories) - 1 else STORY_GAP})
+    previews = game_previews(brief)
+    if previews:
+        text = "On the schedule today: " + "; ".join(p.replace(" vs. ", " versus ") for p in previews) + "."
+        segs.insert(2 if len(segs) > 1 and segs[1].get("topic") == "weather" else 1,
+                    {"text": text, "label": "🏆 My Teams", "topic": "myteams", "gap": SECTION_GAP})
     segs.append({"text": "That's your brief. Have a great day.", "label": "Wrapping up", "gap": 0.3})
     return segs
 
@@ -237,6 +242,34 @@ def weather_line(brief: dict) -> str:
     return line
 
 
+def game_previews(brief: dict) -> list[str]:
+    out = []
+    for g in brief.get("upcoming") or []:
+        line = f"{g['matchup']}"
+        if g.get("time"):
+            line += f" at {g['time']}"
+        if g.get("tv"):
+            line += f" on {g['tv']}"
+        if g.get("record") and g.get("opp_record"):
+            line += f" ({g['team']} {g['record']}, {g['opponent']} {g['opp_record']})"
+        out.append(line)
+    return out
+
+
+def reader_taste() -> str:
+    try:
+        fb = (json.loads(CONFIG.read_text()).get("feedback") or [])[-60:]
+    except (OSError, ValueError):
+        return ""
+    up = [f"- {f.get('headline', '')}" for f in fb if f.get("vote") == 1]
+    down = [f"- {f.get('headline', '')}" for f in fb if f.get("vote") == -1]
+    if not up and not down:
+        return ""
+    return ("\nThe listener's recent thumbs (use them to judge which kinds of stories to headline):\n"
+            + ("Liked:\n" + "\n".join(up) + "\n" if up else "")
+            + ("Not interested:\n" + "\n".join(down) + "\n" if down else ""))
+
+
 def ask_claude(system: str, user: str, schema: dict, label: str):
     """One structured Claude call. Returns the parsed JSON, or None on any problem."""
     if not os.environ.get("ANTHROPIC_API_KEY"):
@@ -334,7 +367,8 @@ If weather is given, the very first segment after the intro is a quick local for
 changes, plus a heads-up on anything notable later in the week (a cold front, a rainy day, a warm
 spell). Keep it conversational and useful, like a friend telling you whether you need a jacket.
 The listener's own teams (if any are given) come next, in their own short segment each,
-before the headliners. Then the headliners, then quick hits as a single segment, then a sign-off.
+before the headliners. If one of their teams plays today, say when and where to watch, in that
+team's segment (or its own short segment, story id "tonight", if the team has no recap). Then the headliners, then quick hits as a single segment, then a sign-off.
 
 Return: an intro line, the segments in order (each with the story id it covers, or "quickhits"),
 and the sign-off."""
@@ -366,6 +400,12 @@ def headliner_episode(brief: dict) -> list[dict] | None:
     wx = weather_facts(brief)
     if wx:
         lines.append(f"\n{wx}")
+    previews = game_previews(brief)
+    if previews:
+        lines.append("\nThe listener's teams play today: " + "; ".join(previews) + ".")
+    taste = reader_taste()
+    if taste:
+        lines.append(taste)
     if teams:
         lines.append("\nThe listener's teams, last night:")
         for s in teams:
@@ -390,7 +430,9 @@ def headliner_episode(brief: dict) -> list[dict] | None:
             continue
         sid = seg.get("story_id", "")
         s = by_id.get(sid)
-        if sid == "weather":
+        if sid == "tonight":
+            segs.append({"text": text, "label": "🏆 My Teams", "topic": "myteams", "gap": SECTION_GAP})
+        elif sid == "weather":
             segs.append({"text": text, "label": "🌤️ Weather", "topic": "weather", "gap": SECTION_GAP})
         elif s:
             t = topics.get(s["topic"], {})
