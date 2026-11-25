@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generated_at": "2026-11-25T11:13:48+00:00",
+ "generated_at": "2026-11-25T18:54:58+00:00",
  "ai_summaries": true,
  "topics": [
   {
@@ -73,27 +73,27 @@
  "overview": [
   {
    "topic": "us",
-   "text": "The Army plans to detonate the nation's lead azide stockpile in Iowa Wednesday morning, as residents brace for a lead dust cloud."
-  },
-  {
-   "topic": "world",
-   "text": "China is investigating Shanghai party chief Chen Jining, the fourth Politburo member probed since 2025, as Xi's purges expand."
-  },
-  {
-   "topic": "tech",
-   "text": "Jensen Huang returned as Nvidia CEO after Trump pushed for it, effectively overriding the company's board."
-  },
-  {
-   "topic": "politics",
-   "text": "Intelligence agencies told congressional aides there was no evidence the woman at the center of the Nvidia scandal took direction from Chinese intelligence."
-  },
-  {
-   "topic": "world",
-   "text": "Solomon Islands replaced its security pact with China with a treaty with Australia that precludes foreign military bases."
+   "text": "The Army detonated nearly five tons of lead-based explosives at an Iowa plant; early lead readings are described as promising while testing continues."
   },
   {
    "topic": "us",
-   "text": "Six people, including two children, were found dead after a small plane crashed off Mississippi's coast."
+   "text": "The administration plans new tariffs on 14 economies, including China, the EU and Brazil, over subsidized production, amid legal obstacles and scrutiny from an incoming Democratic-led Congress."
+  },
+  {
+   "topic": "tech",
+   "text": "Jensen Huang returned as Nvidia CEO after Trump pushed for it, effectively overriding the board, and lawmakers are demanding answers."
+  },
+  {
+   "topic": "world",
+   "text": "China is investigating Shanghai party chief Chen Jining, the fourth Politburo member probed since 2025."
+  },
+  {
+   "topic": "world",
+   "text": "The U.S. paused joint military operations with Ecuador while it investigates a raid that killed an accused gang leader."
+  },
+  {
+   "topic": "local",
+   "text": "A freeze warning covers San Antonio through Thanksgiving morning, and the airport expects nearly 20,000 passengers today."
   }
  ],
  "upcoming": [
@@ -139,61 +139,73 @@
  ],
  "stories": [
   {
-   "id": "local-8",
+   "id": "local-1",
    "topic": "local",
-   "headline": "Near-freezing mornings expected in San Antonio through Friday",
-   "summary": "Parts of San Antonio could hit freezing temperatures overnight, with near-freezing mornings forecast through Friday.",
-   "why": "Matters for Thanksgiving week plans, plants and pets.",
+   "headline": "Freeze warning issued for San Antonio through Thanksgiving morning",
+   "summary": "A freeze warning covers San Antonio, the I-35 corridor and nearby counties, with near-freezing temperatures before sunny skies on Thanksgiving.",
+   "why": "Protect plants, pets and anyone traveling or outdoors early.",
    "sources": [
     {
      "name": "San Antonio Express-News",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUUdhT3FoMndIeFdzMC1nRkNDcDQtTkswMkFMOU9semxCcFpZTUJ0akxocHNCWDRFaDhKWGtRUkRmOG9mY0dZQTlYRTUwTXBpNG5FZHZYTy1hdjVpc2M5T1VJd2VzbFVMc3dsSjFCXzRKSVE4em5pQWhYSlJ3eHAxN1RxZUdaUHNuZXYzQWoyVWJ3TF90bjBHSmZ2ZFNEVFRGT3BnaUtmWDdUd20zVUltc2g0dV95ODl0VDVBQzBXYw?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeVhmNnlpVVRMbDg3dXlzYy10MkxsbldaX0FaNW4zM185LVkwWHBvLWtXQ2U3MTdGT2VzdlpSa0hwOVp1T3N1Xy13dkFzV25EbllfWklxZXpSSEpqc1RjY2prYUdoakRURWNmRlF2V0dvT3FFZTB5UVgzcW1aRW45Sms3bHZLWlBWblJrOGxYN0FpeU5Ha2QxT3pfRjh3anZ4a0o2d3phTDFRZw?oc=5"
     },
     {
-     "name": "KSAT",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRzFYRXMxMllSd09WaUUydTh2UXdEd283TV9Geng0cS1PVmlFOWIzWTFmUkRlOEhLY0NFd3RSTFlLTGVXQkVLNEZ6dVVmaUVwcG5pbFBwNTYwTmtmV2EzTmd5a1h1UXhLUVFGUUh0WElGaWlETlJoQjRZbU5nTFItUXY5REZBNmFmTGpUZ3VkQW0yZXpBYTl2V0sweHhhdw?oc=5"
-    }
-   ],
-   "time": "2026-11-25T10:10:44+00:00"
-  },
-  {
-   "id": "local-12",
-   "topic": "local",
-   "headline": "San Antonio poverty report: 44% can't afford essentials",
-   "summary": "The Ready to Work program reports job gains, while a city poverty report finds 44% of residents cannot afford essentials.",
-   "why": "Shows the city's economic strain and whether job training is helping.",
-   "sources": [
+     "name": "MySA",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQWs3c25xTU1BX1BVdTFkbzl5SjlINDE5SWpTdFNKZTE5VDFzM3BralRsLUpQa0JNdVl3dHctVU1zbDBsb2g4UHViTjJPdDQtX1VLYWx4enhKODVoWmsyQzZqd2VDZ1EwU0JRZFhSZ1J0RGprTlFibTduTXJjLUpUSU85NmdhRTBQcm5Od2tfWGN4eEVaN2NOQg?oc=5"
+    },
     {
-     "name": "KSAT",
-     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNY2ozRUxsZlRRUW12Q0dfQ0RYQ295NEdDRVkwaDFYd1RVVWlWdDhaX2NvUTFaRlFZV1JVUEtNSzR5QVpGY1ZxQmVQVlpIbmozVzNPVzNvV2hRR2dDRXRhNm4zb2xITi1RTUxLY1k3R3hwMnBlYm9ublNOdW1wcjg1aGowd2s2TkFSUTR2ekhRdmFkZ0NxQjZ4NFZ5Nmk0MUhOTUlMNFl1c2RMWS1kZ3JkT0JlRUFBVEJ2eUpCQ29Tc0pmMTU3Wk0xdDhETmdjd1htMHBPTmlnb1NsLURReGc?oc=5"
+     "name": "News Radio 1200 WOAI",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSlBFTjA4eU5qYjVmTU43amZIdXJUaGFEb283QXJ1ZFpmWmNRc25jdXcyZUtmQ2FrSUhZR1dEN2hucS1YdXY5TWdqc3A0OTBKRkgzdWliS2loeHZIRnIxUFJqOXIwMG1wNENYNWNkUklrQWRvMzlubXBNbU9aak03V1hJQml1ZWNqSHV4MU00RERmUm94ZU9uVW41OFRjNFlJWFdxYll1bGhUdDFWcUt1UXZDWC04SWcxQTkwbnFpZmlZZlRHS3c?oc=5"
     }
    ],
-   "time": "2026-11-24T22:31:31+00:00"
+   "time": "2026-11-25T18:34:21+00:00"
   },
   {
-   "id": "local-9",
+   "id": "local-4",
    "topic": "local",
-   "headline": "Texas leaders see hope for high-speed rail after midterms",
-   "summary": "State and local leaders say the Democratic midterm gains have renewed hope for a Texas high-speed rail project.",
-   "why": "",
+   "headline": "Nearly 20,000 passengers expected at San Antonio airport today",
+   "summary": "The Thanksgiving travel rush brings heavy traffic to San Antonio International Airport.",
+   "why": "Plan extra time if you are flying.",
    "sources": [
     {
      "name": "WOAI",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbk5saGxxc0tZd1h4VzVhUkRMTmd3ODM2NGt2NU1McE54NUdxWmNqNG1pZmF4NGpDNGpUc0k3R1JJemFPdmFNWkswS2t1b2JTdHZ0SHZlclBuTW5scHZyRXh6dnp0cnM5TjFOVzNyalJRU1J6S09xMWwtcHlQLWx6b0daZ2dhMWx4TURTX25zX2hRY0gxczY2S0NWaTEtM0tjMTNzVnRmSFVtNWNBSW5yYVJ0X1N2Zw?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNbzVtZS1GZjVsanRkZVd6ZEM4RG1Cd2JFSlVvcDNfQWhvR21HZmVacDF1dF9vWTZmZjFady01cGdRV3J6UmY1WGRtUzBlNjNCQmEza09LV0xQdFVSYnByemtKb1lKck4xSFJUUUpKNkZHenRLRWI3SHUzLWFIeHBWbWs3c1ZadlZzTXk2SnFWTG1ldVo3V1gzTmRPYzJPWFRxNnA1RF92a3BobUV2NjE3SGJLbjFpSlVIRko3Q015VjFjOV91b3FpR1lUNmVwTHpzSl9JLW4zV0hkcDNRVTJLUVY4UW4zcEVuMHVYLUo5UmQtRFBiWjFhRk5fdlFFSHN6bmhuenRVeGhzNG5TQjA0Ug?oc=5"
+    },
+    {
+     "name": "kens5.com",
+     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPSzJqcXNKY0NYVkVFdnpEMXE3SEZtWld4VnhOU0VHNVF4SFZBTGc4SERMWGF5bFUyWVV3ZEJMUXdpRE9ZaHRTd0hzVDFGLW1ncFFpNk5uczFwS0VNMzJQTVV5MzFncXBVVVhMQUJLMG1maWxNMHlleFpLRXFXeFVJZ1RKNFhmb0xZZ0w0R19qaUczZGNmMU1EYzVaVEVQQUVPWDNtdFJKVzhXaVRrcEh2bGJvVVdGUVJvSkhMcTBQQUZVeVdqaDk4LWdKQWJBWjBkQWRLMEpDOTNPN2J1Qjd4RVFOWDJnUQ?oc=5"
     },
     {
      "name": "KABB",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOd0F2aHhpZHU3ZFN4SWJDNjcwQlN5NGhCdkphMjE4MUdxdmFtai1iTl9hRHhJWTA1ZXctRG53M09ReEt4OThsZWMzamxCT3lKbS0tckgwemVFU2N5ajNPNldHLVBnSHdRalNjQzhIT3E5Z1pkRDdqa0NPZy1BUFlTR3pzVWdDRGxjazJZQllSZmhOWUpnOGlleG9uOURnbk9zU21EQ2pnd0IxWmdueEVmSFBNWQ?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQUVl3QXBnVWxfOWpUbzJQdnVUeVQ2SlJORG1SRHk4T2paaFVMU3pNek5TWVQtc25haGpTV3J3NFhpZmlPUUtoT1FoOHlSczFLZllQZmhyYjlzMFNIeVNkczFULWhPWGwxNEFYMGcxRGJOVnNmbW1BaGw4Y3N5M2FQV0EwdER4QjNWeWd5YVdfM2JpV2gycGVyQW9wYjlPcEc1R0kxdWNlc0VzZWdaQkNoaDNHU2FtTzBRYTgxcmtsdG03Y2lBX3lsSG9obTUyQm1mTUI1UEJHazBXem56QWhlR0NUTmNZWC1VUWVsdHd3Q0Z3U2d0RlhLWXNtb2FrMXpUTG9maGZUZGxjaHdlNkw5enE3ZTF6eEtHU2FvZ3F6WjE?oc=5"
     }
    ],
-   "time": "2026-11-25T06:33:45+00:00"
+   "time": "2026-11-25T13:54:38+00:00"
   },
   {
-   "id": "us-1",
+   "id": "local-10",
+   "topic": "local",
+   "headline": "San Antonio road closures and Black Friday store hours announced",
+   "summary": "Drivers face Thanksgiving and Black Friday road closures, and some stores will open early.",
+   "why": "Helps you plan weekend driving and shopping.",
+   "sources": [
+    {
+     "name": "KSAT",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQ0ZmaGNlREwzeUdGSzRtZmNCNkctcFpMR3RiWGRkbnlRNm5SX1BJWjBQNGIwamRMOXBXZExnNDU1TlcyemZBZGczTU5TM3lpeFltNXloQnJlb211VlBrbjJkU1hBakFnRElqZE0xV0NxRTRScUVoY2w0SEd2X3JnTzc0MUZmbEFCUk1LY3FULWo2MW1UQi1Rb3UydHNNaVFuZ3F3?oc=5"
+    },
+    {
+     "name": "MySA",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUFVOSGF3akM4QTRJcjFEX2pQYmkzRldNcFdwTVQ0alRNMGNrWUE5YnFnRU9IUFg0VjJ5bFRiRTAyS3BTdUhwQUxBdW85YXN6T1pNa3ZhejBQY0gycFM3OFdRQUpPbWQyVnlCZk9qejBzdXlhN29RSFVNR2d0bHNqUHpjdG5mM2xHelR5cGFLaFk3UTExVVozdlBnLUo4U2ZpZEloN2tHdWt6Zw?oc=5"
+    }
+   ],
+   "time": "2026-11-25T12:53:30+00:00"
+  },
+  {
+   "id": "us-2",
    "topic": "us",
-   "headline": "Army to detonate nation's lead azide stockpile in Iowa Wednesday",
-   "summary": "The Army plans to detonate nearly five tons of lead azide at the Iowa ammunition plant in Middletown around 9 a.m. CST. Nearby residents are bracing for a toxic lead dust cloud, and the Army says there is no reason to panic.",
-   "why": "Nearby residents face possible health and environmental effects from lead dust.",
+   "headline": "Army detonates nearly five tons of explosives at Iowa plant",
+   "summary": "The Army detonated degrading lead-based explosives at a munitions plant in Iowa on Wednesday, after days of back-and-forth between politicians and courts.",
+   "why": "Residents fear a lead dust cloud; testing of air, water and soil continues.",
    "sources": [
     {
      "name": "CBS News",
@@ -201,20 +213,42 @@
     },
     {
      "name": "NPR",
-     "url": "https://www.npr.org/2026/11/25/nx-s1-6052338/army-plans-to-detonate-nearly-five-tons-of-lead-based-explosives-in-iowa"
+     "url": "https://www.npr.org/2026/11/25/nx-s1-6052338/army-detonation-lead-explosives-iowa"
     },
     {
-     "name": "The Verge",
-     "url": "https://www.theverge.com/science/1041819/us-army-detonation-lead-explosives-iowa"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/climate/iowas-toxic-explosion.html"
     }
    ],
-   "time": "2026-11-25T10:00:09+00:00"
+   "time": "2026-11-25T18:03:57+00:00"
+  },
+  {
+   "id": "us-1",
+   "topic": "us",
+   "headline": "Administration to impose new tariffs on China, EU, Brazil and others",
+   "summary": "The U.S. plans tariffs on 14 economies it accuses of subsidizing industries to overproduce. The move comes amid legal obstacles and scrutiny from an incoming Democratic-led Congress.",
+   "why": "Tariffs can raise prices and strain trade relationships.",
+   "sources": [
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/trump-administration-tariffs-14-trading-partners/"
+    },
+    {
+     "name": "ABC News",
+     "url": "https://abcnews.com/US/wireStory/us-plans-hike-tariffs-china-eu-brazil-subsidized-138438618"
+    },
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/25/business/trump-tariffs-trade.html"
+    }
+   ],
+   "time": "2026-11-25T17:26:56+00:00"
   },
   {
    "id": "us-3",
    "topic": "us",
    "headline": "Plane crash off Mississippi coast kills six, including two children",
-   "summary": "The Coast Guard says six people were found dead after a small plane crashed off Mississippi, near Horn Island. Crews had found the cabin, a life raft and life jackets.",
+   "summary": "A small plane crashed off the Mississippi coast, killing six people. An investigation is underway.",
    "why": "",
    "sources": [
     {
@@ -222,128 +256,122 @@
      "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/"
     },
     {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c6z74l1017zpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
      "name": "New York Times",
      "url": "https://www.nytimes.com/2026/11/25/us/mississippi-plane-crash-horn-island.html"
     }
    ],
-   "time": "2026-11-25T08:57:18+00:00"
-  },
-  {
-   "id": "us-9",
-   "topic": "us",
-   "headline": "Fort Hood shooter Nidal Hasan to petition to delay execution",
-   "summary": "Hasan, who killed 13 people at the Texas Army post in 2009, told a federal court he will file a petition to delay his execution by firing squad.",
-   "why": "",
-   "sources": [
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/nidal-hasan-delay-execution-petition/"
-    }
-   ],
-   "time": "2026-11-25T01:49:00+00:00"
-  },
-  {
-   "id": "politics-3",
-   "topic": "politics",
-   "headline": "Intelligence officials brief Congress on Nvidia scandal",
-   "summary": "After Trump said Jensen Huang was not a security threat, intelligence agencies told congressional aides there was no evidence the woman at the center of the scandal took direction from Chinese intelligence.",
-   "why": "It bears on questions about Trump's role in Huang's reinstatement.",
-   "sources": [
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html"
-    }
-   ],
-   "time": "2026-11-25T03:15:54+00:00"
+   "time": "2026-11-25T17:39:52+00:00"
   },
   {
    "id": "politics-1",
    "topic": "politics",
-   "headline": "Three-hour flight delays on tarmacs hit highest level in 15 years",
-   "summary": "Long tarmac delays have risen to levels not seen in more than 15 years under Trump, with no enforcement in sight.",
-   "why": "Relevant for holiday travelers.",
+   "headline": "Deal Signed to Sell Lukoil’s Foreign Assets, but Without Envoys’ Business Associates",
+   "summary": "Valuable properties belonging to the Russian energy giant will be sold to an American-led consortium. But Middle Eastern business contacts of the peace negotiators Steve Witkoff and Jared Kushner are no longer part of the buyer group.",
+   "why": "",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/25/upshot/tarmac-delays-flights-trump.html"
+     "url": "https://www.nytimes.com/2026/11/25/us/politics/lukoil-deal.html"
     }
    ],
-   "time": "2026-11-25T10:03:47+00:00"
+   "time": "2026-11-25T18:43:02+00:00"
   },
   {
-   "id": "politics-6",
+   "id": "politics-2",
    "topic": "politics",
-   "headline": "U.S. probes Iranian ties to up to 50 hacked ships",
-   "summary": "The U.S. government is investigating possible Iranian links to as many as 50 hacked commercial vessels, officials told NPR, in what may be the latest Iranian cyberattack on critical infrastructure during the war with the U.S.",
-   "why": "Signals cyber threats to global shipping and infrastructure.",
+   "headline": "C.I.A. Waterboarded More Detainees Than It Admitted, F.B.I. Interview Suggests",
+   "summary": "The apparent disclosure was included in files released in response to a New York Times lawsuit. The release also shed light on C.I.A. officials’ fears about possible prosecutions.",
+   "why": "",
    "sources": [
     {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/24/nx-s1-6052994/hack-commercial-vessels-iran"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/25/us/politics/cia-waterboarding.html"
     }
    ],
-   "time": "2026-11-24T21:04:50+00:00"
+   "time": "2026-11-25T17:57:50+00:00"
+  },
+  {
+   "id": "politics-3",
+   "topic": "politics",
+   "headline": "Army wants to resume training flights near site of collision",
+   "summary": "An Army helicopter on a training mission collided with an American Airlines passenger jet on approach at DCA, killing all aboard both aircraft, in January 2025.",
+   "why": "",
+   "sources": [
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/dc-plane-crash-dca-army-training-flights/"
+    }
+   ],
+   "time": "2026-11-25T16:13:56+00:00"
   },
   {
    "id": "world-1",
    "topic": "world",
    "headline": "China investigates Shanghai party chief Chen Jining",
-   "summary": "Xinhua announced an investigation of Politburo member Chen Jining, once seen as a contender for higher office. He is the fourth Politburo member investigated since 2025.",
-   "why": "Shows how far Xi's purges now reach into the top leadership.",
+   "summary": "Chen, a Politburo member seen as a contender for higher office, is the fourth Politburo member investigated since 2025, Xinhua announced.",
+   "why": "Signals continuing purges in the top ranks of Xi Jinping's leadership.",
    "sources": [
     {
      "name": "NPR",
      "url": "https://www.npr.org/2026/11/25/nx-s1-6053801/china-investigation-politburo-shanghai-party"
     },
     {
-     "name": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/11/25/who-is-chen-jining-chinas-latest-politburo-member-under-investigation?traffic_source=rss"
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/nov/25/china-investigates-politburo-chen-jining-xi-jinping-purge"
     },
     {
      "name": "New York Times",
      "url": "https://www.nytimes.com/2026/11/24/world/asia/shanghai-party-leader-investigation-china-xi.html"
     }
    ],
-   "time": "2026-11-25T10:50:26+00:00"
+   "time": "2026-11-25T09:44:13+00:00"
+  },
+  {
+   "id": "world-3",
+   "topic": "world",
+   "headline": "U.S. pauses joint military operations with Ecuador",
+   "summary": "The administration halted joint operations while investigating an Ecuadorean operation that killed an accused gang leader.",
+   "why": "",
+   "sources": [
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/25/ecuador-and-us-review-joint-military-operations-official-says?traffic_source=rss"
+    },
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/world/americas/ecuador-us-military-operations-trump.html"
+    }
+   ],
+   "time": "2026-11-25T17:50:41+00:00"
   },
   {
    "id": "world-2",
    "topic": "world",
-   "headline": "Solomon Islands signs security treaty with Australia, ending China pact",
-   "summary": "The Solomon Islands ended its 2022 security agreement with China in favor of a treaty with Australia. The new accord precludes foreign military bases.",
-   "why": "A shift in Pacific influence away from Beijing.",
+   "headline": "US announces new tariffs on host of countries including China",
+   "summary": "The US is planning tariffs on 14 economies it accuses of using subsidies to help their industries overproduce.",
+   "why": "",
    "sources": [
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html"
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss"
     },
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/ckdd1z2gvlgno?at_medium=RSS&at_campaign=rss"
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/25/trump-announces-new-trade-tariffs-which-countries-will-they-target?traffic_source=rss"
     }
    ],
-   "time": "2026-11-25T05:24:36+00:00"
-  },
-  {
-   "id": "world-8",
-   "topic": "world",
-   "headline": "Leaked figures show Russia has lost almost 500,000 people in Ukraine war",
-   "summary": "Russia's own leaked data indicate nearly 500,000 deaths tied to the full-scale invasion, which has changed mortality patterns in Russia.",
-   "why": "Shows the scale of the war's human cost.",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-25T00:56:51+00:00"
+   "time": "2026-11-25T16:21:34+00:00"
   },
   {
    "id": "tech-1",
    "topic": "tech",
-   "headline": "Jensen Huang returns as Nvidia CEO after Trump pushes for reinstatement",
-   "summary": "Nvidia's board had said Huang would not return, but Trump pushed for it, effectively overriding the board, governance experts say. Huang apologized to employees and said he is in therapy.",
-   "why": "A president's intervention in a major company's leadership is unusual.",
+   "headline": "Trump pushes Nvidia to reinstate Jensen Huang as CEO",
+   "summary": "Huang returned as CEO after the board said he would not. Governance experts say Trump effectively overrode the board. Huang apologized to employees and said he is in therapy.",
+   "why": "Shows presidential influence over a major company central to AI.",
    "sources": [
     {
      "name": "New York Times",
@@ -354,179 +382,229 @@
      "url": "https://www.npr.org/2026/11/24/nx-s1-6051532/jensen-huang-returns-to-nvidia-as-ceo-after-scandal"
     },
     {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-challenges/"
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-25T00:33:07+00:00"
+   "time": "2026-11-25T13:04:17+00:00"
   },
   {
-   "id": "tech-4",
+   "id": "tech-2",
    "topic": "tech",
-   "headline": "Microsoft declares 'Code Red' after major Outlook outage",
-   "summary": "A nearly 24-hour Exchange Online and Outlook outage took down email for millions of customers. A bug on networking gateway servers since July triggered it.",
-   "why": "Shows how fragile widely used cloud services can be.",
-   "sources": [
-    {
-     "name": "The Verge",
-     "url": "https://www.theverge.com/news/1042025/microsoft-code-red-outlook-outage"
-    }
-   ],
-   "time": "2026-11-25T11:13:02+00:00"
-  },
-  {
-   "id": "tech-3",
-   "topic": "tech",
-   "headline": "Half of NASA's aging Mars fleet knocked offline",
-   "summary": "Perseverance is having trouble transmitting to Earth, while Odyssey is rapidly burning through its dwindling fuel supply.",
+   "headline": "The FCC has authorized SpaceX to deploy 1 million satellites",
+   "summary": "In an announcement on Wednesday, the FCC says it authorized SpaceX to deploy up to 1 million AI chip-equipped satellites as part of the Elon Musk-owned company's \"Starmind\" initiative.",
    "why": "",
    "sources": [
     {
      "name": "Ars Technica",
-     "url": "https://arstechnica.com/space/2026/11/half-of-nasas-aging-mars-fleet-knocked-offline-by-technical-issues/"
+     "url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
     }
    ],
-   "time": "2026-11-24T22:50:11+00:00"
+   "time": "2026-11-25T18:22:38+00:00"
+  },
+  {
+   "id": "tech-3",
+   "topic": "tech",
+   "headline": "EA adds AI-generated John Motson to FC 27 video game",
+   "summary": "The AI-generated Motson will appear in the game on 26 November, with the consent of his son and wife.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c65y10j841jpo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-25T10:11:34+00:00"
+  },
+  {
+   "id": "science-1",
+   "topic": "science",
+   "headline": "US Army says controlled blast of explosives in Iowa was 'huge success'",
+   "summary": "Despite widespread concern from residents ahead of the blast, officials say that lead readings in the area so far have been promising.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cwg7l5ve251ko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/lead-azide-detonation-iowa-army-explosives/"
+    }
+   ],
+   "time": "2026-11-25T18:48:48+00:00"
   },
   {
    "id": "science-2",
    "topic": "science",
-   "headline": "China launches Shenzhou-24 with Pakistan's first astronaut",
-   "summary": "China sent three astronauts to its Tiangong station, including Pakistan's Muhammad Zeeshan Ali, the first foreigner on a Chinese crewed mission.",
+   "headline": "Why has China sent the first Pakistani astronaut to space?",
+   "summary": "Muhammad Zeeshan Ali – the first Pakistani to reach orbit – greeted with Chinese ‘space handshake’ at Tiangong station China has flown the first foreign astronaut to its Tiangong space station, starting what it says will be the…",
    "why": "",
    "sources": [
     {
      "name": "BBC",
      "url": "https://www.bbc.co.uk/news/videos/cj5y1p067kxno?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-25T10:26:50+00:00"
-  },
-  {
-   "id": "science-8",
-   "topic": "science",
-   "headline": "Doctors struggle as parents refuse newborn vitamin K shots",
-   "summary": "Doctors say disinformation is driving refusals of routine vitamin K shots, which help prevent a rare but devastating bleeding disorder in newborns.",
-   "why": "Shows a preventable health risk to infants.",
-   "sources": [
+    },
     {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/24/nx-s1-6001723/vitamin-k-deficiency-refusal-vaccine-misinformation-newborn-bleeding"
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/science/2026/nov/25/china-sends-first-pakistani-astronaut-into-space"
     }
    ],
-   "time": "2026-11-24T10:00:00+00:00"
+   "time": "2026-11-25T14:18:29+00:00"
   },
   {
-   "id": "science-6",
+   "id": "science-3",
    "topic": "science",
-   "headline": "Mortality gap between Black and white Americans is shrinking",
-   "summary": "A new report shows significant progress on racial health disparities, though many persist.",
+   "headline": "Images of asteroid targeted to test Earth's defences reveal stadium-sized crater",
+   "summary": "The asteroid's surface was transformed after a spacecraft was deliberately crashed into it four years ago",
    "why": "",
    "sources": [
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/well/black-white-americans-health-death-rates.html"
-    }
-   ],
-   "time": "2026-11-24T19:00:00+00:00"
-  },
-  {
-   "id": "business-9",
-   "topic": "business",
-   "headline": "Trump's rescue of Nvidia's Huang brings political risks",
-   "summary": "The president's intercession to reinstate Huang has linked their fates. Nvidia's board is also facing criticism over its handling of the crisis.",
-   "why": "Ties a major tech firm's fortunes to the White House.",
-   "sources": [
-    {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/ckj05m2zdyryo?at_medium=RSS&at_campaign=rss"
+     "url": "https://www.bbc.co.uk/news/articles/cw8dv112r5gmo?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-25T01:03:05+00:00"
+   "time": "2026-11-25T17:30:16+00:00"
   },
   {
-   "id": "business-11",
+   "id": "business-1",
    "topic": "business",
-   "headline": "California homeowners say wildfire-proofing barely cuts insurance bills",
-   "summary": "Some homeowners have spent thousands making homes safer from wildfires, yet their insurance bills have barely dropped.",
-   "why": "Affects insurance costs in fire-prone areas.",
+   "headline": "What to know before using AI agents for Black Friday shopping",
+   "summary": "59% of U.S. shoppers plan to use AI for holiday shopping this weekend, according to the National Retail Federation",
+   "why": "",
    "sources": [
     {
      "name": "NPR",
-     "url": "https://www.npr.org/sections/planet-money/2026/11/24/g-s1-154477/what-should-it-cost-to-insure-a-home-in-wildfire-country"
+     "url": "https://www.npr.org/2026/11/25/nx-s1-6048524/what-to-know-before-using-ai-agents-for-black-friday-shopping"
+    },
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/travel/black-friday-deals.html"
     }
    ],
-   "time": "2026-11-24T11:30:00+00:00"
+   "time": "2026-11-25T13:51:56+00:00"
   },
   {
-   "id": "business-12",
+   "id": "business-2",
    "topic": "business",
-   "headline": "Detroit Lions owner Martha Firestone Ford dies at 101",
-   "summary": "Ford took over the team after her husband's 2014 death and was one of a handful of female NFL owners.",
+   "headline": "Poundland collapses putting 11,000 jobs at risk",
+   "summary": "US owner Gordon Brothers rejected at least two last-ditch bids for UK budget retailer Do you work for Poundland?",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cm3vgdn037z4o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/business/2026/nov/25/poundland-administration-jobs-at-risk-gordon-brothers"
+    }
+   ],
+   "time": "2026-11-25T18:29:42+00:00"
+  },
+  {
+   "id": "business-3",
+   "topic": "business",
+   "headline": "Martha Firestone Ford, Owner of Detroit Lions, Dies at 101",
+   "summary": "Mrs. Ford, who took over the team after the 2014 death of her husband, William Clay Ford Sr., was one of a handful of female owners in the N.F.L.",
    "why": "",
    "sources": [
     {
      "name": "New York Times",
      "url": "https://www.nytimes.com/2026/11/24/business/martha-firestone-ford-dead.html"
-    }
-   ],
-   "time": "2026-11-25T03:52:08+00:00"
-  },
-  {
-   "id": "sports-3",
-   "topic": "sports",
-   "headline": "Steelers bench Aaron Rodgers, start Mason Rudolph against Broncos",
-   "summary": "Pittsburgh benched Rodgers after offensive struggles led to consecutive losses following a 6-2 start.",
-   "why": "",
-   "sources": [
+    },
     {
-     "name": "CBS Sports",
-     "url": "https://www.cbssports.com/nfl/news/steelers-bench-aaron-rodgers-make-qb-inactive-friday-broncos/"
+     "name": "MySA",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMXVCSlNzc0x1U0ktelAteXBJRXp3aUhQTUpHTkNyeEJtRE91Sll6cmltZ1ZTUTdNcTNMX1RRSjFXOGRwUDB4bXlENXczMlFZanJsYVpBUUlYSEdSQkNWNGtQX24zNWxqVU5ZZjVrbG1NbHdlcGFlQXY0ZDdSSHRZUlB5X1k2blU?oc=5"
     }
    ],
-   "time": "2026-11-25T05:18:04+00:00"
+   "time": "2026-11-25T16:18:53+00:00"
   },
   {
    "id": "sports-1",
    "topic": "sports",
-   "headline": "NFL Thanksgiving slate: Eagles visit Cowboys in middle game",
-   "summary": "The Eagles visit the Cowboys in the middle game of the NFL's Thanksgiving tripleheader.",
-   "why": "Useful for holiday viewing plans.",
-   "sources": [
-    {
-     "name": "Eagles Wire",
-     "url": "https://sports.yahoo.com/nfl/articles/nfl-thanksgiving-tv-schedule-kickoff-110912124.html"
-    },
-    {
-     "name": "The Oklahoman",
-     "url": "https://sports.yahoo.com/nfl/articles/playing-nfl-thanksgiving-eve-game-110810042.html"
-    },
-    {
-     "name": "The Tennessean",
-     "url": "https://sports.yahoo.com/nfl/articles/nfl-games-tv-week-nfl-110431220.html"
-    }
-   ],
-   "time": "2026-11-25T11:09:12+00:00"
-  },
-  {
-   "id": "sports-8",
-   "topic": "sports",
-   "headline": "CFP committee rewards Tennessee, drops Indiana in rankings",
-   "summary": "The latest playoff rankings gave Tennessee more credit, while Indiana fell after weeks of close calls.",
+   "headline": "Fisilau starts as England change five for All Blacks rematch",
+   "summary": "Exeter back row Greg Fisilau will make his first England start in one of five changes to their XV to face New Zealand on Saturday.",
    "why": "",
    "sources": [
     {
-     "name": "CBS Sports",
-     "url": "https://www.cbssports.com/college-football/news/cfp-selection-committee-tennessee-indiana-rankings/"
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cv8e04gj2wwwo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "The Independent",
+     "url": "https://sports.yahoo.com/general/articles/greg-fisilau-handed-first-test-160030908.html"
     }
    ],
-   "time": "2026-11-25T02:33:06+00:00"
+   "time": "2026-11-25T18:41:19+00:00"
+  },
+  {
+   "id": "sports-2",
+   "topic": "sports",
+   "headline": "AD’s first 100 days show Purdue needs progress in NIL spending. What does that look like?",
+   "summary": "Purdue athletic director touched on what he’s seen in his department across his first 100 days, successes and improvements needed, and a call for fans.",
+   "why": "",
+   "sources": [
+    {
+     "name": "Indianapolis Star",
+     "url": "https://sports.yahoo.com/college-sports/articles/ad-first-100-days-show-184227101.html"
+    },
+    {
+     "name": "IndyStar | The Indianapolis Star",
+     "url": "https://sports.yahoo.com/college-sports/articles/ad-first-100-days-show-184227629.html"
+    }
+   ],
+   "time": "2026-11-25T18:42:27+00:00"
+  },
+  {
+   "id": "sports-3",
+   "topic": "sports",
+   "headline": "Trinity Rodman out of USWNT’s World Cup qualifier due to shoulder injury",
+   "summary": "Trinity Rodman has withdrawn from the U.S. women’s national team roster for the Concacaf W Championship, U.S. Soccer announced.",
+   "why": "",
+   "sources": [
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/sports/2026/11/25/trinity-rodman-out-of-uswnts-world-cup-qualifier-due-to-shoulder-injury?traffic_source=rss"
+    },
+    {
+     "name": "First for Sports",
+     "url": "https://sports.yahoo.com/wnba/articles/trinity-rodman-uswnt-world-cup-183642469.html"
+    }
+   ],
+   "time": "2026-11-25T18:36:42+00:00"
   },
   {
    "id": "culture-1",
    "topic": "culture",
-   "headline": "Macy's Thanksgiving Day Parade marks 100th year with 100 inflatables",
-   "summary": "New York's parade celebrates its 100th procession with 100 inflatables, including new characters.",
+   "headline": "In ‘Blade Runner 2099,’ the Future Is Hot and Sticky",
+   "summary": "As a longtime fan of the films, Blade Runner 2099 showrunner Silka Luisa says she was more excited than scared when it came to adapting the series for TV.",
+   "why": "",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/25/arts/blade-runner-2099-set-design-prague.html"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cqpv9kjgy4jno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/entertainment/1041596/blade-runner-2099-interview-showrunner-silka-luisa"
+    }
+   ],
+   "time": "2026-11-25T10:00:28+00:00"
+  },
+  {
+   "id": "culture-2",
+   "topic": "culture",
+   "headline": "See How the 100th Macy’s Thanksgiving Day Parade Came Together Over 5 Years",
+   "summary": "The Macy's Thanksgiving Day Parade is celebrating its 100th procession through New York City this year — and organizers say they are going big with 100 inflatables, including new characters.",
    "why": "",
    "sources": [
     {
@@ -541,32 +619,22 @@
    "time": "2026-11-25T10:02:54+00:00"
   },
   {
-   "id": "culture-6",
+   "id": "culture-3",
    "topic": "culture",
-   "headline": "Nollywood actor Pete Edochie dies at 79",
-   "summary": "The veteran Nigerian actor rose to prominence in 1987 in a TV adaptation of Chinua Achebe's novel Things Fall Apart.",
+   "headline": "Hundreds complain about I'm A Celebrity after Mariella Frostrup called AJ Odudu 'aggressive'",
+   "summary": "Ofcom receives 887 complaints, while media figures accuse Frostrup of using ‘microaggression’ against Odudu Almost 900 people have complained to the UK’s media regulator about an episode of ITV’s I’m A Celebrity … Get Me Out of Here!",
    "why": "",
    "sources": [
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cqwy0rr4rr4yo?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-25T10:37:23+00:00"
-  },
-  {
-   "id": "culture-9",
-   "topic": "culture",
-   "headline": "New London Museum opens Saturday at Smithfield Market",
-   "summary": "The museum's new site opens following a £437m restoration project.",
-   "why": "",
-   "sources": [
+     "url": "https://www.bbc.co.uk/news/articles/c6ly5v11q194o?at_medium=RSS&at_campaign=rss"
+    },
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cky9708qj7wdo?at_medium=RSS&at_campaign=rss"
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/tv-and-radio/2026/nov/25/hundreds-complain-ofcom-mariella-frostrup-aj-odudu-im-a-celebrity"
     }
    ],
-   "time": "2026-11-25T05:50:53+00:00"
+   "time": "2026-11-25T16:00:19+00:00"
   }
  ],
  "weather": {
@@ -575,15 +643,15 @@
    "date": "2026-11-25",
    "emoji": "☀️",
    "desc": "Clear",
-   "summary": "Clear today, with a high of 58° and a low of 36°. No rain expected.",
-   "high": 58,
+   "summary": "Clear today, with a high of 60° and a low of 36°. No rain expected.",
+   "high": 60,
    "low": 36,
    "rain": 0,
-   "feels_high": 50,
+   "feels_high": 53,
    "feels_low": 31,
    "precip_in": 0,
-   "wind": 10,
-   "gust": 21,
+   "wind": 8,
+   "gust": 15,
    "uv": 5,
    "sunrise": "7:06 AM",
    "sunset": "5:35 PM",
@@ -604,14 +672,14 @@
     },
     {
      "label": "Afternoon",
-     "temp": 58,
+     "temp": 60,
      "emoji": "☀️",
      "desc": "Clear",
      "rain": 0
     },
     {
      "label": "Evening",
-     "temp": 47,
+     "temp": 49,
      "emoji": "🌙",
      "desc": "Clear",
      "rain": 0
@@ -624,56 +692,56 @@
     "emoji": "☁️",
     "desc": "Cloudy",
     "high": 59,
-    "low": 36,
+    "low": 37,
     "rain": 0
    },
    {
     "date": "2026-11-27",
     "emoji": "☁️",
     "desc": "Cloudy",
-    "high": 63,
-    "low": 47,
+    "high": 62,
+    "low": 39,
     "rain": 0
    },
    {
     "date": "2026-11-28",
-    "emoji": "☀️",
-    "desc": "Clear",
+    "emoji": "☁️",
+    "desc": "Cloudy",
     "high": 72,
-    "low": 48,
+    "low": 47,
     "rain": 0
    },
    {
     "date": "2026-11-29",
     "emoji": "☁️",
     "desc": "Cloudy",
-    "high": 78,
-    "low": 57,
+    "high": 66,
+    "low": 51,
     "rain": 0
    },
    {
     "date": "2026-11-30",
     "emoji": "☀️",
     "desc": "Clear",
-    "high": 77,
-    "low": 55,
+    "high": 63,
+    "low": 46,
     "rain": 0
    },
    {
     "date": "2026-12-01",
-    "emoji": "☀️",
-    "desc": "Clear",
-    "high": 82,
-    "low": 59,
-    "rain": 1
+    "emoji": "☁️",
+    "desc": "Cloudy",
+    "high": 69,
+    "low": 47,
+    "rain": 0
    },
    {
     "date": "2026-12-02",
     "emoji": "☁️",
     "desc": "Cloudy",
-    "high": 79,
-    "low": 58,
-    "rain": 3
+    "high": 76,
+    "low": 54,
+    "rain": 1
    }
   ]
  }
