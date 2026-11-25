@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-24T11:08:08+00:00",
+ "generated_at": "2026-11-25T03:10:39+00:00",
  "ai_summaries": true,
  "topics": [
   {
@@ -13,6 +13,12 @@
    "id": "myteams",
    "name": "My Teams",
    "emoji": "🏆",
+   "default_on": true
+  },
+  {
+   "id": "local",
+   "name": "Local · San Antonio",
+   "emoji": "📍",
    "default_on": true
   },
   {
@@ -66,30 +72,31 @@
  ],
  "overview": [
   {
+   "topic": "us",
+   "text": "The Army plans to detonate five tons of lead azide in Iowa on Wednesday, and residents are bracing for a possible lead dust plume."
+  },
+  {
    "topic": "politics",
-   "text": "Iran vowed to end the U.S. naval blockade by all available means, while Trump said Iran's attacks have done no damage."
+   "text": "The Justice Department apologized for making a false statement to a judge in the Ilhan Omar search case."
   },
   {
    "topic": "world",
-   "text": "Fighting between Russia and Ukraine is widening geographically, with Russian missiles landing in Poland and NATO's chief vowing defense against a reported nuclear satellite."
+   "text": "Kilmar Abrego Garcia is leaving the U.S. for Spain, ending a 20-month legal fight after his wrongful deportation."
+  },
+  {
+   "topic": "politics",
+   "text": "Republican Dan Sullivan conceded the Alaska Senate race to Mary Peltola."
+  },
+  {
+   "topic": "tech",
+   "text": "A federal jury found Huawei guilty of stealing U.S. trade secrets but acquitted it of racketeering."
   },
   {
    "topic": "science",
-   "text": "The longest UN climate talks on record ended with no deal as oil producers blocked language on phasing out fossil fuels."
-  },
-  {
-   "topic": "us",
-   "text": "An ICE arrest of a father and daughter at Seattle airport has drawn outrage and prompted the family to speak out."
-  },
-  {
-   "topic": "world",
-   "text": "Gaza meningitis cases rose to 272 in October, more than eight times the typical monthly rate, as Israeli strikes continued."
-  },
-  {
-   "topic": "us",
-   "text": "Ousted Bangladeshi leader Sheikh Hasina says she plans to return from exile on December 16."
+   "text": "Wisconsin reported its third measles death a day after Pennsylvania's ninth, bringing the U.S. tally to 14."
   }
  ],
+ "upcoming": [],
  "stories": [
   {
    "headline": "✅ Spurs 123, Kings 107",
@@ -106,219 +113,295 @@
    "why": ""
   },
   {
-   "id": "us-3",
-   "topic": "us",
-   "headline": "Family speaks out after ICE arrests woman and father at Seattle airport",
-   "summary": "Jose Castillo says he felt useless watching his wife and father-in-law taken into federal custody at Seattle-Tacoma airport. Agents dragged the pair from a jet bridge door as they screamed for help.",
-   "why": "The arrest, caught on camera, has sparked outrage over how immigration enforcement is carried out.",
+   "id": "local-1",
+   "topic": "local",
+   "headline": "BermudAir adds nonstop San Antonio flights to Belize City and Grand Cayman",
+   "summary": "Two seasonal nonstop Caribbean routes were announced out of San Antonio International Airport. The airport waived landing and departure fees to land the new service.",
+   "why": "New nonstop options expand vacation travel from San Antonio.",
    "sources": [
     {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/ice-arrest-seattle-airport-husband/"
+     "name": "WOAI",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVTFtZGNza0N3ZXJ6WUJJTW9jcEk2N0hnb0lzNTh2Tk1SWkctOVVfdloxWDhrdk5PdlpIRW0yY0FpZFVLdnRfQTkyUFByTGNRbVRHdmxfWnZDdHlOMWtPb1YyMkYtTXRQLWF6TlBHb2F3Y09kV3JZVWRaS2R1Sk5MTnhLX3p1dkRGSk9uTnVlTVM3ZEVESzViampzaGI4dlctVlpEeldQbXlWRi1jQUpKQmJaRXVwQV92eW5F?oc=5"
+    },
+    {
+     "name": "KABB",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxONk9wOFowLWpZRUZIRFZkV3B1dTFRUW1uZUxDQ3J2S190RGdNbExVb2dUb1d2NXk4MTlJOWRURXNqSE9LYV9JUWpEaG1fQ1N2SFVueGtxT19aenFCOWg2aXhsWlQzQXhUbC1IbW1iYXJYNlV5VHB6ajJnNnhWc1BWczVJZEM1ZllEb3hOUE5NTFVlRDN6ckdyV3ZJNVRDeTcwSWc3RVdOU0FLczZ5LVRFUGp5cVZlUElZUEoxZDQ2NndFWkFfVFVGeXREc3ZJdnJBOXFLdkdzVks3RzZVV2lz?oc=5"
+    },
+    {
+     "name": "CultureMap San Antonio",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRFRkQ1Q5NXdMeUxmbmI1QVVkenc5bEZYZ3RXeDdJQk9UQkZlbFo5TTRZUFJfci1rM0hlWmhyVEZVVWhPRExOcHZ4Y3NBVzhDcEI3YndSWXZoaTdUam5IcVpSWWUxOGhFZDRiVFRSbDR3Q1p5c3RjVlMwLU1IVmhnWXdTdWJZUQ?oc=5"
     }
    ],
-   "time": "2026-11-24T01:49:00+00:00"
+   "time": "2026-11-24T22:27:13+00:00"
+  },
+  {
+   "id": "local-3",
+   "topic": "local",
+   "headline": "San Antonio airport says it has staff for Thanksgiving rush",
+   "summary": "San Antonio International Airport says it has enough staff for the Thanksgiving crowds as hiring continues. Travel is already picking up at the airport.",
+   "why": "Helps travelers plan for a busy holiday week.",
+   "sources": [
+    {
+     "name": "Texas Public Radio | TPR",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSVY0M3hzbllsNHR5VFdRWllFcm14LTl5bnhZSm9kdzhhNC00a1JKbFFNSS1ZY20wS2ZCd1lNQngyUkpYclVrQVRMdWxWaERNYXE1bEFIMTc4c1lrOGtTS0ZBVng5dENtemhQXzU2ZWdPcmZLY0x2Ml9IMU9XZ3NQNUtJWVNLZnpDNzlsXzBMUUxNVV9yVXBDM2IwX2d6U0tUWktpcjBR?oc=5"
+    },
+    {
+     "name": "kens5.com",
+     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPcjdWZXdGNmZaamhTMmxlZjd4MXhhV205dlRaYk81MmtQU19jMkRSVGhhUkNCd2tDZWVkNlZmOUk5NUNWWEVZVUswOV9HV1Y3SzJqeFFrZVphTjZyY0hpUXJIeDFDQVNtdXRjTDFpVXh2cFpFczZrN1p2RGpzSVQ0ck8zLVhQRE5zR21yckctemkwb3FYU0xsRVNZSTA3Vm11SEowRTZITXpVWHJvbllLc2YtUXBKZXR6TnFYRmVuT2I0bm1jQVhuY2FRdURsa0xUTERMUW5mczQ1a1dEaGh0S2s0eWlIU0xWcTdlQnJwcUtPVTZyS1BvYkxhNko?oc=5"
+    },
+    {
+     "name": "KSAT",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQjFaUWgzSDJMaW1SRGhNSTEyYkwzZmt3eWx5WE55dlJHRWtqSVFkSTJOX2l4b3BmaldOTk4zdUljZ3J3OGxmaWN2cDM5T3d3X1czOUw4RTh0cElENlV6ZzBkcnRpV0ZBSUJUSy1PdzRTSjNsQTdtZTFTSUw2X0RNLUJubmxCWWFOUWMydlN6QU9FV2NUdnZEMWhIM1cwWWtDMGprdExUT3dIT0w2NEE?oc=5"
+    }
+   ],
+   "time": "2026-11-24T23:47:04+00:00"
+  },
+  {
+   "id": "local-7",
+   "topic": "local",
+   "headline": "Mayor says ICE arrest at West Side site had no city link",
+   "summary": "San Antonio's mayor said an ICE arrest at a West Side waste collection site involved no city association.",
+   "why": "Shows how federal immigration enforcement is touching local city operations.",
+   "sources": [
+    {
+     "name": "KSAT",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQOE9ROHBpT1dfcVFrUGFzU053WG5MMzFmVGt1TTZ6OUVWNzVwc3pKMGlsdDlubkJMM205akRRbWc3dTZrcFhnM1JjSFM3YkZJaVQ0U3NrMjZWWUNxVlZZR2pfaFRoZV9wNHlqR3VQaWtYVEJYTUl6b0tWV1VhM2NaOTZWTGx2VnBabFgwSV9oS1JEZmZZWk5hTXI2Zko4VjZSVkpJQWRWTFZrb0lJR2VnYnJnUnozWm1HNVpDR3psWUtySEFvNGNEQUZTZEtyZmpqY1NPVnA4dnk?oc=5"
+    },
+    {
+     "name": "kens5.com",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQN0Q3MDVNN0ZCZ0FCaG0tQk5lWk9WWFNjQmZPSW9HVUVYV2ozV1BwR1NzYm90d2x6VVBXQmJPWlFYSGpTMjNPdkdjb1FmUDEyV2toY2V6RzlVT0xTY0dXY2F4NU40aEpyYVFUZXRHYVhaU0h2WVVNb2RTM1QtTEtEcUFGMUUxY0c3SlFCOERlTll5dUNWekRxZWk1cmNmdUlvUnFjbzdwc25yWUFBVU01Q19MMVZzdlpkYkk3N2FfU1R3TlcwZnQ1aS1UbkptMkpsWWF2R2Zn?oc=5"
+    }
+   ],
+   "time": "2026-11-25T02:43:18+00:00"
   },
   {
    "id": "us-1",
    "topic": "us",
-   "headline": "Sheikh Hasina says she will return to Bangladesh on December 16",
-   "summary": "A spokesperson says the ousted Bangladeshi prime minister plans to return home from exile in India on Dec. 16.",
-   "why": "Her return could shake Bangladesh's politics.",
-   "sources": [
-    {
-     "name": "ABC News",
-     "url": "https://abcnews.com/US/wireStory/spokesperson-ousted-bangladeshi-prime-minister-sheikh-hasina-plans-138398761"
-    },
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/c60rk1yj07xeo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "name": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/11/24/sheikh-hasina-plans-to-return-to-bangladesh-from-exile-on-december-16?traffic_source=rss"
-    }
-   ],
-   "time": "2026-11-24T07:35:02+00:00"
-  },
-  {
-   "id": "us-6",
-   "topic": "us",
-   "headline": "FBI's second-ranking official reportedly retiring before year's end",
-   "summary": "Christopher Raia, a veteran agent and the FBI's No. 2 official, is said to be leaving. It comes a few months after another deputy departed.",
-   "why": "Turnover at the bureau's top ranks affects leadership stability.",
-   "sources": [
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/us/politics/fbi-raia-retiring.html"
-    }
-   ],
-   "time": "2026-11-24T04:38:48+00:00"
-  },
-  {
-   "id": "politics-7",
-   "topic": "politics",
-   "headline": "Iran vows to end U.S. naval blockade by 'all available means'",
-   "summary": "Iran says it will force the U.S. to lift its blockade. Trump acknowledged Iran's increasing attacks but said they have done no damage.",
-   "why": "Escalation at sea risks a wider conflict.",
+   "headline": "Army to detonate five tons of lead azide in Iowa",
+   "summary": "The Army plans to detonate 68 barrels of lead azide at an Iowa ammunition plant Wednesday morning after delays. Residents were warned to stay indoors amid conflicting information on how far toxic lead dust could travel.",
+   "why": "Affects the health and safety of residents in the plume's path.",
    "sources": [
     {
      "name": "CBS News",
-     "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/"
+     "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/science/1041819/us-army-detonation-lead-explosives-iowa"
+    },
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/24/us-army-to-detonate-more-than-4-tonnes-of-lead-azide-in-iowa-on-wednesday?traffic_source=rss"
     }
    ],
-   "time": "2026-11-24T09:47:52+00:00"
+   "time": "2026-11-25T01:49:43+00:00"
   },
   {
-   "id": "politics-6",
-   "topic": "politics",
-   "headline": "Democrats probe businesses tied to Trump Jr.'s investment firm",
-   "summary": "Investigators say companies linked to 1789 Capital, Donald Trump Jr.'s investment firm, have profited since his father's reelection. Democrats are examining whether the businesses benefit from government access.",
-   "why": "",
+   "id": "us-2",
+   "topic": "us",
+   "headline": "Alaska ends voter data sharing with Justice Department",
+   "summary": "Alaska's Republican elections chief ended an agreement that gave the Justice Department the state's detailed voter list and let it flag voters for removal.",
+   "why": "Touches on voter privacy and federal searches for noncitizen voters.",
    "sources": [
     {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/24/nx-s1-6051028/jamie-raskin-donald-trump-jr-1789-capital-democrats-investigation"
+     "name": "ABC News",
+     "url": "https://abcnews.com/US/wireStory/alaska-ends-voter-data-agreement-justice-department-searching-138422801"
+    },
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/25/alaska-ends-deal-to-give-voter-records-to-us-justice-department?traffic_source=rss"
     }
    ],
-   "time": "2026-11-24T10:00:00+00:00"
+   "time": "2026-11-25T00:28:28+00:00"
   },
   {
-   "id": "politics-3",
-   "topic": "politics",
-   "headline": "Top aviation officials were traveling when U.S. flights were halted",
-   "summary": "Transportation administrators and key executives of the contractor handling an equipment upgrade were in transit on Nov. 13, when flights were halted nationwide.",
-   "why": "It raises questions about oversight during the air-travel disruption.",
+   "id": "us-10",
+   "topic": "us",
+   "headline": "Student who lost eye at 'No Kings' protest sues government",
+   "summary": "Tucker Collins, 19, says a federal agent shot him in the eye with a projectile while he documented a Los Angeles protest. He is suing the federal government.",
+   "why": "Raises questions about federal agents' use of force at protests.",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/business/l3harris-ground-stop-aviation.html"
+     "url": "https://www.nytimes.com/2026/11/24/us/los-angeles-no-kings-protest-lawsuit.html"
     }
    ],
-   "time": "2026-11-24T10:03:49+00:00"
+   "time": "2026-11-25T03:03:26+00:00"
   },
   {
-   "id": "world-12",
-   "topic": "world",
-   "headline": "Russia-Ukraine fighting widens, with missiles in Poland and Libya strike",
-   "summary": "Ukraine recently sank a Russian warship docked in Libya, and Russian missiles landed in Poland. The Kremlin has not commented on the missiles.",
-   "why": "The war is reaching further beyond Ukraine's borders.",
+   "id": "politics-2",
+   "topic": "politics",
+   "headline": "Justice Department apologizes for false statement to judge in Omar case",
+   "summary": "The department acknowledged making a false statement to a judge hours after the House's top lawyer said it mischaracterized his view on constitutional protections for lawmakers.",
+   "why": "Bears on limits of federal searches of sitting members of Congress.",
    "sources": [
     {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/24/nx-s1-6051564/fighting-between-russia-and-ukraine-has-expanded-geographically-drawing-concerns"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/us/politics/house-lawyer-ilhan-omar-search.html"
     }
    ],
-   "time": "2026-11-24T09:52:03+00:00"
+   "time": "2026-11-25T02:20:55+00:00"
+  },
+  {
+   "id": "politics-4",
+   "topic": "politics",
+   "headline": "Sullivan concedes Alaska Senate race to Peltola",
+   "summary": "The Republican conceded five days after the Trump administration gave up on a long-shot lawsuit meant to potentially block certification of the race.",
+   "why": "Settles a Senate seat and affects the chamber's balance.",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/us/politics/dan-sullivan-concedes-alaska-senate-race-mary-peltola.html"
+    }
+   ],
+   "time": "2026-11-24T23:58:18+00:00"
+  },
+  {
+   "id": "politics-1",
+   "topic": "politics",
+   "headline": "Trump awards Rudy Giuliani the Presidential Medal of Freedom",
+   "summary": "Trump presented the honor to Giuliani, a longtime ally whose reputation was tarnished by his efforts to overturn the 2020 election on Trump's behalf.",
+   "why": "A notable use of the nation's highest civilian honor.",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/us/politics/trump-rudy-giuliani-presidential-medal-of-freedom.html"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/trump-rudy-giuliani-presidential-medal-of-freedom-white-house/"
+    }
+   ],
+   "time": "2026-11-24T21:32:54+00:00"
+  },
+  {
+   "id": "world-1",
+   "topic": "world",
+   "headline": "Abrego Garcia leaves U.S. for Spain, ending legal fight",
+   "summary": "Kilmar Abrego Garcia, wrongly deported last year, is voluntarily leaving for Spain. He had faced the prospect of deportation to Liberia.",
+   "why": "Closes a high-profile immigration case lasting 20 months.",
+   "sources": [
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/25/kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us-legal-battle?traffic_source=rss"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/kilmar-abrego-garcia-leaving-us-europe/"
+    },
+    {
+     "name": "MySA",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNXh6dlBleE9NTXFUQldYVXJuTG1iZFhzdEFPZG9RNmNVS25rRTRKcnUwZHpCSy1xcmVnOF9KSnlvaVN4dFAzN2ZGZlZzdTFXdGtzTC1wZDhCWG1JM0Ztd05jSEs2eGV1Ry04S3NKS2d2TUdJbzdKV0k2SGc1Y2lUaV9KMnQxLXRKYW1oMU1ZMTBOQUtnTTVhOUl0SGxVSlB4VXpXbll3UE1ZRWhrSjFV?oc=5"
+    }
+   ],
+   "time": "2026-11-25T02:40:59+00:00"
+  },
+  {
+   "id": "world-2",
+   "topic": "world",
+   "headline": "Iranian singer and four crew receive 74 lashes each",
+   "summary": "Parastoo Ahmadi and four production team members were flogged after being sentenced for offending public decency by publishing content online. Western governments and rights groups call flogging torture.",
+   "why": "Shows Iran's continued harsh enforcement of dress and content rules.",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/world/middleeast/iran-singer-parastoo-ahmadi-flogging-lashes.html"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/nov/23/iranian-singer-lashes-performing-without-hijab"
+    }
+   ],
+   "time": "2026-11-24T12:34:52+00:00"
   },
   {
    "id": "world-11",
    "topic": "world",
-   "headline": "NATO chief vows defense against space threats after nuclear satellite reports",
-   "summary": "German media reported Russia plans to launch a satellite carrying a nuclear warhead in coming weeks. NATO's chief pledged to defend against threats from space.",
-   "why": "",
+   "headline": "Leaked data: over 300 Russians killed propping up Mali's junta",
+   "summary": "Leaked records list 349 deaths in three years among Russian fighters in Mali. They also shed light on Russia's military activity elsewhere in Africa.",
+   "why": "Reveals the scale of Russia's military role in Africa.",
    "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-24T10:58:51+00:00"
-  },
-  {
-   "id": "world-10",
-   "topic": "world",
-   "headline": "Gaza meningitis cases surge as Israeli strikes kill seven",
-   "summary": "Gaza health officials say meningitis cases reached 272 in October, more than eight times the typical monthly rate. Israeli air strikes killed seven people.",
-   "why": "Disease is compounding the humanitarian crisis.",
-   "sources": [
-    {
-     "name": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/11/24/israeli-air-strikes-in-gaza-kill-7-as-doctors-warn-of-meningitis-outbreak?traffic_source=rss"
-    }
-   ],
-   "time": "2026-11-24T10:47:41+00:00"
-  },
-  {
-   "id": "tech-1",
-   "topic": "tech",
-   "headline": "Bipartisan objections to Trump's role in Huang's return to Nvidia",
-   "summary": "Republicans and Democrats object to Trump's role in Jensen Huang's return as Nvidia CEO. Congress is expected to question Huang about ties to China and the intervention.",
-   "why": "It touches on AI chip exports and national security.",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss"
-    },
     {
      "name": "The Guardian",
-     "url": "https://www.theguardian.com/business/live/2026/nov/24/jensen-huang-nvidia-stock-markets-ai-trade-us-political-backlash-donald-trump-latest-news-updates"
+     "url": "https://www.theguardian.com/world/2026/nov/24/russian-fighters-killed-in-mali-africa-leaked-data"
     }
    ],
-   "time": "2026-11-24T10:55:19+00:00"
+   "time": "2026-11-24T16:00:50+00:00"
   },
   {
-   "id": "tech-5",
+   "id": "tech-2",
    "topic": "tech",
-   "headline": "States sue SpaceX over Grok generating sexual images of children",
-   "summary": "State attorneys general say Grok still produces child sexual abuse material and revenge porn. X says every Grok output is screened.",
-   "why": "",
-   "sources": [
-    {
-     "name": "Ars Technica",
-     "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/"
-    }
-   ],
-   "time": "2026-11-23T21:30:44+00:00"
-  },
-  {
-   "id": "tech-4",
-   "topic": "tech",
-   "headline": "SpaceX renting computing power to rivals complicates Musk's AI effort",
-   "summary": "SpaceX is renting computing capacity from its data centers to competitors including Anthropic, which makes it harder for Musk's own AI effort.",
-   "why": "",
-   "sources": [
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/business/elon-musk-ai-anthropic-google.html"
-    }
-   ],
-   "time": "2026-11-23T16:13:32+00:00"
-  },
-  {
-   "id": "science-7",
-   "topic": "science",
-   "headline": "Longest-ever UN climate talks end with no deal",
-   "summary": "COP31 ended without agreement as deep divisions emerged. European and vulnerable nations rejected a draft after Saudi Arabia and other oil producers blocked any mention of phasing out coal, oil and gas.",
-   "why": "Global climate action stays stalled.",
+   "headline": "Huawei found guilty of stealing U.S. trade secrets",
+   "summary": "A New York federal jury found Huawei guilty of stealing source code and technology from companies including T-Mobile and Cisco, but acquitted it of racketeering.",
+   "why": "A major ruling in the U.S.-China technology fight.",
    "sources": [
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss"
+     "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/tech/1041820/huawei-guilty-trade-secrets-trial"
+    },
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/economy/2026/11/24/chinese-tech-giant-huawei-found-guilty-of-conspiracy-to-steal-trade-secrets?traffic_source=rss"
     }
    ],
-   "time": "2026-11-23T05:15:06+00:00"
+   "time": "2026-11-25T02:59:27+00:00"
   },
   {
-   "id": "science-6",
-   "topic": "science",
-   "headline": "Measles a growing risk for U.S. adults, experts say",
-   "summary": "The danger is greatest for the unvaccinated, but vaccinated people born before 1989 may no longer be sufficiently protected, medical experts said.",
-   "why": "Some adults may need to check their protection.",
+   "id": "tech-3",
+   "topic": "tech",
+   "headline": "Investigators find Nvidia chips illegally diverted to China",
+   "summary": "Justice Department investigators have gathered evidence of Nvidia chips being illegally diverted by other firms to China, while Attorney General Blanche downplayed questions about Nvidia.",
+   "why": "Ties into export controls and the ongoing Nvidia controversy.",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/23/health/measles-adults-vaccine-boosters.html"
+     "url": "https://www.nytimes.com/2026/11/24/us/politics/nvidia-justice-department-todd-blanche.html"
     }
    ],
-   "time": "2026-11-23T22:19:34+00:00"
+   "time": "2026-11-24T23:27:37+00:00"
   },
   {
-   "id": "science-4",
+   "id": "tech-7",
+   "topic": "tech",
+   "headline": "Treasury's financial crimes bureau discloses cybersecurity incident",
+   "summary": "FinCEN said unauthorized access affected a limited subset of its systems. It has not disclosed the full scope or source.",
+   "why": "The bureau holds sensitive financial intelligence data.",
+   "sources": [
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/policy/1041957/fincen-treasury-cybersecurity-incident"
+    }
+   ],
+   "time": "2026-11-25T01:45:35+00:00"
+  },
+  {
+   "id": "science-2",
    "topic": "science",
-   "headline": "Doctors struggle as parents refuse newborn vitamin K shots",
-   "summary": "Doctors are fighting disinformation about routine vitamin K shots given to newborns, which prevent a rare but devastating bleeding disorder.",
-   "why": "Refusals put infants at risk of serious harm.",
+   "headline": "Medicare hospice caps leave some patients without care",
+   "summary": "Critics say payment limits to hospice companies penalize patients who are not dying on the government's timetable.",
+   "why": "Affects care for seriously ill Medicare patients and their families.",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/business/medicare-hospice-caps-patients-lose-care.html"
+    }
+   ],
+   "time": "2026-11-24T10:02:48+00:00"
+  },
+  {
+   "id": "science-11",
+   "topic": "science",
+   "headline": "Doctors struggle to save babies after parents refuse vitamin K",
+   "summary": "Doctors say disinformation is driving refusals of routine newborn vitamin K shots, which prevent a rare but devastating bleeding disorder.",
+   "why": "A preventable risk to newborns.",
    "sources": [
     {
      "name": "NPR",
@@ -328,134 +411,160 @@
    "time": "2026-11-24T10:00:00+00:00"
   },
   {
-   "id": "business-11",
-   "topic": "business",
-   "headline": "High fuel costs hit Thanksgiving travelers",
-   "summary": "A near-record number of people are expected to travel this Thanksgiving week, and they will be paying more to do so.",
-   "why": "Travel budgets are squeezed this holiday.",
+   "id": "science-1",
+   "topic": "science",
+   "headline": "This group of seamstresses mends shirts to make chemo easier for cancer patients",
+   "summary": "Seamstresses in Ohio and other states are making zippered shirts for cancer patients so they can more comfortably undergo chemotherapy treatments.",
+   "why": "",
    "sources": [
     {
      "name": "NPR",
-     "url": "https://www.npr.org/2026/11/23/nx-s1-6042357/thanksgiving-travel-gas-airfare-prices"
+     "url": "https://www.npr.org/2026/11/24/nx-s1-6044239-e1/this-group-of-seamstresses-mends-shirts-to-make-chemo-easier-for-cancer-patients"
     }
    ],
-   "time": "2026-11-23T21:07:16+00:00"
+   "time": "2026-11-24T21:19:27+00:00"
   },
   {
-   "id": "business-5",
+   "id": "business-8",
    "topic": "business",
-   "headline": "Young New Yorkers losing money on Kalshi, city council finds",
-   "summary": "A City Council investigation into prediction market companies found that 18- to 20-year-olds in New York City are losing money at a high rate.",
+   "headline": "U.S. preparing new tariffs on major trading partners",
+   "summary": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
+   "why": "Tariffs can raise prices for consumers.",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-25T00:38:01+00:00"
+  },
+  {
+   "id": "business-3",
+   "topic": "business",
+   "headline": "UK households face soaring gas bills under new price cap",
+   "summary": "Regulator Ofgem's new price cap will raise domestic gas prices significantly in January.",
+   "why": "Signals higher household costs in Britain this winter.",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-25T00:33:25+00:00"
+  },
+  {
+   "id": "business-1",
+   "topic": "business",
+   "headline": "‘Carthage Resident Al Gore’ Buys His Hometown Tennessee Newspaper",
+   "summary": "Former vice-president, who started his career as a journalist, purchases Carthage Courier in Smith county Al Gore, who started his career as a journalist, is returning to the industry as a newspaper owner in his Tennessee town.",
    "why": "",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/business/kalshi-nyc-council.html"
-    }
-   ],
-   "time": "2026-11-24T10:04:07+00:00"
-  },
-  {
-   "id": "business-7",
-   "topic": "business",
-   "headline": "Restaurants turn to AI and call services for phone reservations",
-   "summary": "New services, some AI-run and some staffed by people, are competing to answer restaurants' phone calls.",
-   "why": "",
-   "sources": [
+     "url": "https://www.nytimes.com/2026/11/24/business/media/al-gore-newspaper-carthage-courier.html"
+    },
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/dining/restaurant-reservations-phone-calls.html"
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/us-news/2026/nov/24/al-gore-newspaper-tennessee"
     }
    ],
-   "time": "2026-11-24T10:03:27+00:00"
-  },
-  {
-   "id": "sports-8",
-   "topic": "sports",
-   "headline": "SEC schedules vote on possible LSU expulsion",
-   "summary": "LSU's standoff with the SEC over the RJ Luis dispute has escalated into a legal and political fight, with major penalties still possible.",
-   "why": "It could reshape college football's biggest conference.",
-   "sources": [
-    {
-     "name": "CBS Sports",
-     "url": "https://www.cbssports.com/college-basketball/news/sec-vote-lsu-expulsion-rj-luis/"
-    }
-   ],
-   "time": "2026-11-24T02:33:24+00:00"
+   "time": "2026-11-25T02:31:42+00:00"
   },
   {
    "id": "sports-1",
    "topic": "sports",
-   "headline": "Everton lose 4-0 at Brentford; Moyes questions Tarkowski red card",
-   "summary": "Everton collapsed at Brentford and now face a suspension problem. David Moyes questioned the red card shown to James Tarkowski.",
+   "headline": "Boise State drops out of College Football Playoff rankings",
+   "summary": "After a chaotic Week 12, Boise State fell from 17th to unranked after a last-second loss. No Group of 6 team is in the rankings, though Boise remains in the projected field.",
    "why": "",
    "sources": [
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/sport/football/videos/cq4gnk062y8go?at_medium=RSS&at_campaign=rss"
+     "name": "CBS Sports",
+     "url": "https://www.cbssports.com/college-football/news/college-football-playoff-bracket-12-team-field-rankings/"
     },
     {
-     "name": "Yahoo Sports",
-     "url": "https://sports.yahoo.com/articles/david-moyes-raises-var-questions-105000454.html"
+     "name": "SB Nation",
+     "url": "https://sports.yahoo.com/college-football/articles/college-football-playoff-rankings-boise-025134811.html"
+    },
+    {
+     "name": "Sooners Wire",
+     "url": "https://sports.yahoo.com/college-football/articles/oklahoma-sooners-climb-latest-college-024827931.html"
     }
    ],
-   "time": "2026-11-24T10:50:00+00:00"
+   "time": "2026-11-25T02:51:34+00:00"
   },
   {
-   "id": "sports-6",
+   "id": "sports-2",
    "topic": "sports",
-   "headline": "Infantino's private-jet travel draws scrutiny amid World Cup stake plan",
-   "summary": "FIFA president Gianni Infantino has made 39 private-jet flights in 115 days since his plan to sell a World Cup stake came under scrutiny.",
+   "headline": "CFP committee moves Tennessee ahead of Alabama",
+   "summary": "The committee vaulted Tennessee past Alabama in the rankings. Committee chair Hunter Yurachek said it was not due to public pressure.",
    "why": "",
    "sources": [
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/sport/football/articles/cmkgk22w3vlvo?at_medium=RSS&at_campaign=rss"
+     "name": "Knox News | The Knoxville News-Sentinel",
+     "url": "https://sports.yahoo.com/college-football/articles/did-cfp-committee-succumb-tennessee-024230014.html"
+    },
+    {
+     "name": "The Tennessean",
+     "url": "https://sports.yahoo.com/college-football/articles/did-cfp-committee-succumb-tennessee-024230277.html"
     }
    ],
-   "time": "2026-11-24T06:16:53+00:00"
+   "time": "2026-11-25T02:42:30+00:00"
   },
   {
-   "id": "culture-5",
-   "topic": "culture",
-   "headline": "Police investigate substance that forced Manchester arena evacuation",
-   "summary": "Police are investigating an unknown substance that caused the evacuation of Co-op Live during a Don Toliver show. Attendees described a horrible smell and screaming.",
+   "id": "sports-3",
+   "topic": "sports",
+   "headline": "'Pass, pass, slow, slow' - Man City's slick machine grinding to a halt",
+   "summary": "Manchester City's slick footballing machine is starting to grind to a halt, as displayed in their laborious Champions League draw against Napoli.",
    "why": "",
    "sources": [
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/c9e851dn8516o?at_medium=RSS&at_campaign=rss"
+     "url": "https://www.bbc.co.uk/sport/football/articles/cj3vgdp2edpxo?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-23T17:34:24+00:00"
+   "time": "2026-11-24T23:17:42+00:00"
+  },
+  {
+   "id": "culture-10",
+   "topic": "culture",
+   "headline": "Smithsonian head defends autonomy after report of Trump overhaul plan",
+   "summary": "Lonnie Bunch wrote to staff after an outline of major personnel and programming changes was seen on a White House aide's computer.",
+   "why": "Concerns the independence of the nation's museums.",
+   "sources": [
+    {
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/24/arts/design/smithsonian-letter-lonnie-bunch-white-house.html"
+    }
+   ],
+   "time": "2026-11-24T19:25:21+00:00"
+  },
+  {
+   "id": "culture-1",
+   "topic": "culture",
+   "headline": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
+   "summary": "Washington's $9 billion industry grows more than 70% of the nation's fresh apples. Farmers are being pressed by high costs, tariffs and a strong dollar that diminishes foreign purchasing power.",
+   "why": "",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/sections/the-picture-show/2026/11/24/g-s1-154620/how-high-costs-are-squeezing-apple-producers"
+    }
+   ],
+   "time": "2026-11-24T21:09:29+00:00"
   },
   {
    "id": "culture-2",
    "topic": "culture",
-   "headline": "First Children's Booker prize reveals shortlist and child judges",
-   "summary": "Eight books are in contention, including War by Eoin Colfer and Andrew Donkin.",
+   "headline": "Substance released at concert could be linked to robberies, police say",
+   "summary": "Police are investigating a possible link between the Co-op Live evacuation and reported robberies.",
    "why": "",
    "sources": [
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/c65y18gl23gko?at_medium=RSS&at_campaign=rss"
+     "url": "https://www.bbc.co.uk/news/articles/cqrmgvnzwrm3o?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-24T07:29:37+00:00"
-  },
-  {
-   "id": "culture-6",
-   "topic": "culture",
-   "headline": "King Charles and Elton John honor Australian music figure Molly Meldrum",
-   "summary": "The promoter and broadcaster, who helped shape Australians' music tastes for decades, was remembered by King Charles and Elton John.",
-   "why": "",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/c3qj57rkd2k1o?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-24T00:23:25+00:00"
+   "time": "2026-11-24T22:01:30+00:00"
   }
  ],
  "weather": {
@@ -546,7 +655,7 @@
     "desc": "Foggy",
     "high": 71,
     "low": 57,
-    "rain": 1
+    "rain": 0
    },
    {
     "date": "2026-11-30",
@@ -562,7 +671,7 @@
     "desc": "Cloudy",
     "high": 82,
     "low": 60,
-    "rain": 0
+    "rain": 1
    }
   ]
  }
