@@ -248,3 +248,4 @@ body.playing main { padding-bottom: 110px; }
 .upcoming h3 { font-size: 0.95em; }
 .game-row { display: flex; flex-direction: column; padding: 6px 0; border-top: 1px solid var(--line); }
 .game-row:first-of-type { border-top: 0; }
+.game-row .small { font-size: 0.78em; }

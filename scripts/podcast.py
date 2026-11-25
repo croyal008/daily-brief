@@ -245,6 +245,8 @@ def weather_line(brief: dict) -> str:
 def game_previews(brief: dict) -> list[str]:
     out = []
     for g in brief.get("upcoming") or []:
+        if not g.get("today", True):
+            continue  # only game-day mentions on the podcast
         line = f"{g['matchup']}"
         if g.get("time"):
             line += f" at {g['time']}"

@@ -340,13 +340,27 @@
     return box;
   }
 
+  function gameWhen(g) {
+    if (g.live) return "Live now";
+    if (!g.start) return g.time || "";
+    const start = new Date(g.start);
+    const day = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+    const diff = Math.round((day(start) - day(new Date())) / 86400000);
+    const time = start.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+    if (diff === 0) return `Today ${time}`;
+    if (diff === 1) return `Tomorrow ${time}`;
+    return `${start.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" })} · ${time}`;
+  }
+
   function upcomingCard(games) {
-    const card = el("article", { class: "card story upcoming" }, el("h3", { text: "🏟️ Today" }));
+    const card = el("article", { class: "card story upcoming" }, el("h3", { text: "🏟️ Next games" }));
     for (const g of games) {
-      const bits = [g.live ? "Live now" : g.time, g.tv && `📺 ${g.tv}`].filter(Boolean).join(" · ");
-      card.append(el("div", { class: "game-row" },
+      const bits = [gameWhen(g), g.tv && `📺 ${g.tv}`].filter(Boolean).join(" · ");
+      const recs = g.record && g.opp_record ? `${g.team} ${g.record} · ${g.opponent} ${g.opp_record}` : "";
+      card.append(el("div", { class: "game-row" + (g.start && gameWhen(g).startsWith("Today") ? " is-today" : "") },
         el("b", { text: g.matchup }),
-        el("span", { class: "gameline", text: bits + (g.record ? ` · ${g.team} ${g.record}` : "") })));
+        el("span", { class: "gameline", text: bits }),
+        recs ? el("span", { class: "gameline small", text: recs }) : null));
     }
     return card;
   }

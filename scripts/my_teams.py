@@ -238,12 +238,11 @@ def todays_game(team: dict, today: datetime, fetch_json, tz) -> dict | None:
         other = next(c for c in sides if c is not mine)
         me = mine["team"].get("shortDisplayName") or mine["team"].get("name") or team["name"]
         opp = other["team"].get("shortDisplayName") or other["team"].get("name") or "Opponent"
-        when = ""
+        when, start_iso, is_today = "", "", True
         try:
             start = datetime.fromisoformat((ev.get("date") or comp.get("date")).replace("Z", "+00:00")).astimezone(tz)
-            when = start.strftime("%-I:%M %p")
-            if start.date() != today.date():
-                when = start.strftime("%a %-I:%M %p")
+            when, start_iso = start.strftime("%-I:%M %p"), start.isoformat()
+            is_today = start.date() == today.date()
         except (AttributeError, ValueError, TypeError):
             pass
         rec = lambda c: ((c.get("records") or [{}])[0].get("summary") or "")
@@ -251,22 +250,32 @@ def todays_game(team: dict, today: datetime, fetch_json, tz) -> dict | None:
             "team": me, "opponent": opp,
             "home": mine.get("homeAway") == "home",
             "matchup": f"{me} {'vs.' if mine.get('homeAway') == 'home' else 'at'} {opp}",
-            "time": when, "tv": _broadcasts(comp),
+            "time": when, "start": start_iso, "today": is_today, "tv": _broadcasts(comp),
             "record": rec(mine), "opp_record": rec(other),
             "live": state == "in",
         }
     return None
 
 
+LOOKAHEAD_DAYS = 21
+
+
 def upcoming_games(teams_file: Path, today_local: datetime, helpers: dict, tz) -> list[dict]:
+    """Each team's next game (today or within three weeks), for quick lookup in the app."""
     out = []
     for team in load_teams(teams_file):
-        try:
-            g = todays_game(team, today_local, helpers["fetch_json"], tz)
-        except Exception as e:  # noqa: BLE001
-            print(f"  ! today's game for {team['name']}: {e}", file=sys.stderr)
-            continue
-        if g:
-            print(f"  today: {g['matchup']} {g['time']} {g['tv']}")
-            out.append(g)
+        for d in range(LOOKAHEAD_DAYS):
+            day = today_local + timedelta(days=d)
+            try:
+                g = todays_game(team, day, helpers["fetch_json"], tz)
+            except Exception as e:  # noqa: BLE001
+                print(f"  ! next game for {team['name']}: {e}", file=sys.stderr)
+                break
+            if g:
+                g["today"] = d == 0 and g.get("today", True)
+                print(f"  next: {g['matchup']} {g['start'] or day.date()} {g['tv']}")
+                out.append(g)
+                break
+        else:
+            print(f"  next: no {team['name']} game in the next {LOOKAHEAD_DAYS} days")
     return out
