@@ -4,6 +4,12 @@
  "ai_summaries": true,
  "topics": [
   {
+   "id": "weather",
+   "name": "Weather",
+   "emoji": "🌤️",
+   "default_on": true
+  },
+  {
    "id": "myteams",
    "name": "My Teams",
    "emoji": "🏆",
@@ -451,5 +457,113 @@
    ],
    "time": "2026-11-24T00:23:25+00:00"
   }
- ]
+ ],
+ "weather": {
+  "location": "San Antonio, TX",
+  "today": {
+   "date": "2026-11-24",
+   "emoji": "☁️",
+   "desc": "Cloudy",
+   "summary": "Cloudy today, with a high of 56° and a low of 43°. No rain expected.",
+   "high": 56,
+   "low": 43,
+   "rain": 4,
+   "feels_high": 49,
+   "feels_low": 39,
+   "precip_in": 0,
+   "wind": 12,
+   "gust": 24,
+   "uv": 1,
+   "sunrise": "7:05 AM",
+   "sunset": "5:35 PM",
+   "slots": [
+    {
+     "label": "Morning",
+     "temp": 51,
+     "emoji": "☀️",
+     "desc": "Clear",
+     "rain": 2
+    },
+    {
+     "label": "Midday",
+     "temp": 56,
+     "emoji": "☁️",
+     "desc": "Cloudy",
+     "rain": 4
+    },
+    {
+     "label": "Afternoon",
+     "temp": 52,
+     "emoji": "☁️",
+     "desc": "Cloudy",
+     "rain": 4
+    },
+    {
+     "label": "Evening",
+     "temp": 47,
+     "emoji": "☀️",
+     "desc": "Clear",
+     "rain": 0
+    }
+   ]
+  },
+  "days": [
+   {
+    "date": "2026-11-25",
+    "emoji": "☀️",
+    "desc": "Clear",
+    "high": 59,
+    "low": 37,
+    "rain": 0
+   },
+   {
+    "date": "2026-11-26",
+    "emoji": "☁️",
+    "desc": "Cloudy",
+    "high": 60,
+    "low": 36,
+    "rain": 0
+   },
+   {
+    "date": "2026-11-27",
+    "emoji": "☁️",
+    "desc": "Cloudy",
+    "high": 63,
+    "low": 47,
+    "rain": 0
+   },
+   {
+    "date": "2026-11-28",
+    "emoji": "🌤️",
+    "desc": "Mostly clear",
+    "high": 71,
+    "low": 48,
+    "rain": 0
+   },
+   {
+    "date": "2026-11-29",
+    "emoji": "🌫️",
+    "desc": "Foggy",
+    "high": 71,
+    "low": 57,
+    "rain": 1
+   },
+   {
+    "date": "2026-11-30",
+    "emoji": "☁️",
+    "desc": "Cloudy",
+    "high": 78,
+    "low": 61,
+    "rain": 0
+   },
+   {
+    "date": "2026-12-01",
+    "emoji": "☁️",
+    "desc": "Cloudy",
+    "high": 82,
+    "low": 60,
+    "rain": 0
+   }
+  ]
+ }
 }
