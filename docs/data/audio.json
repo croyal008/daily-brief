@@ -1,8 +1,8 @@
 {
- "date": "2026-11-25",
- "generated_at": "2026-11-25T18:54:58+00:00",
- "url": "https://cdn.jsdelivr.net/gh/croyal008/daily-brief@e18f71d106ba8f3f67a52a3173724211e8a18133/brief-20261125-1856.mp3",
- "duration": 366.8,
+ "date": "2026-11-26",
+ "generated_at": "2026-11-26T11:12:16+00:00",
+ "url": "https://cdn.jsdelivr.net/gh/croyal008/daily-brief@552fcd4173002eb90a5e14a824024c9d406fdb19/brief-20261126-1114.mp3",
+ "duration": 339.1,
  "voice": "Azure en-US-Phoebe:DragonHDOmniLatestNeural",
  "style": "host",
  "chapters": [
@@ -11,78 +11,85 @@
    "label": "Intro",
    "sid": null,
    "topic": null,
-   "text": "Happy Wednesday, it's November 25th, the day before Thanksgiving, which means half the country is at an airport and the other half is at a grocery store arguing over the last can of cranberry sauce. Here's what you need to know."
+   "text": "Happy Thanksgiving. It's Thursday, November 26th, and this is your short, slightly overfed rundown of what's going on. Plenty to get through before the turkey does its work."
   },
   {
-   "t": 13.45,
+   "t": 11.2,
    "label": "🌤️ Weather",
    "sid": null,
    "topic": "weather",
-   "text": "San Antonio is starting the day cold. It's 38 this morning and feels closer to 31, and there's a freeze warning through Thanksgiving morning, so cover the plants and bring in the pets. It warms to a clear 60 by afternoon, then drops to 49 tonight. No rain at all. Thursday is cloudy and in the 50s, and by Saturday we're up to 72."
+   "text": "San Antonio is cloudy and dry today, high of 61, low of 36. It starts chilly at 38, climbs to 57 by midday, then drops to 51 tonight, so layers are your friend. Gusts hit about 21, and it feels like 29 out there early. Friday's 65, Saturday's 73, and no rain until a drizzly Thursday."
   },
   {
-   "t": 35.0,
+   "t": 32.4,
+   "label": "🏆 My Teams",
+   "sid": "team-san-antonio-spurs",
+   "topic": "myteams",
+   "text": "The Spurs dropped one in Portland last night, 116 to 111, their first road loss of the season. Victor Wembanyama did everything he could, 44 points and 16 rebounds, and it still wasn't enough, which feels rude. They're 15 and 4, so nobody's panicking. The Lakers come to San Antonio Friday, and Austin Reaves may play."
+  },
+  {
+   "t": 51.95,
    "label": "🏆 My Teams",
    "sid": null,
    "topic": "myteams",
-   "text": "The Spurs are in Portland tonight to face the Trail Blazers, tip-off at nine on ESPN, or on KUNP 16 if you're staying local. San Antonio is 15 and 3 and Portland is 11 and 6, so this is a real road test, not a layup. Pour something warm and settle in. It's going to be a late one."
+   "text": "And Cowboys fans, your holiday main course kicks off at 3:30 this afternoon on Fox against the Eagles. Dallas is 5 and 6, Philly is 3 and 7, so yes, it's Thanksgiving and we're all hoping for a good meal and a good second half."
   },
   {
-   "t": 52.5,
-   "label": "🇺🇸 U.S.",
-   "sid": "us-2",
-   "topic": "us",
-   "text": "The Army blew up nearly five tons of old explosives in Middletown, Iowa this morning, and the town of about 350 people is still standing. The stuff was lead azide, a compound that's very touchy. It had been sitting in storage at the Iowa Army Ammunition Plant for about twenty years and had degraded to the point that it could go off on its own from a bump. The plan was delayed several times after residents objected and lawyers got involved, because the worry was a cloud of toxic lead dust. The blast went off at nine, a few pops and a faint plume. Fifteen minutes later the EPA said its four monitors had detected zero lead in the air, and the readings held two hours on. The Army called it a huge success, and Middletown's mayor said he felt relieved and vindicated. The Army's account is that the blast was aimed into the ground to keep lead from spreading. Nobody wanted that to be exciting, and it wasn't."
-  },
-  {
-   "t": 99.85,
-   "label": "💻 Tech",
-   "sid": "tech-1",
-   "topic": "tech",
-   "text": "Jensen Huang is back as CEO of Nvidia, and the stock market is behaving like it just got its dog back. Nvidia's board had said he wouldn't return, but President Trump pushed for it, and governance experts say that amounts to overriding the board. Huang has apologized to employees and says he's in therapy. Investors didn't wait around for the details. The stock jumped more than thirty percent in a day, adding roughly nine hundred and fifty billion dollars in value. That's the biggest one-day gain any single company has ever posted, and it's in the neighborhood of all of Walmart. The pitch is that Huang is basically the face of the AI boom, and so much of the market is a bet on it. So the man comes out of therapy and gets a Walmart. Most of us get a worksheet."
-  },
-  {
-   "t": 138.95,
-   "label": "💻 Tech",
-   "sid": "tech-2",
-   "topic": "tech",
-   "text": "The FCC just approved up to one million new SpaceX satellites. That's about fifty times the number currently in orbit. They're called Starmind, and they're meant to work as data centers in space, packed with AI chips. FCC chairman Brendan Carr called it a bold new frontier, and the timing is a day before Thanksgiving, which is when you announce things you'd prefer people skim. Here's the catch: the approval doesn't prove orbital data centers can actually work, technically or financially. SpaceX has seven years to launch one working satellite, until 2035 for the first hundred thousand, and until 2040 for the whole million. That's a fourteen-year runway. Elon Musk, who's allied with the Trump administration, just got a very patient regulator and a very large sky."
-  },
-  {
-   "t": 180.95,
+   "t": 65.45,
    "label": "🇺🇸 U.S.",
    "sid": "us-1",
    "topic": "us",
-   "text": "More tariffs are coming. The Trump administration says it will hit fourteen economies, including China, the European Union, Japan, India, Vietnam and Brazil. The target is what the U.S. calls subsidizing industries so they overproduce. The U.S. Trade Representative, Jamieson Greer, says it'll level the playing field for American workers. Brazil's sugar and aircraft are in the crosshairs, and China faces the highest rates. The move relies on Section 301 of the Trade Act of 1974, which lets the government go after unfair trade practices. That matters because the Supreme Court earlier ruled that the Liberation Day tariffs were illegal, so this is the legally tidier route. Most of these new duties aren't expected to kick in until next year. Economists keep warning that tariffs can push up prices for shoppers if businesses pass on the cost, and that's the part you'll feel at the checkout."
+   "text": "New York's Macy's Thanksgiving Day Parade has been postponed for the first time ever, and it's the hundredth one, so that's some timing. A powerful coastal storm is headed in with gusts up to 65 miles an hour and possible flash flooding. Now picture giant balloons in that. The new date is Saturday at 8:30 in the morning. Mayor Zohran Mamdani said the city has to plan for every possibility, and Macy's said safety comes first. Honestly, a parade with leftovers on the side sounds like a pretty good upgrade for anyone watching from the couch.  The first postponement in a hundred years is a big deal, but nobody wants a runaway balloon on Sixth Avenue."
   },
   {
-   "t": 227.45,
-   "label": "🏛️ Politics",
-   "sid": "politics-3",
-   "topic": "politics",
-   "text": "The Army wants to restart helicopter training flights near Reagan National Airport, as early as December first, according to NTSB chair Jennifer Homendy. This is the same airspace where an Army helicopter collided with an American Airlines jet in January 2025, killing sixty-seven people. A yearlong NTSB review found years of ignored warnings about helicopter traffic there. The FAA suspended training flights in May 2025 after two passenger jets had to abort landings when a Blackhawk got too close. Transportation Secretary Sean Duffy blamed the Pentagon and told the helicopters to take a taxi or an Uber. Now the FAA says it hasn't received a formal request and that it has to approve any restart. Senator Maria Cantwell called the idea exactly the wrong direction. It's a pretty simple question for the FAA: has anything changed since the last time this went badly?"
-  },
-  {
-   "t": 277.15,
+   "t": 100.45,
    "label": "🎬 Culture & Entertainment",
    "sid": "culture-2",
    "topic": "culture",
-   "text": "The Macy's Thanksgiving Day Parade turns one hundred tomorrow, and there will be a hundred inflatables, so the numbers line up. Snoopy is the star. He's been in the parade forty-five times since 1968, as a World War One flying ace, an astronaut and more, and this year he finally shows up as Joe Cool, forty-two feet long, in sunglasses and a red sweater, with Woodstock tucked under his arm. It took the beagle forty-five tries to get cool. Also debuting: Bluey, Hello Kitty and a wizard version of Mickey Mouse. There are about eleven thousand volunteers and participants, with roughly a hundred handlers on each big balloon. The catch is the forecast for New York, which looks stormy. High winds can lower or ground the balloons, though the parade will go on either way."
+   "text": "Brad Pitt and Angelina Jolie have finally settled their fight over Château Miraval, the French vineyard where they got married in 2014. It started in 2022, when Pitt sued after Jolie sold her stake to a company controlled by Russian oligarch Yuri Shefler. He said they'd agreed not to sell without each other's permission. She countersued, accusing him of attacking her and their children on a 2016 private flight, which led to her filing for divorce. Both cases are now resolved, and their reps say it was settled for the family's sake with no further comment. They also added that anything attributed to sources isn't coming from either of them, which is a bold claim about the entire celebrity press ecosystem."
   },
   {
-   "t": 319.05,
+   "t": 137.55,
+   "label": "🎬 Culture & Entertainment",
+   "sid": "culture-3",
+   "topic": "culture",
+   "text": "Gordon Ramsay is the new face of Top Gear, which has been off the air since 2022, when Andrew Flintoff was seriously injured in a crash at the test track. The BBC apologized and paid him compensation. Filming starts next year, with the return set for 2028, and Ramsay's co-hosts haven't been named yet. He says he grew up near Silverstone and used to sneak in over the fences to watch races. Of all the people you could hand a car show to, he's the one most likely to tell a Lamborghini it's raw. He promises the show will have just the right amount of chaos, which, given its history, is a phrase I'd keep an eye on."
+  },
+  {
+   "t": 172.75,
+   "label": "🌍 World",
+   "sid": "world-1",
+   "topic": "world",
+   "text": "Here's a good way to deal with something that might explode on its own: explode it yourself, on schedule. This morning the Army is detonating thousands of pounds of lead azide at the Iowa Army Ammunition Plant in Middletown. It's an explosive used since World War One that was moved to a bunker there 17 years ago, and it crystallized and became unstable. Everyone within five miles has been evacuated, and anyone within twenty miles is told to stay indoors. Also, Kilmar Abrego Garcia, the Salvadoran immigrant who was mistakenly deported in 2025, has left the U.S. for Spain. His lawyer calls it a temporary departure and says he has options to return. And Nvidia's reinstated CEO Jensen Huang reportedly apologized to staff for his past behavior, after stepping down over reports of affairs."
+  },
+  {
+   "t": 216.0,
+   "label": "🏛️ Politics",
+   "sid": "politics-4",
+   "topic": "politics",
+   "text": "A federal judge just blocked the FCC, the Federal Communications Commission, from going ahead with an early review of ABC's broadcast licenses. Judge Loren AliKhan wrote a 45-page ruling saying ABC is likely to prove the review was retaliation. She cited at least 11 times President Trump publicly urged the FCC to go after ABC, and said FCC Chair Brendan Carr treated Trump's rhetoric as his marching orders. It's rare for the plaintiff's best evidence to be the defendant's greatest hits. The stakes were big: ABC stations cover six of the ten biggest U.S. markets, including New York, Los Angeles and Houston. Licenses normally run eight years, so an early review was highly unusual. The judge called it not a close case, though she declined a broader ban, and the injunction holds while the lawsuit plays out."
+  },
+  {
+   "t": 260.7,
+   "label": "💻 Tech",
+   "sid": "tech-1",
+   "topic": "tech",
+   "text": "The FCC just approved SpaceX's plan to launch up to a million satellites to serve as data centers in orbit. The project is called Starmind. The satellites run on sunlight, crunch AI workloads, and beam the results back down. Nobody wants a data center in their town anymore, and experts say that anger even hurt Republicans in the midterms, so the fix is to put them in everyone's sky. FCC Chair Brendan Carr called it a bold new frontier. Amazon called it a lofty ambition rather than a real plan, and astronomers say it would significantly undermine stargazing. Deployment has to begin by November 2033, so there's time to argue."
+  },
+  {
+   "t": 295.15,
    "label": "⚡ Quick hits",
    "sid": null,
    "topic": null,
-   "text": "A few quick ones. Nearly twenty thousand passengers are expected at San Antonio International today, so give yourself extra time. In China, Shanghai party chief Chen Jining is under investigation for suspected discipline violations. He's the fourth Politburo member to fall in this cycle of Xi Jinping's anti-corruption campaign. Martha Firestone Ford, who owned the Detroit Lions after her husband died in 2014, has died at 101. In Britain, discount chain Poundland has collapsed into administration, putting eleven thousand jobs at risk, though the stores stay open for now. And EA is adding the AI-recreated voice of the late John Motson to its football game, with his family's blessing, starting tomorrow."
+   "text": "Quick hits. Duran Duran guitarist Andy Taylor has died at 65 after a long battle with prostate cancer; he co-wrote Rio, Girls on Film and Save a Prayer, and passed away at home with his family on Monday. In Cairo, a fuel tanker crash set off a huge fire on the ring road and killed at least 31 people, with at least 21 injured. A FedEx plane coming from Memphis overran a runway at Miami's airport last night; nobody was hurt, but there are hours-long delays. Jannik Sinner is out of the Australian Open in January after knee surgery, and he hasn't played since winning Wimbledon in July. And a man in Denver has reportedly been trapping Waymo robotaxis with orange cones and pelting them with eggs; no charges so far."
   },
   {
-   "t": 359.4,
+   "t": 334.05,
    "label": "Wrapping up",
    "sid": null,
    "topic": null,
-   "text": "That's your Wednesday. Stay warm tonight, take it easy at the airport, and go Spurs. I'll catch you tomorrow, hopefully with a full plate and a full stomach."
+   "text": "That's your Thursday. Eat well, pace yourself during the Cowboys game, and I'll talk to you tomorrow."
   }
  ],
- "backup_url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261125-1856.mp3"
+ "backup_url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261126-1114.mp3"
 }
