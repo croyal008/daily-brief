@@ -1,6 +1,6 @@
 {
- "date": "2026-11-26",
- "generated_at": "2026-11-26T11:12:16+00:00",
+ "date": "2026-11-27",
+ "generated_at": "2026-11-27T11:08:21+00:00",
  "ai_summaries": true,
  "topics": [
   {
@@ -73,27 +73,27 @@
  "overview": [
   {
    "topic": "us",
-   "text": "Macy's Thanksgiving Day Parade is postponed to Saturday for the first time in its history because of high winds from a storm."
-  },
-  {
-   "topic": "politics",
-   "text": "A federal judge temporarily blocked the FCC from an early review of ABC's broadcast licenses, which the network calls punishment for speech."
-  },
-  {
-   "topic": "politics",
-   "text": "Congress is scrutinizing Nvidia and Jensen Huang's reinstatement, while a CBS investigation finds California-based Nvidia customers with Chinese ownership."
+   "text": "A powerful Thanksgiving storm hit the East Coast with heavy rain, wind and flooding, leaving roughly half a million to nearly a million customers without power."
   },
   {
    "topic": "world",
-   "text": "A fuel tanker crash set off a huge fire on Cairo's ring road, killing at least 31 people."
+   "text": "Two Italians were killed in an Iranian drone attack on Kuwait, which Iran denies, as talks to end the war stall."
+  },
+  {
+   "topic": "politics",
+   "text": "Trump alleged without evidence that economic figures released before the midterms were fake, after voters rejected his Republican party."
+  },
+  {
+   "topic": "politics",
+   "text": "Trump's asylum ban and other immigration changes have all but ended asylum, and the Supreme Court will soon consider due process questions."
   },
   {
    "topic": "us",
-   "text": "Nidal Hasan, the Fort Hood shooter, says he will petition to delay his execution by firing squad."
+   "text": "The EPA says no lead was detected in the air near the Iowa blast site, with more test results expected soon."
   },
   {
    "topic": "local",
-   "text": "Most San Antonio retailers are closed Thanksgiving, with a few grocery stores open."
+   "text": "San Antonio hosted Thanksgiving traditions for airmen far from home, and the Spurs host the Lakers Friday with Dylan Harper possibly returning."
   }
  ],
  "upcoming": [
@@ -104,7 +104,7 @@
    "matchup": "Spurs vs. Lakers",
    "time": "8:30 PM",
    "start": "2026-11-27T20:30:00-06:00",
-   "today": false,
+   "today": true,
    "tv": "Prime Video",
    "record": "15-4",
    "opp_record": "15-3",
@@ -112,15 +112,15 @@
   },
   {
    "team": "Cowboys",
-   "opponent": "Eagles",
-   "home": true,
-   "matchup": "Cowboys vs. Eagles",
-   "time": "3:30 PM",
-   "start": "2026-11-26T15:30:00-06:00",
-   "today": true,
-   "tv": "Fox",
-   "record": "5-6",
-   "opp_record": "3-7",
+   "opponent": "Seahawks",
+   "home": false,
+   "matchup": "Cowboys at Seahawks",
+   "time": "7:15 PM",
+   "start": "2026-12-07T19:15:00-06:00",
+   "today": false,
+   "tv": "ESPN, ABC",
+   "record": "5-7",
+   "opp_record": "6-4",
    "live": false
   },
   {
@@ -130,7 +130,7 @@
    "matchup": "UTSA vs. Tulsa",
    "time": "11:00 AM",
    "start": "2026-11-27T11:00:00-06:00",
-   "today": false,
+   "today": true,
    "tv": "ESPN",
    "record": "9-2",
    "opp_record": "7-4",
@@ -139,479 +139,455 @@
  ],
  "stories": [
   {
-   "headline": "❌ Spurs 111, Trail Blazers 116",
-   "summary": "Final · at Trail Blazers · Record 15-4",
-   "stat": "Victor Wembanyama: 44 PTS, 16 REB",
+   "headline": "❌ Cowboys 38, Eagles 39",
+   "summary": "Final · vs. Eagles · Record 5-7",
+   "stat": "Javonte Williams: 29 CAR, 101 YDS, 2 TD",
    "sources": [
     {
      "name": "ESPN recap",
-     "url": "https://www.espn.com/nba/recap?gameId=401909325"
+     "url": "https://www.espn.com/nfl/recap?gameId=401873080"
     }
    ],
-   "id": "team-san-antonio-spurs",
+   "id": "team-dallas-cowboys",
    "topic": "myteams",
    "why": ""
   },
   {
-   "id": "local-1",
+   "id": "local-12",
    "topic": "local",
-   "headline": "What's open in San Antonio on Thanksgiving Day",
-   "summary": "A handful of grocery stores will open on Thanksgiving, while most retailers will be closed. Stores reopen on Black Friday.",
-   "why": "Useful for last-minute holiday shopping plans.",
+   "headline": "Dylan Harper could return as Spurs host Lakers Friday",
+   "summary": "The Spurs received a positive injury update on Harper ahead of Friday's home game against the Lakers.",
+   "why": "",
    "sources": [
     {
-     "name": "kens5.com",
-     "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPajFSX2hhY0tRdjlRd0Y0YTd3bFVsckR2UjdrUWpEanBZaGNkRkU2U0RLVkNEY1pmTTRtcTF4Q3FsbWMxcGdnSC10SHpCMS1sMF9haXdlX19PeGF1U1JCd3RYNU9KYjdzalN2QmJGVmt1Z0xPWDA3MzhPbS1YTGpJa3ZlbVdzaWRsOGxGMVlJamQ4c2hhQ1VRYTE0aW5LNTcza25oclI0ZGpseFloeGZNQzlYZzNJZlhyN3BNVXVfNHA4V05NcjFJTXVLTm5uM1Q4b04tMzZrM29BWlk4RC1aSE15R0xpOF9FSVVZb2tIMF9BN2R4Qm5fNElaMFBhNEhobzZKR0Via1c1WG4wRG9jZi01QTBRRG4yMW1UMTVwaFBoYTRTVmFRc0FoOC1wSDV5SGM0MnpWdnJtcTQ?oc=5"
+     "name": "San Antonio Express-News",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ1NLQTAzQ3dLaUxocExBR1JOWDdOQnNxVHR1ZkRReTZaWmlDNGY2RXdYQkxoejk4TS1uMTVRMi1HblRLVGRYNHJzSW5XVElyNG50OHRuWktkaFdhRkp0SkZDaEdYeDdXeWxYTmNrWVUxSVNheGtWZGlVanRGWkZKR0Y3VjJ0UnRQS3pRd1ViLTFwcGtzSHFJcWFhNEViUmFYaGY2YmJyNUlnczloUU01Yg?oc=5"
     },
     {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/thanksgiving-store-hours-open-closed-2026-black-friday/"
-    },
-    {
-     "name": "ABC News",
-     "url": "https://abcnews.com/US/wireStory/closed-thanksgiving-stores-reopen-black-friday-138443831"
+     "name": "BasketNews.com",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORzVnT0Y3Y05jcW1nSXJDZEloQVFHV1BIT0JPRDFlUmkyckVvbDd2RTlkTDVrZWdsRnRMR2Q2TGFQTk9jQnRKb2s5WEhRSDE2YUxHMlNrRXM2aVMtdUpoYjRWSnVqMHp4Wm8xa0FVOVlBN012d3lyRmdLTllGUUJ6TVVzR3pFdW0yUmRNSXloaV9OcW5iZHBPUUVFSzJaQUh0eXFYWHpUTFpLTGc?oc=5"
     }
    ],
-   "time": "2026-11-26T11:00:21+00:00"
+   "time": "2026-11-27T06:21:32+00:00"
+  },
+  {
+   "id": "local-3",
+   "topic": "local",
+   "headline": "Operation Home Cooking brings Thanksgiving to San Antonio airmen",
+   "summary": "San Antonio families hosted Air Force trainees far from home for Thanksgiving, in the program's 51st year.",
+   "why": "",
+   "sources": [
+    {
+     "name": "WOAI",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOU0FSY3laeERYWWVqY3hSTWdrS3lLM2VmcFlnbEpLb21WZU5SNlFSdXl4R0RjU1A1V25DUFFMVXhpQkdiUkdpRnR2TGlEUVMtT3RjdzA3dVA3VDFlLVJXeFRIeHgyc1hDbi1fTzV4dGZlSk0tWTNCV21UZHUyNjRvRkgzV0pIc2szTlVYRDR1UllQckNsM19iX1NfTmZCOVg0YXNrTGJLdVlHZkl0aGRqdQ?oc=5"
+    },
+    {
+     "name": "KABB",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPekRKWWNPRE1ZU05qLXVBY2xVYmZHMkpvb3B0YjR3NktfSGM3Mkh2d1AwRDYzd1hndkEzUHVNR2RMMEhkY1ByZTU2amY0cDRyRzVFcjNnN3ZwYXBiZ2lrbnRKMmlBZV9EWmEzMEcyQnFHeGRacEtoMkcyT0xXYy12cUVjRXJ0c1dfMGNSNHJyNFowOW4yYkpHQjlBLXZsUFROVlRyS3MwZU5jaU9Jdk5hUHVHOXNYUllLTUJLa3B6MG8?oc=5"
+    },
+    {
+     "name": "kens5.com",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPd0pmOWlKNWJ3Z25GRWdPd0JNVUp1MDdVUVg1XzRiOGw2ZDFVeEJTTjVuNGo5Qzc0d3NSZ01KSzJDY0Y1UkNPbi1RcnU4bWcyV203TWtkSGZabmNUYXEyZVdSTzlFSHJKY0Jna3U4MHlRU0NyMmJvaWdKY3JpVVQ4YWJsSTdEVjR3STZvZldSMzBwTWtBaVpEVDBqRFNPdzdhNWZ4U2tuQXBWZ2xlRk9MOEozMmF3eVMyY1JXaEtCQkhSTXhMbnJHOWItRFVlNDBIY1VJS0s1d2pSWG11aVRV?oc=5"
+    }
+   ],
+   "time": "2026-11-27T07:57:13+00:00"
   },
   {
    "id": "local-4",
    "topic": "local",
-   "headline": "Spurs lose first road game 116-111 at Portland",
-   "summary": "The Blazers beat San Antonio despite Victor Wembanyama's 44 points, handing the Spurs their first road loss. The Lakers visit San Antonio Friday, and Austin Reaves may play.",
+   "headline": "Raul Jimenez Thanksgiving Dinner serves thousands for 47th year",
+   "summary": "The annual dinner brought holiday meals to thousands of San Antonio residents.",
    "why": "",
    "sources": [
-    {
-     "name": "Pounding The Rock",
-     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQQ0JYeGNzZUlwN3VYZ3lqazNUQUV5b3BlRk5vYjRiLWtfeXBLZ3JxQnZDQ0VMa1REdVY0cFBwUmdJb0g0bGtJS1JWa0l6ZHZJUkw3b2ZhU2kwOUxHekpFMVdMMkx1QXNGZnpjZE12ZVBrOHBqREVDV24xRDJQY2tVbVJzOHduaG9YR05CdVR5UnlyM0ttaFlqR0NNblZPWWNVSnNNRFZJOU5Bc3hmVHJzUzRHZFBzazNYYnYtdFlaZGxyb3BqbWRpbnVxamVUTm95dnQzRHhIMXgxVDBrM01n?oc=5"
-    },
-    {
-     "name": "Yahoo Sports",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUzRqQ1I0ajZ6X0hmNEtEUnROQWc3VUl0ZnlaWWx0aHNIZEVmdUg1ZGctUV95amo2d0gwODBZMkluRWIwa1JaMHpuMjlTbkV5ek51RC03VW5MYTRHNm1CRDl1b1lEODB3eXVJa0tCT0lUajhzTXVoSGw0SUttRDc4bVBGa1M4NGN2?oc=5"
-    },
-    {
-     "name": "NBA.com",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNLWxtOFFjeldCU1VweTR0a3J6dWxod3VKQTJuV0h3RXV6ZTcxUTVheHZtV2ZxcUlmMGpTdTE4RjNWMHhLNzQtVXFSX0UxV0tqb3I0UVlBblVhOG1WSVBaTTFnZzM2bmFVUktqNjZNV19BaEx2VUswcXV2aUh0d3kxSWthRjhvQWt5SnR3?oc=5"
-    }
-   ],
-   "time": "2026-11-26T09:57:54+00:00"
-  },
-  {
-   "id": "local-11",
-   "topic": "local",
-   "headline": "92-year-old woman arrested in 1969 Universal City cold case murder of her son",
-   "summary": "Authorities arrested a 92-year-old woman for murder in her son's 1969 death in Universal City.",
-   "why": "",
-   "sources": [
-    {
-     "name": "kens5.com",
-     "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOcy1YeExzT182OU1hY0JRaE5ublpYMkhwVG5YeU5CX3pyQzV3S0FzQmV5X0lPMUxJNF9ZNWlTcXBWM1ItU1k5b3oyYVU2VXgtNGJSNDdQOUJDY29JNkhMS1NhX1g0T0tBTUZxQ0FQSjBOWkVuUDJ1X0h0SW9wS3NrdWdiOXBFbmVqbFcySUlZeDM5QmZTODNpdnRleE44a1J4bVNiWVN3Y3lQSlNhRE1XZV9odnBtYkdUUGVCQmdzTVJad3RUYkFYbTR2QVdGOVpMcjRUcHFNbWc4NV85Mndib3lPOUZFRThXNkNqVmN0ZlBuUm0tektxX0FxV2dwMjg?oc=5"
-    },
     {
      "name": "WOAI",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRVk4R0RRNTRobDRwT0FaaVViaDNXQlhPaWJ6TFN5NHVEcl92eHFQRmtJRG53a25xNGEzaUFMeTE4RUtxVkZpWDhEQV9oenFKRjVXbUdXRDZITGgtUUM0OExMYjFCanhqUU55WXplYzlxMnJ2aXd1c3BHVXk4b1NGXzRSNmFaVi1xdFZZQWJhLVhhVG1DN2pMd3l4Ql9SUQ?oc=5"
-    }
-   ],
-   "time": "2026-11-26T05:48:50+00:00"
-  },
-  {
-   "id": "us-1",
-   "topic": "us",
-   "headline": "Macy's Thanksgiving Day Parade postponed to Saturday because of high winds",
-   "summary": "New York's Macy's Thanksgiving Day Parade has been postponed for the first time in its history. Forecasters expect high winds from a storm on Thursday, so it moves to Saturday.",
-   "why": "Storms are also disrupting holiday travel for millions.",
-   "sources": [
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/macys-thanksgiving-day-parade-postponed/"
+     "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQYUZoWTVqdGZ3b0tJVW5kV2YtQzhXQUprOUpTejhwaXBBWDd4TXJ0MnZ4YUVvYUpiWnV5c1lNLUxCeE9qbVY3R0dkc0RfeTFXUGRjYVlRdHFGa0N4bHI5WEYtdzh3ZTJTaUxJRVV6Ymwwd05ibHZfa3ZkUWpqaHAwczFXVFp4ZWtlaEJVbFFlWFd5UWdtQW5KYTFOMDk4YXRaSG5heWk2dkFuTTd5RVZ4MFdLOFFGYXFsM2hhMjZBXzdwbE5mdFVsbFNHVkR5bUM3VHczY0JOSlo0dTFtWTVjamdMY3JSQVBWOHNSRFM3bmY3Skg5QUdjWjdYRC1Fa1AzTldzcklPWEZ5ZXctMzIwWW1hMHZXSXhVYmc?oc=5"
     },
     {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/26/nx-s1-6054079/storms-expected-on-both-coasts-as-millions-travel-for-thanksgiving"
+     "name": "kens5.com",
+     "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOcGZIdTJTNnl5blRHQTVRS3NKZldiU0pwaGVWeG15R1JFMnFlRldLVVNVMmh4ZTVFSWZkSE1QM21xc0d0Z0NGM1ZpVDREaE1KTGNtNlk0NVI0cXhEd2I2YktxeksxSEYwcnd0Qk5aWEgtWDNXc2ctN2l3TWZYSnE1dzZVZUxFYmlNTjhVZVdfN3RvTVpSMElQSVZWeWZ4bnRoNXNoQnN3LTdoazUyZXNtSDJpWEQzbWs3STNWeTVFekRScTJXSndWaXZ0ZXRsNEVuTTRXMzRvYUQzWVEyNnlyNEpqN3NZODRIbnFRQmY4MDBFcjFWcnN6dGdlM21kdWFTR3F0SHdR?oc=5"
     },
     {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/us-news/2026/nov/25/macys-thanksgiving-day-parade-postponed-weather"
+     "name": "Spectrum News",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTjhoT3pjS2dCcHdYVlh2cmhQMFdmQjV4QUZzTUpWWVZHLUhWNWJ5LUlxMDRtSjlQSURwanlUVWxHVEcwa2hjcGw0R3c1d2FKdElBZVlMakFyeE15T2ZQdTlQZTMzQ09aNWlRbUUxZkRSMmNnUWJoWmh0WV9YUVlLZG01Uk4wRXZZRlBxNkc1bGVZckd2Rm8xUDhhV18zWHZJVXdRU1hERm5sSF82ZGRpaTlvS0JBRTlBZFE?oc=5"
     }
    ],
-   "time": "2026-11-26T09:43:27+00:00"
+   "time": "2026-11-27T00:09:18+00:00"
   },
   {
-   "id": "us-5",
+   "id": "us-7",
    "topic": "us",
-   "headline": "Fort Hood shooter seeks to delay execution by firing squad",
-   "summary": "Nidal Hasan, who killed 13 people at the Texas Army post in 2009, told a federal court he plans to file a petition to delay his execution.",
-   "why": "",
+   "headline": "Thanksgiving storm leaves half a million without power on East Coast",
+   "summary": "Heavy rain and strong winds from Virginia to New York disrupted holiday travel. Conditions were expected to gradually improve on Friday.",
+   "why": "Affects travel and power for millions during the holiday weekend.",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/25/us/nidal-malik-hasan-fort-hood-execution-stay.html"
-    },
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/nidal-hasan-delay-execution-petition/"
-    },
-    {
-     "name": "San Antonio Report",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQT1B1UEdRNnA5WUNUa1ZXUDhmVXJDTVRzNWQ3eVFNcDJob05MdWJKZ0FfVllMYkxDTnNzN0hjQVZocy0zc0ZycFhldmpaLUcxSGRKRUJMTHdTODBlS2NlaXFSNzlsdndFMGstblE1QmwzYU1Ia0FrZXlIMUFNWUM1S1hWYw?oc=5"
+     "url": "https://www.nytimes.com/2026/11/27/us/thanksgiving-weather-east-coast-storm.html"
     }
    ],
-   "time": "2026-11-26T03:02:01+00:00"
+   "time": "2026-11-27T10:31:04+00:00"
+  },
+  {
+   "id": "us-3",
+   "topic": "us",
+   "headline": "EPA: No lead detected in air after Iowa detonation",
+   "summary": "The EPA says no lead was detected in the air near the Army's blast site, where nearly five tons of lead explosives were detonated Wednesday. Sample test results are expected soon, and some locals remain concerned.",
+   "why": "",
+   "sources": [
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/"
+    },
+    {
+     "name": "ABC News",
+     "url": "https://abcnews.com/US/wireStory/epa-expects-iowa-lead-detonation-results-138473400"
+    }
+   ],
+   "time": "2026-11-27T03:22:12+00:00"
   },
   {
    "id": "us-2",
    "topic": "us",
-   "headline": "FedEx airplane overruns runway at Miami airport, temporarily closing all but 1 runway",
-   "summary": "The plane overran a runway after landing at Miami International Airport on Wednesday, and stopped near a fence. FedEx said there were no injuries.",
+   "headline": "Pregnant inmate escapes prison transport vehicle in New Mexico",
+   "summary": "Rebecca Taylor, 26, took control of the SUV in a Whataburger parking lot while being returned from a prenatal appointment, authorities said. A search is underway.",
    "why": "",
    "sources": [
     {
      "name": "ABC News",
-     "url": "https://abcnews.com/US/wireStory/fedex-airplane-overruns-runway-miami-airport-temporarily-closing-138460484"
+     "url": "https://abcnews.com/US/wireStory/new-mexico-authorities-search-pregnant-woman-escaped-prison-138473645"
     },
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/26/us/fedex-plane-miami-airport.html"
+     "url": "https://www.nytimes.com/2026/11/26/us/pregnant-inmate-escapes-new-mexico.html"
     },
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss"
+     "url": "https://www.bbc.co.uk/news/articles/c9m2jke85xzxo?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-26T10:50:13+00:00"
+   "time": "2026-11-27T05:06:13+00:00"
   },
   {
-   "id": "politics-4",
+   "id": "politics-1",
    "topic": "politics",
-   "headline": "Judge temporarily blocks FCC review of ABC's broadcast licenses",
-   "summary": "A federal judge stopped the FCC from moving ahead with an early review of ABC's licenses. The network argues the Trump administration is trying to punish speech it dislikes. The stations air in six of the largest U.S. markets.",
-   "why": "The ruling touches on government pressure over news coverage.",
+   "headline": "Trump alleges 'fake' economic numbers before midterms, without evidence",
+   "summary": "In a Thanksgiving post, Trump demanded an investigation into economic figures released before the midterms, after voters rejected Republicans. He offered no evidence.",
+   "why": "Questions the credibility of federal data after a major election.",
    "sources": [
     {
      "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/judge-temporarily-blocks-fcc-from-reviewing-abc-licenses/"
+     "url": "https://www.cbsnews.com/news/trump-thanksgiving-commerce-department-gdp-investigation/"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/us-news/2026/nov/26/trump-fake-economic-figures-midterms"
     }
    ],
-   "time": "2026-11-26T03:00:27+00:00"
+   "time": "2026-11-27T00:39:06+00:00"
+  },
+  {
+   "id": "politics-2",
+   "topic": "politics",
+   "headline": "Trump's immigration changes have all but ended asylum",
+   "summary": "An asylum ban, mass firings and new legal maneuvers have effectively ended asylum. The Supreme Court will soon consider whether some changes deny people due process.",
+   "why": "A pending Supreme Court ruling could reshape U.S. asylum access.",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court"
+    }
+   ],
+   "time": "2026-11-27T10:00:00+00:00"
   },
   {
    "id": "politics-12",
    "topic": "politics",
-   "headline": "CBS finds U.S.-based firms giving China access to advanced Nvidia chips",
-   "summary": "A CBS News investigation found at least two California-based Nvidia customers have Chinese ownership, giving China potential access to Nvidia's most advanced technology. It comes as Congress scrutinizes Huang's reinstatement.",
-   "why": "It raises national security questions about chip export controls.",
-   "sources": [
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/nvidia-china-ai-chips-computing-sales/"
-    }
-   ],
-   "time": "2026-11-25T23:10:00+00:00"
-  },
-  {
-   "id": "politics-6",
-   "topic": "politics",
-   "headline": "Court lets Puerto Rico fire company running its power grid",
-   "summary": "A court ruling nullifies LUMA Energy's contract to run the island's grid, five years after it took over. The government has a year to find a new operator.",
-   "why": "Puerto Rico's troubled power grid affects the whole island.",
-   "sources": [
-    {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/26/nx-s1-6054139/court-rules-puerto-ricos-governor-can-fire-company-that-runs-troubled-power-grid"
-    }
-   ],
-   "time": "2026-11-26T09:44:20+00:00"
-  },
-  {
-   "id": "world-2",
-   "topic": "world",
-   "headline": "Fuel tanker crash causes deadly fire on Cairo highway",
-   "summary": "A fuel tanker crash ignited a huge fire on Cairo's ring road, killing at least 31 people and injuring at least 21, Egyptian authorities said.",
+   "headline": "Texas Republicans and DOJ agree border barrier stays for 30 years",
+   "summary": "Just before Democrats take over state government, the Trump administration and outgoing Texas Republican officials signed a settlement barring removal of the wire for 30 years.",
    "why": "",
    "sources": [
-    {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/world/2026/nov/25/people-killed-fuel-tanker-crash-ignites-large-fire-cairo-highway"
-    },
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cqy7rn30v314o?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "time": "2026-11-26T00:39:10+00:00"
-  },
-  {
-   "id": "world-1",
-   "topic": "world",
-   "headline": "Army to detonate tons of lead azide after delays. And, Abrego Garcia leaves U.S.",
-   "summary": "Authorities have evacuated a 5-mile radius to prepare to dispose of thousands of pounds of lead azide. And, after a nearly two-year legal battle, Kilmar Abrego Garcia's has voluntarily left the U.S.",
-   "why": "",
-   "sources": [
-    {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang"
-    },
-    {
-     "name": "CBS News",
-     "url": "https://www.cbsnews.com/news/kilmar-abrego-garcia-leaving-us-europe/"
-    },
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/24/us/politics/abrego-garcia-leave-deportation.html"
+     "url": "https://www.nytimes.com/2026/11/25/us/politics/texas-border-legal-settlement-trump.html"
     }
    ],
-   "time": "2026-11-25T20:14:00+00:00"
+   "time": "2026-11-26T03:42:51+00:00"
   },
   {
    "id": "world-3",
    "topic": "world",
-   "headline": "Net Migration to U.K. Falls to Lowest Level Since 1997, Excluding Pandemic",
-   "summary": "Net migration fell in the year ending June 2026, according to the Office for National Statistics The Liberal Democrats are saying the UK needs a proper plan for immigration.",
-   "why": "",
+   "headline": "Two Italians killed in Iranian drone attack on Kuwait",
+   "summary": "Officials say the deaths followed a series of strikes on Gulf states hosting U.S. military facilities. Iran denies responsibility, and talks to end the war continue to stall.",
+   "why": "Shows the regional war is widening while diplomacy stalls.",
    "sources": [
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/26/world/europe/uk-net-migration-data.html"
+     "url": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-26T21:17:53+00:00"
+  },
+  {
+   "id": "world-6",
+   "topic": "world",
+   "headline": "Zelensky criticizes 'strange' Trump-Putin friendship",
+   "summary": "In a BBC interview, Ukraine's president voiced frustration with the U.S., saying it is not pushing Russia hard enough in peace talks.",
+   "why": "Signals strain in U.S.-Ukraine ties as peace talks continue.",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-27T09:07:48+00:00"
+  },
+  {
+   "id": "world-2",
+   "topic": "world",
+   "headline": "Erin Patterson seeks High Court appeal over mushroom murders",
+   "summary": "Patterson, 52, applied for leave to appeal to Australia's highest court after a failed bid last month to overturn her triple murder conviction.",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/ck053e1d3ly1o?at_medium=RSS&at_campaign=rss"
     },
     {
      "name": "The Guardian",
-     "url": "https://www.theguardian.com/politics/live/2026/nov/26/uk-eu-food-deal-farage-penalty-compensation-reform-net-migration-latest-news-updates"
+     "url": "https://www.theguardian.com/australia-news/2026/nov/27/erin-patterson-launches-high-court-appeal-over-mushroom-convictions-ntwnfb"
     }
    ],
-   "time": "2026-11-26T11:00:45+00:00"
+   "time": "2026-11-27T05:54:38+00:00"
   },
   {
    "id": "tech-1",
    "topic": "tech",
-   "headline": "Musk's plan to send a million SpaceX data satellites into space approved",
-   "summary": "The Trump administration has given SpaceX the green light to deploy 1 million satellites that it said would create data centers in space",
-   "why": "",
-   "sources": [
-    {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "name": "Ars Technica",
-     "url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/"
-    },
-    {
-     "name": "ABC News",
-     "url": "https://abcnews.com/US/wireStory/fcc-spacex-deploy-1-million-satellites-data-centers-138455857"
-    }
-   ],
-   "time": "2026-11-26T09:27:44+00:00"
-  },
-  {
-   "id": "tech-2",
-   "topic": "tech",
-   "headline": "The Verge’s 2026 holiday gift guide for travelers",
-   "summary": "Everyone has that traveler in their life. That person who feels more at home on a 14-hour train ride than a quiet Sunday on the couch. They speak multiple languages, have a gut like a goat, and make friends wherever they go.",
+   "headline": "The absolute best Black Friday deals we’ve found (so far)",
+   "summary": "This year’s Black Friday deals have launched in waves over the past several weeks, but now the floodgates have officially opened.",
    "why": "",
    "sources": [
     {
      "name": "The Verge",
-     "url": "https://www.theverge.com/gadgets/1021917/best-gifts-for-travelers-2026"
+     "url": "https://www.theverge.com/gadgets/1039190/best-black-friday-2026-deals-tech-gadgets-gift-ideas"
     },
     {
-     "name": "San Antonio River Authority",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWXptVE5vcHBTTDBFcjFCTzQ5a2o4cE1zakpBcE5ISkxZNEJJQkxEOU5PYTV4bmMyTGhwSXJFSERHaDV1Zmk4MDhaUE1la01DU3JFZVpiNkMtNVZkNFpzV0JFdHFTNFVadFlMS25qVWZINnd3ZmtDc1g4YzVCd2Z2NEdYVGVPRGRJMEdkNUlnMGFwNmVNWGtqRXc5cFl6Tl9VVkJDbg?oc=5"
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/27/nx-s1-6054055/the-strategy-behind-those-black-friday-deals"
+    },
+    {
+     "name": "MySA",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWllOd0t4NFJ4eXREM1c4T2xnbHgwSkVzTHcwWEZPTUR4eVhkVHJHRnVyOVI4d19lUGxTODhTQUY0NVlhUTdncVhfb0VfMDNiMEdyZnJINENZLTZwT0VpdS1vWWYwZVp1S00zZjJrMkJUcEFITzNVNmcwaFpsdGxvQk9KVDlWaW1VNmdncWVNWjBiVE5fR2pQVm13dFdUcjVCeHpGOXo5WUJfenc?oc=5"
     }
    ],
-   "time": "2026-11-25T22:14:12+00:00"
+   "time": "2026-11-27T10:34:19+00:00"
+  },
+  {
+   "id": "tech-2",
+   "topic": "tech",
+   "headline": "Why is there a shortage of 'wizard' elevator mechanics?",
+   "summary": "The pay is good and there's lots of work, so what's behind the shortage of elevator mechanics?",
+   "why": "",
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c52e8k19y94mo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "time": "2026-11-27T00:02:19+00:00"
   },
   {
    "id": "tech-3",
    "topic": "tech",
-   "headline": "A Man in Denver Has Been Throwing Eggs at Waymo Vehicles",
-   "summary": "The man, who drove a Toyota Corolla from a fleet leased to Lyft drivers, used orange cones to trap the self-driving vehicles before pelting them with eggs, the police said. No charges have been filed.",
+   "headline": "Asia made a big AI bet on Nvidia. What happens now?",
+   "summary": "Asian stocks have been on a rollercoaster ride after Jensen Huang's shock return as Nvidia CEO.",
    "why": "",
    "sources": [
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/25/us/waymo-denver-egg-throwing.html"
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cqevr4lnd1nxo?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-25T21:36:34+00:00"
+   "time": "2026-11-26T23:08:12+00:00"
   },
   {
    "id": "science-1",
    "topic": "science",
-   "headline": "Europe’s Hera Mission Releases Close-Up Images of the Asteroid Hit by a NASA Spacecraft",
-   "summary": "A European mission called Hera has just revealed the first close-up look at the aftermath of NASA’s audacious planetary defense test.",
+   "headline": "Watch: Roofs torn off and streets under water as severe weather hits US",
+   "summary": "A Thanksgiving nor'easter brought powerful winds that knocked down a tree, crushing a home in Maryland. Major floods hit Virginia and New Jersey and the California coast were hit by king tides.",
    "why": "",
    "sources": [
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/25/science/hera-nasa-photos-dart-asteroid.html"
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/videos/cq808d704m22o?at_medium=RSS&at_campaign=rss"
     },
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/videos/cwe9kxpgz2kpo?at_medium=RSS&at_campaign=rss"
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/video/severe-weather-thanksgiving-hits-us-california-new-york/"
     }
    ],
-   "time": "2026-11-25T20:11:46+00:00"
+   "time": "2026-11-27T00:27:00+00:00"
   },
   {
    "id": "science-2",
    "topic": "science",
-   "headline": "Public health specialist discusses the aftermath of the munitions detonation in Iowa",
-   "summary": "NPR's A Martinez speaks with public health specialist Will Sander of the University of Illinois Urbana-Champaign about the aftermath of the Iowa munitions detonation.",
+   "headline": "Floating nature islands installed in parks as Glasgow Games legacy",
+   "summary": "The islands, being planted in five Glasgow parks, are designed to encourage wildlife and help clean the water.",
    "why": "",
    "sources": [
     {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/26/nx-s1-6053950/public-health-specialist-discusses-the-aftermath-of-the-munitions-detonation-in-iowa"
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cwe9kxdm1k4lo?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-26T09:42:38+00:00"
+   "time": "2026-11-27T06:19:13+00:00"
   },
   {
    "id": "science-3",
    "topic": "science",
-   "headline": "What UK season changes mean for you",
-   "summary": "Frosts will become less common and hot summer days more frequent in the UK, the Met Office says.",
+   "headline": "California voters pass billionaire's measure to bankroll his own medical lab",
+   "summary": "California voters passed a ballot measure backed by a billionaire to fund $8.4 billion in immunology research. Half the funding will go to the research group funded by the same billionaire.",
    "why": "",
    "sources": [
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/weather/videos/c804wd3wwqpyo?at_medium=RSS&at_campaign=rss"
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/27/nx-s1-6052399/california-voters-pass-billionaires-measure-to-bankroll-his-own-medical-lab"
     }
    ],
-   "time": "2026-11-26T00:14:16+00:00"
+   "time": "2026-11-27T09:45:53+00:00"
   },
   {
    "id": "business-1",
    "topic": "business",
-   "headline": "Car finance compensation payments explained",
-   "summary": "FCA also tells Barclays to stop making settlement offers while it works through data problems Business live – latest updates The financial regulator has admitted that it has miscalculated part of the compensation scheme for victims of the…",
+   "headline": "Can luxury save Macy's?",
+   "summary": "This week's celebration of Macy's 100th Thanksgiving parade finds the department store at a turning point. After years of losing sales, the retailer is reimagining itself — as a higher-end destination.",
    "why": "",
    "sources": [
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/c2l9vvj097lo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/business/2026/nov/26/uk-regulator-admits-error-in-calculating-car-finance-compensation-payments"
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/27/nx-s1-6026486/macys-tries-to-reinvent-with-luxury"
     }
    ],
-   "time": "2026-11-26T09:39:50+00:00"
+   "time": "2026-11-27T10:01:00+00:00"
   },
   {
    "id": "business-2",
    "topic": "business",
-   "headline": "U.S. Judge rules FCC violated ABC's free speech rights to please Trump",
-   "summary": "A federal judge has blocked the Trump administration from moving to review all local broadcast licenses held by ABC. The stations air in six of the largest U.S. markets.",
+   "headline": "Faisal Islam: Why Trump's new tariffs are less of a threat",
+   "summary": "Other countries have rerouted trade in response to his first tariff salvo, now they are looking beyond Trump's tenure.",
    "why": "",
    "sources": [
     {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/26/nx-s1-6000576/fcc-disney-abc-first-amendment-trump-brendan-carr"
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss"
     }
    ],
-   "time": "2026-11-26T05:23:18+00:00"
+   "time": "2026-11-26T19:55:58+00:00"
   },
   {
    "id": "business-3",
    "topic": "business",
-   "headline": "New UK-EU treaty has 10-year termination clause",
-   "summary": "Text of the treaties will be published this afternoon, alongside legislation designed to enact the bulk of the deal.",
+   "headline": "Holiday Deals Are Tempting. Here’s How to Avoid Buyer’s Remorse.",
+   "summary": "Some deals are too good to be true. Experts suggest doing the math, making lists and avoiding using “buy now, pay later” platforms to make purchases.",
    "why": "",
    "sources": [
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&at_campaign=rss"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/27/business/holiday-shopping-deals-spending.html"
     }
    ],
-   "time": "2026-11-26T09:59:14+00:00"
+   "time": "2026-11-27T10:03:51+00:00"
   },
   {
    "id": "sports-1",
    "topic": "sports",
-   "headline": "Knee surgery rules Sinner out of Australian Open",
-   "summary": "Sinner, a two-time champion at Melbourne Park, has not played a match since winning the 2026 Wimbledon title in July.",
+   "headline": "What happens now for Bayern Munich and Musiala?",
+   "summary": "Bayern Munich's Jamal Musiala might never return to his previous level and will deal with a medical condition for the rest of his life. What happens next?",
    "why": "",
    "sources": [
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/sport/tennis/articles/c6x29q88r9v5o?at_medium=RSS&at_campaign=rss"
+     "url": "https://www.bbc.co.uk/sport/football/articles/cmly5j49ypzqo?at_medium=RSS&at_campaign=rss"
     },
     {
-     "name": "Al Jazeera",
-     "url": "https://www.aljazeera.com/sports/2026/11/26/jannik-sinner-australian-open-2027-knee-injury-surgery-tennis?traffic_source=rss"
+     "name": "SB Nation",
+     "url": "https://sports.yahoo.com/soccer/articles/bayern-munich-player-needs-step-110000277.html"
     }
    ],
-   "time": "2026-11-26T07:19:13+00:00"
+   "time": "2026-11-27T11:00:00+00:00"
   },
   {
    "id": "sports-2",
    "topic": "sports",
-   "headline": "More ref frustration as Pochettino's chaotic start at Man Utd continues",
-   "summary": "What are the findings for Mauricio Pochettino after his first two matches as Manchester United manager?",
+   "headline": "Eight-time champion Marquez to retire from MotoGP",
+   "summary": "VALENCIA, Spain (AP) — Eight-time MotoGP champion Marc Marquez is retiring from the sport. The Spanish rider won his latest championship last week and is competing at this weekend's Valencia Grand Prix, which will be his final race.",
    "why": "",
    "sources": [
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/sport/football/articles/c6vg24l724l4o?at_medium=RSS&at_campaign=rss"
+     "url": "https://www.bbc.co.uk/sport/motorsport/articles/c539gd3r3mk2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "name": "Associated Press",
+     "url": "https://sports.yahoo.com/general/articles/motogp-champion-marc-marquez-announces-104041353.html"
     }
    ],
-   "time": "2026-11-26T00:24:48+00:00"
+   "time": "2026-11-27T10:49:26+00:00"
   },
   {
    "id": "sports-3",
    "topic": "sports",
-   "headline": "Steelers legend reveals how he tricked the NFL during a 2004 brawl",
-   "summary": "Former Pittsburgh Steelers linebacker James Farrior shares how he avoided NFL discipline after a 2004 brawl.",
+   "headline": "Former Steelers coach Mike Tomlin on Aaron Rodgers-Mike McCarthy saga: 'It's a dumpster fire'",
+   "summary": "Aaron Rodgers is no longer the Steelers quarterback. Here's a breakdown of all the drama following his explosive comments about Mike McCarthy.",
    "why": "",
    "sources": [
     {
-     "name": "Steelers Wire",
-     "url": "https://sports.yahoo.com/nfl/articles/steelers-legend-reveals-tricked-nfl-110439761.html"
+     "name": "CBS Sports",
+     "url": "https://www.cbssports.com/nfl/news/former-steelers-coach-mike-tomlin-aaron-rodgers-mike-mccarthy-saga-dumpster-fire/"
+    },
+    {
+     "name": "USA TODAY Sports",
+     "url": "https://sports.yahoo.com/nfl/articles/happened-aaron-rodgers-steelers-benching-104723552.html"
     }
    ],
-   "time": "2026-11-26T11:04:39+00:00"
+   "time": "2026-11-27T10:47:23+00:00"
   },
   {
    "id": "culture-1",
    "topic": "culture",
-   "headline": "Duran Duran guitarist Andy Taylor dies aged 65",
-   "summary": "Taylor revealed his battle with Stage 4 metastatic prostate cancer in 2022. He was the guitarist of the 1980s English band Duran Duran, whose pop hits included \"Hungry Like the Wolf\" and \"Rio\".",
+   "headline": "Gérard Depardieu to stand trial for alleged rape of actress in 2018, court rules",
+   "summary": "The actress Charlotte Arnould has accused the French movie star of raping her in 2018. He has denied any wrongdoing in the case.",
    "why": "",
    "sources": [
     {
      "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cmp3vk6vr44po?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "name": "NPR",
-     "url": "https://www.npr.org/2026/11/26/g-s1-155934/andy-taylor-duran-duran-obit"
+     "url": "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o?at_medium=RSS&at_campaign=rss"
     },
     {
      "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/25/arts/music/andy-taylor-duran-duran-dead.html"
+     "url": "https://www.nytimes.com/2026/11/26/world/europe/france-depardieu-rape-trial.html"
     }
    ],
-   "time": "2026-11-26T08:53:13+00:00"
+   "time": "2026-11-26T14:44:26+00:00"
   },
   {
    "id": "culture-2",
    "topic": "culture",
-   "headline": "Angelina Jolie and Brad Pitt Settle Lawsuit That Aired Abuse Allegations",
-   "summary": "Pitt filed the lawsuit against Jolie in 2022 after she sold her stake in Château Miraval, saying she broke their agreement not to sell their interests Brad Pitt and Angelina Jolie have settled a years-long legal battle over their French…",
+   "headline": "Angelina Jolie and Brad Pitt settle legal battle over French winery",
+   "summary": "The battle over a winery disclosed details about what Ms. Jolie said was abusive behavior by Mr. Pitt toward her and their children in 2016.",
    "why": "",
    "sources": [
-    {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/25/movies/angelina-jolie-brad-pitt-settlement-winery-lawsuit.html"
-    },
     {
      "name": "BBC",
      "url": "https://www.bbc.co.uk/news/articles/cmvg2989wv74o?at_medium=RSS&at_campaign=rss"
     },
     {
-     "name": "The Guardian",
-     "url": "https://www.theguardian.com/film/2026/nov/25/brad-pitt-angelina-jolie-settle-french-winery-lawsuit"
+     "name": "New York Times",
+     "url": "https://www.nytimes.com/2026/11/25/movies/angelina-jolie-brad-pitt-settlement-winery-lawsuit.html"
     }
    ],
    "time": "2026-11-25T23:52:14+00:00"
@@ -619,86 +595,78 @@
   {
    "id": "culture-3",
    "topic": "culture",
-   "headline": "Gordon Ramsay to host Top Gear as show revived after Flintoff crash",
-   "summary": "The British car show “Top Gear” paused production three years ago and is returning with a new host in 2028, the BBC said.",
+   "headline": "Black and tan coonhound Rocker is top dog at the 2026 National Dog Show",
+   "summary": "Around 2,000 dogs competed in the latest edition of the National Dog Show, a beloved Thanksgiving tradition hosted by the Kennel Club of Philadelphia and broadcast by NBC.",
    "why": "",
    "sources": [
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/cjr4gw100d52o?at_medium=RSS&at_campaign=rss"
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/26/nx-s1-6054881/2026-national-dog-show-coonhound-rocker"
     },
     {
-     "name": "New York Times",
-     "url": "https://www.nytimes.com/2026/11/25/arts/television/gordon-ramsay-top-gear-revival.html"
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/2026-national-dog-show-winner-rocker-coonhound/"
     }
    ],
-   "time": "2026-11-25T22:23:18+00:00"
+   "time": "2026-11-26T22:53:00+00:00"
   }
  ],
  "weather": {
   "location": "San Antonio, TX",
   "today": {
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "emoji": "☁️",
    "desc": "Cloudy",
-   "summary": "Cloudy today, with a high of 61° and a low of 36°. No rain expected. Big swing from morning to afternoon, so dress in layers.",
-   "high": 61,
-   "low": 36,
+   "summary": "Cloudy today, with a high of 68° and a low of 40°. No rain expected. Big swing from morning to afternoon, so dress in layers.",
+   "high": 68,
+   "low": 40,
    "rain": 0,
-   "feels_high": 54,
-   "feels_low": 29,
+   "feels_high": 62,
+   "feels_low": 35,
    "precip_in": 0,
-   "wind": 10,
-   "gust": 21,
+   "wind": 9,
+   "gust": 15,
    "uv": 5,
    "sunrise": "7:07 AM",
    "sunset": "5:35 PM",
    "slots": [
     {
      "label": "Morning",
-     "temp": 38,
-     "emoji": "☀️",
-     "desc": "Clear",
+     "temp": 42,
+     "emoji": "☁️",
+     "desc": "Cloudy",
      "rain": 0
     },
     {
      "label": "Midday",
-     "temp": 57,
+     "temp": 64,
      "emoji": "☀️",
      "desc": "Clear",
      "rain": 0
     },
     {
      "label": "Afternoon",
-     "temp": 61,
-     "emoji": "☁️",
-     "desc": "Cloudy",
+     "temp": 67,
+     "emoji": "☀️",
+     "desc": "Clear",
      "rain": 0
     },
     {
      "label": "Evening",
-     "temp": 51,
-     "emoji": "☁️",
-     "desc": "Cloudy",
+     "temp": 54,
+     "emoji": "🌙",
+     "desc": "Clear",
      "rain": 0
     }
    ]
   },
   "days": [
    {
-    "date": "2026-11-27",
-    "emoji": "☁️",
-    "desc": "Cloudy",
-    "high": 65,
-    "low": 39,
-    "rain": 0
-   },
-   {
     "date": "2026-11-28",
-    "emoji": "☁️",
-    "desc": "Cloudy",
-    "high": 73,
-    "low": 48,
+    "emoji": "☀️",
+    "desc": "Clear",
+    "high": 75,
+    "low": 42,
     "rain": 0
    },
    {
@@ -706,15 +674,15 @@
     "emoji": "☁️",
     "desc": "Cloudy",
     "high": 64,
-    "low": 50,
+    "low": 51,
     "rain": 0
    },
    {
     "date": "2026-11-30",
-    "emoji": "☀️",
-    "desc": "Clear",
+    "emoji": "☁️",
+    "desc": "Cloudy",
     "high": 64,
-    "low": 45,
+    "low": 46,
     "rain": 0
    },
    {
@@ -722,24 +690,32 @@
     "emoji": "☁️",
     "desc": "Cloudy",
     "high": 70,
-    "low": 47,
+    "low": 48,
     "rain": 0
    },
    {
     "date": "2026-12-02",
-    "emoji": "🌫️",
-    "desc": "Foggy",
-    "high": 78,
-    "low": 59,
-    "rain": 1
+    "emoji": "☁️",
+    "desc": "Cloudy",
+    "high": 76,
+    "low": 57,
+    "rain": 7
    },
    {
     "date": "2026-12-03",
     "emoji": "🌦️",
+    "desc": "Drizzle",
+    "high": 72,
+    "low": 64,
+    "rain": 24
+   },
+   {
+    "date": "2026-12-04",
+    "emoji": "🌦️",
     "desc": "Light drizzle",
-    "high": 75,
-    "low": 60,
-    "rain": 5
+    "high": 80,
+    "low": 61,
+    "rain": 9
    }
   ]
  }

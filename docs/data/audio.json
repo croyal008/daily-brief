@@ -1,8 +1,8 @@
 {
- "date": "2026-11-26",
- "generated_at": "2026-11-26T11:12:16+00:00",
- "url": "https://cdn.jsdelivr.net/gh/croyal008/daily-brief@552fcd4173002eb90a5e14a824024c9d406fdb19/brief-20261126-1114.mp3",
- "duration": 339.1,
+ "date": "2026-11-27",
+ "generated_at": "2026-11-27T11:08:21+00:00",
+ "url": "https://cdn.jsdelivr.net/gh/croyal008/daily-brief@e90e8a0aa78c9738c2f829848ca0e27093a0c9bf/brief-20261127-1110.mp3",
+ "duration": 386.0,
  "voice": "Azure en-US-Phoebe:DragonHDOmniLatestNeural",
  "style": "host",
  "chapters": [
@@ -11,85 +11,92 @@
    "label": "Intro",
    "sid": null,
    "topic": null,
-   "text": "Happy Thanksgiving. It's Thursday, November 26th, and this is your short, slightly overfed rundown of what's going on. Plenty to get through before the turkey does its work."
+   "text": "Happy Friday, the day after Thanksgiving, so you're either shopping, recovering, or hiding from both. Here's what's worth knowing, starting with a very busy sports day."
   },
   {
-   "t": 11.2,
+   "t": 9.5,
    "label": "🌤️ Weather",
    "sid": null,
    "topic": "weather",
-   "text": "San Antonio is cloudy and dry today, high of 61, low of 36. It starts chilly at 38, climbs to 57 by midday, then drops to 51 tonight, so layers are your friend. Gusts hit about 21, and it feels like 29 out there early. Friday's 65, Saturday's 73, and no rain until a drizzly Thursday."
+   "text": "Cloudy and dry today, high of 68, low of 40, zero percent chance of rain. It starts at 42 this morning, climbs to the mid sixties by afternoon, then drops to 54 tonight. It feels like 35 out the door, so layer up. Saturday is clear and 75, and drizzle shows up Thursday."
   },
   {
-   "t": 32.4,
+   "t": 27.45,
    "label": "🏆 My Teams",
-   "sid": "team-san-antonio-spurs",
+   "sid": "team-dallas-cowboys",
    "topic": "myteams",
-   "text": "The Spurs dropped one in Portland last night, 116 to 111, their first road loss of the season. Victor Wembanyama did everything he could, 44 points and 16 rebounds, and it still wasn't enough, which feels rude. They're 15 and 4, so nobody's panicking. The Lakers come to San Antonio Friday, and Austin Reaves may play."
+   "text": "The Cowboys lost to the Eagles thirty-nine to thirty-eight. One point. They're five and seven now. Javonte Williams did his part with 29 carries, 101 yards and two touchdowns, and it still wasn't enough. Cowboys fans know this feeling, and it never gets any more fun."
   },
   {
-   "t": 51.95,
+   "t": 44.25,
    "label": "🏆 My Teams",
    "sid": null,
    "topic": "myteams",
-   "text": "And Cowboys fans, your holiday main course kicks off at 3:30 this afternoon on Fox against the Eagles. Dallas is 5 and 6, Philly is 3 and 7, so yes, it's Thanksgiving and we're all hoping for a good meal and a good second half."
+   "text": "Two games for you today. UTSA, nine and two, hosts Tulsa, seven and four, at 11 this morning on ESPN. Tonight the Spurs, fifteen and four, host the Lakers, fifteen and three, at 8:30 on Prime Video. And there's good news: Dylan Harper got a positive injury update and could be back. Two teams with one loss between them in the Spurs game, so this one's worth staying up for."
   },
   {
-   "t": 65.45,
-   "label": "🇺🇸 U.S.",
-   "sid": "us-1",
-   "topic": "us",
-   "text": "New York's Macy's Thanksgiving Day Parade has been postponed for the first time ever, and it's the hundredth one, so that's some timing. A powerful coastal storm is headed in with gusts up to 65 miles an hour and possible flash flooding. Now picture giant balloons in that. The new date is Saturday at 8:30 in the morning. Mayor Zohran Mamdani said the city has to plan for every possibility, and Macy's said safety comes first. Honestly, a parade with leftovers on the side sounds like a pretty good upgrade for anyone watching from the couch.  The first postponement in a hundred years is a big deal, but nobody wants a runaway balloon on Sixth Avenue."
+   "t": 64.7,
+   "label": "🏈 Sports",
+   "sid": "sports-3",
+   "topic": "sports",
+   "text": "The Steelers have had a rough week, and by rough I mean Aaron Rodgers is gone. Late Tuesday they benched him for Mason Rudolph. Wednesday he went on the Pat McAfee Show and unloaded on head coach Mike McCarthy, saying he falls asleep in meetings, doesn't prepare, and doesn't connect with players. The last straw, according to Rodgers, was McCarthy saying one, two, three, Packers at halftime of the loss to the Eagles. McCarthy last coached Green Bay in 2018, and he admitted the slip. It's also the team Rodgers spent most of his career with, so he probably noticed. Pittsburgh then released him. Mike Tomlin, who coached Rodgers last year and is now an NBC analyst, said he felt general sadness at the idea this might be the end of a legendary career. The Steelers play Denver today with Rudolph at quarterback."
   },
   {
-   "t": 100.45,
-   "label": "🎬 Culture & Entertainment",
-   "sid": "culture-2",
-   "topic": "culture",
-   "text": "Brad Pitt and Angelina Jolie have finally settled their fight over Château Miraval, the French vineyard where they got married in 2014. It started in 2022, when Pitt sued after Jolie sold her stake to a company controlled by Russian oligarch Yuri Shefler. He said they'd agreed not to sell without each other's permission. She countersued, accusing him of attacking her and their children on a 2016 private flight, which led to her filing for divorce. Both cases are now resolved, and their reps say it was settled for the family's sake with no further comment. They also added that anything attributed to sources isn't coming from either of them, which is a bold claim about the entire celebrity press ecosystem."
+   "t": 108.35,
+   "label": "🏈 Sports",
+   "sid": "sports-2",
+   "topic": "sports",
+   "text": "Marc Marquez is retiring from MotoGP, and he picked a great time to do it. Last weekend in Portugal he won his eighth world title, tying the legend Giacomo Agostini and going one past Valentino Rossi. He's 33. He won his first title in 2013 and is still the only rider to win it in his rookie year. He took six with Honda, then moved to Ducati and won it again the last two seasons. He'd even extended his contract through 2028 back in June. Instead, Sunday's season finale in Valencia will be his last race. His farewell message was pretty simple: thanks for being part of the journey, hope you enjoyed it as much as I did."
   },
   {
-   "t": 137.55,
+   "t": 144.95,
    "label": "🎬 Culture & Entertainment",
    "sid": "culture-3",
    "topic": "culture",
-   "text": "Gordon Ramsay is the new face of Top Gear, which has been off the air since 2022, when Andrew Flintoff was seriously injured in a crash at the test track. The BBC apologized and paid him compensation. Filming starts next year, with the return set for 2028, and Ramsay's co-hosts haven't been named yet. He says he grew up near Silverstone and used to sneak in over the fences to watch races. Of all the people you could hand a car show to, he's the one most likely to tell a Lamborghini it's raw. He promises the show will have just the right amount of chaos, which, given its history, is a phrase I'd keep an eye on."
+   "text": "The National Dog Show is the thing your family has on in the background every Thanksgiving, and this year's winner is a black and tan coonhound named Rocker. He beat six other group winners out of roughly 2,000 dogs. It was his fifteenth best in show, so he's done this before. The judge, Lorraine Bisso, praised his very masculine head, his beautiful feet, and a lovely forechest, which is a sentence that would get you thrown out of most bars. She explained that the forechest matters because he's a hunting hound who can run 25 miles. Rocker's handler, Mandy Clevenger, said she didn't expect the win. He's owned by Traci Mitchell of Bedford, Iowa, and Westminster is next."
   },
   {
-   "t": 172.75,
+   "t": 179.2,
+   "label": "🎬 Culture & Entertainment",
+   "sid": "culture-2",
+   "topic": "culture",
+   "text": "Brad Pitt and Angelina Jolie have settled their fight over a French winery. It's Château Miraval, which they bought a controlling stake in back in 2008 and where they got married in 2014. Pitt sued after Jolie sold her share to a company controlled by Russian oligarch Yuri Shefler without his permission, which he said left him partnered with a stranger with poisonous associations. She countersued, accusing Pitt of attacking her and their children on a 2016 flight, which he's denied. Her filing was the one that exposed those allegations. Both suits are now resolved. Their joint statement says they settled in the best interests of the family and won't comment, and it adds that quotes from sources aren't coming from either of them. The lawsuit has outlasted several vintages, and neither side poured out anything new today."
+  },
+  {
+   "t": 220.95,
+   "label": "🇺🇸 U.S.",
+   "sid": "us-2",
+   "topic": "us",
+   "text": "A pregnant inmate in New Mexico escaped Wednesday, and the details are something. Rebecca Taylor, 26, is serving six years for a string of vehicle thefts. She was being driven back from a prenatal appointment in Albuquerque to the prison in Grants when the three officers stopped at a Whataburger. She wasn't restrained because of the pregnancy, so she climbed from the back seat into the driver's seat and drove off while an officer stood nearby. So a woman convicted of stealing vehicles was left alone in a vehicle. A second inmate got out and is still in custody. Police found the SUV three miles away about an hour later, along with her jumpsuit and a department cellphone, but no Taylor. She has ties to Houston and Albuquerque. The department is investigating how this happened."
+  },
+  {
+   "t": 259.8,
+   "label": "🇺🇸 U.S.",
+   "sid": "us-3",
+   "topic": "us",
+   "text": "In Iowa, the Army blew up nearly five tons of lead azide Wednesday at the Iowa Army Ammunition Plant in Middletown. That's an explosive used in ammunition since World War One, and this stockpile had been rotting in storage for twenty years. The Army said it was safer to detonate it than risk it going off on its own. Locals and environmental groups tried to stop it, worried about a toxic lead plume over farms and homes. The EPA says it took over 1,500 samples before and over 1,000 after, including at homes, schools, daycares and the Mississippi River watershed. So far, no airborne lead has been detected. The first lab results could come as early as today, and some neighbors are still not relaxed."
+  },
+  {
+   "t": 298.35,
    "label": "🌍 World",
-   "sid": "world-1",
+   "sid": "world-6",
    "topic": "world",
-   "text": "Here's a good way to deal with something that might explode on its own: explode it yourself, on schedule. This morning the Army is detonating thousands of pounds of lead azide at the Iowa Army Ammunition Plant in Middletown. It's an explosive used since World War One that was moved to a bunker there 17 years ago, and it crystallized and became unstable. Everyone within five miles has been evacuated, and anyone within twenty miles is told to stay indoors. Also, Kilmar Abrego Garcia, the Salvadoran immigrant who was mistakenly deported in 2025, has left the U.S. for Spain. His lawyer calls it a temporary departure and says he has options to return. And Nvidia's reinstated CEO Jensen Huang reportedly apologized to staff for his past behavior, after stepping down over reports of affairs."
+   "text": "Volodymyr Zelensky sat down with the BBC in Kyiv and was blunt about Washington. He said it's strange that Donald Trump calls Vladimir Putin my friend and posted a photo embracing him. He called Putin an aggressor and a killer, and said a person like that can't be a friend, comparing it to being friends with Hitler in World War Two. He also said delays in delivering anti-ballistic missiles are costing Ukrainian lives. The latest talks in Abu Dhabi went nowhere. His summary was the more we know, the more problems. Trump says he pushed Putin at their summit in China last week and a deal is a strong possibility. Russia, meanwhile, appears to have gone back to its hardline starting positions on everything."
   },
   {
-   "t": 216.0,
-   "label": "🏛️ Politics",
-   "sid": "politics-4",
-   "topic": "politics",
-   "text": "A federal judge just blocked the FCC, the Federal Communications Commission, from going ahead with an early review of ABC's broadcast licenses. Judge Loren AliKhan wrote a 45-page ruling saying ABC is likely to prove the review was retaliation. She cited at least 11 times President Trump publicly urged the FCC to go after ABC, and said FCC Chair Brendan Carr treated Trump's rhetoric as his marching orders. It's rare for the plaintiff's best evidence to be the defendant's greatest hits. The stakes were big: ABC stations cover six of the ten biggest U.S. markets, including New York, Los Angeles and Houston. Licenses normally run eight years, so an early review was highly unusual. The judge called it not a close case, though she declined a broader ban, and the injunction holds while the lawsuit plays out."
-  },
-  {
-   "t": 260.7,
-   "label": "💻 Tech",
-   "sid": "tech-1",
-   "topic": "tech",
-   "text": "The FCC just approved SpaceX's plan to launch up to a million satellites to serve as data centers in orbit. The project is called Starmind. The satellites run on sunlight, crunch AI workloads, and beam the results back down. Nobody wants a data center in their town anymore, and experts say that anger even hurt Republicans in the midterms, so the fix is to put them in everyone's sky. FCC Chair Brendan Carr called it a bold new frontier. Amazon called it a lofty ambition rather than a real plan, and astronomers say it would significantly undermine stargazing. Deployment has to begin by November 2033, so there's time to argue."
-  },
-  {
-   "t": 295.15,
+   "t": 336.35,
    "label": "⚡ Quick hits",
    "sid": null,
    "topic": null,
-   "text": "Quick hits. Duran Duran guitarist Andy Taylor has died at 65 after a long battle with prostate cancer; he co-wrote Rio, Girls on Film and Save a Prayer, and passed away at home with his family on Monday. In Cairo, a fuel tanker crash set off a huge fire on the ring road and killed at least 31 people, with at least 21 injured. A FedEx plane coming from Memphis overran a runway at Miami's airport last night; nobody was hurt, but there are hours-long delays. Jannik Sinner is out of the Australian Open in January after knee surgery, and he hasn't played since winning Wimbledon in July. And a man in Denver has reportedly been trapping Waymo robotaxis with orange cones and pelting them with eggs; no charges so far."
+   "text": "Quick hits. Trump used a Thanksgiving post to claim fake economic numbers were released before the midterms, and demanded an investigation without evidence. He was apparently reacting to GDP growth being revised upward. Australian mushroom murderer Erin Patterson has asked the High Court for a last appeal, but that court only hears about ten percent of cases. A Paris court says Gérard Depardieu will stand trial for the alleged rape of actress Charlotte Arnould in 2018. He denies it. California voters passed an eight-point-four billion dollar immunology research measure backed by a billionaire, and half the money goes to a group he funds. And the US has a shortage of elevator mechanics despite an average salary around 110,000 dollars. One recruiter called them wizards."
   },
   {
-   "t": 334.05,
+   "t": 377.9,
    "label": "Wrapping up",
    "sid": null,
    "topic": null,
-   "text": "That's your Thursday. Eat well, pace yourself during the Cowboys game, and I'll talk to you tomorrow."
+   "text": "That's the show. Go catch UTSA this morning, save some energy for the Spurs tonight, and if you must go shopping, wear layers. Talk tomorrow."
   }
  ],
- "backup_url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261126-1114.mp3"
+ "backup_url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261127-1110.mp3"
 }
