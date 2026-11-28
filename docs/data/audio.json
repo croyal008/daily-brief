@@ -1,8 +1,8 @@
 {
- "date": "2026-11-27",
- "generated_at": "2026-11-27T11:08:21+00:00",
- "url": "https://cdn.jsdelivr.net/gh/croyal008/daily-brief@e90e8a0aa78c9738c2f829848ca0e27093a0c9bf/brief-20261127-1110.mp3",
- "duration": 386.0,
+ "date": "2026-11-28",
+ "generated_at": "2026-11-28T11:03:15+00:00",
+ "url": "https://cdn.jsdelivr.net/gh/croyal008/daily-brief@d73683fa6d683106f4359821903256a2f54562e4/brief-20261128-1105.mp3",
+ "duration": 334.8,
  "voice": "Azure en-US-Phoebe:DragonHDOmniLatestNeural",
  "style": "host",
  "chapters": [
@@ -11,92 +11,85 @@
    "label": "Intro",
    "sid": null,
    "topic": null,
-   "text": "Happy Friday, the day after Thanksgiving, so you're either shopping, recovering, or hiding from both. Here's what's worth knowing, starting with a very busy sports day."
+   "text": "Good morning. It's Saturday, November 28th, the Spurs won, UTSA won, and the weather is behaving. Let's get into it."
   },
   {
-   "t": 9.5,
+   "t": 7.75,
    "label": "🌤️ Weather",
    "sid": null,
    "topic": "weather",
-   "text": "Cloudy and dry today, high of 68, low of 40, zero percent chance of rain. It starts at 42 this morning, climbs to the mid sixties by afternoon, then drops to 54 tonight. It feels like 35 out the door, so layer up. Saturday is clear and 75, and drizzle shows up Thursday."
+   "text": "Dress in layers today. It starts chilly at 42, feels more like 36 with the wind, then climbs to a high of 73. Midday is 65, the afternoon is 72, and it's back down to 59 by evening. Zero chance of rain. Sunday through Tuesday is cloudy and dry, then drizzle shows up Wednesday and sticks around Thursday with a 43 percent chance."
   },
   {
-   "t": 27.45,
+   "t": 30.45,
    "label": "🏆 My Teams",
-   "sid": "team-dallas-cowboys",
+   "sid": "team-san-antonio-spurs",
    "topic": "myteams",
-   "text": "The Cowboys lost to the Eagles thirty-nine to thirty-eight. One point. They're five and seven now. Javonte Williams did his part with 29 carries, 101 yards and two touchdowns, and it still wasn't enough. Cowboys fans know this feeling, and it never gets any more fun."
+   "text": "The Spurs beat the Lakers 99 to 96 and are now 16 and 4. They were down by 20 and came all the way back. Stephon Castle had 26 points and 9 assists, and the win sends San Antonio into the NBA Cup knockout round as a wild card. Not a bad way to spend a Friday."
   },
   {
-   "t": 44.25,
+   "t": 47.45,
    "label": "🏆 My Teams",
-   "sid": null,
+   "sid": "team-utsa-roadrunners",
    "topic": "myteams",
-   "text": "Two games for you today. UTSA, nine and two, hosts Tulsa, seven and four, at 11 this morning on ESPN. Tonight the Spurs, fifteen and four, host the Lakers, fifteen and three, at 8:30 on Prime Video. And there's good news: Dylan Harper got a positive injury update and could be back. Two teams with one loss between them in the Spurs game, so this one's worth staying up for."
+   "text": "UTSA took care of Tulsa, 28 to 22, and moves to 10 and 2. AJ Wilson did most of the damage with four catches for 153 yards and two touchdowns. That's an average of nearly 38 yards a catch, if you like doing math on a Saturday. The win also locks up home field for the American Conference title game, so the Roadrunners get to host it."
   },
   {
-   "t": 64.7,
+   "t": 68.05,
    "label": "🏈 Sports",
-   "sid": "sports-3",
+   "sid": "sports-1",
    "topic": "sports",
-   "text": "The Steelers have had a rough week, and by rough I mean Aaron Rodgers is gone. Late Tuesday they benched him for Mason Rudolph. Wednesday he went on the Pat McAfee Show and unloaded on head coach Mike McCarthy, saying he falls asleep in meetings, doesn't prepare, and doesn't connect with players. The last straw, according to Rodgers, was McCarthy saying one, two, three, Packers at halftime of the loss to the Eagles. McCarthy last coached Green Bay in 2018, and he admitted the slip. It's also the team Rodgers spent most of his career with, so he probably noticed. Pittsburgh then released him. Mike Tomlin, who coached Rodgers last year and is now an NBC analyst, said he felt general sadness at the idea this might be the end of a legendary career. The Steelers play Denver today with Rudolph at quarterback."
+   "text": "The Lakers, meanwhile, had a rough night in San Antonio, and Luka Dončić took it personally. He went 1 for 13 from three in the loss. Over the last couple of weeks he's 26 for 100. After the game he flung his wristband toward a woman in the crowd, then turned around to retrieve it. The man with her handed it back and shoved him, and security stepped in fast. Luka says he throws his wristband almost every game, heard she didn't want it, and went back to get it. The video shows the woman saying something first, and he appeared to flip a middle finger earlier. So his wristband found its target more reliably than his jumper did. Meanwhile, the Spurs fans just watched a 20-point lead evaporate on the other side, and that's the part we're enjoying."
   },
   {
-   "t": 108.35,
-   "label": "🏈 Sports",
-   "sid": "sports-2",
-   "topic": "sports",
-   "text": "Marc Marquez is retiring from MotoGP, and he picked a great time to do it. Last weekend in Portugal he won his eighth world title, tying the legend Giacomo Agostini and going one past Valentino Rossi. He's 33. He won his first title in 2013 and is still the only rider to win it in his rookie year. He took six with Honda, then moved to Ducati and won it again the last two seasons. He'd even extended his contract through 2028 back in June. Instead, Sunday's season finale in Valencia will be his last race. His farewell message was pretty simple: thanks for being part of the journey, hope you enjoyed it as much as I did."
-  },
-  {
-   "t": 144.95,
-   "label": "🎬 Culture & Entertainment",
-   "sid": "culture-3",
-   "topic": "culture",
-   "text": "The National Dog Show is the thing your family has on in the background every Thanksgiving, and this year's winner is a black and tan coonhound named Rocker. He beat six other group winners out of roughly 2,000 dogs. It was his fifteenth best in show, so he's done this before. The judge, Lorraine Bisso, praised his very masculine head, his beautiful feet, and a lovely forechest, which is a sentence that would get you thrown out of most bars. She explained that the forechest matters because he's a hunting hound who can run 25 miles. Rocker's handler, Mandy Clevenger, said she didn't expect the win. He's owned by Traci Mitchell of Bedford, Iowa, and Westminster is next."
-  },
-  {
-   "t": 179.2,
-   "label": "🎬 Culture & Entertainment",
-   "sid": "culture-2",
-   "topic": "culture",
-   "text": "Brad Pitt and Angelina Jolie have settled their fight over a French winery. It's Château Miraval, which they bought a controlling stake in back in 2008 and where they got married in 2014. Pitt sued after Jolie sold her share to a company controlled by Russian oligarch Yuri Shefler without his permission, which he said left him partnered with a stranger with poisonous associations. She countersued, accusing Pitt of attacking her and their children on a 2016 flight, which he's denied. Her filing was the one that exposed those allegations. Both suits are now resolved. Their joint statement says they settled in the best interests of the family and won't comment, and it adds that quotes from sources aren't coming from either of them. The lawsuit has outlasted several vintages, and neither side poured out anything new today."
-  },
-  {
-   "t": 220.95,
-   "label": "🇺🇸 U.S.",
-   "sid": "us-2",
-   "topic": "us",
-   "text": "A pregnant inmate in New Mexico escaped Wednesday, and the details are something. Rebecca Taylor, 26, is serving six years for a string of vehicle thefts. She was being driven back from a prenatal appointment in Albuquerque to the prison in Grants when the three officers stopped at a Whataburger. She wasn't restrained because of the pregnancy, so she climbed from the back seat into the driver's seat and drove off while an officer stood nearby. So a woman convicted of stealing vehicles was left alone in a vehicle. A second inmate got out and is still in custody. Police found the SUV three miles away about an hour later, along with her jumpsuit and a department cellphone, but no Taylor. She has ties to Houston and Albuquerque. The department is investigating how this happened."
-  },
-  {
-   "t": 259.8,
+   "t": 108.3,
    "label": "🇺🇸 U.S.",
    "sid": "us-3",
    "topic": "us",
-   "text": "In Iowa, the Army blew up nearly five tons of lead azide Wednesday at the Iowa Army Ammunition Plant in Middletown. That's an explosive used in ammunition since World War One, and this stockpile had been rotting in storage for twenty years. The Army said it was safer to detonate it than risk it going off on its own. Locals and environmental groups tried to stop it, worried about a toxic lead plume over farms and homes. The EPA says it took over 1,500 samples before and over 1,000 after, including at homes, schools, daycares and the Mississippi River watershed. So far, no airborne lead has been detected. The first lab results could come as early as today, and some neighbors are still not relaxed."
+   "text": "Thanksgiving did not go well on the East Coast. A powerful storm swept through from New York to Virginia, flooding streets, knocking down trees and power lines, and cutting power to nearly a million customers at its peak. More than 260,000 were still in the dark on Friday. It was the wettest Thanksgiving on record in Washington, and nearly two inches fell in New York's Central Park. Hundreds of flights were canceled both days, and one traveler sat in LaGuardia for thirteen hours trying to get to Chicago. Several states declared emergencies, and the president says he'll consider releasing emergency funds. Skies cleared Friday, and crews are working through the repairs."
   },
   {
-   "t": 298.35,
-   "label": "🌍 World",
-   "sid": "world-6",
-   "topic": "world",
-   "text": "Volodymyr Zelensky sat down with the BBC in Kyiv and was blunt about Washington. He said it's strange that Donald Trump calls Vladimir Putin my friend and posted a photo embracing him. He called Putin an aggressor and a killer, and said a person like that can't be a friend, comparing it to being friends with Hitler in World War Two. He also said delays in delivering anti-ballistic missiles are costing Ukrainian lives. The latest talks in Abu Dhabi went nowhere. His summary was the more we know, the more problems. Trump says he pushed Putin at their summit in China last week and a deal is a strong possibility. Russia, meanwhile, appears to have gone back to its hardline starting positions on everything."
+   "t": 143.85,
+   "label": "🇺🇸 U.S.",
+   "sid": "us-1",
+   "topic": "us",
+   "text": "The one tradition that actually got canceled by that storm gets a do-over today. Macy's 100th Thanksgiving Day Parade, postponed for the first time ever, is stepping off this morning with all the balloons, floats and a thousand clowns. Some marching bands from out of town had to scramble to raise tens or even hundreds of thousands of dollars to stay in New York a few extra days. The celebrity lineup mostly survives, and they've added Gloria Gaynor and LL Cool J. Yes, the I Will Survive woman for the parade that just survived. NBC and Peacock have it from 8:30 Eastern, so 7:30 here, until noon Eastern. The National Dog Show rebroadcast follows."
   },
   {
-   "t": 336.35,
+   "t": 179.7,
+   "label": "🇺🇸 U.S.",
+   "sid": "us-5",
+   "topic": "us",
+   "text": "Apple sued OpenAI in June, accusing it of stealing trade secrets to build hardware, naming OpenAI's chief hardware officer Tang Tan and a technical staffer, Chang Liu. Both used to work at Apple. On Friday OpenAI hit back with a countersuit, saying Apple deliberately sets up departing employees so it can accuse them, and their new employers, of stealing whenever convenient. It calls that a trap. Apple says that's a distraction and notes OpenAI has already been ordered to stop using Apple's confidential information. The backdrop is that OpenAI bought the device startup of Jony Ive, the designer behind the iPhone, last year. So Apple's old design star is now building the thing Apple is suing over, and no one is surprised the lawyers got involved."
+  },
+  {
+   "t": 218.45,
+   "label": "💻 Tech",
+   "sid": "tech-3",
+   "topic": "tech",
+   "text": "Court filings are filling in how the government ended up owning ten percent of Intel. In August 2025, a Commerce Department lawyer told Intel's chief financial officer not to make the mistake of thinking this was a negotiation. The board could say no, he said, but there would be consequences he couldn't predict. Days later, the board said yes. Trump announced the government now owned ten percent, valued around eleven billion dollars, for which the United States paid nothing. Very bold approach to the old line, nice chip company you've got there, shame if something happened to it. It also fits a pattern. Trump said this week he convinced Nvidia's board to rehire chief executive Jensen Huang."
+  },
+  {
+   "t": 253.25,
+   "label": "🎬 Culture & Entertainment",
+   "sid": "culture-2",
+   "topic": "culture",
+   "text": "Carly Rae Jepsen has spent a decade being told her best song isn't Call Me Maybe, and fans have always agreed. It's Run Away With Me, released in 2015, and it stalled at number 58 on the charts. Then it turned up in Grand Theft Auto VI, soundtracking a sequence with jet skis and champagne bottles shot off the back of a yacht. Its daily streams went from 20,000 to 281,000 overnight, and it just landed at a new UK peak of 28. Jepsen says she hasn't played the game yet and plans to become a late-in-life gamer. A song about falling head over heels with someone, now with explosions nearby. Seems about right."
+  },
+  {
+   "t": 286.6,
    "label": "⚡ Quick hits",
    "sid": null,
    "topic": null,
-   "text": "Quick hits. Trump used a Thanksgiving post to claim fake economic numbers were released before the midterms, and demanded an investigation without evidence. He was apparently reacting to GDP growth being revised upward. Australian mushroom murderer Erin Patterson has asked the High Court for a last appeal, but that court only hears about ten percent of cases. A Paris court says Gérard Depardieu will stand trial for the alleged rape of actress Charlotte Arnould in 2018. He denies it. California voters passed an eight-point-four billion dollar immunology research measure backed by a billionaire, and half the money goes to a group he funds. And the US has a shortage of elevator mechanics despite an average salary around 110,000 dollars. One recruiter called them wizards."
+   "text": "A few quick ones. A truck crashed into a San Antonio dog daycare on Thanksgiving, and one dog is still missing. Canada's Supreme Court voted six to one to largely uphold Quebec's ban on religious symbols for public sector workers, and critics say it guts minority rights. Customs officers in Amsterdam found 26 Vallarta mud turtles, some of the rarest in the world, duct-taped inside a traveler's checked bag, and an arrest was made. The mall is not dead: indoor mall visits rose four percent last month, outdoor ones almost six, and teens have rediscovered hanging out. And in Britain, online pension and benefits services are still down after what the government calls a cyber incident, though payments are supposed to continue."
   },
   {
-   "t": 377.9,
+   "t": 325.85,
    "label": "Wrapping up",
    "sid": null,
    "topic": null,
-   "text": "That's the show. Go catch UTSA this morning, save some energy for the Spurs tonight, and if you must go shopping, wear layers. Talk tomorrow."
+   "text": "That's your Saturday. Grab a jacket for the morning, shed it by lunch, and enjoy the Spurs win and UTSA's home game. Talk to you tomorrow."
   }
  ],
- "backup_url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261127-1110.mp3"
+ "backup_url": "https://github.com/croyal008/daily-brief/releases/download/podcast/brief-20261128-1105.mp3"
 }
